@@ -37,7 +37,7 @@ export default function NavBar() {
           </div>
         </div>
         <div id="MenuContainer" className="flex justify-center items-center">
-          <button className=" hover:bg-[gray] rounded-full">
+          <button className="hover:bg-[gray] rounded-full">
             <Link
               className="flex justify-center items-center h-10 w-auto p-5"
               href="https://www.linkedin.com/in/emanuel-ps/"

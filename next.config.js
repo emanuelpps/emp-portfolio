@@ -13,12 +13,15 @@ module.exports = {
   },
   theme: {
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'myBlack': '#333333',
-      'gray': '#4C4C4C',
-      'white': '#D0D0D0',
+      transparent: "transparent",
+      current: "currentColor",
+      myBlack: "#333333",
+      gray: "#4C4C4C",
+      white: "#D0D0D0",
     },
+  },
+  images: {
+    domains: ["i.ibb.co"],
   },
   nextConfig,
 };
