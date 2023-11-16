@@ -3,7 +3,7 @@ nav{
 }
 .checkbox {
     width: 223px;
-    height: 60px;
+    height: 50px;
     background-color: #242424;
     border-radius: 30px;
     position: relative;
@@ -16,7 +16,7 @@ nav{
   
   .checkbox .toggle {
     width: 100px;
-    height: 50px;
+    height: 40px;
     position: absolute;
     border-radius: 30px;
     left: 5px;
@@ -28,7 +28,7 @@ nav{
   
   .checkbox .slide {
     width: 230px;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -36,7 +36,7 @@ nav{
   }
   
   .checkbox .slide .text {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     z-index: 100;
     cursor: pointer;

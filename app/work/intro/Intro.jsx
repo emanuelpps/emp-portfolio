@@ -10,9 +10,9 @@ export default function Intro() {
     <div className="window-outline">
       <div id="titles-container" className="h-auto w-full">
         <div className="window-main pl-28 pr-28 mt-25">
-          <h3 className="text-6xl textShadow mt-16">Hi! </h3>
-          <h1 className="text-7xl textShadow">I'm Emanuel Pages</h1>
-          <h2 className="text-6xl textShadow ">Front End Developer</h2>
+          <h3 className="text-6xl textShadow mt-16 font-light">Hi! </h3>
+          <h1 className="text-7xl textShadow font-nomal ">I'm Emanuel Pages</h1>
+          <h2 className="text-6xl textShadow font-extralight">Front End Developer</h2>
           <div id="intro-button-container" className="flex mt-16 justify-evenly">
             <Contact />
             <MyWork />
