@@ -1,3 +1,4 @@
+import NavBar from "@/components/NavBar/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -12,7 +13,10 @@ const poppins = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
-      <body>{children}</body>
+      <body>
+        <NavBar/>
+        {children}
+      </body>
     </html>
   );
 }
