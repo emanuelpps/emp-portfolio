@@ -15,7 +15,6 @@ function ProjectCard({ project }) {
       onMouseEnter={() => setHoverState(true)}
       onMouseLeave={() => setHoverState(false)}
     >
-      {/* Contenido de tu componente */}
       <div className="p-10">
         <div id="title-container" className="flex justify-between">
           <h1 className="text-3xl">{project.name}</h1>
@@ -37,8 +36,8 @@ function ProjectCard({ project }) {
           <Image
             src={project.img}
             alt={project.name}
-            width={500}
-            height={500}
+            width={750}
+            height={750}
             className={`rounded-lg ${
               hoverState
                 ? "transition ease-in-out delay-150 -translate-y-1 scale-110  duration-300"
