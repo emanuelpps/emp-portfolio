@@ -10,11 +10,11 @@ const poppins = Inter({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <NavBar/>
+        <NavBar />
         {children}
       </body>
     </html>

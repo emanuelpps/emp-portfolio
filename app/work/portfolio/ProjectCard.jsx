@@ -36,11 +36,11 @@ function ProjectCard({ project }) {
           <Image
             src={project.img}
             alt={project.name}
-            width={750}
-            height={750}
+            width={1200}
+            height={1000}
             className={`rounded-lg ${
               hoverState
-                ? "transition ease-in-out delay-150 -translate-y-1 scale-110  duration-300"
+                ? "transition ease-in-out delay-150 -translate-y-1 scale-105 duration-300"
                 : "transition ease-in-out delay-150 translate-y-1 scale-100 duration-300"
             }`}
           />
