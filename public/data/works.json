@@ -15,10 +15,10 @@
         "myRole": "Frontend Developer and UX/UI Designer",
         "highlight": "A standout feature is the ability to maintain a detailed history of each client and the services they have booked. Barbers can easily access this information. The history includes details such as the appointment date, the requested service, and the name of the barber who attended to the client, providing a complete overview of the relationship between the client and the barbershop.",
         "team": [
-          "Marco Perez Donoso",
-          "Juan Carlos Galué",
-          "John Pablo",
-          "Juan Pablo Saluzzo"
+          "Marco Perez Donoso, Front End",
+          "Juan Carlos Galué, Back End",
+          "John Pablo, Front End",
+          "Juan Pablo Saluzzo, Back End"
         ]
       }
     ]
@@ -61,7 +61,7 @@
     "infoProject": [
       {
         "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can enjoy a predefined playlist or create your personalized list. Take control of playback, skip to the next track, or go back. Additionally, easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just as effortlessly.",
-        "myRole": "Frontend Developer",
+        "myRole": "Frontend Developer and UI Designer",
         "highlight": "Enjoy music effortlessly with a user-friendly design. Make your playlists or enjoy a default one. Skip, go back, and manage playback effortlessly. Add or remove songs from your playlist with a click"
       }
     ]
@@ -79,7 +79,8 @@
     "infoProject": [
       {
         "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.The design features a simple and highly intuitive user interface. Upon entering, you can view the menu, add your chosen items to the cart. In the cart, you have the option to modify quantities, remove each item, or clear the entire cart. Finally, indicate the payment method, your address, and the order will be submitted. Don Remolo Pizza is a project idea by ID for Ideas.",
-        "highlight": "The order you create is sent directly as a text message via WhatsApp to the company."
+        "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
+        "myRole": "Frontend Developer and UI Designer"
       }
     ]
   },
@@ -92,7 +93,14 @@
     "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Fetch API",
     "code": "https://github.com/emanuelpps/EP-WeatherAPP",
     "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
-    "linkName": "ep-weather"
+    "linkName": "ep-weather",
+    "infoProject": [
+      {
+        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
+        "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   },
   {
     "name": "EP Converter",
@@ -103,7 +111,14 @@
     "lenguage": "SASS - HTML 5 - React Js - Bootstrap - Fetch API",
     "code": "https://github.com/emanuelpps/ep-currency-converter",
     "demo": "https://emanuelpps.github.io/ep-currency-converter/",
-    "linkName": "ep-converter"
+    "linkName": "ep-converter",
+    "infoProject": [
+      {
+        "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
+        "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   },
   {
     "name": "To Do List",
@@ -114,7 +129,14 @@
     "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap",
     "code": "https://github.com/emanuelpps/todoListEP",
     "demo": "https://emanuelpps.github.io/todoListEP/",
-    "linkName": "to-do-list"
+    "linkName": "to-do-list",
+    "infoProject": [
+      {
+        "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
+        "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   },
   {
     "name": "Ñire",
