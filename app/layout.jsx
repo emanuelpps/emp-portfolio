@@ -1,3 +1,4 @@
+import NavBar from "@/components/NavBar/NavBar";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -9,10 +10,13 @@ const poppins = Inter({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }

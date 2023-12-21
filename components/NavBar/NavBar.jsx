@@ -1,11 +1,23 @@
-import React from "react";
+'use client'
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import PortfolioLogo from "@/public/assets/EP_logo.png";
+import PortfolioLogo from "@/public/assets/EP-logo.svg";
 import "./NavBar.css";
 import Link from "next/link";
 import arrow from "@/public/assets/arrow.svg";
+//import { useRouter } from "next/navigation";
 
 export default function NavBar() {
+  const [homeContent, setHomeContent] = useState("work");
+  //const router = useRouter();
+
+
+/*   useEffect(() => {
+    const showContentInHome = () => {
+      homeContent == 'work' ? (router.push('/work')) : (router.push('/info'));
+    }
+    showContentInHome()
+  }, [homeContent]) */
   return (
     <>
       <nav className="grid grid-cols-3 pt-5">
@@ -27,10 +39,10 @@ export default function NavBar() {
           <div class="checkbox">
             <label class="slide" for="checkbox_toggle">
               <label class="toggle" for="checkbox_toggle"></label>
-              <label href="/work" class="text" for="checkbox_toggle">
+              <button class="text" for="checkbox_toggle" onClick={() => setHomeContent('work')}>
                 Work
-              </label>
-              <label class="text" for="checkbox_toggle">
+              </button>
+              <label class="text" for="checkbox_toggle" onClick={() => setHomeContent('info')}>
                 Info
               </label>
             </label>
