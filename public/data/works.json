@@ -132,8 +132,8 @@
     "linkName": "to-do-list",
     "infoProject": [
       {
-        "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
-        "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
+        "overview": "I created a web application for managing tasks, where you can add, mark as done, or delete tasks from your list. The app also displays the number of pending tasks, and you have the option to change the background image of the application.",
+        "highlight": "Easily add, mark tasks as done, or delete them for a well-organized to-do list. Personalize your experience by customizing the background to match your preferences. A unique feature allows you to view completed tasks separately, offering the flexibility to revert them to pending or delete them permanently. Stay informed during task management with real-time displays of the current time and date. Additionally, the app integrates a calendar for a comprehensive overview of upcoming tasks, helping you plan activities for the next days.",
         "myRole": "Frontend Developer and UI Designer"
       }
     ]
@@ -147,7 +147,14 @@
     "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion",
     "code": "https://github.com/emanuelpps/Nire-Panaderia",
     "demo": "https://emanuelpps.github.io/Nire-Panaderia/",
-    "linkName": "nire"
+    "linkName": "nire",
+    "infoProject": [
+      {
+        "overview": "I develop a website for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The website emphasizes a minimalist yet highly appealing design.",
+        "highlight": "The website features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   },
   {
     "name": "Embé Home & Deco",
@@ -155,10 +162,17 @@
     "type": "Web Page",
     "description": "An online shop for home and decor items. It's easy to use, so you can enjoy shopping and know what's new.",
     "img": "https://i.ibb.co/mTJJk6J/embe-ecommerce.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Firebase",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Firebase - Sweetalert",
     "code": "https://github.com/emanuelpps/embe-ecommerce",
     "demo": "https://emanuelpps.github.io/embe-ecommerce/",
-    "linkName": "embe-home-deco"
+    "linkName": "embe-home-deco",
+    "infoProject": [
+      {
+        "overview": "Embé Home & Deco is an online store dedicated to offering a variety of home decoration products. Navigating through the user-friendly menu, you can easily filter products by category, explore detailed product information, add items to your cart, and even reset quantities if needed. The platform also provides a simulated checkout experience for take a look into the purchase process.",
+        "highlight": " Browse through categories, explore product details, and effortlessly add items to your cart. The unique feature of resetting quantities ensures flexibility in your selections. The simulated checkout offers a preview of the purchasing process, making your online shopping journey convenient and enjoyable.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   },
   {
     "name": "Falcon Aviation Shop",
@@ -169,6 +183,13 @@
     "lenguage": "HTML 5 - CSS 3 - Javascript - Bootstrap",
     "code": "https://github.com/emanuelpps/Falcon-Aviation-Shop",
     "demo": "https://emanuelpps.github.io/Falcon-Aviation-Shop/",
-    "linkName": "falcon-aviation-shop"
+    "linkName": "falcon-aviation-shop",
+    "infoProject": [
+      {
+        "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
+        "highlight": "The website is simple, making it eeasy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
+        "myRole": "Frontend Developer and UI Designer"
+      }
+    ]
   }
 ]
