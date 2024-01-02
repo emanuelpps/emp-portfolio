@@ -27,10 +27,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.textShadow {
-  text-shadow: 4px 4px 39px rgba(255, 255, 255, 0.6);
-}
-
 .window-outline {
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
@@ -50,3 +46,8 @@ body {
     0 30px 120px rgba(0, 0, 0, 0.8);
 }
 
+.neon-text{
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff;
+}

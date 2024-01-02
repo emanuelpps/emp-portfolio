@@ -14,7 +14,6 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
       <body>
-        <NavBar />
         {children}
       </body>
     </html>

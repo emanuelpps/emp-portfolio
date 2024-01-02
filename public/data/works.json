@@ -11,15 +11,22 @@
     "linkName": "barber-buddy",
     "infoProject": [
       {
-        "overview": "BarberBuddy is a appointment management system that gives each barber the ability to organize and efficiently manage their services.With BarberBuddy, each barber has personalized access through their email address, ensuring a secure and personalized environment. Once inside the platform, a set of intuitive tools is available that simplifies appointment and service management.The main functionality of BarberBuddy lies in the ability to schedule appointments easily and accurately. Each barber can view an interactive calendar displaying available time slots, allowing them to easily select the day and time that best suits their availability. Additionally, the system offers the flexibility to assign one or multiple services to each scheduled appointment, making it easy to prepare and organize the workday.",
+        "overview": "BarberBuddy is a appointment management system that gives each barber the ability to organize and efficiently manage their services. \n\nWith BarberBuddy, each barber has personalized access through their email address, ensuring a secure and personalized environment. Once inside the platform, a set of intuitive tools is available that simplifies appointment and service management. \n\nThe main functionality of BarberBuddy lies in the ability to schedule appointments easily and accurately. Each barber can view an interactive calendar displaying available time slots, allowing them to easily select the day and time that best suits their availability. \n\nAdditionally, the system offers the flexibility to assign one or multiple services to each scheduled appointment, making it easy to prepare and organize the workday.",
         "myRole": "Frontend Developer and UX/UI Designer",
         "highlight": "A standout feature is the ability to maintain a detailed history of each client and the services they have booked. Barbers can easily access this information. The history includes details such as the appointment date, the requested service, and the name of the barber who attended to the client, providing a complete overview of the relationship between the client and the barbershop.",
         "team": [
-          "Marco Perez Donoso, Front End",
-          "Juan Carlos Galué, Back End",
-          "John Pablo, Front End",
-          "Juan Pablo Saluzzo, Back End"
-        ]
+          "Marco Perez Donoso, Frontend",
+          "Juan Carlos Galué, Backend",
+          "John Pablo, Frontend",
+          "Juan Pablo Saluzzo, Backend"
+        ],
+        "video": "https://awevideo.s3.amazonaws.com/video-22480093-e884e65f0515322662b3f36a6471b54c.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T225704Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1519dc0b39a017f9fdd4ee5cceab538c7ba8c962375e265b8d2e33ffbf915210",
+        "images": [{
+          "highlight": "https://i.ibb.co/bXKhsHZ/Captura-de-pantalla-2023-12-26-230429.png",
+          "gallery" : [
+
+          ]
+        }]
       }
     ]
   },
@@ -44,7 +51,9 @@
           "Macarena Diaz",
           "Yaco Ibars",
           "Matias D'Amico"
-        ]
+        ],
+        "video": "https://awevideo.s3.amazonaws.com/video-20875013-389bd8e2b50940d24f2112623a1f8282.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T225325Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=24f9cbdd6f9a2ec725aa95cc5b8cae6428200f715723169a886c437872b63863",
+        "images": []
       }
     ]
   },
@@ -62,7 +71,11 @@
       {
         "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can enjoy a predefined playlist or create your personalized list. Take control of playback, skip to the next track, or go back. Additionally, easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just as effortlessly.",
         "myRole": "Frontend Developer and UI Designer",
-        "highlight": "Enjoy music effortlessly with a user-friendly design. Make your playlists or enjoy a default one. Skip, go back, and manage playback effortlessly. Add or remove songs from your playlist with a click"
+        "highlight": "Enjoy music effortlessly with a user-friendly design. Make your playlists or enjoy a default one. Skip, go back, and manage playback effortlessly. Add or remove songs from your playlist with a click",
+        "video": "https://awevideo.s3.amazonaws.com/video-23607671-dcd8c4fd6d94d7c7f5dcff1de41c61c9.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T233006Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=93c823c44c9f2f2e4fd18fa0da9d72042523ca6fea3866cc4a5a6c02d44f80b9",
+        "images": [{
+          
+        }]        
       }
     ]
   },
@@ -80,7 +93,9 @@
       {
         "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.The design features a simple and highly intuitive user interface. Upon entering, you can view the menu, add your chosen items to the cart. In the cart, you have the option to modify quantities, remove each item, or clear the entire cart. Finally, indicate the payment method, your address, and the order will be submitted. Don Remolo Pizza is a project idea by ID for Ideas.",
         "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-23607891-1faf3545d2dd56df137b8c195a798bb4.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T233553Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=249512c84a73fc8b60b4a970dfee77a3f390596aeae710043fb4015ec36dced1",
+        "images": []  
       }
     ]
   },
@@ -98,7 +113,9 @@
       {
         "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
         "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-18834525-2f8762d254bf4a7a396e8cdf26d3a318.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T230103Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c1210d6ef5a8642812a5695a691848f4658ac57fe50ba91113d3c70fdbc91ae5",
+        "images": []
       }
     ]
   },
@@ -116,7 +133,9 @@
       {
         "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
         "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-23607970-864a94de4c441ba89cc26dd5ac99a438.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T234549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1956f90dec90e7dfa5d6dc42e566561a2a07af616563c3bf100e17ef276298ea",
+        "images": []
       }
     ]
   },
@@ -134,7 +153,9 @@
       {
         "overview": "I created a web application for managing tasks, where you can add, mark as done, or delete tasks from your list. The app also displays the number of pending tasks, and you have the option to change the background image of the application.",
         "highlight": "Easily add, mark tasks as done, or delete them for a well-organized to-do list. Personalize your experience by customizing the background to match your preferences. A unique feature allows you to view completed tasks separately, offering the flexibility to revert them to pending or delete them permanently. Stay informed during task management with real-time displays of the current time and date. Additionally, the app integrates a calendar for a comprehensive overview of upcoming tasks, helping you plan activities for the next days.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-19005315-abf6baa5ac3ea0dc085edf2bcca28db9.webm?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T230317Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3ab34d3fdb9634fbd99d1d7a8ab935e4e79c09e298ed9060e5cdb5452bab5862",
+        "images": []
       }
     ]
   },
@@ -152,7 +173,9 @@
       {
         "overview": "I develop a website for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The website emphasizes a minimalist yet highly appealing design.",
         "highlight": "The website features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-23607300-86034699.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T223841Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=92ef3fe77093f9ad08b38c76c3152e5fa4df08edbb26360b30cfc9739f209fd4",
+        "images": []        
       }
     ]
   },
@@ -170,7 +193,9 @@
       {
         "overview": "Embé Home & Deco is an online store dedicated to offering a variety of home decoration products. Navigating through the user-friendly menu, you can easily filter products by category, explore detailed product information, add items to your cart, and even reset quantities if needed. The platform also provides a simulated checkout experience for take a look into the purchase process.",
         "highlight": " Browse through categories, explore product details, and effortlessly add items to your cart. The unique feature of resetting quantities ensures flexibility in your selections. The simulated checkout offers a preview of the purchasing process, making your online shopping journey convenient and enjoyable.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-23608001-26c4f381.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T235201Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2b62fd16ce04ed1cb16bf7260a88320983065782dec3d77b4a815ddd00438eec",
+        "images": []  
       }
     ]
   },
@@ -188,7 +213,9 @@
       {
         "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
         "highlight": "The website is simple, making it eeasy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
-        "myRole": "Frontend Developer and UI Designer"
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://awevideo.s3.amazonaws.com/video-23608048-49649b7dbdfbc93f075b1944d09de2d5.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20231227%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231227T235519Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=95b2f225bc527b1acc3b745a90f0e2b199f2362e4af28014ac8fc13c6326ba09",
+        "images": []  
       }
     ]
   }
