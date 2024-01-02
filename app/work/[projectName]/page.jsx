@@ -4,6 +4,10 @@ import projects from "@/public/data/works.json";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
 import { VscLinkExternal } from "react-icons/vsc";
+import { VscArrowLeft } from "react-icons/vsc";
+import { FaRegLightbulb } from "react-icons/fa6";
+
+import Link from "next/link";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
@@ -26,78 +30,122 @@ function ProjectName({ params }) {
     <div>
       {projectPage ? (
         <>
-          <div className="grid grid-cols-6 grid-rows-12 gap-4">
-            <div id="title-container" className="col-span-6">
-              <h1 className="text-center text-3xl">{projectPage.name}</h1>
-              <div id="h2-container" className="flex flex-row justify-center">
-                <h2 className="text-center ">{projectPage.class}</h2>
-              </div>
+          <div className="grid grid-cols-6 grid-rows-17 gap-4">
+            <div className="col-start-1 row-start-1">
+              <Link href={"/work"}>
+                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                  <VscArrowLeft />
+                  Go Back
+                </button>
+              </Link>
             </div>
-            <div className="col-span-4 row-span-3 col-start-2 row-start-2">
-              <div
-                id="image-container"
-                className="flex col-span-3 row-span-4 col-start-2 row-start-2"
-              >
-                <Image
-                  src={projectPage.img}
-                  width={1200}
-                  height={1200}
-                  className="self-auto"
-                  alt="Project Image"
-                />
+            <div className="col-span-4 row-span-4 col-start-2 row-start-2">
+              <div id="title-container" className="mb-10 mt-10">
+                <h1 className="text-center @apply bg-[linear-gradient(to_bottom,var(--on-background)_50%,transparent)] tracking-[-1px] bg-clip-text text-[50px] leading-[72px] [text-shadow:_0_1px_1_rgb(0_0_0_/_80%)]  neon-text">
+                  {projectPage.name}
+                </h1>
+                <div id="h2-container" className="flex flex-row justify-center">
+                  <h2 className="text-center ">{projectPage.class}</h2>
+                </div>
+              </div>
+              <div>
+                <div id="video-container" className="flex justify-center">
+                  {projectPage.infoProject[0].video ? (
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      aspect-auto
+                      rounded-lg
+                      className="rounded-lg hover:aspect-video"
+                      alt="Project Image"
+                    >
+                      <source src={projectPage.infoProject[0].video} />
+                    </video>
+                  ) : (
+                    <div className="text-center">
+                      <p>Please wait... loading video</p>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
             <div
               id="content-container"
-              className="row-span-3 col-start-6 row-start-2"
+              className="row-span-4 col-start-6 row-start-2"
             >
               <ul>
-                <h3>Contents</h3>
+                <h3 className="text-lg">Contents</h3>
                 <li>Overview</li>
                 <li>Highlights</li>
                 <li>Review</li>
               </ul>
             </div>
-            <div className="col-span-4 col-start-2 row-start-5">
+            <div className="col-span-4 col-start-2 row-start-6">
               <div
                 id="buttons-project-container"
                 className="flex justify-center mt-20 pb-20"
               >
-                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-                  <VscLinkExternal />
-                  <p>Deploy</p>
-                </button>
-                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-                  <VscGithub className="w-full " />
-                  <p>Repository</p>
-                </button>
+                <Link href={projectPage.demo} target="_blank">
+                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                    <VscLinkExternal />
+                    <p>Deploy</p>
+                  </button>
+                </Link>
+                <Link href={projectPage.code} target="_blank">
+                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                    <VscGithub className="w-full " />
+                    <p>Repository</p>
+                  </button>
+                </Link>
               </div>
             </div>
-            <div className="pl-20 col-span-3 row-span-2 col-start-1 row-start-6">
+            <div className="pl-20 col-span-2 col-start-2 row-start-7">
               <div id="role-container">
-                <h4>My Role</h4>
-                <h3>{projectPage.infoProject[0].myRole}</h3>
+                <h4 className="font-semibold text-sm">My Role</h4>
+                <h3 className="font-extralight">
+                  {projectPage.infoProject[0].myRole}
+                </h3>
               </div>
             </div>
-            <div className="pl-20 col-span-3 row-span-2 col-start-1 row-start-7">
+            <div className="pl-20 col-span-2 row-span-2 col-start-2 row-start-8">
               <div id="team-container">
-                {projectPage.infoProject[0].team ? <h4>Team</h4> : <></>}
+                {projectPage.infoProject[0].team ? (
+                  <h4 className="font-semibold text-sm">Team</h4>
+                ) : (
+                  <></>
+                )}
                 {projectPage.infoProject[0].team?.map((teamMate) => (
-                  <p>{teamMate}</p>
+                  <p className="font-thin">{teamMate}</p>
                 ))}
               </div>
             </div>
-            <div className="pr-20 col-span-3 row-span-2 col-start-4 row-start-6">
-              <div id="overview-container">
-                <h3>Overview</h3>
-                <p>{projectPage.infoProject[0].overview}</p>
-              </div>
-              <div id="highlights-container" className="pr-20 col-span-3 row-span-2 col-start-4 row-start-8 pt-20">
-                <h3>Highlights</h3>
-                <p>{projectPage.infoProject[0].highlight}</p>
-              </div>
+            <div
+              id="overview-container"
+              className="col-span-2 row-span-3 col-start-4 row-start-7 mb-20"
+            >
+              <h3 className="font-semibold text-sm">Overview</h3>
+              <p className="font-thin tracking-wide @apply whitespace-pre-line">
+                {projectPage.infoProject[0].overview}
+              </p>
             </div>
-            <div className="flex justify-center col-span-5 row-span-3 col-start-1 row-start-10">
+            <div
+              id="highlights-container"
+              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center"
+            >
+              <FaRegLightbulb size={30} className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2" />
+              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">HIGHLIGHTS</h3>
+              <p className="justify-center text-center pl-20 pr-20 mb-10">
+                {projectPage.infoProject[0].highlight}
+              </p>
+              <Image
+                src={projectPage.infoProject[0].images[0].highlight}
+                alt={projectPage.name}
+                width={1200}
+                height={1000}
+              ></Image>
+            </div>
+            <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
               <div id="review-container">
                 <h3>Review</h3>
                 <div id="gallery-container"></div>
@@ -107,9 +155,12 @@ function ProjectName({ params }) {
             <div className="row-span-4 col-start-3 row-start-8 justify-center"></div>
             <div className="col-start-5 row-start-5"></div>
           </div>
+          <div className="col-span-6 row-start-17"></div>
         </>
       ) : (
-        <p className="text-center">Loading Project... Please Wait</p>
+        <p className="grid content-center text-center">
+          Loading Project... Please Wait
+        </p>
       )}
     </div>
   );
