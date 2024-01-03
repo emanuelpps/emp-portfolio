@@ -44,7 +44,10 @@ function ProjectName({ params }) {
                 <h1 className="text-center @apply bg-[linear-gradient(to_bottom,var(--on-background)_50%,transparent)] tracking-[-1px] bg-clip-text text-[50px] leading-[72px] [text-shadow:_0_1px_1_rgb(0_0_0_/_80%)]  neon-text">
                   {projectPage.name}
                 </h1>
-                <div id="h2-container" className="flex flex-row justify-center">
+                <div
+                  id="h2-container"
+                  className="flex flex-row justify-center rounded-3xl"
+                >
                   <h2 className="text-center ">{projectPage.class}</h2>
                 </div>
               </div>
@@ -57,7 +60,7 @@ function ProjectName({ params }) {
                       loop
                       aspect-auto
                       rounded-lg
-                      className="rounded-lg hover:aspect-video"
+                      className="rounded-3xl rounded-video"
                       alt="Project Image"
                     >
                       <source src={projectPage.infoProject[0].video} />
@@ -72,13 +75,19 @@ function ProjectName({ params }) {
             </div>
             <div
               id="content-container"
-              className="row-span-4 col-start-6 row-start-2"
+              className="row-span-4 col-start-6 row-start-2 flex justify-center pt-32"
             >
               <ul>
-                <h3 className="text-lg">Contents</h3>
-                <li>Overview</li>
-                <li>Highlights</li>
-                <li>Review</li>
+                <h3 className="text-lg mb-4 font-semibold text-md">Contents</h3>
+                <Link href={"#overview-container"}>
+                  <li className="font-light text-sm">Overview</li>
+                </Link>
+                <Link href={"#highlights-container"}>
+                <li className="font-light text-sm">Highlights</li>
+                </Link>
+                <Link href={"#review-container"}>
+                <li className="font-light text-sm">Review</li>
+                </Link>
               </ul>
             </div>
             <div className="col-span-4 col-start-2 row-start-6">
@@ -133,16 +142,22 @@ function ProjectName({ params }) {
               id="highlights-container"
               className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center"
             >
-              <FaRegLightbulb size={30} className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2" />
-              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">HIGHLIGHTS</h3>
-              <p className="justify-center text-center pl-20 pr-20 mb-10">
+              <FaRegLightbulb
+                size={30}
+                className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2"
+              />
+              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+                HIGHLIGHTS
+              </h3>
+              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10">
                 {projectPage.infoProject[0].highlight}
               </p>
               <Image
                 src={projectPage.infoProject[0].images[0].highlight}
                 alt={projectPage.name}
-                width={1200}
-                height={1000}
+                width={800}
+                height={800}
+                className="w-full p-10"
               ></Image>
             </div>
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
