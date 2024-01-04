@@ -62,7 +62,7 @@ function ProjectName({ params }) {
                       loop
                       aspect-auto
                       rounded-lg
-                      className="rounded-3xl rounded-video"
+                      className="relative mx-auto rounded-lg overflow-hidden"
                       alt="Project Image"
                     >
                       <source src={projectPage.infoProject[0].video} />
@@ -95,7 +95,7 @@ function ProjectName({ params }) {
                 </Link>
                 <Link href={"#review-container"}>
                   <li className="font-light text-sm text-gray-400 hover:text-white">
-                    Review
+                    Gallery
                   </li>
                 </Link>
               </ul>
@@ -176,7 +176,7 @@ function ProjectName({ params }) {
                         alt={`${projectPage.name}_${key}`}
                         width={800}
                         height={800}
-                        className="w-full p-10 relative mx-auto rounded-lg overflow-hidden"
+                        className="mb-10 relative mx-auto rounded-lg overflow-hidden"
                       />
                     ))}
                   </div>
@@ -186,7 +186,7 @@ function ProjectName({ params }) {
                     alt={projectPage.name}
                     width={800}
                     height={800}
-                    className="w-full p-10 relative mx-auto rounded-lg overflow-hidden"
+                    className="relative mx-auto rounded-lg overflow-hidden"
                   />
                 )}
               </div>
@@ -194,7 +194,7 @@ function ProjectName({ params }) {
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
               <div id="review-container object-center">
                 <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
-                  Review
+                  Gallery
                 </h3>
                 <div
                   id="gallery-container"
@@ -224,9 +224,9 @@ function ProjectName({ params }) {
         </>
       ) : (
         <div className="flex flex-col items-center justify-center h-screen">
-          <div class="flex gap-4 flex-wrap justify-center">
+          <div className="flex gap-4 flex-wrap justify-center">
             <Image
-              class="w-10 h-10 animate-spin"
+              className="w-10 h-10 animate-spin"
               src="https://www.svgrepo.com/show/199956/loading-loader.svg"
               alt="Loading icon"
               width={10}

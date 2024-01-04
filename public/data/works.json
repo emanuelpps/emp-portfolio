@@ -65,11 +65,20 @@
         "images": [
           {
             "highlight": {
-              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homefix9.png",
-              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homefix5.png",
-              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homefix6.png"
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix3.png"
             },
-            "gallery": {}
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix6.png",
+              "image-7": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix7.png",
+              "image-8": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix8.png"
+            }
           }
         ]
       }
@@ -91,7 +100,19 @@
         "myRole": "Frontend Developer and UI Designer",
         "highlight": "Enjoy music effortlessly with a user-friendly design. Make your playlists or enjoy a default one. Skip, go back, and manage playback effortlessly. Add or remove songs from your playlist with a click",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epplayer.mp4",
-        "images": [{}]
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/highlight-epPlayer.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/highlight-epPlayer.png"
+            }}]
       }
     ]
   },
