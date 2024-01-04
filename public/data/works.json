@@ -98,7 +98,7 @@
       {
         "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can enjoy a predefined playlist or create your personalized list. Take control of playback, skip to the next track, or go back. Additionally, easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just as effortlessly.",
         "myRole": "Frontend Developer and UI Designer",
-        "highlight": "Enjoy music effortlessly with a user-friendly design. Make your playlists or enjoy a default one. Skip, go back, and manage playback effortlessly. Add or remove songs from your playlist with a click",
+        "highlight": "Enjoy music easily with a simple design. Create your playlists or listen to a default one. Skip, go back, and control playback smoothly. Add or remove songs from your playlist with just a click.",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epplayer.mp4",
         "images": [
           {
@@ -112,7 +112,44 @@
               "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer4.png",
               "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer5.png",
               "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/highlight-epPlayer.png"
-            }}]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EP Weather",
+    "class": "Weather Information",
+    "type": "Web App",
+    "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
+    "img": "https://i.ibb.co/YNTF1BR/ep-weather.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Fetch API",
+    "code": "https://github.com/emanuelpps/EP-WeatherAPP",
+    "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
+    "linkName": "ep-weather",
+    "infoProject": [
+      {
+        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
+        "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need. Additionally, the application features a dynamic background that adjusts according to the local weather conditions. For instance, if it's cloudy, raining, stormy, or snowing, the background of the app reflects these climatic conditions.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epweather.mp4",
+        "images": [
+          {
+            "highlight": {
+              "video-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epWeather-video1.mp4",
+              "video-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epWeather-video2.mp4"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image6.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -132,27 +169,24 @@
         "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/donremolo.mp4",
-        "images": []
-      }
-    ]
-  },
-  {
-    "name": "EP Weather",
-    "class": "Weather Information",
-    "type": "Web App",
-    "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
-    "img": "https://i.ibb.co/YNTF1BR/ep-weather.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Fetch API",
-    "code": "https://github.com/emanuelpps/EP-WeatherAPP",
-    "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
-    "linkName": "ep-weather",
-    "infoProject": [
-      {
-        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
-        "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need.",
-        "myRole": "Frontend Developer and UI Designer",
-        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epweather.mp4",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/highlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/highlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image6.png",
+              "image-7": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image7.png",
+              "image-8": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image8.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -172,7 +206,17 @@
         "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epconverter.mp4",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image2.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -192,7 +236,20 @@
         "highlight": "Easily add, mark tasks as done, or delete them for a well-organized to-do list. Personalize your experience by customizing the background to match your preferences. A unique feature allows you to view completed tasks separately, offering the flexibility to revert them to pending or delete them permanently. Stay informed during task management with real-time displays of the current time and date. Additionally, the app integrates a calendar for a comprehensive overview of upcoming tasks, helping you plan activities for the next days.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/todolist.webm",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/hightlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/hightlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image4.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -212,7 +269,19 @@
         "highlight": "The website features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/nire.mp4",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/highlight-image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/highlight-image1.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image3.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -232,7 +301,22 @@
         "highlight": " Browse through categories, explore product details, and effortlessly add items to your cart. The unique feature of resetting quantities ensures flexibility in your selections. The simulated checkout offers a preview of the purchasing process, making your online shopping journey convenient and enjoyable.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/embeecommerce.mp4",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image1.png"
+            }
+          }
+        ]
       }
     ]
   },
@@ -249,10 +333,24 @@
     "infoProject": [
       {
         "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
-        "highlight": "The website is simple, making it eeasy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
+        "highlight": "The website is simple, making it easy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/falconaviation.mp4",
-        "images": []
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/highlight-image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/highlight-image1.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image2.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image3.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image4.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image5.png"
+            }
+          }
+        ]
       }
     ]
   }

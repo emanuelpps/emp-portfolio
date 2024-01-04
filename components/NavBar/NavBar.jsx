@@ -22,7 +22,10 @@ export default function NavBar() {
   return (
     <div className="relative z-50">
       <nav className="grid grid-cols-3 grid-rows-1 gap-4 pt-5 fixed top-0 align-middle justify-center ustify-items-center  w-screen">
-        <div id="LogoContainer" className="flex justify-center items-center">
+        <div
+          id="LogoContainer"
+          className="flex justify-center items-center pr-40"
+        >
           <Image
             src={PortfolioLogo}
             alt="Emanuel Pages Front End Developer Logo"
@@ -31,7 +34,9 @@ export default function NavBar() {
             className="rounded-lg bg-black"
           ></Image>
           <div id="titleLogo">
-            <h1 className="text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">Emanuel Pages</h1>
+            <h1 className="text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
+              Emanuel Pages
+            </h1>
             <h3 className="text-xs font-extralight  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
               Front End Developer
             </h3>
@@ -59,8 +64,11 @@ export default function NavBar() {
             </label>
           </div>
         </div>
-        <div id="MenuContainer" className="flex justify-center items-center">
-          <button className="font-extralight hover:font-semibold  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
+        <div
+          id="MenuContainer"
+          className="flex justify-center items-center pl-40"
+        >
+          <button className="font-extralight hover:font-semibold bg-opacity-40">
             <Link
               className="flex justify-center items-center h-10 w-auto p-5"
               href="https://www.linkedin.com/in/emanuel-ps/"
