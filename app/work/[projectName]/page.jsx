@@ -31,7 +31,7 @@ function ProjectName({ params }) {
       {projectPage ? (
         <>
           <div className="grid grid-cols-6 grid-rows-17 gap-4">
-            <div className="col-start-1 row-start-1">
+            <div className="col-start-1 row-start-1 sticky top-0">
               <Link href={"/work"}>
                 <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
@@ -169,18 +169,34 @@ function ProjectName({ params }) {
                   <div>
                     {Object.entries(
                       projectPage.infoProject[0].images[0].highlight
-                    ).map(([key, value], index) => (
-                      <Image
-                        key={index}
-                        src={value}
-                        alt={`${projectPage.name}_${key}`}
-                        width={800}
-                        height={800}
-                        className="mb-10 relative mx-auto rounded-lg overflow-hidden"
-                      />
-                    ))}
+                    ).map(([key, value], index) =>
+                      value.endsWith(".png") ? (
+                        <Image
+                          key={index}
+                          src={value}
+                          alt={`${projectPage.name}_${key}`}
+                          width={800}
+                          height={800}
+                          className="mb-10 relative mx-auto rounded-lg overflow-hidden"
+                        />
+                      ) : (
+                        <video
+                          key={index}
+                          autoPlay
+                          muted
+                          loop
+                          className="mb-10 relative mx-auto rounded-lg overflow-hidden"
+                          width={800}
+                          height={800}
+                        >
+                          <source src={value} />
+                        </video>
+                      )
+                    )}
                   </div>
-                ) : (
+                ) : projectPage.infoProject[0].images[0].highlight.endsWith(
+                    ".png"
+                  ) ? (
                   <Image
                     src={projectPage.infoProject[0].images[0].highlight}
                     alt={projectPage.name}
@@ -188,6 +204,17 @@ function ProjectName({ params }) {
                     height={800}
                     className="relative mx-auto rounded-lg overflow-hidden"
                   />
+                ) : (
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    className="relative mx-auto rounded-lg overflow-hidden"
+                  >
+                    <source
+                      src={projectPage.infoProject[0].images[0].highlight}
+                    />
+                  </video>
                 )}
               </div>
             </div>
