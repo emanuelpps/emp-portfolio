@@ -17,7 +17,7 @@ function ProjectCard({ project }) {
     >
       <div className="p-10">
         <div id="title-container" className="flex justify-between">
-          <h1 className="text-3xl">{project.name}</h1>
+          <h1 className="text-3xl shadowButtons">{project.name}</h1>
           <Image
             className="hover:width[60]"
             src={arrowRight}
@@ -27,10 +27,10 @@ function ProjectCard({ project }) {
           />
         </div>
         <div id="description-container" className="mt-5">
-          <h2>
+          <h2 className="font-extralight">
             {project.class} - {project.type}
           </h2>
-          <p>{project.description}</p>
+          <p className="font-extralight">{project.description}</p>
         </div>
         <div id="img-container" className="flex justify-center mt-5">
           <Image
@@ -46,7 +46,7 @@ function ProjectCard({ project }) {
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">
-          <p>{project.lenguage}</p>
+          <p className="font-semibold">{project.lenguage}</p>
         </div>
       </div>
     </div>

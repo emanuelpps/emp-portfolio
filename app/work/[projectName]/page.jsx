@@ -6,7 +6,7 @@ import { VscGithub } from "react-icons/vsc";
 import { VscLinkExternal } from "react-icons/vsc";
 import { VscArrowLeft } from "react-icons/vsc";
 import { FaRegLightbulb } from "react-icons/fa6";
-
+import "ldrs/tailChase";
 import Link from "next/link";
 
 function ProjectName({ params }) {
@@ -33,7 +33,7 @@ function ProjectName({ params }) {
           <div className="grid grid-cols-6 grid-rows-17 gap-4">
             <div className="col-start-1 row-start-1">
               <Link href={"/work"}>
-                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
                   Go Back
                 </button>
@@ -41,14 +41,16 @@ function ProjectName({ params }) {
             </div>
             <div className="col-span-4 row-span-4 col-start-2 row-start-2">
               <div id="title-container" className="mb-10 mt-10">
-                <h1 className="text-center @apply bg-[linear-gradient(to_bottom,var(--on-background)_50%,transparent)] tracking-[-1px] bg-clip-text text-[50px] leading-[72px] [text-shadow:_0_1px_1_rgb(0_0_0_/_80%)]  neon-text">
+                <h1 className="text-center text-[50px]  neon-text">
                   {projectPage.name}
                 </h1>
                 <div
                   id="h2-container"
                   className="flex flex-row justify-center rounded-3xl"
                 >
-                  <h2 className="text-center ">{projectPage.class}</h2>
+                  <h2 className="text-center font-light">
+                    {projectPage.class}
+                  </h2>
                 </div>
               </div>
               <div>
@@ -75,18 +77,26 @@ function ProjectName({ params }) {
             </div>
             <div
               id="content-container"
-              className="row-span-4 col-start-6 row-start-2 flex justify-center pt-32"
+              className="row-span-4 col-start-6 row-start-2 flex justify-center pt-32 relative"
             >
-              <ul>
-                <h3 className="text-lg mb-4 font-semibold text-md">Contents</h3>
+              <ul className="fixed">
+                <h3 className="text-lg mb-4 font-semibold text-md text-white">
+                  Contents
+                </h3>
                 <Link href={"#overview-container"}>
-                  <li className="font-light text-sm">Overview</li>
+                  <li className="font-light text-sm text-gray-400 hover:text-white">
+                    Overview
+                  </li>
                 </Link>
                 <Link href={"#highlights-container"}>
-                <li className="font-light text-sm">Highlights</li>
+                  <li className="font-light text-sm text-gray-400 hover:text-white">
+                    Highlights
+                  </li>
                 </Link>
                 <Link href={"#review-container"}>
-                <li className="font-light text-sm">Review</li>
+                  <li className="font-light text-sm text-gray-400 hover:text-white">
+                    Review
+                  </li>
                 </Link>
               </ul>
             </div>
@@ -96,13 +106,13 @@ function ProjectName({ params }) {
                 className="flex justify-center mt-20 pb-20"
               >
                 <Link href={projectPage.demo} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscLinkExternal />
                     <p>Deploy</p>
                   </button>
                 </Link>
                 <Link href={projectPage.code} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-white text-gray-800 hover:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscGithub className="w-full " />
                     <p>Repository</p>
                   </button>
@@ -140,11 +150,11 @@ function ProjectName({ params }) {
             </div>
             <div
               id="highlights-container"
-              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center"
+              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center mb-20 animate-blinkingBg"
             >
               <FaRegLightbulb
                 size={30}
-                className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2"
+                className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2 neon"
               />
               <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
                 HIGHLIGHTS
@@ -152,18 +162,58 @@ function ProjectName({ params }) {
               <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10">
                 {projectPage.infoProject[0].highlight}
               </p>
-              <Image
-                src={projectPage.infoProject[0].images[0].highlight}
-                alt={projectPage.name}
-                width={800}
-                height={800}
-                className="w-full p-10"
-              ></Image>
+              <div className="relative mx-auto rounded-lg overflow-hidden">
+                {typeof projectPage.infoProject[0].images[0].highlight ===
+                  "object" &&
+                projectPage.infoProject[0].images[0].highlight !== null ? (
+                  <div>
+                    {Object.entries(
+                      projectPage.infoProject[0].images[0].highlight
+                    ).map(([key, value], index) => (
+                      <Image
+                        key={index}
+                        src={value}
+                        alt={`${projectPage.name}_${key}`}
+                        width={800}
+                        height={800}
+                        className="w-full p-10 relative mx-auto rounded-lg overflow-hidden"
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <Image
+                    src={projectPage.infoProject[0].images[0].highlight}
+                    alt={projectPage.name}
+                    width={800}
+                    height={800}
+                    className="w-full p-10 relative mx-auto rounded-lg overflow-hidden"
+                  />
+                )}
+              </div>
             </div>
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
-              <div id="review-container">
-                <h3>Review</h3>
-                <div id="gallery-container"></div>
+              <div id="review-container object-center">
+                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+                  Review
+                </h3>
+                <div
+                  id="gallery-container"
+                  className="grid grid-cols-2 md:grid-cols-2 gap-4"
+                >
+                  {Object.entries(
+                    projectPage.infoProject[0].images[0].gallery
+                  ).map(([key, image], index) => (
+                    <div key={index}>
+                      <Image
+                        width={500}
+                        height={100}
+                        className="h-auto max-w-full rounded-lg"
+                        src={image}
+                        alt={key}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="row-span-4 col-start-1 row-start-2"></div>
@@ -173,9 +223,18 @@ function ProjectName({ params }) {
           <div className="col-span-6 row-start-17"></div>
         </>
       ) : (
-        <p className="grid content-center text-center">
-          Loading Project... Please Wait
-        </p>
+        <div className="flex flex-col items-center justify-center h-screen">
+          <div class="flex gap-4 flex-wrap justify-center">
+            <Image
+              class="w-10 h-10 animate-spin"
+              src="https://www.svgrepo.com/show/199956/loading-loader.svg"
+              alt="Loading icon"
+              width={10}
+              height={10}
+            />
+          </div>
+          <p className="object-center">Loading Project... Please Wait</p>
+        </div>
       )}
     </div>
   );

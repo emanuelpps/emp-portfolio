@@ -1,11 +1,16 @@
 import React from "react";
 import "../defaultStyles.css";
+import Link from "next/link";
 
 function Contact() {
   return (
-    <button className="cta">
-      <span class="hover-underline-animation shadowButtons"> Contact</span>
-    </button>
+    <Link href={"#contact-container"}>
+      <button className="cta">
+        <span class="hover-underline-animation shadowButtons tracking-wide">
+          Contact
+        </span>
+      </button>
+    </Link>
   );
 }
 
