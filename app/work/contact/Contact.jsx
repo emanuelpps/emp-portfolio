@@ -65,7 +65,7 @@ function Contact() {
   };
 
   return (
-    <div>
+    <div id="contact-container">
       <form
         class="rounded-lg shadow-xl flex flex-col px-8 py-8 w-8/12 md:w-[42rem]"
         onSubmit={handleSubmit}

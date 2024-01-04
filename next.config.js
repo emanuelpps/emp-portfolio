@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   images: {
-    domains: ["i.ibb.co"],
+    domains: ["i.ibb.co","duodigitalmarketing.000webhostapp.com"],
   },
   nextConfig,
 };
