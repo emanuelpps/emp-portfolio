@@ -1,7 +1,7 @@
 //import NavBar from "@/components/NavBar/NavBar";
 import NavBar from "@/components/NavBar/NavBar";
 import Contact from "./contact/Contact";
-import Footer from "./footer/Footer";
+import Footer from "../../components/footer/Footer";
 import Intro from "./intro/Intro";
 import PortfolioContainer from "./portfolio/PortfolioContainer";
 

@@ -14,10 +14,10 @@ export default function Intro() {
             Hi!{" "}
           </h3>
           <h1 className="text-6xl textShadow font-nomal tracking-wide">
-            I'm Emanuel Pages
+            I'm Emanuel Pagés
           </h1>
           <h2 className="text-6xl textShadow font-extralight tracking-wide">
-            Front End Developer
+            Frontend Developer
           </h2>
           <div
             id="intro-button-container"
