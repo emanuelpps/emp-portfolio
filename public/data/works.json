@@ -1,0 +1,357 @@
+[
+  {
+    "name": "BarberBuddy",
+    "class": "Appointment Management",
+    "type": "Web App",
+    "description": "BarberBuddy is a appointment management system",
+    "img": "https://i.ibb.co/SX2WxF4/barber-buddy.png",
+    "lenguage": "Figma - HTML 5 - CSS 3 - Next Js - Tailwindcss - Redux Toolkit - Axios - Date FNS - Notiflix - React Day Picker",
+    "code": "https://github.com/No-Country/s11-04-t-node-react",
+    "demo": "https://barberbuddyapp.vercel.app/",
+    "linkName": "barber-buddy",
+    "infoProject": [
+      {
+        "overview": "BarberBuddy is a appointment management system that gives each barber the ability to organize and efficiently manage their services. \n\nWith BarberBuddy, each barber has personalized access through their email address, ensuring a secure and personalized environment. Once inside the platform, a set of intuitive tools is available that simplifies appointment and service management. \n\nThe main functionality of BarberBuddy lies in the ability to schedule appointments easily and accurately. Each barber can view an interactive calendar displaying available time slots, allowing them to easily select the day and time that best suits their availability. \n\nAdditionally, the system offers the flexibility to assign one or multiple services to each scheduled appointment, making it easy to prepare and organize the workday.",
+        "myRole": "Frontend Developer and UX/UI Designer",
+        "highlight": "A standout feature is the ability to maintain a detailed history of each client and the services they have booked. Barbers can easily access this information. The history includes details such as the appointment date, the requested service, and the name of the barber who attended to the client, providing a complete overview of the relationship between the client and the barbershop.",
+        "team": [
+          "Marco Perez Donoso, Frontend",
+          "Juan Carlos Galué, Backend",
+          "John Pablo, Frontend",
+          "Juan Pablo Saluzzo, Backend"
+        ],
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/barberbuddy.mp4",
+        "images": [
+          {
+            "highlight": "https://i.ibb.co/bXKhsHZ/Captura-de-pantalla-2023-12-26-230429.png",
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-6.png",
+              "image-7": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-7.png",
+              "image-8": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/barberBuddy/barberBuddy-8.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HomeFix",
+    "class": "Inventory Manager",
+    "type": "Web App",
+    "description": "Efficient inventory management for tools and construction materials, optimizing stock and streamlining operations.",
+    "img": "https://i.ibb.co/rkPJXW6/homefix.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Redux Toolkit - Axios - ReCharts",
+    "code": "https://github.com/No-Country/c13-33-t-csharp",
+    "demo": "https://homefixapp.vercel.app/",
+    "linkName": "home-fix",
+    "infoProject": [
+      {
+        "overview": "HOMEFIX is a home inventory manager for tools and construction items that assists in managing and controlling the flow of products. It facilitates precise tracking of stocks, optimizes inventory levels, prevents shortages or excess of products, thus streamlining operations and enhancing decision-making.",
+        "myRole": "Frontend Developer",
+        "highlight": "HomeFix stands out with its analytical capabilities, allowing you to gather valuable insights into your inventory movement. You can easily identify products with higher sales, both on a daily and monthly basis, helping you make informed decisions to enhance your operations.",
+        "team": [
+          "Marco Perez Donoso, Frontend",
+          "Martin Romero, Backend",
+          "Macarena Diaz, UX/UI",
+          "Yaco Ibars, Backend",
+          "Matias D'Amico, Backend"
+        ],
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/homefix.webm",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/highlight-homefix3.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix6.png",
+              "image-7": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix7.png",
+              "image-8": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/homeFix/homefix8.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EP Music Player",
+    "class": "Music Player",
+    "type": "Web App",
+    "description": "A simple and user-friendly music player project, bringing joy to your tunes with easy navigation and playback features",
+    "img": "https://i.ibb.co/yB9F0d6/ep-player.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion - Fetch API",
+    "code": "https://github.com/emanuelpps/EP-Music-Player",
+    "demo": "https://emanuelpps.github.io/EP-Music-Player/",
+    "linkName": "ep-music-player",
+    "infoProject": [
+      {
+        "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can enjoy a predefined playlist or create your personalized list. Take control of playback, skip to the next track, or go back. Additionally, easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just as effortlessly.",
+        "myRole": "Frontend Developer and UI Designer",
+        "highlight": "Enjoy music easily with a simple design. Create your playlists or listen to a default one. Skip, go back, and control playback smoothly. Add or remove songs from your playlist with just a click.",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epplayer.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/highlight-epPlayer.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/epplayer5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epPlayer/highlight-epPlayer.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EP Weather",
+    "class": "Weather Information",
+    "type": "Web App",
+    "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
+    "img": "https://i.ibb.co/YNTF1BR/ep-weather.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Fetch API",
+    "code": "https://github.com/emanuelpps/EP-WeatherAPP",
+    "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
+    "linkName": "ep-weather",
+    "infoProject": [
+      {
+        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
+        "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need. Additionally, the application features a dynamic background that adjusts according to the local weather conditions. For instance, if it's cloudy, raining, stormy, or snowing, the background of the app reflects these climatic conditions.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epweather.mp4",
+        "images": [
+          {
+            "highlight": {
+              "video-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epWeather-video1.mp4",
+              "video-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epWeather-video2.mp4"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epWeather/image6.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Don Remolo",
+    "class": "Food Delivery",
+    "type": "Web App",
+    "description": "An easy-to-use project for ordering pizzas or empanadas, making your meal experience delightful with straightforward ordering and delivery features.",
+    "img": "https://i.ibb.co/BcNmFBC/don-remolo.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion - Firebase",
+    "code": "https://github.com/emanuelpps/don-remolo-pizza",
+    "demo": "https://emanuelpps.github.io/don-remolo-pizza/",
+    "linkName": "don-remolo",
+    "infoProject": [
+      {
+        "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.The design features a simple and highly intuitive user interface. Upon entering, you can view the menu, add your chosen items to the cart. In the cart, you have the option to modify quantities, remove each item, or clear the entire cart. Finally, indicate the payment method, your address, and the order will be submitted. Don Remolo Pizza is a project idea by ID for Ideas.",
+        "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/donremolo.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/highlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/highlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image6.png",
+              "image-7": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image7.png",
+              "image-8": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/donRemolo/image8.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EP Converter",
+    "class": "Currency Converter",
+    "type": "Web App",
+    "description": "Currency converter application, helping you quickly convert currencies for smooth financial transactions.",
+    "img": "https://i.ibb.co/4fSxV6s/ep-converter.png",
+    "lenguage": "SASS - HTML 5 - React Js - Bootstrap - Fetch API",
+    "code": "https://github.com/emanuelpps/ep-currency-converter",
+    "demo": "https://emanuelpps.github.io/ep-currency-converter/",
+    "linkName": "ep-converter",
+    "infoProject": [
+      {
+        "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
+        "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/epconverter.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epConverter/image2.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "To Do List",
+    "class": "Tasks List",
+    "type": "Web App",
+    "description": "A straightforward to-do list application for efficient task management, making it simple to organize and complete your daily activities.",
+    "img": "https://i.ibb.co/HTQB0XR/todo-list.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap",
+    "code": "https://github.com/emanuelpps/todoListEP",
+    "demo": "https://emanuelpps.github.io/todoListEP/",
+    "linkName": "to-do-list",
+    "infoProject": [
+      {
+        "overview": "I created a web application for managing tasks, where you can add, mark as done, or delete tasks from your list. The app also displays the number of pending tasks, and you have the option to change the background image of the application.",
+        "highlight": "Easily add, mark tasks as done, or delete them for a well-organized to-do list. Personalize your experience by customizing the background to match your preferences. A unique feature allows you to view completed tasks separately, offering the flexibility to revert them to pending or delete them permanently. Stay informed during task management with real-time displays of the current time and date. Additionally, the app integrates a calendar for a comprehensive overview of upcoming tasks, helping you plan activities for the next days.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/todolist.webm",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/hightlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/hightlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/epToDoList/image4.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ñire",
+    "class": "Bakery",
+    "type": "Web Page",
+    "description": "Institutional bakery website, offering a delightful online experience to explore bakery products and stay updated with the latest offerings.",
+    "img": "https://i.ibb.co/zP6Y4xZ/nire-webpage.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion",
+    "code": "https://github.com/emanuelpps/Nire-Panaderia",
+    "demo": "https://emanuelpps.github.io/Nire-Panaderia/",
+    "linkName": "nire",
+    "infoProject": [
+      {
+        "overview": "I develop a website for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The website emphasizes a minimalist yet highly appealing design.",
+        "highlight": "The website features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/nire.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/highlight-image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/highlight-image1.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/nire/image3.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Embé Home & Deco",
+    "class": "Ecommerce",
+    "type": "Web Page",
+    "description": "An online shop for home and decor items. It's easy to use, so you can enjoy shopping and know what's new.",
+    "img": "https://i.ibb.co/mTJJk6J/embe-ecommerce.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Firebase - Sweetalert",
+    "code": "https://github.com/emanuelpps/embe-ecommerce",
+    "demo": "https://emanuelpps.github.io/embe-ecommerce/",
+    "linkName": "embe-home-deco",
+    "infoProject": [
+      {
+        "overview": "Embé Home & Deco is an online store dedicated to offering a variety of home decoration products. Navigating through the user-friendly menu, you can easily filter products by category, explore detailed product information, add items to your cart, and even reset quantities if needed. The platform also provides a simulated checkout experience for take a look into the purchase process.",
+        "highlight": " Browse through categories, explore product details, and effortlessly add items to your cart. The unique feature of resetting quantities ensures flexibility in your selections. The simulated checkout offers a preview of the purchasing process, making your online shopping journey convenient and enjoyable.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/embeecommerce.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image2.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image2.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image3.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image4.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/image5.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/embe/highlight-image1.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Falcon Aviation Shop",
+    "class": "Ecommerce",
+    "type": "Web Page",
+    "description": "An online store for aviation products. Easy shopping to discover the latest gear and essentials.",
+    "img": "https://i.ibb.co/R47PdGg/falcon-aviation-shop.png",
+    "lenguage": "HTML 5 - CSS 3 - Javascript - Bootstrap",
+    "code": "https://github.com/emanuelpps/Falcon-Aviation-Shop",
+    "demo": "https://emanuelpps.github.io/Falcon-Aviation-Shop/",
+    "linkName": "falcon-aviation-shop",
+    "infoProject": [
+      {
+        "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
+        "highlight": "The website is simple, making it easy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/falconaviation.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/highlight-image1.png"
+            },
+            "gallery": {
+              "image-1": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image1.png",
+              "image-2": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/highlight-image1.png",
+              "image-3": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image2.png",
+              "image-4": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image3.png",
+              "image-5": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image4.png",
+              "image-6": "https://duodigitalmarketing.000webhostapp.com/portafolio/images/falconAviation/image5.png"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
