@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = { fastRefresh: false };
 
 module.exports = {
   async redirects() {
@@ -21,7 +21,7 @@ module.exports = {
     },
   },
   images: {
-    domains: ["i.ibb.co","duodigitalmarketing.000webhostapp.com"],
+    domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
   },
   nextConfig,
 };
