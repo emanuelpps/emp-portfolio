@@ -1,25 +1,27 @@
 import React from "react";
 import Image from "next/image";
-import freeTimeImage from "@/public/assets/free-time-image.png"
+import freeTimeImage from "@/public/assets/free-time-image.png";
 
 function FreeTime() {
   return (
-    <div className="grid grid-cols-2 grid-rows-1 gap-4 pt-20 w-full md:w-[62rem]">
+    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 pt-10 md:pt-40 w-full md:w-[62rem]">
       <div
-        id="summary-image-container"
-        className="flex flex-col justify-center items-center"
+        id="free-time-image-container"
+        className="flex flex-col justify-center items-center "
       >
-        <Image
-          src={freeTimeImage}
-          alt="computer Image"
-          width={1200}
-          height={1200}
-          className="rounded-xl text-center"
-        />
+        <div className="window-outline">
+          <Image
+            src={freeTimeImage}
+            alt="computer Image"
+            width={400}
+            height={1800}
+            className="rounded-2xl text-center"
+          />
+        </div>
       </div>
-      <div id="summary-text-container">
-        <h3 className="ml-20 font-semibold text-md">In my Free Time</h3>
-        <p className="pt-10 ml-20 text-[14px] font-thin tracking-wide @apply whitespace-pre-line">
+      <div id="free-time-text-container">
+        <h3 className="pt-10 pl-10 font-semibold text-md">In my Free Time</h3>
+        <p className="pt-10 pl-10 pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line">
           Probably developing new projects to enhance my skills or perfecting my
           portfolio in some ways. Besides that, I spend my time hiking or
           reading books about history. Another thing that I love is playing game

@@ -17,27 +17,27 @@ function ProjectCard({ project }) {
     >
       <div className="p-10">
         <div id="title-container" className="flex justify-between">
-          <h1 className="text-3xl shadowButtons">{project.name}</h1>
+          <h1 className="text-2xl md:text-3xl shadowButtons">{project.name}</h1>
           <Image
             className="hover:width[60]"
             src={arrowRight}
             alt="arrow"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
           />
         </div>
         <div id="description-container" className="mt-5">
-          <h2 className="font-extralight">
+          <h2 className="text-sm md:text-base font-extralight">
             {project.class} - {project.type}
           </h2>
-          <p className="font-extralight">{project.description}</p>
+          <p className="text-sm md:text-base font-extralight">{project.description}</p>
         </div>
         <div id="img-container" className="flex justify-center mt-5">
           <Image
             src={project.img}
             alt={project.name}
-            width={1200}
-            height={1000}
+            width={600}
+            height={800}
             className={`rounded-lg ${
               hoverState
                 ? "transition ease-in-out delay-150 -translate-y-1 scale-105 duration-300"
@@ -46,7 +46,7 @@ function ProjectCard({ project }) {
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">
-          <p className="font-semibold">{project.lenguage}</p>
+          <p className="font-semibold text-sm md:text-base">{project.lenguage}</p>
         </div>
       </div>
     </div>
