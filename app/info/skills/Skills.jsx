@@ -10,19 +10,19 @@ function Skills() {
   return (
     <div
       id="skills-container"
-      className="grid grid-cols-1 grid-rows-5 w-full md:w-[62rem] mt-20"
+      className="grid grid-cols-1 grid-rows-4 w-full md:w-[62rem] md:grid-cols-2 md:grid-rows-2 pt-10 md:pt-40"
     >
       <div
         id="skills-title-container"
-        className="text-start grid grid-cols-2 grid-rows-1 gap-4 h-24"
+        className="text-start grid grid-cols-2 grid-rows-1"
       >
         <h3 className="font-semibold text-md ml-12">Skills</h3>
       </div>
       <div
         id="skills-frontend-container"
-        className="grid grid-cols-2 grid-rows-1 gap-4 mt-[-20px]"
+        className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-5 md:mt-[-62px]"
       >
-        <div id="frontend-title-container" className="flex flex-col justify-center items-center">
+        <div id="frontend-title-container" className="flex flex-col justify-center items-center m-12">
           <h3 className="text-center text-[14px] font-light">Frontend</h3>
         </div>
         <div
@@ -47,9 +47,9 @@ function Skills() {
       </div>
       <div
         id="skills-backend-container"
-        className="grid grid-cols-2 grid-rows-1 gap-4 mt-10"
+        className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-5 md:mt-10" 
       >
-        <div id="backend-title-container" className="flex flex-col justify-center items-center">
+        <div id="backend-title-container" className="flex flex-col justify-center items-center m-12">
           <h3 className="text-center text-[14px] font-extralight">Backend</h3>
         </div>
         <div
@@ -74,10 +74,10 @@ function Skills() {
       </div>
       <div
         id="skills-native-container"
-        className="grid grid-cols-2 grid-rows-1 gap-4 mt-10"
+        className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-5 md:mt-10"
       >
-        <div id="native-title-container" className="flex flex-col justify-center items-center">
-          <h3 className="text-center text-[14px] font-extralight">Native</h3>
+        <div id="native-title-container" className="flex flex-col justify-center items-center m-12">
+          <h3 className="text-center text-[14px] font-extralight">Mobile</h3>
         </div>
         <div id="native-icons-container" className="flex flex-wrap gap-10 align-middle">
           {nativeIcons.map((image) => (
@@ -98,9 +98,9 @@ function Skills() {
       </div>
       <div
         id="skills-design-container"
-        className="grid grid-cols-2 grid-rows-1 gap-4 mt-10"
+        className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-5 md:mt-10"
       >
-        <div id="design-title-container" className="flex flex-col justify-center items-center">
+        <div id="design-title-container" className="flex flex-col justify-center items-center m-12">
           <h3 className="text-center text-[14px] font-extralight">Design</h3>
         </div>
         <div

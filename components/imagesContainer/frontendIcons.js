@@ -30,7 +30,7 @@ export const frontendIcons = [
   },
   {
     id: 10,
-    name: "Redux Toolkit",
+    name: "Redux",
     path: "/assets/skills-icons/frontend/redux.svg",
   },
 ];

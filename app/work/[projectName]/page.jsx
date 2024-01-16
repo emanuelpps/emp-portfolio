@@ -30,7 +30,7 @@ function ProjectName({ params }) {
     <div>
       {projectPage ? (
         <>
-          <div className="grid grid-cols-6 grid-rows-17 gap-4">
+          <div className="grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
             <div className="col-start-1 row-start-1 sticky top-0">
               <Link href={"/work"}>
                 <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
@@ -77,7 +77,7 @@ function ProjectName({ params }) {
             </div>
             <div
               id="content-container"
-              className="row-span-4 col-start-6 row-start-2 flex justify-center pt-32 relative"
+              className="invisible md:visible md:row-span-4 col-start-6 row-start-2 md:flex md:justify-center md:pt-32 md:relative"
             >
               <ul className="fixed">
                 <h3 className="text-lg mb-4 font-semibold text-md text-white">
@@ -121,8 +121,8 @@ function ProjectName({ params }) {
             </div>
             <div className="pl-20 col-span-2 col-start-2 row-start-7">
               <div id="role-container">
-                <h4 className="font-semibold text-sm">My Role</h4>
-                <h3 className="font-extralight">
+                <h4 className="font-semibold text-md">My Role</h4>
+                <h3 className="font-extralight text-[14px]">
                   {projectPage.infoProject[0].myRole}
                 </h3>
               </div>
@@ -130,12 +130,12 @@ function ProjectName({ params }) {
             <div className="pl-20 col-span-2 row-span-2 col-start-2 row-start-8">
               <div id="team-container">
                 {projectPage.infoProject[0].team ? (
-                  <h4 className="font-semibold text-sm">Team</h4>
+                  <h4 className="font-semibold text-md">Team</h4>
                 ) : (
                   <></>
                 )}
                 {projectPage.infoProject[0].team?.map((teamMate) => (
-                  <p className="font-thin">{teamMate}</p>
+                  <p className="font-thin text-[14px]">{teamMate}</p>
                 ))}
               </div>
             </div>
@@ -143,8 +143,8 @@ function ProjectName({ params }) {
               id="overview-container"
               className="col-span-2 row-span-3 col-start-4 row-start-7 mb-20"
             >
-              <h3 className="font-semibold text-sm">Overview</h3>
-              <p className="font-thin tracking-wide @apply whitespace-pre-line">
+              <h3 className="font-semibold text-md">Overview</h3>
+              <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
                 {projectPage.infoProject[0].overview}
               </p>
             </div>
@@ -156,10 +156,10 @@ function ProjectName({ params }) {
                 size={30}
                 className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2 neon"
               />
-              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow text-md">
                 HIGHLIGHTS
               </h3>
-              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10">
+              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10 text-[14px]">
                 {projectPage.infoProject[0].highlight}
               </p>
               <div className="relative mx-auto rounded-lg overflow-hidden">
@@ -220,7 +220,7 @@ function ProjectName({ params }) {
             </div>
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
               <div id="review-container object-center">
-                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow font-semibold text-md">
                   Gallery
                 </h3>
                 <div
