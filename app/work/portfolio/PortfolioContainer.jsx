@@ -14,7 +14,7 @@ function PortfolioContainer() {
   console.log(dataProjects);
 
   return (
-    <div className="md:mt-44 w-screen p-10 md:w-[62rem] h-[auto] md:h-full">
+    <div className="md:mt-44 w-screen p-10 md:p-0 md:w-[60rem] h-[auto] md:h-auto">
       {dataProjects?.map((project) => (
         <Link href={`/work/${project.linkName}`}>
         <ProjectCard project={project} />
