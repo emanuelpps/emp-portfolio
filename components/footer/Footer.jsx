@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import PortfolioLogo from "@/public/assets/EP-logo.svg";
 import Link from "next/link";
-import epLogo from "@/public/assets/ep-developer-logo.svg";
 
 function Footer() {
   return (
