@@ -27,14 +27,14 @@ function Summary() {
           digital marketing.
         </p>
         <br />
-        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10">
+        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 text-center md:text-start">
           I have skills in Agile Methodologies, Github, GIT, HTML 5, CSS 3,
           Javascript, Bootstrap, SASS, React JS, Framer Motion, Next JS,
           Tailwindcss, React Native, Expo, Node JS, MongoDB, SEO, SEM, Email
           Marketing, and Wordpress.
         </p>
         <br />
-        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10">
+        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 text-center md:text-start">
           Currently, I wear two hats – working as a Digital Marketing Manager
           and a Frontend Developer. In my digital marketing role, I handle
           Email Marketing Campaigns, create content,
@@ -43,7 +43,7 @@ function Summary() {
           manage the marketing budget.
         </p>
         <br />
-        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 pb-10">
+        <p className="flex flex-col justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 pb-10 text-center md:text-start">
           In my role as a Frontend Developer, I focus on developing and
           maintaining frontend components using React JS or Next JS. I
           collaborate with team members, integrate services and APIs, and

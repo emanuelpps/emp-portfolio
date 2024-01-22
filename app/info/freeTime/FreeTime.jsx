@@ -20,8 +20,8 @@ function FreeTime() {
         </div>
       </div>
       <div id="free-time-text-container">
-        <h3 className="md:pt-10 md:pl-10 font-semibold text-md">In my Free Time</h3>
-        <p className="pt-10 md:pl-10 md:pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line">
+        <h3 className="md:pt-10 md:pl-10 font-semibold text-md text-center md:text-start">In my Free Time</h3>
+        <p className="pt-10 md:pl-10 md:pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line text-center md:text-start">
           Probably developing new projects to enhance my skills or perfecting my
           portfolio in some ways. Besides that, I spend my time hiking or
           reading books about history. Another thing that I love is playing game

@@ -6,15 +6,15 @@ function AboutMe() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 pt-10 md:mt-20 w-full md:w-[60rem]">
       <div id="summary-text-container">
-        <h3 className="font-semibold text-md md:pl-10 md:pt-10">About Me</h3>
-        <p className="pt-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10">
+        <h3 className="font-semibold text-md md:pl-10 md:pt-10 text-center md:text-start">About Me</h3>
+        <p className="pt-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 text-center md:text-start">
           A few years ago, I began working in the culinary industry (now a meditative hobby), before venturing into the
           realm of Digital Marketing. While working in digital marketing, I got
           introduced to HTML, CSS, and JavaScript. Since then, I have been
           meaning to learn more about web development.
         </p>
         <br />
-        <p className="text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10">
+        <p className="text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 text-center md:text-start">
           I spent most of my life in Ushuaia (Tierra del Fuego), then several
           years in Capital Federal (Buenos Aires), and finally, I rooted myself
           in the city of General Roca (Río Negro). Here, I started teaching
@@ -22,7 +22,7 @@ function AboutMe() {
           took the opportunity to explore programming on my own.
         </p>
         <br />
-        <p className="text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 pb-10">
+        <p className="text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 pb-10 text-center md:text-start">
           While working as a Marketing Manager, I decided to dive into Full
           Stack Development studies. I dedicate each day to learning something
           new. It's a journey I find both challenging and exciting. I am

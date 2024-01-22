@@ -21,7 +21,7 @@ function Skills() {
         </div>
         <div
           id="frontend-title-container"
-          className="flex flex-col justify-center items-center pb-5 md:pb-0 md:m-12"
+          className="flex flex-col justify-center items-center pb-5 mb-8 md:mb-0 md:m-12"
         >
           <h3 className="text-center text-[14px] font-light">Frontend</h3>
         </div>
@@ -51,7 +51,7 @@ function Skills() {
       >
         <div
           id="backend-title-container"
-          className="flex flex-col justify-center items-center md:m-12"
+          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
         >
           <h3 className="text-center text-[14px] font-extralight">Backend</h3>
         </div>
@@ -81,13 +81,13 @@ function Skills() {
       >
         <div
           id="native-title-container"
-          className="flex flex-col justify-center items-center m-12"
+          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
         >
           <h3 className="text-center text-[14px] font-extralight">Mobile</h3>
         </div>
         <div
           id="native-icons-container"
-          className="flex flex-wrap  gap-5 justify-center md:justify-normal align-middle"
+          className="flex flex-wrap  gap-5 justify-center md:justify-normal align-middle mb-8 md:mb-0"
         >
           {nativeIcons.map((image) => (
             <div className="flex flex-col justify-center items-center">
@@ -111,7 +111,7 @@ function Skills() {
       >
         <div
           id="design-title-container"
-          className="flex flex-col justify-center items-center m-12"
+          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
         >
           <h3 className="text-center text-[14px] font-extralight">Design</h3>
         </div>
