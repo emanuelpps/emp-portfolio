@@ -11,16 +11,7 @@ const nextConfig = {
     ];
   },
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ibb.co",
-      },
-      {
-        protocol: "https",
-        hostname: "duodigitalmarketing.000webhostapp.com",
-      },
-    ],
+    domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
   },
 };
 
