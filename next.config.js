@@ -11,7 +11,7 @@ module.exports = {
       },
     ];
   },
-  theme: {
+  themes: {
     colors: {
       transparent: "transparent",
       current: "currentColor",
@@ -20,7 +20,7 @@ module.exports = {
       white: "#D0D0D0",
     },
   },
-  images: {
+  image: {
     domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
   },
   nextConfig,
