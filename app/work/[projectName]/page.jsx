@@ -8,10 +8,12 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { FaRegLightbulb } from "react-icons/fa6";
 import "ldrs/tailChase";
 import Link from "next/link";
+import { PulseLoader } from "react-spinners";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
   const [projectPage, setProjectPage] = useState(null);
+  const [isVideoLoading, setVideoLoading] = useState(true);
 
   useEffect(() => {
     setDataProjects(projects);
@@ -24,16 +26,20 @@ function ProjectName({ params }) {
     setProjectPage(findProject);
   }, [dataProjects, params.projectName]);
 
+  const handleVideoLoaded = () => {
+    setVideoLoading(false);
+  };
+
   console.log(projectPage);
 
   return (
     <div>
       {projectPage ? (
         <>
-          <div className="grid grid-cols-6 grid-rows-17 gap-4">
-            <div className="col-start-1 row-start-1 sticky top-0">
+          <div className="grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
+            <div className="col-start-1 row-start-1 sticky top-0 w-[300px] z-50">
               <Link href={"/work"}>
-                <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                <button className="m-10 px-6 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
                   Go Back
                 </button>
@@ -54,22 +60,36 @@ function ProjectName({ params }) {
                 </div>
               </div>
               <div>
-                <div id="video-container" className="flex justify-center">
+                <div
+                  id="video-container"
+                  className="flex justify-center place-content-center place-items-center"
+                >
                   {projectPage.infoProject[0].video ? (
-                    <video
-                      autoPlay
-                      muted
-                      loop
-                      aspect-auto
-                      rounded-lg
-                      className="relative mx-auto rounded-lg overflow-hidden"
-                      alt="Project Image"
-                    >
-                      <source src={projectPage.infoProject[0].video} />
-                    </video>
+                    <>
+                      {isVideoLoading && (
+                        <div className="text-center mt-20">
+                          <PulseLoader color="#ffff" />
+                          <p>Please wait... Loading video</p>
+                        </div>
+                      )}
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        aspect-auto
+                        rounded-lg
+                        className={`relative mx-auto rounded-lg overflow-hidden ${
+                          isVideoLoading ? "hidden" : ""
+                        }`}
+                        alt="Project Image"
+                        onLoadedData={handleVideoLoaded}
+                      >
+                        <source src={projectPage.infoProject[0].video} />
+                      </video>
+                    </>
                   ) : (
                     <div className="text-center">
-                      <p>Please wait... loading video</p>
+                      <p>No video available</p>
                     </div>
                   )}
                 </div>
@@ -77,7 +97,7 @@ function ProjectName({ params }) {
             </div>
             <div
               id="content-container"
-              className="row-span-4 col-start-6 row-start-2 flex justify-center pt-32 relative"
+              className="invisible md:visible md:row-span-4 col-start-6 row-start-2 md:flex md:justify-center md:pt-32 md:relative"
             >
               <ul className="fixed">
                 <h3 className="text-lg mb-4 font-semibold text-md text-white">
@@ -103,63 +123,62 @@ function ProjectName({ params }) {
             <div className="col-span-4 col-start-2 row-start-6">
               <div
                 id="buttons-project-container"
-                className="flex justify-center mt-20 pb-20"
+                className="flex justify-center mt-10 pb-10"
               >
                 <Link href={projectPage.demo} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                  <button className="m-10 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscLinkExternal />
                     <p>Deploy</p>
                   </button>
                 </Link>
                 <Link href={projectPage.code} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                  <button className="m-10 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscGithub className="w-full " />
                     <p>Repository</p>
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="pl-20 col-span-2 col-start-2 row-start-7">
+            <div className="md:pl-20 col-span-4 col-start-2 row-start-7 md:col-span-2 md:col-start-2 md:row-start-7 text-center md:text-start">
               <div id="role-container">
-                <h4 className="font-semibold text-sm">My Role</h4>
-                <h3 className="font-extralight">
+                <h4 className="font-semibold text-md">My Role</h4>
+                <h3 className="font-extralight text-[14px]">
                   {projectPage.infoProject[0].myRole}
                 </h3>
               </div>
             </div>
-            <div className="pl-20 col-span-2 row-span-2 col-start-2 row-start-8">
-              <div id="team-container">
+            <div className="mt-5 md:mt-0 md:pl-20 col-span-4 md:col-span-2 row-span-4 col-start-2 md:row-span-2 md:col-start-2 row-start-8  text-center md:text-start">
+              <div id="team-container" className="flex flex-col md:flex-none justify-center md:justify-start md:items-start">
                 {projectPage.infoProject[0].team ? (
-                  <h4 className="font-semibold text-sm">Team</h4>
+                  <h4 className="font-semibold text-md">Team</h4>
                 ) : (
                   <></>
                 )}
                 {projectPage.infoProject[0].team?.map((teamMate) => (
-                  <p className="font-thin">{teamMate}</p>
+                  <p className="font-thin text-[14px]">{teamMate}</p>
                 ))}
               </div>
             </div>
-            <div
-              id="overview-container"
-              className="col-span-2 row-span-3 col-start-4 row-start-7 mb-20"
-            >
-              <h3 className="font-semibold text-sm">Overview</h3>
-              <p className="font-thin tracking-wide @apply whitespace-pre-line">
-                {projectPage.infoProject[0].overview}
-              </p>
+            <div className="mt-5 md:mt-0 md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-7 col-span-4 row-span-3 col-start-2 row-start-9 mb-4 md:mb-20 justify-center place-items-center text-center md:text-start">
+              <div id="overview-container">
+                <h3 className="font-semibold text-md">Overview</h3>
+                <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
+                  {projectPage.infoProject[0].overview}
+                </p>
+              </div>
             </div>
             <div
               id="highlights-container"
-              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center mb-20 animate-blinkingBg"
+              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
             >
               <FaRegLightbulb
                 size={30}
                 className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2 neon"
               />
-              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow text-md">
                 HIGHLIGHTS
               </h3>
-              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10">
+              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10 text-[14px]">
                 {projectPage.infoProject[0].highlight}
               </p>
               <div className="relative mx-auto rounded-lg overflow-hidden">
@@ -220,21 +239,21 @@ function ProjectName({ params }) {
             </div>
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
               <div id="review-container object-center">
-                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow">
+                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow font-semibold text-md">
                   Gallery
                 </h3>
                 <div
                   id="gallery-container"
-                  className="grid grid-cols-2 md:grid-cols-2 gap-4"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-4"
                 >
                   {Object.entries(
                     projectPage.infoProject[0].images[0].gallery
                   ).map(([key, image], index) => (
-                    <div key={index}>
+                    <div key={index} className="flex flex-column">
                       <Image
                         width={500}
                         height={100}
-                        className="h-auto max-w-full rounded-lg"
+                        className="h-auto w-full object-cover rounded-lg"
                         src={image}
                         alt={key}
                       />
