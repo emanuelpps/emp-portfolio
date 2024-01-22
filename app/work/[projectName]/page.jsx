@@ -39,7 +39,7 @@ function ProjectName({ params }) {
           <div className="grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
             <div className="col-start-1 row-start-1 sticky top-0 w-[300px] z-50">
               <Link href={"/work"}>
-                <button className="m-10 px-10 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                <button className="m-10 px-6 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
                   Go Back
                 </button>
@@ -126,13 +126,13 @@ function ProjectName({ params }) {
                 className="flex justify-center mt-10 pb-10"
               >
                 <Link href={projectPage.demo} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                  <button className="m-10 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscLinkExternal />
                     <p>Deploy</p>
                   </button>
                 </Link>
                 <Link href={projectPage.code} target="_blank">
-                  <button className="m-10 py-3 px-4 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                  <button className="m-10 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscGithub className="w-full " />
                     <p>Repository</p>
                   </button>
