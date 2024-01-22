@@ -4,7 +4,7 @@ import "../defaultStyles.css";
 function MyWork() {
   return (
     <button className="cta">
-      <span class="hover-underline-animation shadowButtons tracking-wide"> My Work</span>
+      <span class="hover-underline-animation tracking-wide"> My Work</span>
     </button>
   )
 }
