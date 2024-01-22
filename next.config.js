@@ -1,15 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/work",
-        permanent: true,
-      },
-    ];
-  },
   images: {
     remotePatterns: [
       {
@@ -21,6 +12,15 @@ const nextConfig = {
         hostname: "duodigitalmarketing.000webhostapp.com",
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/work",
+        permanent: true,
+      },
+    ];
   },
 };
 
