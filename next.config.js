@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = withImages({
+const nextConfig = {
   output: "export",
   async redirects() {
     return [
@@ -14,6 +14,6 @@ const nextConfig = withImages({
   images: {
     domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
   },
-});
+};
 
 module.exports = nextConfig;
