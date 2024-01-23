@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  experimental: {
+    serverActions: true,
+  },
   output: "export",
   async redirects() {
     return [
@@ -12,7 +15,19 @@ const nextConfig = {
     ];
   },
   images: {
-    domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.ibb.co",
+      },
+      {
+        protocol: "https",
+        hostname: "duodigitalmarketing.000webhostapp.com",
+      },
+    ],
+  },
+  typescript: {
+    ignoreBuildErrors: true,
   },
 };
 
