@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
+const withImages = require('next-images');
 
-const nextConfig = {
+const nextConfig = withImages({
   output: "export",
   async redirects() {
     return [
@@ -12,6 +13,7 @@ const nextConfig = {
     ];
   },
   images: {
+    disableStaticImages: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -23,6 +25,6 @@ const nextConfig = {
       },
     ],
   },
-};
+});
 
 module.exports = nextConfig;
