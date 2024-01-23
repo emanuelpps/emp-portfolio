@@ -1,5 +1,4 @@
 /** @type {import('next').NextConfig} */
-const withImages = require('next-images');
 
 const nextConfig = withImages({
   output: "export",
@@ -13,17 +12,7 @@ const nextConfig = withImages({
     ];
   },
   images: {
-    disableStaticImages: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "i.ibb.co",
-      },
-      {
-        protocol: "https",
-        hostname: "duodigitalmarketing.000webhostapp.com",
-      },
-    ],
+    domains: ["i.ibb.co", "duodigitalmarketing.000webhostapp.com"],
   },
 });
 
