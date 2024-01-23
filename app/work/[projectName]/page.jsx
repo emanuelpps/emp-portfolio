@@ -10,6 +10,20 @@ import "ldrs/tailChase";
 import Link from "next/link";
 import { PulseLoader } from "react-spinners";
 
+export async function generateStaticParams() {
+  const paths = projects.map((porject) => ({
+    params: { projectName: projects.linkName },
+  }));
+  const findProject = projects.find(
+    (element) => element.linkName === params.projectName
+  );
+  return {
+    projectPage: findProject,
+    paths,
+    fallback: false,
+  };
+}
+
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
   const [projectPage, setProjectPage] = useState(null);
@@ -148,7 +162,10 @@ function ProjectName({ params }) {
               </div>
             </div>
             <div className="mt-5 md:mt-0 md:pl-20 col-span-4 md:col-span-2 row-span-4 col-start-2 md:row-span-2 md:col-start-2 row-start-8  text-center md:text-start">
-              <div id="team-container" className="flex flex-col md:flex-none justify-center md:justify-start md:items-start">
+              <div
+                id="team-container"
+                className="flex flex-col md:flex-none justify-center md:justify-start md:items-start"
+              >
                 {projectPage.infoProject[0].team ? (
                   <h4 className="font-semibold text-md">Team</h4>
                 ) : (
