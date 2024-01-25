@@ -9,8 +9,6 @@ const nextConfig = {
       },
     ];
   },
-  assetPrefix: process.env.ASSET_PREFIX,
-  basePath: process.env.BASE_PATH,
   images: {
     unoptimized: true,
     remotePatterns: [
