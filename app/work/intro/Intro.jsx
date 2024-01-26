@@ -7,7 +7,7 @@ import MyWork from "@/components/buttons/MyWork/MyWork";
 
 export default function Intro() {
   return (
-    <div className="window-outline w-screen p-10 md:w-[60rem] h-[auto] mt-28 md:h-auto md:mt-1">
+    <div className="window-outline w-screen md:p-10 md:w-[60rem] h-[auto] md:h-auto md:mt-1">
       <div id="titles-container" className="p-10 md:p-20">
         <div className="window-main ml">
           <h3 className="text-4xl md:text-5xl textShadow mt-0 md:mt-1 font-extralight tracking-wide md:pl-24">
@@ -26,13 +26,16 @@ export default function Intro() {
             <Contact />
             <MyWork />
           </div>
-          <div className="flex justify-center items-center arrow mt-5 md:mt-10 bounce">
-            <Image src={arrowDown} className="w-9"></Image>
+          <div className="flex justify-center items-center mt-5 md:mt-10">
+            <Image
+              src={arrowDown}
+              className="w-9 text-center mx-0 my-[5%] animate-[bounce_2s_infinite]"
+            ></Image>
           </div>
         </div>
       </div>
-      <div className="noise-gradient"></div>
-      <div className="noise"></div>
+      <div className="z-[2] h-3/6 bg-[linear-gradient(_to_right,transparent_5%,var(--on-background)_50%,transparent_95%_)] opacity-70 blur-[100px] hidden absolute rounded-[2000px] top-24 bottom-auto inset-x-6"></div>
+      <div className="bg-[url('https://assets-global.website-files.com/63dcb6e1a80e9454b630f4c4/644af0299bc01254815ae442_noise-overlay-2.png')] bg-[0_0] bg-[200px] block inset-[0%]"></div>
     </div>
   );
 }

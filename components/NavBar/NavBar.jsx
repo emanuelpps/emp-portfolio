@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import PortfolioLogo from "@/public/assets/EP-logo.svg";
-import "./NavBar.css";
 import Link from "next/link";
 import arrow from "@/public/assets/arrow.svg";
 import { useRouter } from "next/navigation";
@@ -28,15 +27,13 @@ export default function NavBar() {
           <Image
             src={PortfolioLogo}
             alt="Emanuel Pagés Front End Developer Logo"
-            width={45}
-            height={45}
-            className="rounded-lg bg-black"
+            className="rounded-lg bg-black hidden md:flex md:w-[45px]"
           ></Image>
           <div id="titleLogo">
-            <h1 className="text-sm md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
+            <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
               Emanuel Pagés
             </h1>
-            <h3 className="text-[0.7rem] md:text-xs font-bold  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 text-gray-500">
+            <h3 className="text-[0.5rem] md:text-xs font-bold  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 text-gray-500">
               Frontend Developer
             </h3>
           </div>
@@ -53,7 +50,7 @@ export default function NavBar() {
               <input id="Toggle3" type="checkbox" className="hidden peer" />
               <Link href={"/work"}>
                 <button
-                  className={`px-4 py-0.6 rounded-l-md text-white font-semibold ${
+                  className={`text-[0.8rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-l-md text-white font-semibold ${
                     currentPath === "/work" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
@@ -66,7 +63,7 @@ export default function NavBar() {
               </Link>
               <Link href={"/info"}>
                 <button
-                  className={`px-4 py-0.6 rounded-r-md text-white font-semibold ${
+                  className={`text-[0.8rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-r-md text-white font-semibold ${
                     currentPath === "/info" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
@@ -107,7 +104,7 @@ export default function NavBar() {
         </div>
         <div
           id="menu-mobile-container"
-          className="flex flex-col md:hidden ml-24 w-6"
+          className="flex flex-col md:hidden pl-10 w-fit"
         >
           <button
             className="active:bg-[#6b7280] focus:outline-none focus:ring focus:ring-[#6b7280] w-auto"
