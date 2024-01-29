@@ -36,7 +36,7 @@ function ProjectName({ params }) {
     <div>
       {projectPage ? (
         <>
-          <div className="grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
+          <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
             <div className="col-start-1 row-start-1 sticky top-0 w-[300px] z-50">
               <Link href={"/work"}>
                 <button className="m-10 px-6 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
@@ -172,7 +172,7 @@ function ProjectName({ params }) {
             </div>
             <div
               id="highlights-container"
-              className="col-span-4 row-span-3 col-start-2 row-start-10 window-outline flex flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
+              className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 window-outline md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
             >
               <FaRegLightbulb
                 size={30}
@@ -181,7 +181,7 @@ function ProjectName({ params }) {
               <h3 className="justify-center text-center w-full mb-10 dropShadow:glow text-md">
                 HIGHLIGHTS
               </h3>
-              <p className="font-extralight justify-center text-center pl-20 pr-20 mb-10 text-[14px]">
+              <p className="font-extralight justify-center text-center md:pl-20 md:pr-20 mb-10 text-[14px]">
                 {projectPage.infoProject[0].highlight}
               </p>
               <div className="relative mx-auto rounded-lg overflow-hidden">

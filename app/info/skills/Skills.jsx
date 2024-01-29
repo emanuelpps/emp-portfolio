@@ -10,7 +10,7 @@ function Skills() {
   return (
     <div
       id="skills-container"
-      className="grid grid-cols-1 grid-rows-8 w-full md:w-[60rem] md:grid md:grid-cols-1 md:grid-rows-4 pt-10 md:pt-40"
+      className="grid grid-cols-1 grid-rows-8 w-full md:w-[60rem] md:grid md:grid-cols-1 md:grid-rows-4 md:pt-40"
     >
       <div
         id="skills-frontend-container"

@@ -17,7 +17,7 @@ export default async function RootLayout({ children }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body>{children}</body>
+      <body className="scroll-smooth">{children}</body>
     </html>
   );
 }

@@ -13,15 +13,13 @@ function FreeTime() {
           <Image
             src={freeTimeImage}
             alt="computer Image"
-            width={400}
-            height={1800}
-            className="rounded-2xl text-center"
+            className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-auto md:w-[400px]"
           />
         </div>
       </div>
       <div id="free-time-text-container">
         <h3 className="md:pt-10 md:pl-10 font-semibold text-md text-center md:text-start">In my Free Time</h3>
-        <p className="pt-10 md:pl-10 md:pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line text-center md:text-start">
+        <p className="pt-10 pl-2 pr-2 md:pl-10 md:pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line text-center md:text-start">
           Probably developing new projects to enhance my skills or perfecting my
           portfolio in some ways. Besides that, I spend my time hiking or
           reading books about history. Another thing that I love is playing game

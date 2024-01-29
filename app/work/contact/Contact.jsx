@@ -67,7 +67,7 @@ function Contact() {
   return (
     <div id="contact-container">
       <form
-        className="rounded-lg shadow-xl flex flex-col px-4 md:px-8 py-6 md:py-8 w-[400px] md:w-[42rem] mt-5 md:mt-20"
+        className="rounded-lg shadow-xl flex flex-col px-4 md:px-8 py-6 md:py-8 w-full md:w-[42rem] mt-5 md:mt-20"
         onSubmit={handleSubmit}
       >
         <h1 className="font-semibold text-md text-center md:text-start">Send me a message</h1>
