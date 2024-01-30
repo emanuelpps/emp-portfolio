@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div id="footer-container" className="w-full mt-20">
       <hr class="border-t-1 border-gray-800 border-gray my-8" />
-      <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-20">
+      <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-4 mt-20">
         <div id="footer-logo-container">
           <div className="w-full flex items-center justify-center flex-row">
             <Image
@@ -29,7 +29,7 @@ function Footer() {
         </div>
         <div
           id="footer-links-container"
-          className="w-full flex items-center justify-center"
+          className="w-full flex items-center justify-center mt-10 md:mt-0"
         >
           <div
             id="nav-links-container"
@@ -70,9 +70,9 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div id="footer-rights-container" className="col-span-2 mt-20">
-          <div className="w-full flex items-center justify-center">
-            <h3>© 2024 Emanuel Pagés.</h3>
+        <div id="footer-rights-container" className="md:col-span-2 mt-20 w-auto">
+          <div className="w-full flex items-center justify-center text-center ">
+            <h3 className="text-sm md:text-base">© 2024 Emanuel Pagés.</h3>
           </div>
         </div>
       </div>
