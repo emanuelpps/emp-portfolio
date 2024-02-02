@@ -59,6 +59,58 @@ body {
   filter: drop-shadow(0px 0px 3px #ffffff);
 }
 
+
+
+
+.loadership_UIUWW {
+  display: flex;
+  position: relative;
+  width: 18px;
+  height: 10px;
+}
+
+.loadership_UIUWW div {
+  position: absolute;
+  top: 6px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #000;
+  animation: loadership_UIUWW_bounce 2.25s infinite;
+  animation-timing-function: linear;
+}
+
+.loadership_UIUWW div:nth-child(1) {
+      animation-delay: 0.00s;
+      left: 0px;
+  }
+.loadership_UIUWW div:nth-child(2) {
+      animation-delay: 0.48s;
+      left: 7px;
+  }
+.loadership_UIUWW div:nth-child(3) {
+      animation-delay: 0.97s;
+      left: 14px;
+  }
+
+
+@keyframes loadership_UIUWW_bounce {
+  0%, 12.888888888888888%, 32.22222222222222%, 51.55555555555555%, 64.44444444444444%, 100% {
+    transform: translateY(0);
+  }
+
+  25.777777777777775% {
+    transform: translateY(-6px);
+  }
+
+  38.666666666666664% {
+    transform: translateY(-2.4000000000000004px);
+  }
+}
+
+
+
+
 @keyframes flicker {
   from {
     opacity: 1;

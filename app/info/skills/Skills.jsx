@@ -47,7 +47,7 @@ function Skills() {
       </div>
       <div
         id="skills-backend-container"
-        className="flex flex-col md:grid md:grid-cols-2 pt-16 md:pt-12"
+        className="flex flex-col md:grid md:grid-cols-2 mt-5 md:mt-0 pt-16 md:pt-12"
       >
         <div
           id="backend-title-container"
@@ -57,7 +57,7 @@ function Skills() {
         </div>
         <div
           id="backend-icons-container"
-          className="flex flex-wrap  gap-5 justify-center md:justify-normal align-middle"
+          className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {backendIcons.map((image) => (
             <div className="flex flex-col justify-center items-center">
@@ -77,7 +77,7 @@ function Skills() {
       </div>
       <div
         id="skills-native-container"
-        className="flex flex-col md:grid md:grid-cols-2 pt-10 md:pt-0"
+        className="flex flex-col md:grid md:grid-cols-2 mt-5 md:mt-0"
       >
         <div
           id="native-title-container"

@@ -36,9 +36,10 @@ function ProjectCard({ project }) {
           <Image
             src={project.img}
             alt={project.name}
-            width={600}
-            height={800}
-            className={`rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
+            width="0"
+            height="0"
+            sizes="100vw"
+            className={`w-full h-auto rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">

@@ -7,22 +7,51 @@ import arrow from "@/public/assets/arrow.svg";
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { GrMenu } from "react-icons/gr";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
+import { RiMailCheckFill } from "react-icons/ri";
+import { RiMailFill } from "react-icons/ri";
+import { BsFillFileEarmarkMedicalFill } from "react-icons/bs";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaCheckCircle } from "react-icons/fa";
 
 export default function NavBar() {
   const [showWork, setShowWork] = useState(true);
   const [showInfo, setShowInfo] = useState(false);
   const [menuClicked, setMenuClicked] = useState(false);
   const [checkedToggle, setCheckedToggle] = useState();
+  const [mailCopied, setMailCopied] = useState(false);
   const router = useRouter();
 
   const currentPath = usePathname();
+
+  const resetCopied = () => {
+    setInterval(() => {
+      setMailCopied(false);
+    }, 4000);
+  };
+
+  const notifyCopied = () => {
+    navigator.clipboard.writeText("emanuelpages.ps@gmail.com");
+    resetCopied();
+    toast("Email address copied. Ready to paste!", {
+      hideProgressBar: true,
+      autoClose: 2000,
+      type: "success",
+      className: "mt-8 text-sm",
+      theme: "transparent",
+      closeOnClick: true,
+      icon: ({ theme, type }) => <FaCheckCircle />,
+    });
+  };
 
   return (
     <div className="relative z-50">
       <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-5 fixed top-0 justify-center items-center w-screen">
         <div
           id="LogoContainer"
-          className="flex justify-center items-center pr-4 md:pr-40"
+          className="flex justify-center items-center pr-4 md:pr-48"
         >
           <Image
             src={PortfolioLogo}
@@ -81,24 +110,53 @@ export default function NavBar() {
           id="MenuContainer"
           className="md:flex justify-center items-center hidden md:visible md:pl-44"
         >
-          <button className="font-extralight hover:font-semibold bg-opacity-40">
+          <button
+            className="font-extralight hover:font-semibold bg-opacity-40"
+            title="Github"
+          >
             <Link
-              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
+              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
+              href="https://github.com/emanuelpps"
+              target="_blank"
+            >
+              <FaGithub className="h-5 w-5"/>
+            </Link>
+          </button>
+          <button
+            className="font-extralight hover:font-semibold bg-opacity-40"
+            title="Linkedin"
+          >
+            <Link
+              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
               href="https://www.linkedin.com/in/emanuel-ps/"
               target="_blank"
             >
-              Linkedin
-              <Image src={arrow} className="h-5 w-5" />
+              <FaLinkedinIn  className="h-5 w-5"/>
             </Link>
           </button>
-          <button className="font-extralight hover:font-semibold bg-black rounded-md">
+          <button
+            className="font-extralight hover:font-semibold bg-opacity-40"
+            title="Copy Email"
+          >
+            <div
+              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
+              onClick={(e) => {
+                setMailCopied(true), notifyCopied();
+              }}
+            >
+              {mailCopied ? <RiMailCheckFill  className="h-5 w-5"/> : <RiMailFill  className="h-5 w-5"/>}
+            </div>
+          </button>
+          <button
+            className="font-extralight hover:font-semibold bg-black rounded-md"
+            title="Resume"
+          >
             <Link
-              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
+              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
               href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
               target="_blank"
             >
-              Resume
-              <Image src={arrow} className="h-5 w-5" />
+              <BsFillFileEarmarkMedicalFill  className="h-5 w-5"/>
             </Link>
           </button>
         </div>
@@ -118,11 +176,31 @@ export default function NavBar() {
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
               <Link
                 className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
+                href="https://github.com/emanuelpps"
+                target="_blank"
+              >
+                <FaGithub />
+              </Link>
+            </button>
+            <button className="font-extralight hover:font-semibold bg-opacity-40 ">
+              <Link
+                className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
                 href="https://www.linkedin.com/in/emanuel-ps/"
                 target="_blank"
               >
-                Linkedin
-                <Image src={arrow} className="h-5 w-5" />
+                <FaLinkedinIn />
+              </Link>
+            </button>
+            <button className="font-extralight hover:font-semibold bg-opacity-40 ">
+              <Link
+                className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
+                href="https://www.linkedin.com/in/emanuel-ps/"
+                target="_blank"
+                onClick={(e) => {
+                  setMailCopied(true), notifyCopied();
+                }}
+              >
+                {mailCopied ? <RiMailCheckFill /> : <RiMailFill />}
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold rounded-md">
@@ -131,8 +209,7 @@ export default function NavBar() {
                 href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
                 target="_blank"
               >
-                Resume
-                <Image src={arrow} className="h-5 w-5" />
+                <BsFillFileEarmarkMedicalFill />
               </Link>
             </button>
           </div>

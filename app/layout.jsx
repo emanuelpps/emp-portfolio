@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
   title: "Emanuel Pagés | Frontend Developer",
@@ -17,7 +18,10 @@ export default async function RootLayout({ children }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className="scroll-smooth">{children}</body>
+      <body className="scroll-smooth">
+        {children}
+        <ToastContainer closeButton={false} />
+      </body>
     </html>
   );
 }
