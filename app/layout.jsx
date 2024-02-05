@@ -18,7 +18,7 @@ export default async function RootLayout({ children }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className="scroll-smooth">
+      <body className="overflow-x-hidden scroll-smooth">
         {children}
         <ToastContainer closeButton={false} />
       </body>

@@ -21,6 +21,8 @@ const nextConfig = {
         hostname: "duodigitalmarketing.000webhostapp.com",
       },
     ],
+    loader: "custom",
+    loaderFile: './components/loader/loader.js',
   },
 };
 

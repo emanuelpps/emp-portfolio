@@ -257,8 +257,8 @@
   {
     "name": "Ñire",
     "class": "Bakery",
-    "type": "Web Page",
-    "description": "Institutional bakery website, offering a delightful online experience to explore bakery products and stay updated with the latest offerings.",
+    "type": "Landing Page",
+    "description": "Institutional bakery landing page, offering a delightful online experience to explore bakery products and stay updated with the latest offerings.",
     "img": "https://i.ibb.co/zP6Y4xZ/nire-webpage.png",
     "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion",
     "code": "https://github.com/emanuelpps/Nire-Panaderia",
@@ -266,8 +266,8 @@
     "linkName": "nire",
     "infoProject": [
       {
-        "overview": "I develop a website for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The website emphasizes a minimalist yet highly appealing design.",
-        "highlight": "The website features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
+        "overview": "I develop a landing page for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The lainding page emphasizes a minimalist yet highly appealing design.",
+        "highlight": "The landing page features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://duodigitalmarketing.000webhostapp.com/portafolio/videos/nire.mp4",
         "images": [

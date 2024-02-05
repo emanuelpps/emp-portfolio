@@ -179,7 +179,7 @@ export default function NavBar() {
                 href="https://github.com/emanuelpps"
                 target="_blank"
               >
-                <FaGithub />
+                <FaGithub  className="w-5 h-5"/>
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
@@ -188,7 +188,7 @@ export default function NavBar() {
                 href="https://www.linkedin.com/in/emanuel-ps/"
                 target="_blank"
               >
-                <FaLinkedinIn />
+                <FaLinkedinIn  className="w-5 h-5"/>
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
@@ -200,7 +200,7 @@ export default function NavBar() {
                   setMailCopied(true), notifyCopied();
                 }}
               >
-                {mailCopied ? <RiMailCheckFill /> : <RiMailFill />}
+                {mailCopied ? <RiMailCheckFill  className="w-5 h-5"/> : <RiMailFill  className="w-5 h-5"/>}
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold rounded-md">
@@ -209,7 +209,7 @@ export default function NavBar() {
                 href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
                 target="_blank"
               >
-                <BsFillFileEarmarkMedicalFill />
+                <BsFillFileEarmarkMedicalFill  className="w-5 h-5"/>
               </Link>
             </button>
           </div>

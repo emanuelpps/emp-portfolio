@@ -9,11 +9,13 @@ import { FaRegLightbulb } from "react-icons/fa6";
 import "ldrs/tailChase";
 import Link from "next/link";
 import { PulseLoader } from "react-spinners";
+import loader from "@/components/loader/loader";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
   const [projectPage, setProjectPage] = useState(null);
-  const [isVideoLoading, setVideoLoading] = useState(true);
+  const [isLoading, setLoading] = useState(true);
+  const [galleryLoading, setGalleryLoading] = useState(true);
 
   useEffect(() => {
     setDataProjects(projects);
@@ -26,8 +28,8 @@ function ProjectName({ params }) {
     setProjectPage(findProject);
   }, [dataProjects, params.projectName]);
 
-  const handleVideoLoaded = () => {
-    setVideoLoading(false);
+  const handleLoaded = () => {
+    setLoading(false);
   };
 
   console.log(projectPage);
@@ -37,7 +39,7 @@ function ProjectName({ params }) {
       {projectPage ? (
         <>
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
-            <div className="col-start-1 row-start-1 sticky top-0 w-[300px] z-50">
+            <div className="col-start-1 row-start-1 sticky top-5 md:top-0 w-[300px] z-50">
               <Link href={"/work"}>
                 <button className="m-10 px-6 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
@@ -66,9 +68,22 @@ function ProjectName({ params }) {
                 >
                   {projectPage.infoProject[0].video ? (
                     <>
-                      {isVideoLoading && (
-                        <div className="text-center mt-20">
-                          <PulseLoader color="#ffff" />
+                      {isLoading && (
+                        <div className="flex flex-col items-center  text-center mt-20">
+                          <div className="loadership_MANQV">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                          </div>
                           <p>Please wait... Loading video</p>
                         </div>
                       )}
@@ -79,10 +94,10 @@ function ProjectName({ params }) {
                         aspect-auto
                         rounded-lg
                         className={`relative mx-auto rounded-lg overflow-hidden ${
-                          isVideoLoading ? "hidden" : ""
+                          isLoading ? "hidden" : ""
                         }`}
                         alt="Project Image"
-                        onLoadedData={handleVideoLoaded}
+                        onLoadedData={handleLoaded}
                       >
                         <source src={projectPage.infoProject[0].video} />
                       </video>
@@ -200,6 +215,10 @@ function ProjectName({ params }) {
                           width={800}
                           height={800}
                           className="mb-10 relative mx-auto rounded-lg overflow-hidden"
+                          onLoadingComplete={(image) =>
+                            image.classList.remove("opacity-0")
+                          }
+                          onLoadStart={loader}
                         />
                       ) : (
                         <video
@@ -220,6 +239,7 @@ function ProjectName({ params }) {
                     ".png"
                   ) ? (
                   <Image
+                    loader={loader}
                     src={projectPage.infoProject[0].images[0].highlight}
                     alt={projectPage.name}
                     width={800}
@@ -254,6 +274,7 @@ function ProjectName({ params }) {
                   ).map(([key, image], index) => (
                     <div key={index} className="flex flex-column">
                       <Image
+                        loader={loader}
                         width={500}
                         height={100}
                         className="h-auto w-full object-cover rounded-lg"
@@ -274,13 +295,20 @@ function ProjectName({ params }) {
       ) : (
         <div className="flex flex-col items-center justify-center h-screen">
           <div className="flex gap-4 flex-wrap justify-center">
-            <Image
-              className="w-10 h-10 animate-spin"
-              src="https://www.svgrepo.com/show/199956/loading-loader.svg"
-              alt="Loading icon"
-              width={10}
-              height={10}
-            />
+            <div className="loadership_MANQV">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
           <p className="object-center">Loading Project... Please Wait</p>
         </div>
