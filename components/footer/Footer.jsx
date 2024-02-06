@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import PortfolioLogo from "@/public/assets/EP-logo.svg";
 import Link from "next/link";
+import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
 
 function Footer() {
   return (
@@ -70,8 +71,39 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div id="footer-rights-container" className="md:col-span-2 mt-20 w-auto">
-          <div className="w-full flex items-center justify-center text-center ">
+        <div className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-4">
+          <p className="text-center mt-5 md:pr-10">This site was built with:</p>
+          <div className="flex flex-row justify-center items-center text-center md:gap-4">
+          {frontendIcons
+            .filter((image) =>
+              ["CSS 3", "Next.js", "Tailwind CSS", "Framer Motion"].includes(
+                image.name
+              )
+            )
+            .map((image) => (
+              <div
+                className="flex flex-row justify-center items-center text-center align-middle w-20"
+                key={image.id}
+              >
+                <Image
+                  src={image.path}
+                  alt={image.name}
+                  width={30}
+                  height={30}
+                />
+                <h4 className="text-xs text-center mt-2 font-extralight">
+                  {image.name}
+                </h4>
+              </div>
+            ))}
+            
+            </div>
+        </div>
+        <div
+          id="footer-rights-container"
+          className="md:col-span-2 pt-10 w-auto items-end h-[auto] md:mb-[-80px]"
+        >
+          <div className="w-full flex items-center justify-center text-center">
             <h3 className="text-sm md:text-base">© 2024 Emanuel Pagés.</h3>
           </div>
         </div>

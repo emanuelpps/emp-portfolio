@@ -8,7 +8,6 @@ import { VscArrowLeft } from "react-icons/vsc";
 import { FaRegLightbulb } from "react-icons/fa6";
 import "ldrs/tailChase";
 import Link from "next/link";
-import { PulseLoader } from "react-spinners";
 import loader from "@/components/loader/loader";
 
 function ProjectName({ params }) {
@@ -40,7 +39,7 @@ function ProjectName({ params }) {
         <>
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
             <div className="col-start-1 row-start-1 sticky top-10 md:top-0 w-[300px] z-50">
-              <Link href={"/work"}>
+              <Link href={"/"}>
                 <button className="md:m-10 px-6 py-3 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
                   Go Back

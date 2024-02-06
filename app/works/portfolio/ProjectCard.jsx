@@ -1,14 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import arrowRight from "@/public/assets/arrowRight.svg";
-import Link from "next/link";
+import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
   const [hoverState, setHoverState] = useState(false);
   const [hoverTransition, setHoverTransition] = useState();
 
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y:50}}
+      whileInView={{ opacity: 1, y:0}}
+      exit={{opacity:0}}
+      viewport={{ once: true }}
       id={`id-${project.id}`}
       className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer window-outline mb-20 ${
         hoverState
@@ -53,7 +57,7 @@ function ProjectCard({ project }) {
           <p className="font-semibold text-sm md:text-sm">{project.lenguage}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

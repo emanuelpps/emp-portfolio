@@ -39,10 +39,10 @@ export default function NavBar() {
       hideProgressBar: true,
       autoClose: 2000,
       type: "success",
-      className: "mt-8 text-sm",
+      className: "mt-20 h-auto md:mt-8 text-sm",
       theme: "transparent",
       closeOnClick: true,
-      icon: ({ theme, type }) => <FaCheckCircle />,
+      icon: ({ theme, type }) => <FaCheckCircle className="h-10" />,
     });
   };
 
@@ -74,12 +74,12 @@ export default function NavBar() {
           <div className="flex items-center justify-center">
             <label
               for="Toggle3"
-              className="block p-2 h-10 min-w-full md:w-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 cursor-pointer dark:text-gray-800"
+              className="block p-1 md:p-2 h-auto min-w-full md:w-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 cursor-pointer dark:text-gray-800"
             >
               <input id="Toggle3" type="checkbox" className="hidden peer" />
               <Link href={"/works"}>
                 <button
-                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-l-md text-white font-semibold ${
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-1 rounded-l-md text-white font-semibold ${
                     currentPath === "/works" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
@@ -92,7 +92,7 @@ export default function NavBar() {
               </Link>
               <Link href={"/about"}>
                 <button
-                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-r-md text-white font-semibold ${
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-1 rounded-r-md text-white font-semibold ${
                     currentPath === "/about" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
@@ -196,9 +196,8 @@ export default function NavBar() {
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
-              <Link
+              <div
                 className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
-                href="https://www.linkedin.com/in/emanuel-ps/"
                 target="_blank"
                 onClick={(e) => {
                   setMailCopied(true), notifyCopied();
@@ -209,7 +208,7 @@ export default function NavBar() {
                 ) : (
                   <RiMailFill className="w-5 h-5" />
                 )}
-              </Link>
+              </div>
             </button>
             <button className="font-extralight hover:font-semibold rounded-md">
               <Link

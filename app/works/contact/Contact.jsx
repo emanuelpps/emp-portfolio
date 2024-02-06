@@ -152,8 +152,8 @@ function Contact() {
               setMessage(e.target.value);
             }}
           ></textarea>
-          <div className="flex flex-row items-center justify-start">
-            <button className=" py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+          <div className="flex flex-row items-center justify-center md:justify-start">
+            <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
               {buttonText === "Sending" ? (
                 <>
                   {buttonText}
