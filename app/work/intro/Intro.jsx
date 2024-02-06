@@ -7,7 +7,7 @@ import MyWork from "@/components/buttons/MyWork/MyWork";
 
 export default function Intro() {
   return (
-    <div className=" -outline-offset-1 bg-[radial-gradient(_circle_farthest-side_at_50%_0,rgba(242,242,242,0.2),rgba(0,0,0,0)_)] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t w-screen md:p-10 md:w-[60rem] h-[auto] md:h-auto md:mt-1">
+    <div className="-outline-offset-1 bg-[radial-gradient(_circle_farthest-side_at_50%_0,rgba(242,242,242,0.2),rgba(0,0,0,0)_)] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t w-screen md:p-10 md:w-[60rem] h-[auto] md:h-auto md:mt-1">
       <div id="titles-container" className="p-10 md:p-20">
         <div className="window-main ml">
           <h3 className="text-4xl md:text-5xl textShadow mt-0 md:mt-1 font-extralight tracking-wide md:pl-24">

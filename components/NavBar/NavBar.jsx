@@ -115,11 +115,11 @@ export default function NavBar() {
             title="Github"
           >
             <Link
-              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
+              className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4 "
               href="https://github.com/emanuelpps"
               target="_blank"
             >
-              <FaGithub className="h-5 w-5"/>
+              <FaGithub className="h-5 w-5 fill-gray-400 hover:fill-white" />
             </Link>
           </button>
           <button
@@ -131,7 +131,7 @@ export default function NavBar() {
               href="https://www.linkedin.com/in/emanuel-ps/"
               target="_blank"
             >
-              <FaLinkedinIn  className="h-5 w-5"/>
+              <FaLinkedinIn className="h-5 w-5 fill-gray-400 hover:fill-white" />
             </Link>
           </button>
           <button
@@ -144,7 +144,11 @@ export default function NavBar() {
                 setMailCopied(true), notifyCopied();
               }}
             >
-              {mailCopied ? <RiMailCheckFill  className="h-5 w-5"/> : <RiMailFill  className="h-5 w-5"/>}
+              {mailCopied ? (
+                <RiMailCheckFill className="h-5 w-5 fill-gray-400 hover:fill-white" />
+              ) : (
+                <RiMailFill className="h-5 w-5 fill-gray-400 hover:fill-white" />
+              )}
             </div>
           </button>
           <button
@@ -156,7 +160,7 @@ export default function NavBar() {
               href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
               target="_blank"
             >
-              <BsFillFileEarmarkMedicalFill  className="h-5 w-5"/>
+              <BsFillFileEarmarkMedicalFill className="h-5 w-5 fill-gray-400 hover:fill-white" />
             </Link>
           </button>
         </div>
@@ -179,7 +183,7 @@ export default function NavBar() {
                 href="https://github.com/emanuelpps"
                 target="_blank"
               >
-                <FaGithub  className="w-5 h-5"/>
+                <FaGithub className="w-5 h-5" />
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
@@ -188,7 +192,7 @@ export default function NavBar() {
                 href="https://www.linkedin.com/in/emanuel-ps/"
                 target="_blank"
               >
-                <FaLinkedinIn  className="w-5 h-5"/>
+                <FaLinkedinIn className="w-5 h-5" />
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold bg-opacity-40 ">
@@ -200,7 +204,11 @@ export default function NavBar() {
                   setMailCopied(true), notifyCopied();
                 }}
               >
-                {mailCopied ? <RiMailCheckFill  className="w-5 h-5"/> : <RiMailFill  className="w-5 h-5"/>}
+                {mailCopied ? (
+                  <RiMailCheckFill className="w-5 h-5" />
+                ) : (
+                  <RiMailFill className="w-5 h-5" />
+                )}
               </Link>
             </button>
             <button className="font-extralight hover:font-semibold rounded-md">
@@ -209,7 +217,7 @@ export default function NavBar() {
                 href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
                 target="_blank"
               >
-                <BsFillFileEarmarkMedicalFill  className="w-5 h-5"/>
+                <BsFillFileEarmarkMedicalFill className="w-5 h-5" />
               </Link>
             </button>
           </div>

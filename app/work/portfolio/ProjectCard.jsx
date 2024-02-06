@@ -9,15 +9,20 @@ function ProjectCard({ project }) {
 
   return (
     <div
+      id={`id-${project.id}`}
       className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer window-outline mb-20 ${
-        hoverState ? "hover:shadow-xl transition duration-300 hover:scale-105" : ""
+        hoverState
+          ? "hover:shadow-xl transition duration-300 hover:scale-105"
+          : ""
       } transition duration-800 ease-in-out`}
       onMouseEnter={() => setHoverState(true)}
       onMouseLeave={() => setHoverState(false)}
     >
       <div className="p-2 md:p-10">
         <div id="title-container" className="flex justify-between">
-          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl">{project.name}</h1>
+          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl">
+            {project.name}
+          </h1>
           <Image
             src={arrowRight}
             alt="arrow"
@@ -30,7 +35,9 @@ function ProjectCard({ project }) {
           <h2 className="text-sm md:text-base font-extralight">
             {project.class} - {project.type}
           </h2>
-          <p className="text-sm md:text-base font-extralight">{project.description}</p>
+          <p className="text-sm md:text-base font-extralight">
+            {project.description}
+          </p>
         </div>
         <div id="img-container" className="flex justify-center mt-5">
           <Image

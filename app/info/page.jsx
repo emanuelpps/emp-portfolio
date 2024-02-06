@@ -11,7 +11,7 @@ function page() {
   return (
     <div>
       <NavBar />
-      <main className="flex min-h-screen flex-col items-center justify-between md:p-24">
+      <main className="flex min-h-screen flex-col items-center justify-between md:p-24 overflow-x-hidden scroll-smooth">
         <Summary/>
         <Skills/>
         <AboutMe/>

@@ -36,11 +36,10 @@ function Summary() {
         <br />
         <p className="flex flex-col pl-2 pr-2 justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 text-center md:text-start">
           Currently, I wear two hats – working as a Digital Marketing Manager
-          and a Frontend Developer. In my digital marketing role, I handle Email
-          Marketing Campaigns, create content, and managing WordPress websites.
-          As a Marketing Manager, I lead online and offline marketing
-          strategies, develop social media plans, and manage the marketing
-          budget.
+          and a Frontend Developer. In my role as a Digital Marketing Manager, I
+          handle Email Marketing Campaigns, create content, and manage WordPress
+          websites. I lead online marketing strategies, develop social media
+          plans, and execute social media ads and Google Ads campaigns
         </p>
         <br />
         <p className="flex flex-col pl-2 pr-2 justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 pb-10 text-center md:text-start">
