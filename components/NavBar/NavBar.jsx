@@ -74,33 +74,33 @@ export default function NavBar() {
           <div className="flex items-center justify-center">
             <label
               for="Toggle3"
-              className="block p-2 h-10 w-full md:w-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 cursor-pointer dark:text-gray-800"
+              className="block p-2 h-10 min-w-full md:w-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 cursor-pointer dark:text-gray-800"
             >
               <input id="Toggle3" type="checkbox" className="hidden peer" />
-              <Link href={"/work"}>
+              <Link href={"/works"}>
                 <button
-                  className={`text-[0.8rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-l-md text-white font-semibold ${
-                    currentPath === "/work" ? "bg-gray-500" : ""
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-l-md text-white font-semibold ${
+                    currentPath === "/works" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
                     setShowWork(true);
                     setShowInfo(false);
                   }}
                 >
-                  Work
+                  Works
                 </button>
               </Link>
-              <Link href={"/info"}>
+              <Link href={"/about"}>
                 <button
-                  className={`text-[0.8rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-r-md text-white font-semibold ${
-                    currentPath === "/info" ? "bg-gray-500" : ""
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-0.6 rounded-r-md text-white font-semibold ${
+                    currentPath === "/about" ? "bg-gray-500" : ""
                   }`}
                   onClick={() => {
                     setShowWork(false);
                     setShowInfo(true);
                   }}
                 >
-                  Info
+                  About
                 </button>
               </Link>
             </label>

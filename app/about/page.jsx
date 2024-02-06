@@ -1,6 +1,6 @@
 import React from "react";
 import NavBar from "@/components/NavBar/NavBar";
-import Contact from "../work/contact/Contact";
+import Contact from "../works/contact/Contact";
 import Footer from "@/components/footer/Footer";
 import Summary from "./summary/Summary";
 import Skills from "./skills/Skills";

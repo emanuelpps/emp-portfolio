@@ -47,7 +47,7 @@ function Skills() {
       </div>
       <div
         id="skills-backend-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-5 md:mt-0 pt-16 md:pt-12"
+        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0 md:pt-12"
       >
         <div
           id="backend-title-container"
@@ -77,7 +77,7 @@ function Skills() {
       </div>
       <div
         id="skills-native-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-5 md:mt-0"
+        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0"
       >
         <div
           id="native-title-container"
@@ -107,7 +107,7 @@ function Skills() {
       </div>
       <div
         id="skills-design-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-5 md:mt-0 pb-20 md:pb-0"
+        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0 pb-20 md:pb-0"
       >
         <div
           id="design-title-container"
