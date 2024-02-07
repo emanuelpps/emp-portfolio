@@ -9,9 +9,17 @@ function ProjectCard({ project }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y:50}}
-      whileInView={{ opacity: 1, y:0}}
-      exit={{opacity:0}}
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          stiffness: 50,
+          damping: 30,
+        },
+      }}
+      exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
       className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer window-outline mb-20 ${

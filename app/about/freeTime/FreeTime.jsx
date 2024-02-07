@@ -24,11 +24,10 @@ function FreeTime() {
       </div>
       <AnimatePresence>
         <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: 300 }}
-          animate={{
-            opacity: isInView ? 1 : 0,
-            x: isInView ? 0 : 300,
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
             transition: {
               type: "spring",
               stiffness: 50,
@@ -36,6 +35,7 @@ function FreeTime() {
             },
           }}
           exit={{ opacity: 0 }}
+          viewport={{ once: true }}
           id="free-time-text-container"
         >
           <h3 className="md:pt-10 md:pl-10 font-semibold text-md text-center md:text-start">

@@ -1,14 +1,28 @@
+'use client';
 import React from "react";
 import Image from "next/image";
 import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
 import { backendIcons } from "@/components/imagesContainer/backendIcons";
 import { nativeIcons } from "@/components/imagesContainer/nativeIcons";
 import { designIcons } from "@/components/imagesContainer/designIcons";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Skills() {
   console.log(frontendIcons);
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          stiffness: 50,
+          damping: 30,
+        },
+      }}
+      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
       id="skills-container"
       className="grid grid-cols-1 grid-rows-8 w-full md:w-[60rem] md:grid md:grid-cols-1 md:grid-rows-4 md:pt-40"
     >
@@ -135,7 +149,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

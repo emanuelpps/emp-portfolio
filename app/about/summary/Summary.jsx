@@ -21,9 +21,10 @@ function Summary() {
       </div>
       <AnimatePresence>
         <motion.div
-          initial={{ x: 800 }}
-          animate={{
-            x: 0,
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
             transition: {
               type: "spring",
               stiffness: 50,
@@ -31,9 +32,8 @@ function Summary() {
             },
           }}
           exit={{ opacity: 0 }}
+          viewport={{ once: true }}
           id="summary-text-container"
-          className=""
-          whileInView={{ opacity: 1 }}
         >
           <h3 className="font-semibold text-md md:pl-10 md:pt-10 text-center md:text-start">
             Summary

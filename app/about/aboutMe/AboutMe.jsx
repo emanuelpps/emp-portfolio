@@ -2,21 +2,17 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import aboutmeImage from "@/public/assets/aboutme-image.png";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 function AboutMe() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 pt-10 md:mt-20 w-full md:w-[60rem]">
       <AnimatePresence>
         <motion.div
-          ref={ref}
-          initial={{ opacity: 0, x: -300 }}
-          animate={{
-            opacity: isInView ? 1 : 0,
-            x: isInView ? 0 : -300,
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
             transition: {
               type: "spring",
               stiffness: 50,
@@ -24,6 +20,7 @@ function AboutMe() {
             },
           }}
           exit={{ opacity: 0 }}
+          viewport={{ once: true }}
           id="summary-text-container"
         >
           <h3 className="font-semibold text-md md:pl-10 md:pt-10 text-center md:text-start">
