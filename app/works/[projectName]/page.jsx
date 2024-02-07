@@ -50,34 +50,19 @@ function ProjectName({ params }) {
               </Link>
             </div>
             <div className="col-span-4 row-span-4 col-start-2 row-start-2">
-              <AnimatePresence>
-                <motion.div
-                  initial={{ x: 800 }}
-                  animate={{
-                    x: 0,
-                    transition: {
-                      type: "spring",
-                      stiffness: 50,
-                      damping: 30,
-                    },
-                  }}
-                  exit={{ opacity: 0 }}
-                  id="title-container"
-                  className="mb-10 mt-10"
+              <div id="title-container" className="mb-10 mt-10">
+                <h1 className="text-center text-[50px]  neon-text">
+                  {projectPage.name}
+                </h1>
+                <div
+                  id="h2-container"
+                  className="flex flex-row justify-center rounded-3xl"
                 >
-                  <h1 className="text-center text-[50px]  neon-text">
-                    {projectPage.name}
-                  </h1>
-                  <div
-                    id="h2-container"
-                    className="flex flex-row justify-center rounded-3xl"
-                  >
-                    <h2 className="text-center font-light">
-                      {projectPage.class}
-                    </h2>
-                  </div>
-                </motion.div>
-              </AnimatePresence>
+                  <h2 className="text-center font-light">
+                    {projectPage.class}
+                  </h2>
+                </div>
+              </div>
               <div>
                 <div
                   id="video-container"
@@ -171,138 +156,208 @@ function ProjectName({ params }) {
                 </Link>
               </div>
             </div>
-            <div className="md:pl-20 col-span-4 col-start-2 row-start-7 md:col-span-2 md:col-start-2 md:row-start-7 text-center md:text-start">
-              <div id="role-container">
-                <h4 className="font-semibold text-md">My Role</h4>
-                <h3 className="font-extralight text-[14px]">
-                  {projectPage.infoProject[0].myRole}
-                </h3>
-              </div>
-            </div>
-            <div className="mt-5 md:mt-0 md:pl-20 col-span-4 md:col-span-2 row-span-4 col-start-2 md:row-span-2 md:col-start-2 row-start-8  text-center md:text-start">
-              <div
-                id="team-container"
-                className="flex flex-col md:flex-none justify-center md:justify-start md:items-start"
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0, y: 250 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 30,
+                  },
+                }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
+                className="md:pl-20 col-span-4 col-start-2 row-start-7 md:col-span-2 md:col-start-2 md:row-start-7 text-center md:text-start"
               >
-                {projectPage.infoProject[0].team ? (
-                  <h4 className="font-semibold text-md">Team</h4>
-                ) : (
-                  <></>
-                )}
-                {projectPage.infoProject[0].team?.map((teamMate) => (
-                  <p className="font-thin text-[14px]">{teamMate}</p>
-                ))}
-              </div>
-            </div>
-            <div className="mt-5 md:mt-0 md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-7 col-span-4 row-span-3 col-start-2 row-start-9 mb-4 md:mb-20 justify-center place-items-center text-center md:text-start">
-              <div id="overview-container">
-                <h3 className="font-semibold text-md">Overview</h3>
-                <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
-                  {projectPage.infoProject[0].overview}
-                </p>
-              </div>
-            </div>
-            <div
-              id="highlights-container"
-              className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 window-outline md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
-            >
-              <FaRegLightbulb
-                size={30}
-                className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2 neon"
-              />
-              <h3 className="justify-center text-center w-full mb-10 dropShadow:glow text-md">
-                HIGHLIGHTS
-              </h3>
-              <p className="font-extralight justify-center text-center md:pl-20 md:pr-20 mb-10 text-[14px]">
-                {projectPage.infoProject[0].highlight}
-              </p>
-              <div className="relative mx-auto rounded-lg overflow-hidden">
-                {typeof projectPage.infoProject[0].images[0].highlight ===
-                  "object" &&
-                projectPage.infoProject[0].images[0].highlight !== null ? (
-                  <div>
-                    {Object.entries(
-                      projectPage.infoProject[0].images[0].highlight
-                    ).map(([key, value], index) =>
-                      value.endsWith(".png") ? (
-                        <Image
-                          key={index}
-                          src={value}
-                          alt={`${projectPage.name}_${key}`}
-                          width={800}
-                          height={800}
-                          className="mb-10 relative mx-auto rounded-lg overflow-hidden"
-                          onLoadingComplete={(image) =>
-                            image.classList.remove("opacity-0")
-                          }
-                          onLoadStart={loader}
-                        />
-                      ) : (
-                        <video
-                          key={index}
-                          autoPlay
-                          muted
-                          loop
-                          className="mb-10 relative mx-auto rounded-lg overflow-hidden"
-                          width={800}
-                          height={800}
-                        >
-                          <source src={value} />
-                        </video>
-                      )
-                    )}
-                  </div>
-                ) : projectPage.infoProject[0].images[0].highlight.endsWith(
-                    ".png"
-                  ) ? (
-                  <Image
-                    loader={loader}
-                    src={projectPage.infoProject[0].images[0].highlight}
-                    alt={projectPage.name}
-                    width={800}
-                    height={800}
-                    className="relative mx-auto rounded-lg overflow-hidden"
-                  />
-                ) : (
-                  <video
-                    autoPlay
-                    muted
-                    loop
-                    className="relative mx-auto rounded-lg overflow-hidden"
-                  >
-                    <source
-                      src={projectPage.infoProject[0].images[0].highlight}
-                    />
-                  </video>
-                )}
-              </div>
-            </div>
-            <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
-              <div id="gallery-container" className="object-center">
-                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow font-semibold text-md">
-                  Gallery
-                </h3>
+                <div id="role-container">
+                  <h4 className="font-semibold text-md">My Role</h4>
+                  <h3 className="font-extralight text-[14px]">
+                    {projectPage.infoProject[0].myRole}
+                  </h3>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 250 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 30,
+                  },
+                }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
+                className="mt-5 md:mt-0 md:pl-20 col-span-4 md:col-span-2 row-span-4 col-start-2 md:row-span-2 md:col-start-2 row-start-8  text-center md:text-start"
+              >
                 <div
-                  id="gallery-container"
-                  className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                  id="team-container"
+                  className="flex flex-col md:flex-none justify-center md:justify-start md:items-start"
                 >
-                  {Object.entries(
-                    projectPage.infoProject[0].images[0].gallery
-                  ).map(([key, image], index) => (
-                    <div key={index} className="flex flex-column">
-                      <Image
-                        loader={loader}
-                        width={500}
-                        height={100}
-                        className="h-auto w-full object-cover rounded-lg"
-                        src={image}
-                        alt={key}
-                      />
-                    </div>
+                  {projectPage.infoProject[0].team ? (
+                    <h4 className="font-semibold text-md">Team</h4>
+                  ) : (
+                    <></>
+                  )}
+                  {projectPage.infoProject[0].team?.map((teamMate) => (
+                    <p className="font-thin text-[14px]">{teamMate}</p>
                   ))}
                 </div>
-              </div>
-            </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 250 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 30,
+                  },
+                }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
+                className="mt-5 md:mt-0 md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-7 col-span-4 row-span-3 col-start-2 row-start-9 mb-4 md:mb-20 justify-center place-items-center text-center md:text-start"
+              >
+                <div id="overview-container">
+                  <h3 className="font-semibold text-md">Overview</h3>
+                  <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
+                    {projectPage.infoProject[0].overview}
+                  </p>
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 250 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 30,
+                  },
+                }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
+                id="highlights-container"
+                className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 window-outline md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
+              >
+                <FaRegLightbulb
+                  size={30}
+                  className="justify-center w-full mt-10 mb-2 neon-text stroke-white stroke-2 neon"
+                />
+                <h3 className="justify-center text-center w-full mb-10 dropShadow:glow text-md">
+                  HIGHLIGHTS
+                </h3>
+                <p className="font-extralight justify-center text-center md:pl-20 md:pr-20 mb-10 text-[14px]">
+                  {projectPage.infoProject[0].highlight}
+                </p>
+                <div className="relative mx-auto rounded-lg overflow-hidden">
+                  {typeof projectPage.infoProject[0].images[0].highlight ===
+                    "object" &&
+                  projectPage.infoProject[0].images[0].highlight !== null ? (
+                    <div>
+                      {Object.entries(
+                        projectPage.infoProject[0].images[0].highlight
+                      ).map(([key, value], index) =>
+                        value.endsWith(".png") ? (
+                          <Image
+                            key={index}
+                            src={value}
+                            alt={`${projectPage.name}_${key}`}
+                            width={800}
+                            height={800}
+                            className="mb-10 relative mx-auto rounded-lg overflow-hidden"
+                            onLoadingComplete={(image) =>
+                              image.classList.remove("opacity-0")
+                            }
+                            onLoadStart={loader}
+                          />
+                        ) : (
+                          <video
+                            key={index}
+                            autoPlay
+                            muted
+                            loop
+                            className="mb-10 relative mx-auto rounded-lg overflow-hidden"
+                            width={800}
+                            height={800}
+                          >
+                            <source src={value} />
+                          </video>
+                        )
+                      )}
+                    </div>
+                  ) : projectPage.infoProject[0].images[0].highlight.endsWith(
+                      ".png"
+                    ) ? (
+                    <Image
+                      loader={loader}
+                      src={projectPage.infoProject[0].images[0].highlight}
+                      alt={projectPage.name}
+                      width={800}
+                      height={800}
+                      className="relative mx-auto rounded-lg overflow-hidden"
+                    />
+                  ) : (
+                    <video
+                      autoPlay
+                      muted
+                      loop
+                      className="relative mx-auto rounded-lg overflow-hidden"
+                    >
+                      <source
+                        src={projectPage.infoProject[0].images[0].highlight}
+                      />
+                    </video>
+                  )}
+                </div>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 250 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  transition: {
+                    type: "spring",
+                    stiffness: 50,
+                    damping: 30,
+                  },
+                }}
+                exit={{ opacity: 0 }}
+                viewport={{ once: true }}
+                className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13"
+              >
+                <div id="gallery-container" className="object-center">
+                  <h3 className="justify-center text-center w-full mb-10 dropShadow:glow font-semibold text-md">
+                    Gallery
+                  </h3>
+                  <div
+                    id="gallery-container"
+                    className="grid grid-cols-1 md:grid-cols-2 gap-4"
+                  >
+                    {Object.entries(
+                      projectPage.infoProject[0].images[0].gallery
+                    ).map(([key, image], index) => (
+                      <div key={index} className="flex flex-column">
+                        <Image
+                          loader={loader}
+                          width={500}
+                          height={100}
+                          className="h-auto w-full object-cover rounded-lg"
+                          src={image}
+                          alt={key}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
             <div className="row-span-4 col-start-1 row-start-2"></div>
             <div className="row-span-4 col-start-3 row-start-8 justify-center"></div>
             <div className="col-start-5 row-start-5"></div>
