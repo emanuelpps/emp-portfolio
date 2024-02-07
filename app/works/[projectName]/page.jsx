@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import projects from "@/public/data/works.json";
 import Image from "next/image";
 import { VscGithub } from "react-icons/vsc";
@@ -9,12 +9,15 @@ import { FaRegLightbulb } from "react-icons/fa6";
 import "ldrs/tailChase";
 import Link from "next/link";
 import loader from "@/components/loader/loader";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
   const [projectPage, setProjectPage] = useState(null);
   const [isLoading, setLoading] = useState(true);
-  const [galleryLoading, setGalleryLoading] = useState(true);
+
+  const ref = useRef(null);
+  const isInView = useInView(ref);
 
   useEffect(() => {
     setDataProjects(projects);
@@ -47,19 +50,34 @@ function ProjectName({ params }) {
               </Link>
             </div>
             <div className="col-span-4 row-span-4 col-start-2 row-start-2">
-              <div id="title-container" className="mb-10 mt-10">
-                <h1 className="text-center text-[50px]  neon-text">
-                  {projectPage.name}
-                </h1>
-                <div
-                  id="h2-container"
-                  className="flex flex-row justify-center rounded-3xl"
+              <AnimatePresence>
+                <motion.div
+                  initial={{ x: 800 }}
+                  animate={{
+                    x: 0,
+                    transition: {
+                      type: "spring",
+                      stiffness: 50,
+                      damping: 30,
+                    },
+                  }}
+                  exit={{ opacity: 0 }}
+                  id="title-container"
+                  className="mb-10 mt-10"
                 >
-                  <h2 className="text-center font-light">
-                    {projectPage.class}
-                  </h2>
-                </div>
-              </div>
+                  <h1 className="text-center text-[50px]  neon-text">
+                    {projectPage.name}
+                  </h1>
+                  <div
+                    id="h2-container"
+                    className="flex flex-row justify-center rounded-3xl"
+                  >
+                    <h2 className="text-center font-light">
+                      {projectPage.class}
+                    </h2>
+                  </div>
+                </motion.div>
+              </AnimatePresence>
               <div>
                 <div
                   id="video-container"
