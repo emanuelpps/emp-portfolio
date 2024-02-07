@@ -108,7 +108,7 @@ function Contact() {
           </label>
           <input
             type="text"
-            name="fullName"
+            name="from_name"
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
             value={fullName}
             onChange={(e) => {
@@ -121,7 +121,7 @@ function Contact() {
           </label>
           <input
             type="email"
-            name="email"
+            name="reply_to"
             className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
             value={email}
             onChange={(e) => {
