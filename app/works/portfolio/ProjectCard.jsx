@@ -51,14 +51,18 @@ function ProjectCard({ project }) {
             {project.description}
           </p>
         </div>
-        <div id="img-container" className="flex justify-center mt-5">
+        <div
+          id="img-container"
+          className="flex flex-column overflow-hidden justify-center mt-5 "
+        >
           <Image
             src={project.img}
             alt={project.name}
+            loading="lazy"
             width="0"
             height="0"
             sizes="100vw"
-            className={`w-full h-auto rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
+            className={`w-auto h-full object-contain rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">
