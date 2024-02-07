@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
@@ -24,18 +24,18 @@ function Skills() {
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id="skills-container"
-      className="grid grid-cols-1 grid-rows-8 w-full md:w-[60rem] md:grid md:grid-cols-1 md:grid-rows-4 md:pt-40"
+      className="grid grid-cols-1 grid-rows-8 w-full md:w-[62rem] md:grid-rows-5 md:pt-20"
     >
+      <div className="flex justify-center md:col-start-1 md:col-span-1 md:justify-start md:items-end mb-10 md:mb-10 md:ml-10">
+        <h1>Skills</h1>
+      </div>
       <div
         id="skills-frontend-container"
-        className="flex flex-col md:grid md:grid-cols-2"
+        className="flex flex-col md:grid md:grid-cols-2 mb-14 md:mb-5"
       >
-        <div className="flex justify-center md:col-start-1 md:col-span-4 md:justify-start mt-20 md:mt-10 mb-10">
-          <h1>Skills</h1>
-        </div>
         <div
           id="frontend-title-container"
-          className="flex flex-col justify-center items-center pb-5 mb-8 md:mb-0 md:m-12"
+          className="flex flex-col justify-center items-center"
         >
           <h3 className="text-center text-[14px] font-light">Frontend</h3>
         </div>
@@ -61,13 +61,13 @@ function Skills() {
       </div>
       <div
         id="skills-backend-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0 md:pt-12"
+        className="flex flex-col md:grid md:grid-cols-2 mb-14 md:mb-0"
       >
         <div
           id="backend-title-container"
-          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
+          className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-extralight">Backend</h3>
+          <h3 className="text-center text-[14px] font-light">Backend</h3>
         </div>
         <div
           id="backend-icons-container"
@@ -91,17 +91,17 @@ function Skills() {
       </div>
       <div
         id="skills-native-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0"
+        className="flex flex-col md:grid md:grid-cols-2 mb-14 md:mb-0"
       >
         <div
           id="native-title-container"
-          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
+          className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-extralight">Mobile</h3>
+          <h3 className="text-center text-[14px] font-light">Mobile</h3>
         </div>
         <div
           id="native-icons-container"
-          className="flex flex-wrap  gap-5 justify-center md:justify-normal align-middle mb-8 md:mb-0"
+          className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {nativeIcons.map((image) => (
             <div className="flex flex-col justify-center items-center">
@@ -121,13 +121,13 @@ function Skills() {
       </div>
       <div
         id="skills-design-container"
-        className="flex flex-col md:grid md:grid-cols-2 mt-10 md:mt-0 pb-20 md:pb-0"
+        className="flex flex-col md:grid md:grid-cols-2"
       >
         <div
           id="design-title-container"
-          className="flex flex-col justify-center items-center md:m-12 mb-8 md:mb-0"
+          className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-extralight">Design</h3>
+          <h3 className="text-center text-[14px] font-light">Design</h3>
         </div>
         <div
           id="design-icons-container"

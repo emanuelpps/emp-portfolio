@@ -9,7 +9,7 @@ function FreeTime() {
   const isInView = useInView(ref);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 pt-10 md:pt-40 w-full md:w-[62rem]">
+    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-20 md:mt-40 w-full md:w-[62rem]">
       <div
         id="free-time-image-container"
         className="flex flex-col justify-center items-center "

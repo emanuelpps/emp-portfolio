@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function AboutMe() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 pt-10 md:mt-20 w-full md:w-[60rem]">
+    <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-20 w-full md:w-[60rem]">
       <AnimatePresence>
         <motion.div
           initial={{ opacity: 0, y: 50 }}

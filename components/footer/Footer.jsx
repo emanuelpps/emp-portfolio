@@ -41,11 +41,11 @@ function Footer() {
                 <li className="text-gray-500 font-semibold text-sm mb-5">
                   MAIN
                 </li>
-                <Link href={"/work"}>
-                  <li className="mb-5 hover:font-semibold">Work</li>
+                <Link href={"/work"} className="">
+                  <li className="mb-5 hover:font-semibold w-12">Work</li>
                 </Link>
                 <Link href={"/info"}>
-                  <li className="mb-5 hover:font-semibold">Info</li>
+                  <li className="mb-5 hover:font-semibold w-12">Info</li>
                 </Link>
               </ul>
             </div>
@@ -58,14 +58,14 @@ function Footer() {
                   href={"https://www.linkedin.com/in/emanuel-ps"}
                   target="_blank"
                 >
-                  <li className="mb-5 hover:font-semibold">Linkedin</li>
+                  <li className="mb-5 hover:font-semibold w-12">Linkedin</li>
                 </Link>
                 <Link
                   href={
                     "https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
                   }
                 >
-                  <li className="mb-5 hover:font-semibold">Resume</li>
+                  <li className="mb-5 hover:font-semibold w-12">Resume</li>
                 </Link>
               </ul>
             </div>
