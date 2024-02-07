@@ -13,10 +13,10 @@ function AboutMe() {
       <AnimatePresence>
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, x: -600 }}
+          initial={{ opacity: 0, x: -300 }}
           animate={{
             opacity: isInView ? 1 : 0,
-            x: isInView ? 0 : -600,
+            x: isInView ? 0 : -300,
             transition: {
               type: "spring",
               stiffness: 50,

@@ -117,17 +117,17 @@ function ProjectName({ params }) {
                 <h3 className="text-lg mb-4 font-semibold text-md text-white">
                   Contents
                 </h3>
-                <Link href={"#overview-container"}>
+                <Link href="#overview-container" scroll={true}>
                   <li className="font-light text-sm text-gray-400 hover:text-white">
                     Overview
                   </li>
                 </Link>
-                <Link href={"#highlights-container"}>
+                <Link href="#highlights-container" scroll={true}>
                   <li className="font-light text-sm text-gray-400 hover:text-white">
                     Highlights
                   </li>
                 </Link>
-                <Link href={"#review-container"}>
+                <Link href="#gallery-container" scroll={true}>
                   <li className="font-light text-sm text-gray-400 hover:text-white">
                     Gallery
                   </li>
@@ -260,7 +260,7 @@ function ProjectName({ params }) {
               </div>
             </div>
             <div className="flex justify-center col-span-4 row-span-4 col-start-2 row-start-13">
-              <div id="review-container object-center">
+              <div id="gallery-container" className="object-center">
                 <h3 className="justify-center text-center w-full mb-10 dropShadow:glow font-semibold text-md">
                   Gallery
                 </h3>

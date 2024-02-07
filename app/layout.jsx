@@ -7,6 +7,7 @@ export const metadata = {
   title: "Emanuel Pagés | Frontend Developer",
   description:
     "I'm passionate about programming. I'm always seeking opportunities to enhance my skills and knowledge.",
+    lang: "en"
 };
 const poppins = Inter({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ const poppins = Inter({
 
 export default async function RootLayout({ children }) {
   return (
-    <html lang="en" className={poppins.className}>
+    <html lang="en" className={`${poppins.className} scroll-smooth`}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
