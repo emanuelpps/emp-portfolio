@@ -37,7 +37,7 @@ function Skills() {
           id="frontend-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light">Frontend</h3>
+          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">Frontend</h3>
         </div>
         <div
           id="frontend-icons-container"
@@ -67,7 +67,7 @@ function Skills() {
           id="backend-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light">Backend</h3>
+          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">Backend</h3>
         </div>
         <div
           id="backend-icons-container"
@@ -97,7 +97,7 @@ function Skills() {
           id="native-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light">Mobile</h3>
+          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">Mobile</h3>
         </div>
         <div
           id="native-icons-container"
@@ -127,7 +127,7 @@ function Skills() {
           id="design-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light">Design</h3>
+          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">Design</h3>
         </div>
         <div
           id="design-icons-container"
