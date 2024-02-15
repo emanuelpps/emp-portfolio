@@ -49,24 +49,26 @@ export default function NavBar() {
   return (
     <div className="relative z-50">
       <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-5 fixed top-0 justify-center items-center w-screen">
-        <div
-          id="LogoContainer"
-          className="flex justify-center items-center pr-4 md:pr-48"
-        >
-          <Image
-            src={PortfolioLogo}
-            alt="Emanuel Pagés Front End Developer Logo"
-            className="rounded-lg bg-black hidden md:flex md:w-[45px]"
-          ></Image>
-          <div id="titleLogo">
-            <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
-              Emanuel Pagés
-            </h1>
-            <h3 className="text-[0.5rem] md:text-xs font-bold  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 text-gray-500">
-              Frontend Developer
-            </h3>
+        <Link href={"/"}>
+          <div
+            id="LogoContainer"
+            className="flex justify-center items-center pr-4 md:pr-48"
+          >
+            <Image
+              src={PortfolioLogo}
+              alt="Emanuel Pagés Front End Developer Logo"
+              className="rounded-lg bg-black hidden md:flex md:w-[45px]"
+            ></Image>
+            <div id="titleLogo">
+              <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
+                Emanuel Pagés
+              </h1>
+              <h3 className="text-[0.5rem] md:text-xs font-bold  bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 text-gray-500">
+                Frontend Developer
+              </h3>
+            </div>
           </div>
-        </div>
+        </Link>
         <div
           id="ButtonContainer"
           className="flex justify-center items-center md:mr-5"

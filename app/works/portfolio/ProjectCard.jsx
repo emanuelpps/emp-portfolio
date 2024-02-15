@@ -19,6 +19,10 @@ function ProjectCard({ project }) {
           damping: 30,
         },
       }}
+      whileHover={{ scale: 1.02}}
+      whileTap={{
+        scale: 0.8
+      }}
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
