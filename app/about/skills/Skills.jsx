@@ -8,7 +8,6 @@ import { designIcons } from "@/components/imagesContainer/designIcons";
 import { AnimatePresence, motion } from "framer-motion";
 
 function Skills() {
-  console.log(frontendIcons);
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}
@@ -37,21 +36,20 @@ function Skills() {
           id="frontend-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">Frontend</h3>
+          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">
+            Frontend
+          </h3>
         </div>
         <div
           id="frontend-icons-container"
           className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {frontendIcons.map((image) => (
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                key={image.id}
-                src={image.path}
-                alt={image.name}
-                width={46}
-                height={46}
-              />
+            <div
+              key={image.id}
+              className="flex flex-col justify-center items-center"
+            >
+              <Image src={image.path} alt={image.name} width={46} height={46} />
               <h4 className="text-xs text-center mt-2 font-extralight">
                 {image.name}
               </h4>
@@ -67,21 +65,20 @@ function Skills() {
           id="backend-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">Backend</h3>
+          <h3 className="text-center text-[14px] font-light mb-5 md:mb-0">
+            Backend
+          </h3>
         </div>
         <div
           id="backend-icons-container"
           className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {backendIcons.map((image) => (
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                key={image.id}
-                src={image.path}
-                alt={image.name}
-                width={36}
-                height={36}
-              />
+            <div
+              key={image.id}
+              className="flex flex-col justify-center items-center"
+            >
+              <Image src={image.path} alt={image.name} width={36} height={36} />
               <h4 className="text-xs text-center mt-2 font-extralight">
                 {image.name}
               </h4>
@@ -97,21 +94,20 @@ function Skills() {
           id="native-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">Mobile</h3>
+          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">
+            Mobile
+          </h3>
         </div>
         <div
           id="native-icons-container"
           className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {nativeIcons.map((image) => (
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                key={image.id}
-                src={image.path}
-                alt={image.name}
-                width={36}
-                height={36}
-              />
+            <div
+              key={image.id}
+              className="flex flex-col justify-center items-center"
+            >
+              <Image src={image.path} alt={image.name} width={36} height={36} />
               <h4 className="text-xs text-center mt-2 font-extralight">
                 {image.name}
               </h4>
@@ -127,21 +123,20 @@ function Skills() {
           id="design-title-container"
           className="flex flex-col justify-center items-center"
         >
-          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">Design</h3>
+          <h3 className="text-center text-[14px] font-light  mb-5 md:mb-0">
+            Design
+          </h3>
         </div>
         <div
           id="design-icons-container"
           className="flex flex-wrap gap-5 justify-center md:justify-normal align-middle"
         >
           {designIcons.map((image) => (
-            <div className="flex flex-col justify-center items-center">
-              <Image
-                key={image.id}
-                src={image.path}
-                alt={image.name}
-                width={46}
-                height={46}
-              />
+            <div
+              key={image.id}
+              className="flex flex-col justify-center items-center"
+            >
+              <Image src={image.path} alt={image.name} width={46} height={46} />
               <h4 className="text-xs text-center mt-2 font-extralight">
                 {image.name}
               </h4>

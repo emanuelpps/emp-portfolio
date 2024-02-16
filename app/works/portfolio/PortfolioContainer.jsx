@@ -11,7 +11,6 @@ function PortfolioContainer() {
     setDataProjects(projects);
   }, []);
 
-  console.log(dataProjects);
 
   return (
     <div className="md:mt-44 w-screen p-6 md:p-0 md:w-[60rem] h-[auto] md:h-auto">

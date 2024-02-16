@@ -34,7 +34,6 @@ function ProjectName({ params }) {
     setLoading(false);
   };
 
-  console.log(projectPage);
 
   return (
     <div>

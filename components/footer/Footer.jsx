@@ -7,7 +7,7 @@ import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
 function Footer() {
   return (
     <div id="footer-container" className="w-full mt-20">
-      <hr class="border-t-1 border-gray-800 border-gray my-8" />
+      <hr className="border-t-1 border-gray-800 border-gray my-8" />
       <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-4 mt-20">
         <div id="footer-logo-container">
           <div className="w-full flex items-center justify-center flex-row">

@@ -31,18 +31,15 @@ function Contact() {
       !fullName ||
       !email ||
       !subject ||
-      !message /*||
-      specialChars.test(email)*/
+      !message
     ) {
       setFormErrors(true);
       setErrorManagement(errorManager.formError);
       setTimeout(() => {
         setFormErrors(false);
       }, 3000);
-      //manejar error
     } else {
       setFormErrors(false);
-      console.log("todo ok");
       sendEmail();
       setButtonText("Sending");
       //enviar mail
@@ -50,7 +47,6 @@ function Contact() {
   };
 
   const sendEmail = () => {
-    console.log();
     emailjs
       .sendForm(
         process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID,
@@ -60,12 +56,6 @@ function Contact() {
       )
       .then(
         (response) => {
-          console.log(
-            "response:",
-            response.status,
-            "description:",
-            response.text
-          );
           setErrorManagement(errorManager.formDeliverOk);
           setEmail("");
           setFullName("");
@@ -142,7 +132,7 @@ function Contact() {
             }}
           />
 
-          <label for="message" class="mt-4 font-extralight text-sm">
+          <label for="message" className="mt-4 font-extralight text-sm">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea

@@ -6,7 +6,7 @@ function Contact() {
   return (
     <Link href="#contact-container" scroll={true}>
       <button className="cta">
-        <span class="hover-underline-animation tracking-wide">
+        <span className="hover-underline-animation tracking-wide">
           Contact
         </span>
       </button>

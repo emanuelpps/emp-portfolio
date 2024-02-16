@@ -6,7 +6,7 @@ function MyWork() {
   return (
     <Link href="#id-1" scroll={true}>
       <button className="cta">
-        <span class="hover-underline-animation tracking-wide"> My Work</span>
+        <span className="hover-underline-animation tracking-wide"> My Work</span>
       </button>
     </Link>
   );
