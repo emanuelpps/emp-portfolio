@@ -106,7 +106,7 @@ function Footer() {
         >
           <div className="w-full flex flex-col items-center justify-center text-center">
             <h3 className="text-sm md:text-base">© 2024 Emanuel Pagés.</h3>
-            <h4 className="text-[10px]">Version 1.0.0</h4>
+            <h4 className="text-[10px]">v{process.env.PORTFOLIO_VERSION}</h4>
           </div>
         </div>
       </div>
