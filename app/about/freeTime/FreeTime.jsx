@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import freeTimeImage from "@/public/assets/free-time-image.png";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 
 function FreeTime() {
@@ -16,9 +15,11 @@ function FreeTime() {
       >
         <div className="window-outline">
           <Image
-            src={freeTimeImage}
+            src="https://res.cloudinary.com/dkgoszhfr/image/upload/v1709861417/hosting/portfolio-about-images/ol8imypraurw2m0hkxyr.png"
             alt="computer Image"
             className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-auto md:w-[400px]"
+            width={250}
+            height={400}
           />
         </div>
       </div>
@@ -44,7 +45,8 @@ function FreeTime() {
           <p className="pt-10 pl-2 pr-2 md:pl-10 md:pr-10 pb-10 text-[14px] font-thin tracking-wide @apply whitespace-pre-line text-center md:text-start">
             Probably developing new projects to enhance my skills or perfecting
             my portfolio in some ways. Besides that, I spend my time hiking or
-            reading books about history. Another thing I love is playing various game simulators, whether it's planes, trucks, cars, or ships.
+            reading books about history. Another thing I love is playing various
+            game simulators, whether it's planes, trucks, cars, or ships.
           </p>
         </motion.div>
       </AnimatePresence>

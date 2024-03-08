@@ -20,6 +20,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "duodigitalmarketing.000webhostapp.com",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
     loader: "custom",
     loaderFile: './components/loader/loader.js',

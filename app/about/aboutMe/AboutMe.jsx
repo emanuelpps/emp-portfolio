@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
-import aboutmeImage from "@/public/assets/aboutme-image.png";
 import { AnimatePresence, motion } from "framer-motion";
 
 function AboutMe() {
@@ -64,9 +63,11 @@ function AboutMe() {
       >
         <div className="window-outline">
           <Image
-            src={aboutmeImage}
+            src="https://res.cloudinary.com/dkgoszhfr/image/upload/v1709861423/hosting/portfolio-about-images/gixv7hil8tsjmvkszteu.png"
             alt="computer Image"
             className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-auto md:w-[400px]"
+            width={250}
+            height={400}
           />
         </div>
       </div>

@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import summaryImage from "@/public/assets/summary-image.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 function Summary() {
@@ -13,9 +12,11 @@ function Summary() {
       >
         <div className="window-outline md:flex">
           <Image
-            src={summaryImage}
+            src="https://res.cloudinary.com/dkgoszhfr/image/upload/v1709861429/hosting/portfolio-about-images/lw106x9gbqbdummexenv.png"
             alt="computer Image"
             className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-auto md:w-[400px]"
+            width={250}
+            height={400}
           />
         </div>
       </div>
