@@ -10,11 +10,14 @@ import "ldrs/tailChase";
 import Link from "next/link";
 import loader from "@/components/loader/loader";
 import { AnimatePresence, motion, useInView } from "framer-motion";
+import { SlClose } from "react-icons/sl";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
   const [projectPage, setProjectPage] = useState(null);
   const [isLoading, setLoading] = useState(true);
+  const [isViewing, setIsViewing] = useState(false);
+  const [selectedPhoto, setSelectedPhoto] = useState({});
 
   const ref = useRef(null);
   const isInView = useInView(ref);
@@ -34,9 +37,15 @@ function ProjectName({ params }) {
     setLoading(false);
   };
 
+  const handleImageSelected = (photo) => {
+    setSelectedPhoto(photo);
+    console.log("photo", photo);
+    setIsViewing(true);
+    console.log("isViewing", isViewing);
+  };
 
   return (
-    <div>
+    <div /*className= {isViewing ? "blur" : "unblur"} */>
       {projectPage ? (
         <>
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
@@ -295,6 +304,10 @@ function ProjectName({ params }) {
                       ".png"
                     ) ? (
                     <Image
+                      onLoadingComplete={(image) =>
+                        image.classList.remove("opacity-0")
+                      }
+                      onLoadStart={loader}
                       loader={loader}
                       src={projectPage.infoProject[0].images[0].highlight}
                       alt={projectPage.name}
@@ -339,15 +352,38 @@ function ProjectName({ params }) {
                     id="gallery-container"
                     className="grid grid-cols-1 md:grid-cols-2 gap-4"
                   >
+                    {isViewing ? (
+                      <div className="md:absolute md:flex md:items-center md:justify-center md:w-[1020px] md:h-[1000px] md:backdrop-blur-[2px] md:backdrop-saturate-[180%] md:bg-[rgba(17,25,40,0)]">
+                        <div
+                          className="md:absolute md:top-[25%] md:right-12 md:cursor-pointer"
+                          onClick={() => {
+                            setIsViewing(false), setSelectedPhoto("");
+                          }}
+                        >
+                          <div className="md:h-6">
+                            <SlClose className="hidden md:flex md:w-[fit-content] md:h-full md:bg-black md:rounded-full" />
+                          </div>
+                        </div>
+                        <Image
+                          className="md:object-cover md:rounded-lg miw-[950px] min- max-w-[950px]"
+                          src={selectedPhoto}
+                          width={950}
+                          height={800}
+                        />
+                      </div>
+                    ) : (
+                      ""
+                    )}
                     {Object.entries(
                       projectPage.infoProject[0].images[0].gallery
                     ).map(([key, image], index) => (
                       <div key={index} className="flex flex-column">
                         <Image
+                          onClick={() => handleImageSelected(image)}
                           loader={loader}
                           width={500}
                           height={100}
-                          className="h-auto w-full object-cover rounded-lg"
+                          className="h-auto w-full object-cover rounded-lg cursor-pointer"
                           src={image}
                           alt={key}
                         />
