@@ -355,17 +355,17 @@ function ProjectName({ params }) {
                     {isViewing ? (
                       <div className="md:absolute md:flex md:items-center md:justify-center md:w-[1020px] md:h-[1000px] md:backdrop-blur-[2px] md:backdrop-saturate-[180%] md:bg-[rgba(17,25,40,0)]">
                         <div
-                          className="md:absolute md:top-[25%] md:right-12 md:cursor-pointer"
+                          className="hidden md:flex md:absolute md:top-[25%] md:right-12 md:cursor-pointer"
                           onClick={() => {
                             setIsViewing(false), setSelectedPhoto("");
                           }}
                         >
                           <div className="md:h-6">
-                            <SlClose className="hidden md:flex md:w-[fit-content] md:h-full md:bg-black md:rounded-full" />
+                            <SlClose className="md:w-[fit-content] md:h-full md:bg-black md:rounded-full" />
                           </div>
                         </div>
                         <Image
-                          className="md:object-cover md:rounded-lg miw-[950px] min- max-w-[950px]"
+                          className="hidden md:flex md:object-cover md:rounded-lg md:min-w-[950px] md:max-w-[950px]"
                           src={selectedPhoto}
                           width={950}
                           height={800}
