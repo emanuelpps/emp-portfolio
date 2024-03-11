@@ -56,7 +56,7 @@
       {
         "overview": "HOMEFIX is a space for inventory management of tools and constructions products that enables you to organize and keep a track on flow of the products.Such a lean system helps to identify the most profitable products without any additional losses and reduce the costs of extra warehousing, thus speeding up operation and making changes in the decision making.",
         "myRole": "Frontend Developer",
-        "highlight": "HomeFix is more than just provide you with an inventory tracking system through its analytics capabilities, which is in fact a key ingredient to the understanding of the inventory behavior.It is very simple, you can immediately distinguish those products which are selling well on a daily and monthly sales basis.With this information you can make right decisions to run your business successfully.",
+        "highlight": "HomeFix is more than just provide you with an inventory tracking system, it also provides you with analytics capabilities, which is in fact a key ingredient to the understanding of the inventory behavior.It is very simple, you can immediately distinguish those products which are selling well on a daily and monthly sales basis.With this information you can make right decisions to run your business successfully.",
         "team": [
           "Marco Perez Donoso, Frontend",
           "Martin Romero, Backend",
@@ -99,9 +99,9 @@
     "linkName": "ep-music-player",
     "infoProject": [
       {
-        "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can enjoy a predefined playlist or create your personalized list. Take control of playback, skip to the next track, or go back. Additionally, easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just as effortlessly.",
+        "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can access to a predefined playlist or create your personalized playlist. Take control of playback, skip to the next track, or go back. Additionally, you can easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just with the same ease.",
         "myRole": "Frontend Developer and UI Designer",
-        "highlight": "Enjoy music easily with a simple design. Create your playlists or listen to a default one. Skip, go back, and control playback smoothly. Add or remove songs from your playlist with just a click.",
+        "highlight": "Enjoy music easily with a simple design. Create your own playlists or listen to a default one. Skip, go back, and control playback with ease. Add or remove songs from your playlist with just a click.",
         "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597401/hosting/ep-player/video/rqxdjfx2imqmaggyluqv.mp4",
         "images": [
           {
@@ -134,7 +134,7 @@
     "linkName": "ep-weather",
     "infoProject": [
       {
-        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter the app, it automatically uses your location to show you the current weather conditions where you are. It also gives a forecast every three hours and for the next five days. If you want to check the weather in another place, my app has a handy search tool that lets you find out the weather conditions of any location you want.",
+        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter to the app, it will automatically determine where you are, to show you the weather conditions at your location. It also provides the forecast for the next three hours and for the next five days. If you want to check the weather in another place, this app has a friendly search tool that lets you find out the weather conditions of any location you want.",
         "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need. Additionally, the application features a dynamic background that adjusts according to the local weather conditions. For instance, if it's cloudy, raining, stormy, or snowing, the background of the app reflects these climatic conditions.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597401/hosting/ep-weather/video/jh0tsuk9ae4ybmzyuiyr.mp4",
@@ -170,7 +170,7 @@
     "linkName": "don-remolo",
     "infoProject": [
       {
-        "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.The design features a simple and highly intuitive user interface. Upon entering, you can view the menu, add your chosen items to the cart. In the cart, you have the option to modify quantities, remove each item, or clear the entire cart. Finally, indicate the payment method, your address, and the order will be submitted. Don Remolo Pizza is a project idea by ID for Ideas.",
+        "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.This project work was designed to be simple, and at the same time have very intuitive user interface. On entering, you can place an order by referring to the menu and then adding the chosen items on the cart. Inside the cart, you have the feature enabling you to vary quantities, drop any item, or empty it completely. To conclude, state in your option, payment method, and your address to submit your order.  Don Remolo Pizza is a project idea by ID for Ideas.",
         "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597399/hosting/don-remolo/video/pkjssx23gowqewosqsek.mp4",
@@ -208,7 +208,7 @@
     "linkName": "ep-converter",
     "infoProject": [
       {
-        "overview": "EP Currency Converter is an application designed to help you easily convert any amount into various currencies in real-time. With a simple and quick currency conversion process, this application provides a user-friendly experience for individuals seeking to check exchange rates on the go",
+        "overview": "EP Currency Converter is the application that makes it possible for you to quickly transform any currency into different currency units in just a few clicks.  With a simple and quick currency conversion process, this application provides a user-friendly experience for anyone seeking to check exchange rates.",
         "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
         "myRole": "Frontend Developer and UI Designer",
         "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597395/hosting/ep-converter/video/vpi4ozij02lmakrpfoze.mp4",
@@ -231,7 +231,7 @@
     "name": "To Do List",
     "class": "Tasks List",
     "type": "Web App",
-    "description": "A straightforward to-do list application for efficient task management, making it simple to organize and complete your daily activities.",
+    "description": "A simple and intuitive to-do list application for efficient task management, making it ease to organize and complete your daily activities.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/zeuevnzfewyh4golv6v5",
     "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap",
     "code": "https://github.com/emanuelpps/todoListEP",
