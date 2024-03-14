@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import arrowRight from "@/public/assets/arrowRight.svg";
 import { motion } from "framer-motion";
+import noCountryLogo from "@/public/assets/images/noCountryLogo.svg";
 
 function ProjectCard({ project }) {
   const [hoverState, setHoverState] = useState(false);
@@ -19,9 +20,9 @@ function ProjectCard({ project }) {
           damping: 30,
         },
       }}
-      whileHover={{ scale: 1.02}}
+      whileHover={{ scale: 1.02 }}
       whileTap={{
-        scale: 0.8
+        scale: 0.8,
       }}
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
@@ -36,16 +37,17 @@ function ProjectCard({ project }) {
     >
       <div className="p-2 md:p-10">
         <div id="title-container" className="flex justify-between">
-          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl">
+          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl md:gap-4">
             {project.name}
           </h1>
-          <Image
-            src={arrowRight}
-            alt="arrow"
-            width={30}
-            height={30}
-            className="hidden md:flex"
-          />
+          {project.noCountry ? (
+            <div>
+              <h3 className="md:text-sm text-[0.5rem]">Developed at</h3>
+              <Image src={noCountryLogo} width={130} height={130} />
+            </div>
+          ) : (
+            ""
+          )}
         </div>
         <div id="description-container" className="mt-5">
           <h2 className="text-sm md:text-base font-extralight">
