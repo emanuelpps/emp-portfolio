@@ -45,7 +45,7 @@ function ProjectName({ params }) {
   };
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {projectPage ? (
         <>
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
