@@ -1,0 +1,33 @@
+[
+  {
+    "id": 6,
+    "name": "EP Converter",
+    "class": "Currency Converter",
+    "type": "Web App",
+    "description": "Currency converter application, helping you quickly convert currencies for smooth financial transactions.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/ju1lhvihjzyf8h54afrc",
+    "lenguage": "SASS - HTML 5 - React Js - Bootstrap - Fetch API",
+    "code": "https://github.com/emanuelpps/ep-currency-converter",
+    "demo": "https://emanuelpps.github.io/ep-currency-converter/",
+    "linkName": "ep-converter",
+    "infoProject": [
+      {
+        "overview": "EP Currency Converter is the application that makes it possible for you to quickly transform any currency into different currency units in just a few clicks.  With a simple and quick currency conversion process, this application provides a user-friendly experience for anyone seeking to check exchange rates.",
+        "highlight": "stands out with its user-friendly features and a visually appealing interface. Developed using HTML5, ReactJS, Bootstrap, and SASS, the application ensures an intuitive experience for users. The integration with the Currency Data API allows for up-to-date and accurate information on exchange rates, ensuring that users can rely on the latest currency conversion data. Whether you're planning a trip or need to make international transactions, the Currency Converter provides a seamless and efficient solution for all your currency conversion needs.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597395/hosting/ep-converter/video/vpi4ozij02lmakrpfoze.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597391/hosting/ep-converter/cezwwezwfpwqgjpdsdzc.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597391/hosting/ep-converter/kil4xcqva2ukdktrltzi.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597392/hosting/ep-converter/oesykwtgqcizq9w2i99o.png"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

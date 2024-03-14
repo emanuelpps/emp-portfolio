@@ -45,7 +45,7 @@ function ProjectName({ params }) {
   };
 
   return (
-    <div /*className= {isViewing ? "blur" : "unblur"} */>
+    <div>
       {projectPage ? (
         <>
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
@@ -103,7 +103,7 @@ function ProjectName({ params }) {
                         loop
                         aspect-auto
                         rounded-lg
-                        className={`relative mx-auto rounded-lg overflow-hidden ${
+                        className={`relative mx-auto overflow-hidden ${
                           isLoading ? "hidden" : ""
                         }`}
                         alt="Project Image"
