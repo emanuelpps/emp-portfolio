@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Contact() {
   return (
-    <Link href="#contact-container" scroll={true}>
+    <Link href="/#contact-container" scroll={true}>
       <button className="cta">
         <span className="hover-underline-animation tracking-wide">
           Contact

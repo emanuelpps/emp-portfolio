@@ -4,7 +4,7 @@ import "../defaultStyles.css";
 
 function MyWork() {
   return (
-    <Link href="#id-1" scroll={true}>
+    <Link href="/#id-1" scroll={true}>
       <button className="cta">
         <span className="hover-underline-animation tracking-wide"> My Work</span>
       </button>
