@@ -26,19 +26,17 @@ function AboutMe() {
             About Me
           </h3>
           <p className="pt-10 pl-2 pr-2  text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 text-center md:text-start">
-            A few years ago, I began working in the culinary industry (now a
-            meditative hobby), before venturing into the realm of Digital
-            Marketing. While working in digital marketing, I got introduced to
-            HTML, CSS, and JavaScript. Since then, I have been meaning to learn
-            more about web development.
+            A few years ago, I started working in Digital Marketing. During my
+            time in digital marketing, I was introduced to HTML, CSS, and
+            JavaScript. Since then, I have been meaning to learn more about web
+            development.
           </p>
           <br />
           <p className="text-[14px] pl-2 pr-2 font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 text-center md:text-start">
-            I spent most of my life in Ushuaia (Tierra del Fuego), then several
-            years in Capital Federal (Buenos Aires), and finally, I rooted
-            myself in the city of General Roca (Río Negro). Here, I started
-            teaching flight lessons as a Flight Instructor. During the COVID-19
-            pandemic, I took the opportunity to explore programming on my own.
+            I spent many years in Buenos Aires, Capital Federal, and eventually
+            settled in General Roca, Río Negro. There, I began teaching flight
+            lessons as a Flight Instructor. During the COVID-19 pandemic, I took
+            the opportunity to explore programming on my own.
           </p>
           <br />
           <p className="text-[14px] pl-2 pr-2 font-thin tracking-wide @apply whitespace-pre-line md:pr-10 md:pl-10 pb-10 text-center md:text-start">
