@@ -158,7 +158,7 @@ function ProjectName({ params }) {
                 </Link>
                 <Link href={projectPage.code} target="_blank">
                   <button className="m-10 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
-                    <VscGithub/>
+                    <VscGithub />
                     <p>Repository</p>
                   </button>
                 </Link>
@@ -236,6 +236,12 @@ function ProjectName({ params }) {
                   <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
                     {projectPage.infoProject[0].overview}
                   </p>
+                </div>
+                <div id="technologies-container" className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-5">
+                  <h4 className="font-semibold text-md">Technologies used</h4>
+                  <h3 className="font-extralight text-[14px]">
+                    {projectPage.lenguage}
+                  </h3>
                 </div>
               </motion.div>
               <motion.div
