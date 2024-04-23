@@ -1,5 +1,12 @@
 
 
+## [1.4.1](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.0...v1.4.1) (2024-4-23)
+
+
+### Bug Fixes
+
+* deleted pointer in experience section ([3261a06](https://github.com/emanuelpps/emp-portfolio/commit/3261a06f266af150f99477a0333f3cf222844151))
+
 ## [1.4.0](https://github.com/emanuelpps/emp-portfolio/compare/v1.3.11...v1.4.0) (2024-4-23)
 
 
