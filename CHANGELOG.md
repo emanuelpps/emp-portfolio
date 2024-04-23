@@ -1,5 +1,12 @@
 
 
+## [1.4.2](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.1...v1.4.2) (2024-4-23)
+
+
+### Bug Fixes
+
+* text colors in dark mode ([079615a](https://github.com/emanuelpps/emp-portfolio/commit/079615ab30795bbbc3aa55111ae4c390eddf40f3))
+
 ## [1.4.1](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.0...v1.4.1) (2024-4-23)
 
 
