@@ -32,13 +32,13 @@ function Experience() {
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2023 - Present
             </time>
-            <h3 className="text-lg text-[14px] font-light mb-5 md:mb-0 text-gray-900 dark:text-white flex flex-row">
+            <h3 className="text-lg text-[14px] font-light mb-5 md:mb-0 text-white flex flex-row">
               Frontend Developer
               <p className="ml-2 text-gray-400 font-light text-[0.9rem]">
                 - NoCountry
               </p>
             </h3>
-            <p className="mb-4 text-base font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-light text-gray-400">
               Development and maintenance of frontend components using React JS
               or Next JS. Translate designs and specifications into functional
               user interfaces. Work closely with other team members to achieve
@@ -53,13 +53,13 @@ function Experience() {
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2022 - Present
             </time>
-            <h3 className="text-lg  text-[14px] font-light mb-5 md:mb-0 text-gray-900 dark:text-white flex items-center">
+            <h3 className="text-lg  text-[14px] font-light mb-5 md:mb-0 text-white flex items-center">
               Digital Marketing Manager
               <p className="ml-2 text-gray-400 font-light text-[0.9rem]">
                 - Duo Digital
               </p>
             </h3>
-            <p className="mb-4 text-base font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-light text-gray-400">
               Content creation, writing, and sending of Email Marketing
               campaigns. Content Manager, Community Manager, and Paid Media
               Manager. Preparation of reports and tracking of KPIs.
@@ -71,13 +71,13 @@ function Experience() {
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               2021 - 2022
             </time>
-            <h3 className="text-lg  text-[14px] font-light mb-5 md:mb-0 text-gray-900 dark:text-white flex">
+            <h3 className="text-lg  text-[14px] font-light mb-5 md:mb-0 text-white flex">
               Marketing Manager
               <p className="ml-2 text-gray-400 font-light text-[0.9rem]">
                 - Vital Servicios
               </p>
             </h3>
-            <p className="mb-4 text-base font-light text-gray-500 dark:text-gray-400">
+            <p className="mb-4 text-base font-light text-gray-400">
               SEM. SEO. Development, implementation, and monitoring of the
               strategic online and offline marketing plan. Proposals for digital
               actions. Development of the marketing plan for social media.
