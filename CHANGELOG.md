@@ -1,5 +1,12 @@
 
 
+## [1.4.3](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.2...v1.4.3) (2024-4-23)
+
+
+### Bug Fixes
+
+* experience title in mobile version centered ([af5cbfd](https://github.com/emanuelpps/emp-portfolio/commit/af5cbfde5d1dc45d520926c375ff058495f1030a))
+
 ## [1.4.2](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.1...v1.4.2) (2024-4-23)
 
 
