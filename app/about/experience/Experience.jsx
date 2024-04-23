@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function Experience() {
   return (
-    <div className="flex justify-center text-center md:text-left md:p-10 cursor-pointer window-outline mb-20 mt-20  w-full md:w-[60rem] md:flex-row flex-col">
+    <div className="flex justify-center text-center md:text-left md:p-10 window-outline mb-20 mt-20  w-full md:w-[60rem] md:flex-row flex-col">
       <div id="expereice-title" className="w-full flex flex-row">
         <h1 className="flex justify-start items-start mt-10 md:mt-0">
           My Experience
