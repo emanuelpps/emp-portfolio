@@ -18,8 +18,10 @@ function ProjectName({ params }) {
   const [isLoading, setLoading] = useState(true);
   const [isViewing, setIsViewing] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState({});
+  const [inSection, setInSection] = useState("");
 
   const ref = useRef(null);
+  const scrollRef = useRef(null);
   const isInView = useInView(ref);
 
   useEffect(() => {
@@ -43,6 +45,12 @@ function ProjectName({ params }) {
     setIsViewing(true);
     console.log("isViewing", isViewing);
   };
+
+  useEffect(() => {
+    setInSection(scrollRef.current?.id)
+  }, [ref])
+
+  console.log("inSection",ref.current?.id);
 
   return (
     <div>
@@ -128,8 +136,16 @@ function ProjectName({ params }) {
                 <h3 className="text-lg mb-4 font-semibold text-md text-white">
                   Contents
                 </h3>
-                <Link href="#overview-container" scroll={true}>
-                  <li className="font-light text-sm text-gray-400 hover:text-white">
+                <Link href="#overview-container">
+                  <li
+                  ref={scrollRef}
+                    className={`font-light text-sm  hover:text-white ${inSection == "overview-container" ? "text-white" : "text-gray-400"}`}
+                    viewport={{ root: scrollRef }}
+                    whileInView={{
+                      fontWeight: "bold",
+                      fontSize: "3rem",
+                    }}
+                  >
                     Overview
                   </li>
                 </Link>
@@ -166,6 +182,7 @@ function ProjectName({ params }) {
             </div>
             <AnimatePresence>
               <motion.div
+                ref={scrollRef}
                 initial={{ opacity: 0, y: 250 }}
                 whileInView={{
                   opacity: 1,
@@ -231,13 +248,16 @@ function ProjectName({ params }) {
                 viewport={{ once: true }}
                 className="mt-5 md:mt-0 md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-7 col-span-4 row-span-3 col-start-2 row-start-9 mb-4 md:mb-20 justify-center place-items-center text-center md:text-start"
               >
-                <div id="overview-container">
+                <div ref={ref} id="overview-container">
                   <h3 className="font-semibold text-md">Overview</h3>
                   <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
                     {projectPage.infoProject[0].overview}
                   </p>
                 </div>
-                <div id="technologies-container" className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-5">
+                <div
+                  id="technologies-container"
+                  className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-5"
+                >
                   <h4 className="font-semibold text-md">Technologies used</h4>
                   <h3 className="font-extralight text-[14px]">
                     {projectPage.lenguage}
