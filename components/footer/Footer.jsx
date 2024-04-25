@@ -3,6 +3,7 @@ import React from "react";
 import PortfolioLogo from "@/public/assets/EP-logo.svg";
 import Link from "next/link";
 import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
+import { VscGithub } from "react-icons/vsc";
 
 function Footer() {
   return (
@@ -71,8 +72,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-4">
-          <p className="text-center mt-5 md:pr-10 text-sm">
+        <div className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-2 mt-8">
+          <p className="text-center md:pr-10 text-sm">
             This site was built with:
           </p>
           <div className="flex flex-row justify-center items-center text-center md:gap-4">
@@ -99,6 +100,15 @@ function Footer() {
                 </div>
               ))}
           </div>
+        </div>
+        <div id="footer-code-button" className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-2 mt-10 md:mt-0">
+          <p className="text-center md:pr-10 text-sm">View this website on GitHub</p>
+            <Link href={"https://github.com/emanuelpps/emp-portfolio"} target="_blank" className="flex justify-center items-center">
+              <button className="py-1 px-2 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                <VscGithub />
+                <p>Repository</p>
+              </button>
+            </Link>
         </div>
         <div
           id="footer-rights-container"

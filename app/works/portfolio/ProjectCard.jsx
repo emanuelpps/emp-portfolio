@@ -20,14 +20,13 @@ function ProjectCard({ project }) {
           damping: 30,
         },
       }}
-      whileHover={{ scale: 1.02 }}
       whileTap={{
         scale: 0.8,
       }}
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
-      className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer window-outline mb-20 ${
+      className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 ${
         hoverState
           ? "hover:shadow-xl transition duration-300 hover:scale-105"
           : ""

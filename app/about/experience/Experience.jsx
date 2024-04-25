@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 
 function Experience() {
   return (
-    <div className="flex justify-center text-center md:text-left md:p-10 window-outline mb-20 mt-20  w-full md:w-[60rem] md:flex-row flex-col">
+    <div className="flex justify-center text-center md:text-left md:p-10 -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 mt-20  w-full md:w-[60rem] md:flex-row flex-col">
       <div
         id="expereice-title"
         className="w-full flex flex-row justify-center md:justify-start"

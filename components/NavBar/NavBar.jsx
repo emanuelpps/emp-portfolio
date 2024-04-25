@@ -57,7 +57,7 @@ export default function NavBar() {
             <Image
               src={PortfolioLogo}
               alt="Emanuel Pagés Front End Developer Logo"
-              className="rounded-lg bg-black hidden md:flex md:w-[45px]"
+              className="rounded-lg bg-transparent hidden md:flex md:w-[45px]"
             ></Image>
             <div id="titleLogo">
               <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
@@ -154,7 +154,7 @@ export default function NavBar() {
             </div>
           </button>
           <button
-            className="font-extralight hover:font-semibold bg-black rounded-md"
+            className="font-extralight hover:font-semibold bg-transparent rounded-md"
             title="Resume"
           >
             <Link

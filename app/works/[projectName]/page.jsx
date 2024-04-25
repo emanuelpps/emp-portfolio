@@ -278,7 +278,7 @@ function ProjectName({ params }) {
                 exit={{ opacity: 0 }}
                 viewport={{ once: true }}
                 id="highlights-container"
-                className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 window-outline md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
+                className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
               >
                 <FaRegLightbulb
                   size={30}
@@ -449,5 +449,6 @@ function ProjectName({ params }) {
     </div>
   );
 }
+
 
 export default ProjectName;
