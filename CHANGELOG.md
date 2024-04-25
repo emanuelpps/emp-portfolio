@@ -1,5 +1,12 @@
 
 
+## [1.4.4](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.3...v1.4.4) (2024-4-25)
+
+
+### Bug Fixes
+
+* added new background color to all site, change the backgground color to all cards, added to footer github button ([93023be](https://github.com/emanuelpps/emp-portfolio/commit/93023be1c0982020008dfc18bede0a1c8427e36f))
+
 ## [1.4.3](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.2...v1.4.3) (2024-4-23)
 
 
