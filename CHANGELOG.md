@@ -1,5 +1,12 @@
 
 
+## [1.4.5](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.4...v1.4.5) (2024-4-25)
+
+
+### Bug Fixes
+
+* fix in color scheme ([c71a6d6](https://github.com/emanuelpps/emp-portfolio/commit/c71a6d6b1ff052f07bae4d9e0dbdab3197f13298))
+
 ## [1.4.4](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.3...v1.4.4) (2024-4-25)
 
 
