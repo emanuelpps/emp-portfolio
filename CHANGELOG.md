@@ -1,5 +1,12 @@
 
 
+## [1.4.8](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.7...v1.4.8) (2024-4-29)
+
+
+### Bug Fixes
+
+* change the server of resume ([b3776c0](https://github.com/emanuelpps/emp-portfolio/commit/b3776c07e764167df1fc0a1a8affbb15105eded0))
+
 ## [1.4.7](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.6...v1.4.7) (2024-4-29)
 
 
