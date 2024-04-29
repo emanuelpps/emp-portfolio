@@ -1,5 +1,12 @@
 
 
+## [1.4.9](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.8...v1.4.9) (2024-4-29)
+
+
+### Bug Fixes
+
+* updated readme.md ([d3d3670](https://github.com/emanuelpps/emp-portfolio/commit/d3d36701f089adb3d2b63d830996961303581a76))
+
 ## [1.4.8](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.7...v1.4.8) (2024-4-29)
 
 
