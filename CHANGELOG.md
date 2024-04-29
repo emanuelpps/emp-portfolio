@@ -1,5 +1,13 @@
 
 
+## [1.4.7](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.6...v1.4.7) (2024-4-29)
+
+
+### Bug Fixes
+
+* change surname visibility in intro card, visible in desktop and hidden in mobile ([6ac778a](https://github.com/emanuelpps/emp-portfolio/commit/6ac778a2eed032b6192d1038a19ef0bf75df6be7))
+* changed background color and removed card in home work version mobile ([d5e79eb](https://github.com/emanuelpps/emp-portfolio/commit/d5e79eb5ededafccd6603d97a30218037dd33db1))
+
 ## [1.4.6](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.5...v1.4.6) (2024-4-25)
 
 
