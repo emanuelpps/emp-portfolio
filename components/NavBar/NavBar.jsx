@@ -159,7 +159,7 @@ export default function NavBar() {
           >
             <Link
               className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-4"
-              href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
+              href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
               target="_blank"
             >
               <BsFillFileEarmarkMedicalFill className="h-5 w-5 fill-gray-400 hover:fill-white" />
