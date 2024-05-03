@@ -12,9 +12,9 @@ function Summary() {
       >
         <div className="window-outline md:flex">
           <Image
-            src="https://res.cloudinary.com/dkgoszhfr/image/upload/v1709861429/hosting/portfolio-about-images/lw106x9gbqbdummexenv.png"
+            src="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714752210/jxfvfsbtswzfyh9j9q1s.png"
             alt="computer Image"
-            className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-auto md:w-[400px]"
+            className="rounded-2xl text-center object-cover h-[400px] w-[250px] md:object-cover md:h-[600px] md:w-[350px]"
             width={250}
             height={400}
           />
