@@ -1,5 +1,12 @@
 
 
+## [1.4.10](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.9...v1.4.10) (2024-5-3)
+
+
+### Bug Fixes
+
+* added new image to summary section ([6d14520](https://github.com/emanuelpps/emp-portfolio/commit/6d14520d8aee93aba32f743e4e2e6058683d1b3d))
+
 ## [1.4.9](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.8...v1.4.9) (2024-4-29)
 
 
