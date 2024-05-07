@@ -28,7 +28,7 @@ function ProjectCard({ project }) {
       id={`id-${project.id}`}
       className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 ${
         hoverState
-          ? "hover:shadow-xl transition duration-300 hover:scale-105"
+          ? "hover:bg-[#1f1d1d] hover:shadow-xl transition duration-300 hover:scale-105"
           : ""
       } transition duration-800 ease-in-out`}
       onMouseEnter={() => setHoverState(true)}
@@ -67,7 +67,7 @@ function ProjectCard({ project }) {
             width="0"
             height="0"
             sizes="100vw"
-            className={`w-full h-full object-cover rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
+            className={`md:w-[650px] w-[fit-content] object-cover rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">

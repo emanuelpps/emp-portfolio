@@ -47,16 +47,16 @@ function ProjectName({ params }) {
   };
 
   useEffect(() => {
-    setInSection(scrollRef.current?.id)
-  }, [ref])
+    setInSection(scrollRef.current?.id);
+  }, [ref]);
 
-  console.log("inSection",ref.current?.id);
+  console.log("inSection", ref.current?.id);
 
   return (
     <div>
       {projectPage ? (
         <>
-          <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4">
+          <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4 overflow-x-hidden">
             <div className="col-start-1 row-start-1 sticky top-10 md:top-0 w-[200px] z-50">
               <Link href={"/"}>
                 <button className="md:m-10 px-5 py-2 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
@@ -111,7 +111,7 @@ function ProjectName({ params }) {
                         loop
                         aspect-auto
                         rounded-lg
-                        className={`relative mx-auto overflow-hidden ${
+                        className={`relative w-[900px] overflow-hidden ${
                           isLoading ? "hidden" : ""
                         }`}
                         alt="Project Image"
@@ -138,8 +138,12 @@ function ProjectName({ params }) {
                 </h3>
                 <Link href="#overview-container">
                   <li
-                  ref={scrollRef}
-                    className={`font-light text-sm  hover:text-white ${inSection == "overview-container" ? "text-white" : "text-gray-400"}`}
+                    ref={scrollRef}
+                    className={`font-light text-sm  hover:text-white ${
+                      inSection == "overview-container"
+                        ? "text-white"
+                        : "text-gray-400"
+                    }`}
                     viewport={{ root: scrollRef }}
                     whileInView={{
                       fontWeight: "bold",
@@ -248,7 +252,7 @@ function ProjectName({ params }) {
                 viewport={{ once: true }}
                 className="mt-5 md:mt-0 md:col-span-2 md:row-span-3 md:col-start-4 md:row-start-7 col-span-4 row-span-3 col-start-2 row-start-9 mb-4 md:mb-20 justify-center place-items-center text-center md:text-start"
               >
-                <div ref={ref} id="overview-container">
+                <div ref={ref} id="overview-container" className="md:w-[26rem]">
                   <h3 className="font-semibold text-md">Overview</h3>
                   <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
                     {projectPage.infoProject[0].overview}
@@ -256,7 +260,7 @@ function ProjectName({ params }) {
                 </div>
                 <div
                   id="technologies-container"
-                  className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-5"
+                  className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-6 md:w-[26rem]"
                 >
                   <h4 className="font-semibold text-md">Technologies used</h4>
                   <h3 className="font-extralight text-[14px]">
@@ -278,7 +282,7 @@ function ProjectName({ params }) {
                 exit={{ opacity: 0 }}
                 viewport={{ once: true }}
                 id="highlights-container"
-                className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0"
+                className="md:col-span-4 md:row-span-3 md:col-start-2 md:row-start-10 -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t md:flex md:flex-col justify-center mb-20 animate-blinkingBg mt-10 md:mt-0 md:w-[55rem] mx-auto"
               >
                 <FaRegLightbulb
                   size={30}
@@ -303,7 +307,7 @@ function ProjectName({ params }) {
                             key={index}
                             src={value}
                             alt={`${projectPage.name}_${key}`}
-                            width={800}
+                            width={600}
                             height={800}
                             className="mb-10 relative mx-auto rounded-lg overflow-hidden"
                             onLoadingComplete={(image) =>
@@ -449,6 +453,5 @@ function ProjectName({ params }) {
     </div>
   );
 }
-
 
 export default ProjectName;
