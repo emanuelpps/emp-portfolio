@@ -1,5 +1,12 @@
 
 
+## [1.4.11](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.10...v1.4.11) (2024-5-7)
+
+
+### Bug Fixes
+
+* Added re dimensions in projects cards and projects image, width correction in project section ([f64d485](https://github.com/emanuelpps/emp-portfolio/commit/f64d4859784ac55f289259e2e7422c78b937731c))
+
 ## [1.4.10](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.9...v1.4.10) (2024-5-3)
 
 
