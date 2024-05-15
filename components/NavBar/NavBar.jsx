@@ -215,7 +215,7 @@ export default function NavBar() {
             <button className="font-extralight hover:font-semibold rounded-md">
               <Link
                 className="text-sm md:text-base flex justify-center items-center h-10 w-auto p-5"
-                href="https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
+                href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
                 target="_blank"
               >
                 <BsFillFileEarmarkMedicalFill className="w-5 h-5" />
