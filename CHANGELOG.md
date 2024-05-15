@@ -1,5 +1,12 @@
 
 
+## [1.4.12](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.11...v1.4.12) (2024-5-15)
+
+
+### Bug Fixes
+
+* fix resume link in responsive version ([b180295](https://github.com/emanuelpps/emp-portfolio/commit/b18029573000230c3ef220114439aedbfeee830c))
+
 ## [1.4.11](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.10...v1.4.11) (2024-5-7)
 
 
