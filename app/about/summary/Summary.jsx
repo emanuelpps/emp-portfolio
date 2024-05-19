@@ -45,20 +45,13 @@ function Summary() {
             digital marketing.
           </p>
           <br />
-          <p className="flex flex-col pl-2 pr-2  justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 text-center md:text-start">
-            I have skills in Agile Methodologies, Github, GIT, HTML 5, CSS 3,
-            Javascript, Bootstrap, SASS, React JS, Framer Motion, Next JS,
-            Tailwindcss, React Native, Expo, Node JS, MongoDB, SEO, SEM, Email
-            Marketing, and Wordpress.
-          </p>
-          <br />
           <p className="flex flex-col pl-2 pr-2 justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 text-center md:text-start">
             Currently, I wear two hats – working as a Digital Marketing Manager
             and a Frontend Developer. In my role as a Digital Marketing Manager,
             I handle Email Marketing Campaigns, create content, and manage
             WordPress websites. I lead online marketing strategies, develop
             social media plans, and execute social media ads and Google Ads
-            campaigns
+            campaigns.
           </p>
           <br />
           <p className="flex flex-col pl-2 pr-2 justify-center items-center text-[14px] font-thin tracking-wide @apply whitespace-pre-line md:pl-10 md:pr-10 pb-10 text-center md:text-start">

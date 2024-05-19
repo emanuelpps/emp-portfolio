@@ -23,7 +23,7 @@ function Skills() {
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id="skills-container"
-      className="grid grid-cols-1 grid-rows-8 w-full md:w-[62rem] md:grid-rows-5 md:pt-20"
+      className="grid grid-cols-1 grid-rows-8 w-full md:w-[62rem] md:grid-rows-5 md:pt-19"
     >
       <div className="flex justify-center md:col-start-1 md:col-span-1 md:justify-start md:items-end mb-10 md:mb-10 md:ml-10">
         <h1>Skills</h1>
