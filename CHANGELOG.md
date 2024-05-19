@@ -1,5 +1,12 @@
 
 
+## [1.4.13](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.12...v1.4.13) (2024-5-19)
+
+
+### Bug Fixes
+
+* styles corrections ([db63d24](https://github.com/emanuelpps/emp-portfolio/commit/db63d24bd871dda5c8fbfe1215448bc6221daac9))
+
 ## [1.4.12](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.11...v1.4.12) (2024-5-15)
 
 
