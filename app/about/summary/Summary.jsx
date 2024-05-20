@@ -22,6 +22,7 @@ function Summary() {
       </div>
       <AnimatePresence>
         <motion.div
+        key={"summaryText"}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,

@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import arrowRight from "@/public/assets/arrowRight.svg";
 import { motion } from "framer-motion";
 import noCountryLogo from "@/public/assets/images/noCountryLogo.svg";
 
@@ -10,6 +9,7 @@ function ProjectCard({ project }) {
 
   return (
     <motion.div
+    key={"projecrt"}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
           {project.noCountry ? (
             <div>
               <h3 className="md:text-sm text-[0.5rem]">Developed at</h3>
-              <Image src={noCountryLogo} width={130} height={130} />
+              <Image src={noCountryLogo} width={130} height={130}  alt="No Country"/>
             </div>
           ) : (
             ""

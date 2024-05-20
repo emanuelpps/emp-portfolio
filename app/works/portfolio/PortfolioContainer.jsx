@@ -5,6 +5,7 @@ import projects from "@/public/data/works.json";
 import Link from "next/link";
 import { LuPlusSquare } from "react-icons/lu";
 import { LuMinusSquare } from "react-icons/lu";
+import uuid from "react-uuid";
 
 function PortfolioContainer() {
   const [dataProjects, setDataProjects] = useState([]);
@@ -16,16 +17,16 @@ function PortfolioContainer() {
 
   return (
     <div className="md:mt-44 w-screen p-6 md:p-0 md:w-[55rem] h-[auto] md:h-auto">
-      {dataProjects?.slice(0, 6).map((project) => (
-        <Link href={`/works/${project.linkName}`}>
-          <ProjectCard key={project.id} project={project} />
+      {dataProjects?.slice(0, 6).map((project, index) => (
+        <Link key={uuid()} href={`/works/${project.linkName}`}>
+          <ProjectCard project={project} />
         </Link>
       ))}
       {moreProjects ? (
         <>
-          {dataProjects?.slice(6).map((project) => (
-            <Link href={`/works/${project.linkName}`}>
-              <ProjectCard key={project.id} project={project} />
+          {dataProjects?.slice(6).map((project, index) => (
+            <Link key={uuid()} href={`/works/${project.linkName}`}>
+              <ProjectCard project={project} />
             </Link>
           ))}
         </>

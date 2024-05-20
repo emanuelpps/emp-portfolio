@@ -8,6 +8,7 @@ function AboutMe() {
     <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 mt-20 w-full md:w-[60rem]">
       <AnimatePresence>
         <motion.div
+        key={"summary"}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,

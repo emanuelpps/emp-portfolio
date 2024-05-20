@@ -9,7 +9,7 @@ function NotFound() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-5xl">Error 404</h1>
-      <Image src={notFoundImage} className="w-96" />
+      <Image src={notFoundImage} className="w-96" alt="Page Not Found"/>
       <h2 className="text-2xl pt-10">Page Not Found</h2>
       <div className="">
         <Link href={"/"}>

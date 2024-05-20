@@ -6,10 +6,12 @@ import { backendIcons } from "@/components/imagesContainer/backendIcons";
 import { nativeIcons } from "@/components/imagesContainer/nativeIcons";
 import { designIcons } from "@/components/imagesContainer/designIcons";
 import { AnimatePresence, motion } from "framer-motion";
+import uuid from "react-uuid";
 
 function Skills() {
   return (
     <motion.div
+    key={"skills"}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -46,7 +48,7 @@ function Skills() {
         >
           {frontendIcons.map((image) => (
             <div
-              key={image.id}
+              key={uuid()}
               className="flex flex-col justify-center items-center"
             >
               <Image src={image.path} alt={image.name} width={46} height={46} />
@@ -75,7 +77,7 @@ function Skills() {
         >
           {backendIcons.map((image) => (
             <div
-              key={image.id}
+              key={uuid()}
               className="flex flex-col justify-center items-center"
             >
               <Image src={image.path} alt={image.name} width={36} height={36} />
@@ -104,7 +106,7 @@ function Skills() {
         >
           {nativeIcons.map((image) => (
             <div
-              key={image.id}
+              key={uuid()}
               className="flex flex-col justify-center items-center"
             >
               <Image src={image.path} alt={image.name} width={36} height={36} />
@@ -133,7 +135,7 @@ function Skills() {
         >
           {designIcons.map((image) => (
             <div
-              key={image.id}
+              key={uuid()}
               className="flex flex-col justify-center items-center"
             >
               <Image src={image.path} alt={image.name} width={46} height={46} />

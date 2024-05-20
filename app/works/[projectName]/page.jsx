@@ -11,6 +11,7 @@ import Link from "next/link";
 import loader from "@/components/loader/loader";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { SlClose } from "react-icons/sl";
+import uuid from "react-uuid";
 
 function ProjectName({ params }) {
   const [dataProjects, setDataProjects] = useState([]);
@@ -232,8 +233,8 @@ function ProjectName({ params }) {
                   ) : (
                     <></>
                   )}
-                  {projectPage.infoProject[0].team?.map((teamMate) => (
-                    <p className="font-thin text-[14px]">{teamMate}</p>
+                  {projectPage.infoProject[0].team?.map((teamMate, index) => (
+                    <p key={uuid()} className="font-thin text-[14px]">{teamMate}</p>
                   ))}
                 </div>
               </motion.div>
@@ -304,7 +305,7 @@ function ProjectName({ params }) {
                       ).map(([key, value], index) =>
                         value.endsWith(".png") ? (
                           <Image
-                            key={index}
+                            key={uuid()}
                             src={value}
                             alt={`${projectPage.name}_${key}`}
                             width={600}
@@ -399,6 +400,7 @@ function ProjectName({ params }) {
                           src={selectedPhoto}
                           width={950}
                           height={800}
+                          alt={projectPage.name}
                         />
                       </div>
                     ) : (
@@ -407,7 +409,7 @@ function ProjectName({ params }) {
                     {Object.entries(
                       projectPage.infoProject[0].images[0].gallery
                     ).map(([key, image], index) => (
-                      <div key={index} className="flex flex-column">
+                      <div key={uuid()} className="flex flex-column">
                         <Image
                           onClick={() => handleImageSelected(image)}
                           loader={loader}

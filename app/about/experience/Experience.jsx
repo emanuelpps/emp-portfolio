@@ -14,6 +14,7 @@ function Experience() {
         </h1>
       </div>
       <motion.div
+      key={"experience"}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{
           opacity: 1,

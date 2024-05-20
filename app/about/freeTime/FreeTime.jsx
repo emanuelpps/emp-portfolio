@@ -25,6 +25,7 @@ function FreeTime() {
       </div>
       <AnimatePresence>
         <motion.div
+          key={isInView ? "inView" : "notInView"}
           initial={{ opacity: 0, y: 50 }}
           whileInView={{
             opacity: 1,

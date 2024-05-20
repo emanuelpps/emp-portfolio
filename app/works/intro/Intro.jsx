@@ -14,6 +14,7 @@ export default function Intro() {
         <div className="window-main ml">
           <AnimatePresence>
             <motion.div
+            key={"intro"}
               initial={{ x: -300 }}
               animate={{
                 x: 0,
@@ -30,6 +31,7 @@ export default function Intro() {
               </h3>
             </motion.div>
             <motion.div
+            key={"introName"}
               initial={{ x: -800 }}
               animate={{
                 x: 0,
@@ -46,6 +48,7 @@ export default function Intro() {
               </h1>
             </motion.div>
             <motion.div
+            key={"introJob"}
               initial={{ x: -1200 }}
               animate={{
                 x: 0,
@@ -64,6 +67,7 @@ export default function Intro() {
           </AnimatePresence>
           <AnimatePresence>
             <motion.div
+            key={"introText"}
             initial={{ opacity: 0 }}
             animate={{
               opacity: 1,
@@ -85,6 +89,7 @@ export default function Intro() {
                 <Image
                   src={arrowDown}
                   className="w-9 text-center mx-0 my-[5%] animate-[bounce_2s_infinite]"
+                  alt="Arrow Down"
                 ></Image>
               </div>
             </motion.div>

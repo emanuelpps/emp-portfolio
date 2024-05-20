@@ -93,7 +93,7 @@ function Contact() {
             Send me a message
           </h1>
 
-          <label for="fullName" className="mt-8 font-extralight text-sm">
+          <label htmlFor="fullName" className="mt-8 font-extralight text-sm">
             Full name<span className="text-red-500">*</span>
           </label>
           <input
@@ -106,7 +106,7 @@ function Contact() {
             }}
           />
 
-          <label for="email" className="mt-4 font-extralight text-sm">
+          <label htmlFor="email" className="mt-4 font-extralight text-sm">
             E-mail<span className="text-red-500">*</span>
           </label>
           <input
@@ -119,7 +119,7 @@ function Contact() {
             }}
           />
 
-          <label for="subject" className="mt-4 font-extralight text-sm">
+          <label htmlFor="subject" className="mt-4 font-extralight text-sm">
             Subject<span className="text-red-500">*</span>
           </label>
           <input
@@ -132,7 +132,7 @@ function Contact() {
             }}
           />
 
-          <label for="message" className="mt-4 font-extralight text-sm">
+          <label htmlFor="message" className="mt-4 font-extralight text-sm">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea

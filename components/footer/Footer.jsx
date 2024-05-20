@@ -4,6 +4,7 @@ import PortfolioLogo from "@/public/assets/EP-logo.svg";
 import Link from "next/link";
 import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
 import { VscGithub } from "react-icons/vsc";
+import uuid from "react-uuid";
 
 function Footer() {
   return (
@@ -86,7 +87,7 @@ function Footer() {
               .map((image) => (
                 <div
                   className="flex flex-row justify-center items-center text-center align-middle w-20 gap-2"
-                  key={image.id}
+                  key={uuid()}
                 >
                   <Image
                     src={image.path}
