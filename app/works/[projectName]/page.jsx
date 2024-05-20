@@ -59,7 +59,7 @@ function ProjectName({ params }) {
           <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4 overflow-x-hidden">
             <div className="col-start-1 row-start-1 sticky top-10 md:top-0 w-[200px] z-50">
               <Link href={"/"}>
-                <button className="md:m-10 px-5 py-2 md:px-4 flex md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                <button className="md:m-10 hidden py-2 md:px-4 md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                   <VscArrowLeft />
                   Go Back
                 </button>
@@ -254,7 +254,7 @@ function ProjectName({ params }) {
               >
                 <div ref={ref} id="overview-container" className="md:w-[26rem]">
                   <h3 className="font-semibold text-md">Overview</h3>
-                  <p className="font-thin tracking-wide @apply whitespace-pre-line text-[14px]">
+                  <p className="font-thin tracking-wide whitespace-pre-line text-[14px]">
                     {projectPage.infoProject[0].overview}
                   </p>
                 </div>
