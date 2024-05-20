@@ -56,7 +56,7 @@ function ProjectName({ params }) {
     <div>
       {projectPage ? (
         <>
-          <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4 overflow-x-hidden">
+          <div className="p-2 md:p-0 md:grid grid-cols-1 grid-rows-auto md:grid-cols-6 md:grid-rows-17 gap-4 overflow-x-hidden  overflow-y-hidden">
             <div className="col-start-1 row-start-1 sticky top-10 md:top-0 w-[200px] z-50">
               <Link href={"/"}>
                 <button className="md:m-10 hidden py-2 md:px-4 md:inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
@@ -72,7 +72,7 @@ function ProjectName({ params }) {
                 </h1>
                 <div
                   id="h2-container"
-                  className="flex flex-row justify-center rounded-3xl"
+                  className="flex flex-row justify-center rounded-3xl "
                 >
                   <h2 className="text-center font-light">
                     {projectPage.class}
@@ -82,7 +82,7 @@ function ProjectName({ params }) {
               <div>
                 <div
                   id="video-container"
-                  className="flex justify-center place-content-center place-items-center"
+                  className="flex justify-center place-content-center place-items-center "
                 >
                   {projectPage.infoProject[0].video ? (
                     <>
