@@ -385,7 +385,7 @@ function ProjectName({ params }) {
                     {isViewing ? (
                       <div className="md:absolute md:flex md:items-center md:justify-center md:w-[1020px] md:h-[1000px] md:backdrop-blur-[2px] md:backdrop-saturate-[180%] md:bg-[rgba(17,25,40,0)]">
                         <div
-                          className="hidden md:flex md:absolute md:top-[25%] md:right-12 md:cursor-pointer"
+                          className="hidden md:flex md:absolute md:top-[23%] md:right-12 md:cursor-pointer"
                           onClick={() => {
                             setIsViewing(false), setSelectedPhoto("");
                           }}
