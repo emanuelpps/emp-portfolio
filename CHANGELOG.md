@@ -1,5 +1,12 @@
 
 
+## [1.4.16](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.15...v1.4.16) (2024-5-20)
+
+
+### Bug Fixes
+
+* overflow-y in project page fixed ([25e0987](https://github.com/emanuelpps/emp-portfolio/commit/25e09879cec94052a32dddabccc196cf381915af))
+
 ## [1.4.15](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.14...v1.4.15) (2024-5-20)
 
 
