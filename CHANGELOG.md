@@ -1,5 +1,12 @@
 
 
+## [1.4.17](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.16...v1.4.17) (2024-5-20)
+
+
+### Bug Fixes
+
+* key id fix, and SEO optimization ([518d7e9](https://github.com/emanuelpps/emp-portfolio/commit/518d7e93563f3ba23a783bfc34d6f475d8f07af8))
+
 ## [1.4.16](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.15...v1.4.16) (2024-5-20)
 
 
