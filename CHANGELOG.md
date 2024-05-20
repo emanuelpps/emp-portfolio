@@ -1,5 +1,12 @@
 
 
+## [1.4.15](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.14...v1.4.15) (2024-5-20)
+
+
+### Bug Fixes
+
+* go back button in mobile deleted ([b4639f3](https://github.com/emanuelpps/emp-portfolio/commit/b4639f3068dde76ed7168a7321e9e2fffff25b5d))
+
 ## [1.4.14](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.13...v1.4.14) (2024-5-20)
 
 
