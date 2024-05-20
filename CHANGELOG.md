@@ -1,5 +1,12 @@
 
 
+## [1.4.14](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.13...v1.4.14) (2024-5-20)
+
+
+### Bug Fixes
+
+* close button in gallery ([c4d6475](https://github.com/emanuelpps/emp-portfolio/commit/c4d64750a59f94d4748cff96e69d814176afc800))
+
 ## [1.4.13](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.12...v1.4.13) (2024-5-19)
 
 
