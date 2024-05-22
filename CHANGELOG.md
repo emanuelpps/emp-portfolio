@@ -1,5 +1,12 @@
 
 
+## [1.4.18](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.17...v1.4.18) (2024-5-22)
+
+
+### Bug Fixes
+
+* logo corrections ([2ef9063](https://github.com/emanuelpps/emp-portfolio/commit/2ef9063cfc1a38cab6928e9611da82d958e09c36))
+
 ## [1.4.17](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.16...v1.4.17) (2024-5-20)
 
 
