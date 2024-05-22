@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import PortfolioLogo from "@/public/assets/EP-logo.svg";
+import PortfolioLogo from "@/public/assets/logo-ep.svg";
 import Link from "next/link";
 import { frontendIcons } from "@/components/imagesContainer/frontendIcons";
 import { VscGithub } from "react-icons/vsc";
@@ -18,7 +18,7 @@ function Footer() {
               alt="Emanuel Pagés Front End Developer Logo"
               width={45}
               height={45}
-              className="rounded-lg"
+              className="mr-2"
             ></Image>
             <div id="titleLogo">
               <h1 className="text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
@@ -102,14 +102,23 @@ function Footer() {
               ))}
           </div>
         </div>
-        <div id="footer-code-button" className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-2 mt-10 md:mt-0">
-          <p className="text-center md:pr-10 text-sm">View this website on GitHub</p>
-            <Link href={"https://github.com/emanuelpps/emp-portfolio"} target="_blank" className="flex justify-center items-center">
-              <button className="py-1 px-2 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
-                <VscGithub />
-                <p>Repository</p>
-              </button>
-            </Link>
+        <div
+          id="footer-code-button"
+          className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-2 mt-10 md:mt-0"
+        >
+          <p className="text-center md:pr-10 text-sm">
+            View this website on GitHub
+          </p>
+          <Link
+            href={"https://github.com/emanuelpps/emp-portfolio"}
+            target="_blank"
+            className="flex justify-center items-center"
+          >
+            <button className="py-1 px-2 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+              <VscGithub />
+              <p>Repository</p>
+            </button>
+          </Link>
         </div>
         <div
           id="footer-rights-container"

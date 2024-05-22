@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import PortfolioLogo from "@/public/assets/EP-logo.svg";
+import PortfolioLogo from "@/public/assets/logo-ep.svg";
 import Link from "next/link";
 import arrow from "@/public/assets/arrow.svg";
 import { useRouter } from "next/navigation";
@@ -57,7 +57,7 @@ export default function NavBar() {
             <Image
               src={PortfolioLogo}
               alt="Emanuel Pagés Front End Developer Logo"
-              className="rounded-lg bg-transparent hidden md:flex md:w-[45px]"
+              className="hidden md:flex md:w-[45px] mr-2"
             ></Image>
             <div id="titleLogo">
               <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
