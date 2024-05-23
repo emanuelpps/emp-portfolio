@@ -46,7 +46,7 @@ function Footer() {
                 <Link href={"/work"} className="">
                   <li className="mb-5 hover:font-semibold w-12">Work</li>
                 </Link>
-                <Link href={"/info"}>
+                <Link href={"/about"}>
                   <li className="mb-5 hover:font-semibold w-12">Info</li>
                 </Link>
               </ul>
@@ -64,7 +64,7 @@ function Footer() {
                 </Link>
                 <Link
                   href={
-                    "https://duodigitalmarketing.000webhostapp.com/portafolio/EmanuelPagesResume.pdf"
+                    "https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
                   }
                 >
                   <li className="mb-5 hover:font-semibold w-12">Resume</li>
