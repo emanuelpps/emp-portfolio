@@ -1,5 +1,12 @@
 
 
+## [1.4.19](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.18...v1.4.19) (2024-5-23)
+
+
+### Bug Fixes
+
+* corrections in footer links ([220ebf0](https://github.com/emanuelpps/emp-portfolio/commit/220ebf0ca94a4af7a330e1aacd66914cacd5cfd0))
+
 ## [1.4.18](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.17...v1.4.18) (2024-5-22)
 
 
