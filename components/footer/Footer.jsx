@@ -66,6 +66,7 @@ function Footer() {
                   href={
                     "https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
                   }
+                  target="_blank"
                 >
                   <li className="mb-5 hover:font-semibold w-12">Resume</li>
                 </Link>
