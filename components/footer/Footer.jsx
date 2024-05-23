@@ -47,7 +47,7 @@ function Footer() {
                   <li className="mb-5 hover:font-semibold w-12">Work</li>
                 </Link>
                 <Link href={"/about"}>
-                  <li className="mb-5 hover:font-semibold w-12">Info</li>
+                  <li className="mb-5 hover:font-semibold w-12">About</li>
                 </Link>
               </ul>
             </div>
