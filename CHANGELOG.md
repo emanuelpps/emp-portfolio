@@ -1,5 +1,13 @@
 
 
+## [1.4.20](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.19...v1.4.20) (2024-5-26)
+
+
+### Bug Fixes
+
+* correction target blank in footer resume ([aa9be07](https://github.com/emanuelpps/emp-portfolio/commit/aa9be07bfcff834b4bb865d4d9a95ac09329dc7e))
+* fix width of project cards and intro card, new cover photo in project card - work section ([cf136f9](https://github.com/emanuelpps/emp-portfolio/commit/cf136f988e20616cfc1c60833eaa2dd80d3a3534))
+
 ## [1.4.19](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.18...v1.4.19) (2024-5-23)
 
 
