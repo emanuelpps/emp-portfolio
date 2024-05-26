@@ -9,8 +9,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Intro() {
   return (
-    <div className="-outline-offset-1 md:bg-[#161515] overflow-hidden p-2 rounded-3xl md:border-t-[rgba(242,242,242,0.15)] md:border-x-[rgba(242,242,242,0.15)] md:border-l md:border-solid md:border-r md:border-t w-[410px] md:p-10 md:w-[55rem] h-screen md:h-auto md:mt-1">
-      <div id="titles-container" className="p-10 md:p-20 text">
+    <div className="-outline-offset-1 md:bg-[#161515] overflow-hidden p-2 rounded-3xl md:border-t-[rgba(242,242,242,0.15)] md:border-x-[rgba(242,242,242,0.15)] md:border-l md:border-solid md:border-r md:border-t w-[410px] md:p-10 md:w-[50rem] h-screen md:h-auto md:mt-1">
+      <div id="titles-container" className="p-10 md:p-10 text">
         <div className="window-main ml">
           <AnimatePresence>
             <motion.div

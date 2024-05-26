@@ -23,7 +23,7 @@ function ProjectCard({ project }) {
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
-      className={`flex justify-center text-center md:text-left md:p-10 cursor-pointer -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 ${
+      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 ${
         hoverState
           ? "md:hover:bg-[#1f1d1d] md:hover:shadow-xl md:transition md:duration-300 md:hover:scale-105"
           : ""
@@ -31,7 +31,7 @@ function ProjectCard({ project }) {
       onMouseEnter={() => setHoverState(true)}
       onMouseLeave={() => setHoverState(false)}
     >
-      <div className="p-2 md:p-10">
+      <div className="p-2 md:p-5 md:w-[80%]">
         <div id="title-container" className="flex justify-between">
           <h1 className="w-full text-center md:text-left text-2xl md:text-3xl md:gap-4">
             {project.name}
@@ -55,16 +55,13 @@ function ProjectCard({ project }) {
         </div>
         <div
           id="img-container"
-          className="flex flex-column overflow-hidden justify-center mt-5 "
+          className="flex flex-column overflow-hidden justify-center mt-5 md:h-[300px]"
         >
-          <Image
+          <img
             src={project.img}
             alt={project.name}
             loading="lazy"
-            width="0"
-            height="0"
-            sizes="100vw"
-            className={`md:w-[650px] w-[fit-content] object-cover rounded-lg shadow-[0px_3px_15px_0px_#000000]`}
+            className="object-fit"
           />
         </div>
         <div id="tech-container" className="flex justify-center mt-5">
