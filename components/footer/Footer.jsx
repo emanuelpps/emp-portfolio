@@ -39,36 +39,38 @@ function Footer() {
             className="grid grid-cols-2 grid-rows-1 gap-4 "
           >
             <div className="w-full flex items-center justify-center">
-              <ul className="">
-                <li className="text-gray-500 font-semibold text-sm mb-5">
+              <ul className="flex flex-col">
+                <h3 className="text-gray-500 font-semibold text-sm mb-5">
                   MAIN
-                </li>
-                <Link href={"/work"} className="">
-                  <li className="mb-5 hover:font-semibold w-12">Work</li>
+                </h3>
+                <Link href={"/work"} className="mb-5 hover:font-semibold w-12">
+                  Work
                 </Link>
-                <Link href={"/about"}>
-                  <li className="mb-5 hover:font-semibold w-12">About</li>
+                <Link href={"/about"} className="mb-5 hover:font-semibold w-12">
+                  About
                 </Link>
               </ul>
             </div>
             <div className="w-full flex items-center justify-center">
-              <ul>
-                <li className="text-gray-500 font-semibold text-sm mb-5">
+              <ul className="flex flex-col">
+                <h3 className="text-gray-500 font-semibold text-sm mb-5">
                   CONTACT
-                </li>
+                </h3>
                 <Link
                   href={"https://www.linkedin.com/in/emanuel-ps"}
                   target="_blank"
+                  className="mb-5 hover:font-semibold w-12"
                 >
-                  <li className="mb-5 hover:font-semibold w-12">Linkedin</li>
+                  Linkedin
                 </Link>
                 <Link
                   href={
                     "https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
                   }
                   target="_blank"
+                  className="mb-5 hover:font-semibold w-12"
                 >
-                  <li className="mb-5 hover:font-semibold w-12">Resume</li>
+                  Resume
                 </Link>
               </ul>
             </div>

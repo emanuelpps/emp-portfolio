@@ -173,6 +173,7 @@ export default function NavBar() {
           <button
             className="active:bg-[#6b7280] focus:outline-none focus:ring focus:ring-[#6b7280] w-auto"
             onClick={() => setMenuClicked(!menuClicked)}
+            aria-labelledby="menu-button"
           >
             <GrMenu className="h-6 w-6" />
           </button>

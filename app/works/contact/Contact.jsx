@@ -104,6 +104,7 @@ function Contact() {
             onChange={(e) => {
               setFullName(e.target.value);
             }}
+            aria-labelledby="fullName"
           />
 
           <label htmlFor="email" className="mt-4 font-extralight text-sm">
@@ -117,6 +118,7 @@ function Contact() {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
+            aria-labelledby="email"
           />
 
           <label htmlFor="subject" className="mt-4 font-extralight text-sm">
@@ -130,6 +132,7 @@ function Contact() {
             onChange={(e) => {
               setSubject(e.target.value);
             }}
+            aria-labelledby="subject"
           />
 
           <label htmlFor="message" className="mt-4 font-extralight text-sm">
@@ -142,6 +145,7 @@ function Contact() {
             onChange={(e) => {
               setMessage(e.target.value);
             }}
+            aria-labelledby="message"
           ></textarea>
           <div className="flex flex-row items-center justify-center md:justify-start">
             <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
