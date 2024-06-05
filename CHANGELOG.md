@@ -1,5 +1,12 @@
 
 
+## [1.5.1](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.0...v1.5.1) (2024-6-5)
+
+
+### Bug Fixes
+
+* change isInprogress to show button of demo page ([37a6240](https://github.com/emanuelpps/emp-portfolio/commit/37a624065b4c62ec35f306cebf094dc1fe6d3fac))
+
 ## [1.5.0](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.20...v1.5.0) (2024-6-5)
 
 
