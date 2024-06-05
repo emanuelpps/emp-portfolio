@@ -1,5 +1,12 @@
 
 
+## [1.5.0](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.20...v1.5.0) (2024-6-5)
+
+
+### Features
+
+* added projects under development ([45c86a1](https://github.com/emanuelpps/emp-portfolio/commit/45c86a18e247f50b2a324fa0095e9a89c710f852))
+
 ## [1.4.20](https://github.com/emanuelpps/emp-portfolio/compare/v1.4.19...v1.4.20) (2024-5-26)
 
 
