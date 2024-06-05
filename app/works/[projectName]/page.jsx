@@ -171,12 +171,14 @@ function ProjectName({ params }) {
                 id="buttons-project-container"
                 className="flex justify-center mt-10 pb-10"
               >
-                <Link href={projectPage.demo} target="_blank">
-                  <button className="m-10 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
-                    <VscLinkExternal />
-                    <p>Deploy</p>
-                  </button>
-                </Link>
+                {projectPage.isInProgress === false ? (
+                  <Link href={projectPage.demo} target="_blank">
+                    <button className="m-10 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                      <VscLinkExternal />
+                      <p>Demo</p>
+                    </button>
+                  </Link>
+                ) : null}
                 <Link href={projectPage.code} target="_blank">
                   <button className="m-10 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                     <VscGithub />

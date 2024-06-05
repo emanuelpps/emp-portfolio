@@ -11,6 +11,7 @@
     "demo": "#",
     "linkName": "coffee-roastery",
     "noCountry": false,
+    "isInProgress": true,
     "infoProject": [
       {
         "overview": "Project under development...",
@@ -42,6 +43,7 @@
     "demo": "#",
     "linkName": "epic-sound",
     "noCountry": false,
+    "isInProgress": true,
     "infoProject": [
       {
         "overview": "Project under development...",
@@ -73,6 +75,7 @@
     "demo": "https://educlass-two.vercel.app/",
     "linkName": "edu-class",
     "noCountry": true,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "(This platform has been designed only in mobile version)\n\n Communication between schools and families is disrupted by WhatsApp groups. Incoherent messages lead to poor flow and important information gets lost, making it hard for families to organize. EduClass is a tool that optimizes communication between schools and families through a direct link, promoting transparency, security, and avoiding unnecessary conflicts. The target audience includes institutions and families with children aged between 3 and 12 years old (Preschool/Kindergarten and Primary School).",
@@ -126,6 +129,7 @@
     "demo": "https://barberbuddyapp.vercel.app/",
     "linkName": "barber-buddy",
     "noCountry": true,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "BarberBuddy is a syste­m to help barbers organize and e­asily manage their appointments \n\nEach barbe­r can access their BarberBuddy account se­curely through their own email addre­ss. Once logged in, simple tools are­ available to help with appointments and se­rvices. \n\nThe main part of BarberBuddy le­ts barbers schedule appointme­nts easily and correctly. Each barber can se­e an interactive cale­ndar showing open time slots. They can pick the­ day and time that works best for them. \n\nAlso, the­ system lets barbers choose­ one or more service­s for each appointment. This makes it e­asy to get ready and plan the workday.",
@@ -169,6 +173,7 @@
     "demo": "https://homefixapp.vercel.app/",
     "linkName": "home-fix",
     "noCountry": true,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "HOMEFIX is a space for inventory management of tools and constructions products that enables you to organize and keep a track on flow of the products.Such a lean system helps to identify the most profitable products without any additional losses and reduce the costs of extra warehousing, thus speeding up operation and making changes in the decision making.",
@@ -216,6 +221,7 @@
     "demo": "https://emanuelpps.github.io/EP-Music-Player/",
     "linkName": "ep-music-player",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can access to a predefined playlist or create your personalized playlist. Take control of playback, skip to the next track, or go back. Additionally, you can easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just with the same ease.",
@@ -252,6 +258,7 @@
     "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
     "linkName": "ep-weather",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter to the app, it will automatically determine where you are, to show you the weather conditions at your location. It also provides the forecast for the next three hours and for the next five days. If you want to check the weather in another place, this app has a friendly search tool that lets you find out the weather conditions of any location you want.",
@@ -289,6 +296,7 @@
     "demo": "https://emanuelpps.github.io/don-remolo-pizza/",
     "linkName": "don-remolo",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.This project work was designed to be simple, and at the same time have very intuitive user interface. On entering, you can place an order by referring to the menu and then adding the chosen items on the cart. Inside the cart, you have the feature enabling you to vary quantities, drop any item, or empty it completely. To conclude, state in your option, payment method, and your address to submit your order.  Don Remolo Pizza is a project idea by ID for Ideas.",
@@ -328,6 +336,7 @@
     "demo": "https://emanuelpps.github.io/Nire-Panaderia/",
     "linkName": "nire",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "I develop a landing page for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The lainding page emphasizes a minimalist yet highly appealing design.",
@@ -362,6 +371,7 @@
     "demo": "https://emanuelpps.github.io/embe-ecommerce/",
     "linkName": "embe-home-deco",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "Embé Home & Deco is an online store dedicated to offering a variety of home decoration products. Navigating through the user-friendly menu, you can easily filter products by category, explore detailed product information, add items to your cart, and even reset quantities if needed. The platform also provides a simulated checkout experience for take a look into the purchase process.",
@@ -399,6 +409,7 @@
     "demo": "https://emanuelpps.github.io/Falcon-Aviation-Shop/",
     "linkName": "falcon-aviation-shop",
     "noCountry": false,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
