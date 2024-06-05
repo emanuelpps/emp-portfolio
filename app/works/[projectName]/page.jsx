@@ -107,8 +107,8 @@ function ProjectName({ params }) {
                         </div>
                       )}
                       <video
+                        controls={true}
                         autoPlay
-                        muted
                         loop
                         aspect-auto
                         rounded-lg
@@ -234,7 +234,9 @@ function ProjectName({ params }) {
                     <></>
                   )}
                   {projectPage.infoProject[0].team?.map((teamMate, index) => (
-                    <p key={uuid()} className="font-thin text-[14px]">{teamMate}</p>
+                    <p key={uuid()} className="font-thin text-[14px]">
+                      {teamMate}
+                    </p>
                   ))}
                 </div>
               </motion.div>
