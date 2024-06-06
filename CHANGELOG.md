@@ -1,5 +1,12 @@
 
 
+## [1.5.2](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.1...v1.5.2) (2024-6-6)
+
+
+### Bug Fixes
+
+* added more details button in project card and go back button sticky and fixed ([df42ba0](https://github.com/emanuelpps/emp-portfolio/commit/df42ba07beb500c4b1d88bcaa2361d777d1c5bdd))
+
 ## [1.5.1](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.0...v1.5.1) (2024-6-5)
 
 
