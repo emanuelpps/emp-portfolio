@@ -9,7 +9,7 @@ function ProjectCard({ project }) {
 
   return (
     <motion.div
-    key={"projecrt"}
+      key={"projecrt"}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{
         opacity: 1,
@@ -39,7 +39,12 @@ function ProjectCard({ project }) {
           {project.noCountry ? (
             <div>
               <h3 className="md:text-sm text-[0.5rem]">Developed at</h3>
-              <Image src={noCountryLogo} width={130} height={130}  alt="No Country"/>
+              <Image
+                src={noCountryLogo}
+                width={130}
+                height={130}
+                alt="No Country"
+              />
             </div>
           ) : (
             ""
@@ -64,7 +69,12 @@ function ProjectCard({ project }) {
             className="object-fit"
           />
         </div>
-        <div id="tech-container" className="flex justify-center mt-5">
+        <div className="flex justify-center pb-10">
+          <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+            More Details
+          </button>
+        </div>
+        <div id="tech-container" className="flex justify-center mt-5 ">
           <p className="font-semibold text-sm md:text-sm">{project.lenguage}</p>
         </div>
       </div>
