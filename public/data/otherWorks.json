@@ -29,5 +29,80 @@
         ]
       }
     ]
+  },
+  {
+    "id": 10,
+    "name": "Embé Home & Deco",
+    "class": "Ecommerce",
+    "type": "Web Page",
+    "description": "An online shop for home and decor items. It's easy to use, so you can enjoy shopping and know what's new.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716691552/cks4pqorjo9xdn6da46r.png",
+    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Firebase - Sweetalert",
+    "code": "https://github.com/emanuelpps/embe-ecommerce",
+    "demo": "https://emanuelpps.github.io/embe-ecommerce/",
+    "linkName": "embe-home-deco",
+    "noCountry": false,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "Embé Home & Deco is an online store dedicated to offering a variety of home decoration products. Navigating through the user-friendly menu, you can easily filter products by category, explore detailed product information, add items to your cart, and even reset quantities if needed. The platform also provides a simulated checkout experience for take a look into the purchase process.",
+        "highlight": " Browse through categories, explore product details, and effortlessly add items to your cart. The unique feature of resetting quantities ensures flexibility in your selections. The simulated checkout offers a preview of the purchasing process, making your online shopping journey convenient and enjoyable.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597397/hosting/embe/video/s2lfchfiitnqmacbgpn9.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/embe/fymktuund27u3xz70t3d.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/embe/ckni84q0h00isiykhb7m.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/embe/qivg0ohc7mdtz7x0sb8n.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597390/hosting/embe/dmdmjh3mharfeyqjuuyg.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597390/hosting/embe/aenkwkp4gep5p7uiproy.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597390/hosting/embe/jaoupor7wwtxzappjrfz.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597391/hosting/embe/hkp6stmntlak288oivx6.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/embe/fymktuund27u3xz70t3d.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Falcon Aviation Shop",
+    "class": "Ecommerce",
+    "type": "Web Page",
+    "description": "An online store for aviation products. Easy shopping to discover the latest gear and essentials.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716692025/oydrlxo8h8rhhway6y9v.png",
+    "lenguage": "HTML 5 - CSS 3 - Javascript - Bootstrap",
+    "code": "https://github.com/emanuelpps/Falcon-Aviation-Shop",
+    "demo": "https://emanuelpps.github.io/Falcon-Aviation-Shop/",
+    "linkName": "falcon-aviation-shop",
+    "noCountry": false,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "Falcon Aviation Shop is an aviation online store, made using HTML5, CSS, and Vanilla JavaScript. It's designed for aviation fans and pilots, offering various aviation products. The website is easy to use, allowing you to explore and buy aviation-related items. Whether you're a pilot or an aircraft enthusiast, Falcon Aviation Shop provides a simple and enjoyable online shopping experience.",
+        "highlight": "The website is simple, making it easy for browsing and shopping. It offers aviation fans a special place to find and get different aviation products. Whether you're a pilot or just love aviation, Falcon Aviation Shop guarantees a straightforward and fun online shopping experience for all things aviation.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597418/hosting/falcon-avation/video/c1hywpbiilx013ely222.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597399/hosting/falcon-avation/zp83gyq0bxtpuzwmhzaj.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597401/hosting/falcon-avation/bcsuoir3ivtzbgx85hr1.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597399/hosting/falcon-avation/zp83gyq0bxtpuzwmhzaj.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597401/hosting/falcon-avation/c4ldvkvuzj1kvh4ey6fg.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597400/hosting/falcon-avation/vr4qjc98tqqo6quwvkws.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597401/hosting/falcon-avation/ehgr3slxkcftsdiwpgxc.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597402/hosting/falcon-avation/kckep6ecwkbes9r7bxmz.png"
+            }
+          }
+        ]
+      }
+    ]
   }
 ]

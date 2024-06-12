@@ -9,13 +9,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Intro() {
   return (
-    <div className="-outline-offset-1 md:bg-[#161515] overflow-hidden p-2 rounded-3xl md:border-t-[rgba(242,242,242,0.15)] md:border-x-[rgba(242,242,242,0.15)] md:border-l md:border-solid md:border-r md:border-t w-[410px] md:p-10 md:w-[50rem] h-screen md:h-auto md:mt-1">
+    <div className="flex justify-center items-center -outline-offset-1 overflow-hidden p-2 rounded-3xl md:p-10 md:w-[80rem] h-screen md:h-auto md:mt-1">
       <div id="titles-container" className="p-10 md:p-10 text">
-        <div className="window-main ml">
+        <div className="window-main">
           <AnimatePresence>
             <motion.div
-            key={"intro"}
-              initial={{ x: -300 }}
+              key={"intro"}
+              initial={{ x: -800 }}
               animate={{
                 x: 0,
                 transition: {
@@ -26,13 +26,13 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <h3 className="text-4xl md:text-5xl textShadow mt-10 md:mt-1 font-extralight tracking-wide md:pl-24">
+              <h3 className="text-4xl md:text-6xl textShadow mt-10 md:mt-1 font-extralight tracking-wide ">
                 Hi!
               </h3>
             </motion.div>
             <motion.div
-            key={"introName"}
-              initial={{ x: -800 }}
+              key={"introName"}
+              initial={{ x: -1300 }}
               animate={{
                 x: 0,
                 transition: {
@@ -43,12 +43,15 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <h1 className="md:flex text-4xl md:text-5xl textShadow mt-0 md:mt-2 font-normal tracking-wide md:pl-24 gap-5">
-                I'm Emanuel <p className="md:flex hidden text-4xl md:text-5xl textShadow mt-0  font-normal tracking-wide">Pagés</p>
-              </h1>
+              <p className="md:flex text-4xl md:text-8xl textShadow mt-0 md:mt-2 font-extralight tracking-wide  gap-5">
+                I'm 
+                <h1 className="md:flex hidden text-4xl md:text-8xl textShadow mt-0 font-semibold tracking-wide">
+                Emanuel Pagés
+                </h1>
+              </p>
             </motion.div>
             <motion.div
-            key={"introJob"}
+              key={"introJob"}
               initial={{ x: -1200 }}
               animate={{
                 x: 0,
@@ -60,27 +63,28 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <h2 className="text-4xl md:text-5xl textShadow mt-0 md:mt-2 font-extralight tracking-wide md:pl-24">
+              <h2 className="text-4xl md:text-7xl textShadow mt-0 md:mt-2 font-extralight tracking-wide ">
                 Frontend Developer
               </h2>
             </motion.div>
           </AnimatePresence>
           <AnimatePresence>
             <motion.div
-            key={"introText"}
-            initial={{ opacity: 0 }}
-            animate={{
-              opacity: 1,
-              transition: {
-                type: "spring",
-                duration: 1.5,
-                delay:2.3
-              },
-            }}
-            exit={{ opacity: 0 }}>
+              key={"introText"}
+              initial={{ opacity: 0 }}
+              animate={{
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                  duration: 1.5,
+                  delay: 2.3,
+                },
+              }}
+              exit={{ opacity: 0 }}
+            >
               <div
                 id="intro-button-container"
-                className="flex mt-10 md:mt-20 justify-center md:justify-evenly gap-20"
+                className="flex mt-10 md:mt-20 justify-center items-center gap-60"
               >
                 <Contact />
                 <MyWork />

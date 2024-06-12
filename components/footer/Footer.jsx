@@ -11,7 +11,7 @@ function Footer() {
     <div id="footer-container" className="w-full mt-20">
       <hr className="border-t-1 border-gray-800 border-gray my-8" />
       <div className="md:grid md:grid-cols-2 md:grid-rows-2 gap-4 mt-20">
-        <div id="footer-logo-container">
+      {/*<div id="footer-logo-container">
           <div className="w-full flex items-center justify-center flex-row">
             <Image
               src={PortfolioLogo}
@@ -75,7 +75,7 @@ function Footer() {
               </ul>
             </div>
           </div>
-        </div>
+        </div>*/}
         <div className="flex flex-col md:flex-row w-auto md:col-span-2 justify-center items-center gap-2 mt-8">
           <p className="text-center md:pr-10 text-sm">
             This site was built with:

@@ -16,7 +16,7 @@ function PortfolioContainer() {
   }, []);
 
   return (
-    <div className="md:mt-44 w-screen p-6 md:p-0 md:w-[50rem] h-[auto] md:h-auto">
+    <div className="flex flex-wrap justify-center items-center gap-2 md:mt-44 w-screen md:p-0 md:w-[80rem] h-[auto] md:h-auto">
       {dataProjects?.slice(0, 6).map((project, index) => (
         <Link key={uuid()} href={`/works/${project.linkName}`}>
           <ProjectCard project={project} />

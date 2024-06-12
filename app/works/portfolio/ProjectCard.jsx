@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import noCountryLogo from "@/public/assets/images/noCountryLogo.svg";
+import { FiPlus } from "react-icons/fi";
 
 function ProjectCard({ project }) {
   const [hoverState, setHoverState] = useState(false);
@@ -23,21 +24,26 @@ function ProjectCard({ project }) {
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
-      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1 bg-[#161515] overflow-hidden p-2 rounded-3xl border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t mb-20 ${
+      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1  overflow-hidden  border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t  w-[400px] h-[400px] ${
         hoverState
           ? "md:hover:bg-[#1f1d1d] md:hover:shadow-xl md:transition md:duration-300 md:hover:scale-105"
           : ""
       } transition duration-800 ease-in-out`}
+      style={{
+        backgroundImage: `url(${project.img})`,
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+      }}
       onMouseEnter={() => setHoverState(true)}
       onMouseLeave={() => setHoverState(false)}
-    >
-      <div className="p-2 md:p-5 md:w-[80%]">
-        <div id="title-container" className="flex justify-between">
-          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl md:gap-4">
+    >{ hoverState &&
+      <div className="p-5  md:w-[100%]">
+        <div id="title-container" className="flex justify-between ">
+          <h1 className="w-full text-center md:text-left text-2xl md:text-3xl md:gap-4 ">
             {project.name}
           </h1>
           {project.noCountry ? (
-            <div>
+            <div className="">
               <h3 className="md:text-sm text-[0.5rem]">Developed at</h3>
               <Image
                 src={noCountryLogo}
@@ -54,11 +60,11 @@ function ProjectCard({ project }) {
           <h2 className="text-sm md:text-base font-extralight">
             {project.class} - {project.type}
           </h2>
-          <p className="text-sm md:text-base font-extralight">
+          {/*<p className="text-sm md:text-base font-extralight w-[300px]">
             {project.description}
-          </p>
+          </p>*/}
         </div>
-        <div
+        {/*<div
           id="img-container"
           className="flex flex-column overflow-hidden justify-center mt-5 md:h-[300px]"
         >
@@ -68,16 +74,17 @@ function ProjectCard({ project }) {
             loading="lazy"
             className="object-fit"
           />
-        </div>
-        <div className="flex justify-center pb-10">
-          <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
-            More Details
-          </button>
+        </div>*/}
+        <div className="flex justify-center items-center pb-10 gap-2">
+          <span className="flex justify-center items-center gap-x-2 text-sm font-normal rounded-md">
+            See more details
+          </span>
+          <FiPlus />
         </div>
         <div id="tech-container" className="flex justify-center mt-5 ">
           <p className="font-semibold text-sm md:text-sm">{project.lenguage}</p>
         </div>
-      </div>
+      </div>}
     </motion.div>
   );
 }
