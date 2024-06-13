@@ -31,29 +31,28 @@ function PortfolioContainer() {
           ))}
         </>
       ) : null}
-      <div>
-        {moreProjects ? (
-          <div className="w-full flex justify-center items-center">
-            <div
-              onClick={() => setMoreProjects(false)}
-              className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
-            >
-              <LuMinusSquare className="text-[1.5rem]" />
-              Show Less Projects
-            </div>
+      <div></div>
+      {moreProjects ? (
+        <div className="w-full flex justify-center items-center">
+          <div
+            onClick={() => setMoreProjects(false)}
+            className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
+          >
+            <LuMinusSquare className="text-[1.5rem]" />
+            Show Less Projects
           </div>
-        ) : (
-          <div className="w-full flex justify-center items-center">
-            <div
-              onClick={() => setMoreProjects(true)}
-              className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
-            >
-              <LuPlusSquare className="text-[1.5rem]" />
-              Show More Projects
-            </div>
+        </div>
+      ) : (
+        <div className="w-full flex justify-center items-center">
+          <div
+            onClick={() => setMoreProjects(true)}
+            className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
+          >
+            <LuPlusSquare className="text-[1.5rem]" />
+            Show More Projects
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 }

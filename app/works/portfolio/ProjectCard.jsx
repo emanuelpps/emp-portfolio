@@ -24,14 +24,14 @@ function ProjectCard({ project }) {
       exit={{ opacity: 0 }}
       viewport={{ once: true }}
       id={`id-${project.id}`}
-      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1  overflow-hidden  border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t  w-[400px] h-[400px] ${
+      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1  overflow-hidden  border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t  w-[500px] h-[400px] ${
         hoverState
           ? "md:hover:bg-[#1f1d1d] md:hover:shadow-xl md:transition md:duration-300 md:hover:scale-105"
           : ""
       } transition duration-800 ease-in-out`}
       style={{
         backgroundImage: `url(${project.img})`,
-        backgroundSize: "contain",
+        backgroundSize: "cover",
         backgroundPosition: "center",
       }}
       onMouseEnter={() => setHoverState(true)}
