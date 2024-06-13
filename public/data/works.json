@@ -8,10 +8,10 @@
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718231380/wfajijgvvnv9myvawl5s.png",
     "lenguage": "HTML 5 - React Js - Tailwindcss - React-Router-DOM - Firebase - Framer Motion",
     "code": "https://github.com/emanuelpps/the-coffee-roastery",
-    "demo": "#",
+    "demo": "https://the-coffee-roastery.vercel.app/",
     "linkName": "coffee-roastery",
     "noCountry": false,
-    "isInProgress": true,
+    "isInProgress": false,
     "infoProject": [
       {
         "overview": "Project under development...",
