@@ -44,9 +44,9 @@ export default function Intro() {
               exit={{ opacity: 0 }}
             >
               <p className="md:flex text-4xl md:text-8xl textShadow mt-0 md:mt-2 font-extralight tracking-wide  gap-5">
-                I'm 
-                <h1 className="md:flex hidden text-4xl md:text-8xl textShadow mt-0 font-semibold tracking-wide">
-                Emanuel Pagés
+                I'm
+                <h1 className="md:flex hidden text-4xl md:text-8xl textShadow mt-0 font-bold tracking-wide">
+                  Emanuel Pagés
                 </h1>
               </p>
             </motion.div>

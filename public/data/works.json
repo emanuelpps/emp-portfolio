@@ -5,8 +5,15 @@
     "class": "Coffee Shop",
     "type": "Web Page",
     "description": "Web page for holesale coffee market",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718231380/wfajijgvvnv9myvawl5s.png",
-    "lenguage": "HTML 5 - React Js - Tailwindcss - React-Router-DOM - Firebase - Framer Motion",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718322516/akqalnttvkzlkesnkz6w.png",
+    "lenguage": [
+      "HTML 5",
+      "React Js",
+      "Tailwindcss",
+      "React-Router-DOM",
+      "Firebase",
+      "Framer Motion"
+    ],
     "code": "https://github.com/emanuelpps/the-coffee-roastery",
     "demo": "https://the-coffee-roastery.vercel.app/",
     "linkName": "coffee-roastery",
@@ -37,8 +44,8 @@
     "class": "Music App",
     "type": "Web App",
     "description": "Streaming music application",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718231853/zol9gd2hrrjd2mod16le.png",
-    "lenguage": "HTML 5 - Next Js - Tailwindcss - Fetch API",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718322212/ijugwj9mn9knhfidb9me.png",
+    "lenguage": ["HTML 5", "Next Js", "Tailwindcss", "Fetch API"],
     "code": "https://github.com/emanuelpps/EPic-Sound",
     "demo": "#",
     "linkName": "epic-sound",
@@ -70,7 +77,14 @@
     "type": "Web App",
     "description": "Communications Manager for Educational institutions",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718228672/iphone-multiple-screens-mockup_1_o6bti4.png",
-    "lenguage": "HTML 5 - React Js - Tailwindcss - React-Router-DOM - NextUI - Axios",
+    "lenguage": [
+      "HTML 5",
+      "React Js",
+      "Tailwindcss",
+      "React-Router-DOM",
+      "NextUI",
+      "Axios"
+    ],
     "code": "https://github.com/No-Country/s13-03-m-node-react/tree/dev-front",
     "demo": "https://educlass-two.vercel.app/",
     "linkName": "edu-class",
@@ -123,8 +137,17 @@
     "class": "Appointment Management",
     "type": "Web App",
     "description": "BarberBuddy is a appointment management system",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718233790/dsjcfwcgiy32hndaqerz.png",
-    "lenguage": "HTML 5 - Next Js - Tailwindcss - Redux Toolkit - Axios - Date FNS - Notiflix - React Day Picker",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718322806/vtaeonsvlmcswutvakul.png",
+    "lenguage": [
+      "HTML 5",
+      "Next Js",
+      "Tailwindcss",
+      "Redux Toolkit",
+      "Axios",
+      "Date FNS",
+      "Notiflix",
+      "React Day Picker"
+    ],
     "code": "https://github.com/No-Country/s11-04-t-node-react",
     "demo": "https://barberbuddyapp.vercel.app/",
     "linkName": "barber-buddy",
@@ -167,8 +190,16 @@
     "class": "Inventory Manager",
     "type": "Web App",
     "description": "Efficient inventory management for tools and construction materials, optimizing stock and streamlining operations.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718234582/j3llh9dkhwxom2ei6dcb.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Redux Toolkit - Axios - ReCharts",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718323091/crveceejdg6ve0uk1vxr.png",
+    "lenguage": [
+      "HTML 5",
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Redux Toolkit",
+      "Axios",
+      "ReCharts"
+    ],
     "code": "https://github.com/No-Country/c13-33-t-csharp",
     "demo": "https://homefixapp.vercel.app/",
     "linkName": "home-fix",
@@ -216,7 +247,14 @@
     "type": "Web App",
     "description": "A simple and user-friendly music player project, bringing joy to your tunes with easy navigation and playback features",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718234886/qkgphzasyabwmr8jx91v.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion - Fetch API",
+    "lenguage": [
+      "HTML 5",
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Framer Motion",
+      "Fetch API"
+    ],
     "code": "https://github.com/emanuelpps/EP-Music-Player",
     "demo": "https://emanuelpps.github.io/EP-Music-Player/",
     "linkName": "ep-music-player",
@@ -252,8 +290,8 @@
     "class": "Weather Information",
     "type": "Web App",
     "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716689992/hbsacl0rdtl70nmnh9yb.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Fetch API",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718323950/dyjjrvyswrk1s8qaefge.png",
+    "lenguage": ["HTML 5", "CSS 3", "React Js", "Bootstrap", "Fetch API"],
     "code": "https://github.com/emanuelpps/EP-WeatherAPP",
     "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
     "linkName": "ep-weather",
@@ -290,8 +328,15 @@
     "class": "Food Delivery",
     "type": "Web App",
     "description": "An easy-to-use project for ordering pizzas or empanadas, making your meal experience delightful with straightforward ordering and delivery features.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716690317/wralwu9qpjxrmbb6ckcb.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion - Firebase",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1718324232/am3rs4itwhtzwsjaykgy.png",
+    "lenguage": [
+      "HTML 5",
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Framer Motion",
+      " Firebase"
+    ],
     "code": "https://github.com/emanuelpps/don-remolo-pizza",
     "demo": "https://emanuelpps.github.io/don-remolo-pizza/",
     "linkName": "don-remolo",
@@ -318,41 +363,6 @@
               "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/don-remolo/l07ik2makki0dwcp7ezt.png",
               "image-7": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/don-remolo/acg9uippi6cruf3ctbch.png",
               "image-8": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597388/hosting/don-remolo/rby7igflyz6jxqrqwbrr.png"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "name": "Ñire",
-    "class": "Bakery",
-    "type": "Landing Page",
-    "description": "Institutional bakery landing page, offering a delightful online experience to explore bakery products and stay updated with the latest offerings.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716691246/b1v10q7u5pldf7ciaslm.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion",
-    "code": "https://github.com/emanuelpps/Nire-Panaderia",
-    "demo": "https://emanuelpps.github.io/Nire-Panaderia/",
-    "linkName": "nire",
-    "noCountry": false,
-    "isInProgress": false,
-    "infoProject": [
-      {
-        "overview": "I develop a landing page for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The lainding page emphasizes a minimalist yet highly appealing design.",
-        "highlight": "The landing page features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
-        "myRole": "Frontend Developer and UI Designer",
-        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597409/hosting/nire/video/zntjl8vlp9agts3fzxrf.mp4",
-        "images": [
-          {
-            "highlight": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/lxjt45gtsxttf2tt0ihu.png"
-            },
-            "gallery": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/hgw45rvmrgaoh3qzrwfq.png",
-              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597405/hosting/nire/ru39zbhqmcpnybisrhed.png",
-              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/lxjt45gtsxttf2tt0ihu.png",
-              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/ve8yc2zlnrsv72j7hcmv.png"
             }
           }
         ]

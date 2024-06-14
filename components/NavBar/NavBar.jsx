@@ -48,7 +48,7 @@ export default function NavBar() {
 
   return (
     <div className="relative z-50">
-      <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-5 fixed top-0 justify-center items-center w-screen">
+      <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-5 fixed top-0 justify-center items-center w-screen  bg-[#100D0D] pb-4">
         <Link href={"/"}>
           <div
             id="LogoContainer"
