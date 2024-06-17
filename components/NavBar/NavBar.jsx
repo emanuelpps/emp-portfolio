@@ -22,8 +22,6 @@ export default function NavBar() {
   const [menuClicked, setMenuClicked] = useState(false);
   const [checkedToggle, setCheckedToggle] = useState();
   const [mailCopied, setMailCopied] = useState(false);
-  const router = useRouter();
-
   const currentPath = usePathname();
 
   const resetCopied = () => {

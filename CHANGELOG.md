@@ -1,5 +1,12 @@
 
 
+## [1.5.3](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.2...v1.5.3) (2024-6-17)
+
+
+### Build System
+
+* added libraries and new home structure and styles corrections ([00a9581](https://github.com/emanuelpps/emp-portfolio/commit/00a9581b410e11b4bd6a42eebf602adea2fa7e1e))
+
 ## [1.5.2](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.1...v1.5.2) (2024-6-6)
 
 
