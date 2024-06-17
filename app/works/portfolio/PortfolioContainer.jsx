@@ -33,40 +33,10 @@ function PortfolioContainer() {
       className="flex flex-wrap justify-center items-center gap-10 md:gap-43 md:mt-44 w-[360px] md:p-0 md:w-[90rem] h-[auto] md:h-auto"
     >
       {dataProjects?.map((project, index) => (
-        <div key={uuid()}>
-          <ProjectCard project={project} />
-        </div>
+        <Link key={uuid()}  href={`/works/${project.linkName}`}>
+          <ProjectCard index={index} project={project} />
+        </Link>
       ))}
-      {/* {moreProjects ? (
-        <>
-          {dataProjects?.slice(6).map((project, index) => (
-            <Link key={uuid()} href={`/works/${project.linkName}`}>
-              <ProjectCard project={project} />
-            </Link>
-          ))}
-        </>
-      ) : null} */}
-      {/* {moreProjects ? (
-        <div className="w-full flex justify-center items-center">
-          <div
-            onClick={() => setMoreProjects(false)}
-            className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
-          >
-            <LuMinusSquare className="text-[1.5rem]" />
-            Show Less Projects
-          </div>
-        </div>
-      ) : (
-        <div className="w-full flex justify-center items-center">
-          <div
-            onClick={() => setMoreProjects(true)}
-            className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black cursor-pointer"
-          >
-            <LuPlusSquare className="text-[1.5rem]" />
-            Show More Projects
-          </div>
-        </div>
-      )} */}
     </motion.div>
   );
 }

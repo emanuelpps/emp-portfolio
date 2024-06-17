@@ -14,9 +14,7 @@ function ProjectCard({ project }) {
 
   useEffect(() => {
     setMediaQuery(window.matchMedia("(max-width: 768px)"));
-  }, [mediaQuery]);
-
-  console.log(mediaQuery);
+  }, []);
 
   return (
     <div
@@ -32,10 +30,7 @@ function ProjectCard({ project }) {
         setHoverState(false);
       }}
     >
-      <Link
-        href={`/works/${project.linkName}`}
-        className={`flex flex-col justify-between h-full md:w-[100%]`}
-      >
+      <div className={`flex flex-col justify-between h-full md:w-[100%]`}>
         <motion.div
           id="title-container"
           className={`flex md:flex p-5 bg-[#1f1d1d] w-[350px] md:w-full justify-between`}
@@ -109,7 +104,7 @@ function ProjectCard({ project }) {
             ))}
           </motion.div>
         </div>
-      </Link>
+      </div>
     </div>
   );
 }
