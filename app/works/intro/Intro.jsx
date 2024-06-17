@@ -9,9 +9,9 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Intro() {
   return (
-    <div className="flex justify-center items-center -outline-offset-1 overflow-hidden p-2 rounded-3xl md:p-10 md:w-[80rem] h-screen md:h-auto md:mt-1">
+    <div className="flex justify-center items-center -outline-offset-1 overflow-hidden p-2 rounded-3xl md:p-10 md:w-[80rem] h-screen pb-20 md:h-auto md:mt-1">
       <div id="titles-container" className="p-10 md:p-10 text">
-        <div className="window-main">
+        <div className="window-main flex flex-col w-[360px] max-w-[360px] md:w-full md:max-w-full ml-5 md:ml-0 gap-5 md:gap-3">
           <AnimatePresence>
             <motion.div
               key={"intro"}
@@ -25,8 +25,9 @@ export default function Intro() {
                 },
               }}
               exit={{ opacity: 0 }}
+              className="flex flex-row"
             >
-              <h3 className="text-4xl md:text-6xl textShadow mt-10 md:mt-1 font-extralight tracking-wide ">
+              <h3 className="hidden md:flex text-4xl md:text-6xl textShadow mt-10 md:mt-1 font-extralight tracking-wide ">
                 Hi!
               </h3>
             </motion.div>
@@ -42,13 +43,14 @@ export default function Intro() {
                 },
               }}
               exit={{ opacity: 0 }}
+              className="flex flex-col md:flex-row w-full gap-2 md:gap-5"
             >
-              <p className="md:flex text-4xl md:text-8xl textShadow mt-0 md:mt-2 font-extralight tracking-wide  gap-5">
+              <p className="md:flex text-3xl md:text-8xl textShadow mt-0  font-extralight tracking-wide  gap-5">
                 I'm
-                <h1 className="md:flex hidden text-4xl md:text-8xl textShadow mt-0 font-bold tracking-wide">
+                </p>
+                <h1 className="flex text-4xl md:text-8xl textShadow mt-0 font-bold tracking-wide">
                   Emanuel Pagés
                 </h1>
-              </p>
             </motion.div>
             <motion.div
               key={"introJob"}
@@ -63,7 +65,7 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <h2 className="text-4xl md:text-7xl textShadow mt-0 md:mt-2 font-extralight tracking-wide ">
+              <h2 className="text-3xl md:text-7xl textShadow mt-0 md:mt-2 font-extralight tracking-wide ">
                 Frontend Developer
               </h2>
             </motion.div>
@@ -84,7 +86,7 @@ export default function Intro() {
             >
               <div
                 id="intro-button-container"
-                className="flex mt-10 md:mt-20 justify-center items-center gap-60"
+                className="flex mt-10 md:mt-16 justify-evenly "
               >
                 <Contact />
                 <MyWork />

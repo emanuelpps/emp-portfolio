@@ -171,7 +171,7 @@ export default function NavBar() {
           className="flex flex-col md:hidden pl-10 w-fit"
         >
           <button
-            className="active:bg-[#6b7280] focus:outline-none focus:ring focus:ring-[#6b7280] w-auto"
+            className="active:bg-[#6b7280] focus:outline-none  w-auto"
             onClick={() => setMenuClicked(!menuClicked)}
             aria-labelledby="menu-button"
           >

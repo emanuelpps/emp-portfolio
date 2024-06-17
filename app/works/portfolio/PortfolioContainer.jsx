@@ -6,6 +6,7 @@ import Link from "next/link";
 import { LuPlusSquare } from "react-icons/lu";
 import { LuMinusSquare } from "react-icons/lu";
 import uuid from "react-uuid";
+import { motion } from "framer-motion";
 
 function PortfolioContainer() {
   const [dataProjects, setDataProjects] = useState([]);
@@ -16,11 +17,25 @@ function PortfolioContainer() {
   }, []);
 
   return (
-    <div className="flex flex-wrap justify-center items-center gap-3 md:mt-44 w-screen md:p-0 md:w-[90rem] h-[auto] md:h-auto">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          type: "spring",
+          stiffness: 50,
+          damping: 30,
+        },
+      }}
+      exit={{ opacity: 0 }}
+      viewport={{ once: true }}
+      className="flex flex-wrap justify-center items-center gap-10 md:gap-43 md:mt-44 w-[360px] md:p-0 md:w-[90rem] h-[auto] md:h-auto"
+    >
       {dataProjects?.map((project, index) => (
-        <Link key={uuid()} href={`/works/${project.linkName}`}>
+        <div key={uuid()}>
           <ProjectCard project={project} />
-        </Link>
+        </div>
       ))}
       {/* {moreProjects ? (
         <>
@@ -31,7 +46,6 @@ function PortfolioContainer() {
           ))}
         </>
       ) : null} */}
-      <div></div>
       {/* {moreProjects ? (
         <div className="w-full flex justify-center items-center">
           <div
@@ -53,7 +67,7 @@ function PortfolioContainer() {
           </div>
         </div>
       )} */}
-    </div>
+    </motion.div>
   );
 }
 

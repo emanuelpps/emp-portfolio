@@ -1,68 +1,71 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import noCountryLogo from "@/public/assets/images/noCountryLogo.svg";
 import { FiPlus } from "react-icons/fi";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 function ProjectCard({ project }) {
   const [hoverState, setHoverState] = useState(false);
-  const [hoverTransition, setHoverTransition] = useState();
+  const [hoverTransition, setHoverTransition] = useState("");
+  const [mediaQuery, setMediaQuery] = useState("");
+
+  const animationAttributes = {};
+
+  useEffect(() => {
+    setMediaQuery(window.matchMedia("(max-width: 768px)"));
+  }, [mediaQuery]);
+
+  console.log(mediaQuery);
 
   return (
-    <motion.div
-      key={"projecrt"}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: {
-          type: "spring",
-          stiffness: 50,
-          damping: 30,
-        },
-      }}
-      exit={{ opacity: 0 }}
-      viewport={{ once: true }}
-      id={`id-${project.id}`}
-      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1  overflow-hidden  border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t  w-[600px] h-[400px] ${
-        hoverState
-          ? "md:hover:bg-[#1f1d1d] md:hover:shadow-xl md:transition md:duration-300 md:hover:scale-105"
-          : ""
-      } transition duration-800 ease-in-out`}
+    <div
+      className={`flex justify-center text-center md:text-left cursor-pointer -outline-offset-1  overflow-hidden  border-t-[rgba(242,242,242,0.15)] border-x-[rgba(242,242,242,0.15)] border-l border-solid border-r border-t hover:border-none hover:-outline-offset-0 w-[340px] h-[400px] md:w-[600px] md:h-[400px] transition duration-800 bg-cover bg-no-repeat ease-in-out  rounded-xl`}
       style={{
         backgroundImage: `url(${project.img})`,
-        backgroundSize: "cover",
         backgroundPosition: "center",
       }}
-      onMouseEnter={() => setHoverState(true)}
-      onMouseLeave={() => setHoverState(false)}
+      onMouseEnter={() => {
+        setHoverState(true);
+      }}
+      onMouseLeave={() => {
+        setHoverState(false);
+      }}
     >
-      <div
-        className={`flex ${
-          hoverState ? "md:flex" : "md:hidden"
-        } flex-col justify-between h-full md:w-[100%]`}
+      <Link
+        href={`/works/${project.linkName}`}
+        className={`flex flex-col justify-between h-full md:w-[100%]`}
       >
-        <div id="title-container" className="flex p-2 bg-[#1f1d1d] w-full justify-between">
-          <h1 className="text-center md:text-left text-2xl md:text-3xl md:gap-2 ">
+        <motion.div
+          id="title-container"
+          className={`flex md:flex p-5 bg-[#1f1d1d] w-[350px] md:w-full justify-between`}
+          initial={{ opacity: 0, y: -20 }}
+          animate={
+            mediaQuery.matches
+              ? { opacity: 1, y: 0 }
+              : { opacity: hoverState ? 1 : 0, y: hoverState ? 0 : -20 }
+          }
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="text-center md:text-left text-1xl md:text-3xl md:gap-2 ">
             {project.name}
           </h1>
           <div className="flex justify-center items-end p-2 w-[fit-content]">
-            <h2 className="text-[1rem] text-balance">{project.class}</h2>
+            <h2 className="text-[0.8rem] text-balance">{project.class}</h2>
           </div>
           {project.noCountry ? (
             <div className="">
               <h3 className="md:text-sm text-[0.5rem]">Developed at</h3>
               <Image
                 src={noCountryLogo}
-                width={130}
-                height={130}
                 alt="No Country"
+                className="w-[70px] md:w-[100px]"
               />
             </div>
           ) : (
             ""
           )}
-        </div>
+        </motion.div>
         <div
           id="description-container"
           className="flex flex-col justify-evenly h-full"
@@ -86,26 +89,28 @@ function ProjectCard({ project }) {
           />
         </div>*/}
           <div className="flex md:invisible justify-center items-center gap-2 h-full">
-            <span className="flex justify-center items-center mx-auto text-md font-bold rounded-md text-black">
+            <span className="justify-center  text-md font-bold text-white py-3 px-5 inline-flex items-center text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
               See more details
             </span>
-            <FiPlus />
           </div>
-          <div
+          <motion.div
             id="tech-container"
-            className="flex flex-grow justify-center items-center w-full  bg-[#1f1d1d] h-12 gap-3"
+            className={`hidden md:flex flex-grow justify-center items-center w-full bg-[#1f1d1d] h-12 gap-3`}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: hoverState ? 1 : 0, y: hoverState ? 0 : 20 }}
+            transition={{ duration: 0.5 }}
           >
             {project.lenguage.map((lenguage, index) => (
-              <p className="flex justify-center items-centerfont-semibold text-sm md:text-[0.7rem] w-[fit-content]  border-solid border-white border-[1px] bg-[#353535]">
-                <span key={index} className="p-1 px-1 text-pretty">
+              <p className="flex justify-center items-centerfont-semibold text-[0.6rem] md:text-[0.7rem] w-[fit-content]  border-solid border-white border-[1px] bg-[#353535] rounded-md">
+                <span key={index} className="md:p-1  text-pretty">
                   {lenguage}
                 </span>
               </p>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </motion.div>
+      </Link>
+    </div>
   );
 }
 
