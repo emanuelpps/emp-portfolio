@@ -268,9 +268,13 @@ function ProjectName({ params }) {
                   className="flex flex-col md:flex-none justify-center md:justify-start md:items-start mt-6 md:w-[26rem]"
                 >
                   <h4 className="font-semibold text-md">Technologies used</h4>
-                  <h3 className="font-extralight text-[14px]">
-                    {projectPage.lenguage}
-                  </h3>
+                  <div className="flex flex-wrap gap-5 w-[95%] justify-center items-center md:justify-start md:gap-4">
+                    {projectPage.lenguage.map((tech, index) => (
+                      <h3 key={index} className="font-extralight text-[14px]">
+                        {tech}
+                      </h3>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
               <motion.div
