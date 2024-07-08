@@ -46,7 +46,7 @@ export default function NavBar() {
 
   return (
     <div className="relative z-50">
-      <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-5 fixed top-0 justify-center items-center w-screen  bg-[#100D0D] pb-4">
+      <nav className="grid grid-cols-3 md:grid-cols-3 gap-1 pt-2 fixed top-0 justify-center items-center w-screen  bg-[#100D0D] pb-2">
         <Link href={"/"}>
           <div
             id="LogoContainer"
@@ -55,7 +55,7 @@ export default function NavBar() {
             <Image
               src={PortfolioLogo}
               alt="Emanuel Pagés Front End Developer Logo"
-              className="hidden md:flex md:w-[45px] mr-2"
+              className="hidden md:flex md:w-[25px] mr-2"
             ></Image>
             <div id="titleLogo">
               <h1 className="text-[0.7rem] md:text-md font-light bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40">
@@ -74,13 +74,13 @@ export default function NavBar() {
           <div className="flex items-center justify-center">
             <label
               htmlFor="Toggle3"
-              className="block p-1 md:p-2 h-auto min-w-full md:w-auto bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 border border-gray-100 cursor-pointer dark:text-gray-800"
+              className="block p-1 md:p-2 h-auto min-w-full md:w-auto  rounded-md  cursor-pointer dark:text-gray-800"
             >
               <input id="Toggle3" type="checkbox" className="hidden peer" />
               <Link href={"/works"}>
                 <button
-                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-1 rounded-l-md text-white font-semibold ${
-                    currentPath === "/works" ? "bg-gray-500" : ""
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-0 py-1  text-white font-semibold ${
+                    currentPath === "/works" ? "border-b-2 border-gray-500 " : ""
                   }`}
                   onClick={() => {
                     setShowWork(true);
@@ -92,8 +92,8 @@ export default function NavBar() {
               </Link>
               <Link href={"/about"}>
                 <button
-                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-4 py-1 rounded-r-md text-white font-semibold ${
-                    currentPath === "/about" ? "bg-gray-500" : ""
+                  className={`text-[0.7rem] md:text-[1rem] px-2 md:px-0 md:ml-10 py-1  text-white font-semibold ${
+                    currentPath === "/about" ? "border-b-2 border-gray-500 " : ""
                   }`}
                   onClick={() => {
                     setShowWork(false);

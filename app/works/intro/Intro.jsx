@@ -27,7 +27,7 @@ export default function Intro() {
               exit={{ opacity: 0 }}
               className="flex flex-row"
             >
-              <h3 className="hidden md:flex text-4xl md:text-6xl textShadow mt-10 md:mt-1 font-extralight tracking-wide ">
+              <h3 className="hidden md:flex text-4xl md:text-6xl textShadow mt-10 md:mt-1 font-extralight tracking-wide opacity-80">
                 Hi!
               </h3>
             </motion.div>
@@ -45,12 +45,12 @@ export default function Intro() {
               exit={{ opacity: 0 }}
               className="flex flex-col md:flex-row w-full gap-2 md:gap-5"
             >
-              <p className="md:flex text-3xl md:text-8xl textShadow mt-0  font-extralight tracking-wide  gap-5">
+              <p className="md:flex text-3xl md:text-8xl textShadow mt-0  font-extralight tracking-wide  gap-5  opacity-80">
                 I'm
-                </p>
-                <h1 className="flex text-4xl md:text-8xl textShadow mt-0 font-bold tracking-wide">
-                  Emanuel Pagés
-                </h1>
+              </p>
+              <h1 className="flex text-4xl md:text-8xl textShadow mt-0 font-bold tracking-wide">
+                Emanuel Pagés
+              </h1>
             </motion.div>
             <motion.div
               key={"introJob"}
@@ -65,7 +65,7 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <h2 className="text-3xl md:text-7xl textShadow mt-0 md:mt-2 font-extralight tracking-wide ">
+              <h2 className="text-3xl md:text-7xl textShadow mt-0 md:mt-2 font-extralight tracking-wide  opacity-80">
                 Frontend Developer
               </h2>
             </motion.div>
@@ -84,19 +84,20 @@ export default function Intro() {
               }}
               exit={{ opacity: 0 }}
             >
-              <div
-                id="intro-button-container"
-                className="flex mt-10 md:mt-16 justify-evenly "
-              >
-                <Contact />
-                <MyWork />
-              </div>
-              <div className="flex justify-center items-center mt-20 md:mt-10">
-                <Image
-                  src={arrowDown}
-                  className="w-9 text-center mx-0 my-[5%] animate-[bounce_2s_infinite]"
-                  alt="Arrow Down"
-                ></Image>
+              <div className="main__action flex justify-center items-center mx-auto w-full pt-40">
+                <a className="main__scroll" href="#projects-container">
+                  <div className="main__scroll-box w-10 h-30">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path
+                        d="M11.9997 13.1716L7.04996 8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <span className="main__scroll-text color-white">Scroll</span>
+                </a>
               </div>
             </motion.div>
           </AnimatePresence>
