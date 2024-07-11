@@ -10,7 +10,7 @@ export default function page() {
   return (
     <div>
       <NavBar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-24 overflow-x-hidden scroll-smooth">
+      <main className="flex min-h-screen flex-col items-center justify-between p-24 gap-40 overflow-x-hidden scroll-smooth">
         <Intro />
         <Experience/>
         <PortfolioContainer />
