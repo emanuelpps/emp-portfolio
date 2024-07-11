@@ -34,7 +34,8 @@
     "reactflow": "^11.11.3",
     "release-it": "^17.3.0",
     "sharp": "^0.33.4",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "tailwindcss-animated": "^1.1.2"
   },
   "devDependencies": {
     "autoprefixer": "^10",

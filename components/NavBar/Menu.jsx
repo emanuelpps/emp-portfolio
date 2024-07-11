@@ -51,7 +51,7 @@ function Menu({ ...props }) {
       >
         <Link
           href={"/#home"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white w-full"
+          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
             Home
@@ -59,7 +59,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#experience"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white w-full"
+          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
             Experience
@@ -67,7 +67,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#experience"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white w-full"
+          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
             Projects
@@ -75,7 +75,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#experience"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white w-full"
+          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
             Skills
@@ -83,14 +83,17 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#experience"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white w-full"
+          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
             Contact
           </div>
         </Link>
       </div>
-      <div id="socialMedia-container" className="flex flex-row justify-evenly m-4">
+      <div
+        id="socialMedia-container"
+        className="flex flex-row justify-evenly m-4"
+      >
         <Link
           href="https://github.com/emanuelpps"
           id="github-link"
@@ -107,10 +110,18 @@ function Menu({ ...props }) {
         >
           <FaLinkedinIn className="text-black text-3xl hover:text-white hover:stroke-black hover:stroke-[1.5rem]" />
         </Link>
-        <div
+        <Link
+          href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
           id="resume-link"
           target="_blank"
           title="See my Resume"
+        >
+          <IoDocumentText className="text-black text-3xl hover:text-white hover:stroke-black hover:stroke-[1.5rem]" />
+        </Link>
+        <div
+          id="resume-link"
+          target="_blank"
+          title="Copy my email"
           onClick={(e) => {
             setMailCopied(true), notifyCopied();
           }}
@@ -122,14 +133,6 @@ function Menu({ ...props }) {
             <MdOutlineMailOutline className="text-black text-3xl" />
           )}
         </div>
-        <Link
-          href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
-          id="resume-link"
-          target="_blank"
-          title="See my Resume"
-        >
-          <IoDocumentText className="text-black text-3xl hover:text-white hover:stroke-black hover:stroke-[1.5rem]" />
-        </Link>
       </div>
     </div>
   );

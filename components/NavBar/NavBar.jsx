@@ -52,7 +52,7 @@ export default function NavBar() {
       <div id="navbar" className="w-full sticky top-0">
         <div
           id="navBarContainer"
-          className="flex justify-between items-center p-5"
+          className="flex justify-between items-center pl-10 pr-10 pt-5"
         >
           <Image
             src={PortfolioLogo}
@@ -61,10 +61,13 @@ export default function NavBar() {
             height={45}
             className="font-bold"
           />
-          <TfiMenu className="text-4xl  cursor-pointer"  onClick={() => setIsOpen(!isOpen)}/>
+          <TfiMenu
+            className="text-4xl  cursor-pointer"
+            onClick={() => setIsOpen(!isOpen)}
+          />
         </div>
       </div>
-      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen}/>}
+      {isOpen && <Menu isOpen={isOpen} setIsOpen={setIsOpen} />}
     </>
   );
 }
