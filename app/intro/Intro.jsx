@@ -11,7 +11,10 @@ import ArrowIntro from "./components/ArrowIntro";
 
 export default function Intro() {
   return (
-    <div className="w-full max-w-[1400px] h-[100%]">
+    <div className="w-full max-w-[1400px] h-[100%] relative">
+      <div className="absolute bottom-96 right-44">
+        <span className="text-[10rem] font-[900] opacity-5">{"</>"}</span>
+      </div>
       <TitleIntro />
       <ArrowIntro />
     </div>

@@ -8,6 +8,7 @@
   --background-end-rgb: 0, 0, 0;
   max-width: 1600px;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root {

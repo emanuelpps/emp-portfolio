@@ -15,7 +15,6 @@ export default function page() {
         <Intro />
         <Experience />
         <Projects />
-        <PortfolioContainer />
         <Contact />
         <Footer />
       </main>
