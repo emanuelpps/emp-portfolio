@@ -1,12 +1,12 @@
 import React from "react";
-import ProjectsTitle from "./components/ProjectsTitle";
 import ProjectsWrapper from "./components/ProjectsWrapper";
+import SectionTitle from "@/components/SectionTitles/SectionTitles";
 
 function Projects() {
   return (
     <div id="projects" className="w-full">
       <div id="projects-container" className="flex flex-col gap-20 relative ">
-        <ProjectsTitle />
+        <SectionTitle text="I been working on these" title="Projects" />
         <ProjectsWrapper />
       </div>
     </div>

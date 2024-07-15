@@ -7,7 +7,7 @@ function ArrowIntro() {
       id="arrow-intro"
       className="w-full flex flex-col items-end justify-center gap-5"
     >
-      <div id="arrow-intro-container" className="flex flex-col gap-5 justify-center items-center">
+      <div id="arrow-intro-container" className="flex flex-col gap-10 justify-center items-center">
         <div className="gap-5 rotate-90">
           <span className="text-sm">Scroll</span>
         </div>
