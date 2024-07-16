@@ -46,7 +46,7 @@ function ExperienceBox() {
                   - Keep the current code updated, troubleshoot, and fix bugs.
                 </li>
                 <li>
-                  - Review your peers' code and follow development guidelines.
+                  - Review of code and follow development guidelines.
                 </li>
               </div>
             </div>
