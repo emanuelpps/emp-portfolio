@@ -4,7 +4,7 @@ function ExperienceBox() {
   return (
     <>
       <div className="absolute w-full flex justify-center">
-        <span className="text-[16rem] font-[900] opacity-10">EXPERIENCE</span>
+        <span className="text-[16rem] font-[900] opacity-10">Experience</span>
       </div>
       <div className="-outline-offset-1 overflow-hidden flex flex-col justify-center items-center mt-20">
         <div
@@ -13,7 +13,7 @@ function ExperienceBox() {
         ></div>
         <div id="experience-container" className="pt-10 ml-5  w-[80%]">
           <ol className="relative border-s border-gray-200 dark:border-gray-700">
-            <li className="mb-10 ms-4">
+            <div className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
                 2023 - Present
@@ -26,18 +26,31 @@ function ExperienceBox() {
                   - NoCountry
                 </p>
               </div>
-              <p className="mb-4 text-[1.2rem] font-light text-gray-400">
-                Development and maintenance of frontend components using React
-                JS or Next JS. Translate designs and specifications into
-                functional user interfaces. Work closely with other team members
-                to achieve shared objectives. Integrate services and APIs to
-                fetch data and dynamically display it in the user interface.
-                Maintain and update current code, troubleshoot, and fix bugs
-                actively. Review your peers’ code and conform to development
-                guidelines.
-              </p>
-            </li>
-            <li className="mb-10 ms-4">
+              <div className="mb-4 text-[1.2rem] font-light text-gray-400">
+                <li>
+                  - Develop and maintain frontend components using React JS or
+                  Next JS.
+                </li>
+                <li>
+                  - Turn designs and specifications into working user
+                  interfaces.
+                </li>
+                <li>
+                  - Work closely with team members to achieve common goals.
+                </li>
+                <li>
+                  - Connect services and APIs to get data and display it
+                  dynamically in the user interface.
+                </li>
+                <li>
+                  - Keep the current code updated, troubleshoot, and fix bugs.
+                </li>
+                <li>
+                  - Review your peers' code and follow development guidelines.
+                </li>
+              </div>
+            </div>
+            <div className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
                 2022 - Present
@@ -50,14 +63,35 @@ function ExperienceBox() {
                   - Duo Digital
                 </p>
               </div>
-              <p className="mb-4 text-[1.2rem] font-light text-gray-400">
-                Content creation, writing, and sending of Email Marketing
-                campaigns. Content Manager, Community Manager, and Paid Media
-                Manager. Preparation of reports and tracking of KPIs.
-                Administration and building of websites in Wordpress.
-              </p>
-            </li>
-            <li className="ms-4">
+              <div className="mb-4 text-[1.2rem] font-light text-gray-400 text-pretty">
+                <li className="text-balance">
+                  - Develop and write content for various platforms, including
+                  blogs, social media, and websites.
+                </li>
+                <li className="text-balance">
+                  - Plan, write, and send email marketing campaigns to engage
+                  customers.
+                </li>
+                <li className="text-balance">
+                  - Plan and manage paid advertising campaigns on platforms like
+                  Google Ads, Facebook Ads, and others.
+                </li>
+                <li className="text-pretty">
+                  - Prepare detailed reports on campaign performance, track
+                  KPIs, and provide insights for improvements.
+                </li>
+                <li>- Build and maintain websites using WordPress</li>
+                <li>
+                  - Optimize website content for search engines (SEO) and manage
+                  search engine marketing (SEM) campaigns.
+                </li>
+                <li>
+                  - Monitor and manage the digital marketing budget, ensuring
+                  cost-effective strategies.
+                </li>
+              </div>
+            </div>
+            <div className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
                 2021 - 2022
@@ -70,13 +104,44 @@ function ExperienceBox() {
                   - Vital Servicios
                 </p>
               </div>
-              <p className="mb-4 text-[1.2rem] font-light text-gray-400">
-                SEM. SEO. Development, implementation, and monitoring of the
-                strategic online and offline marketing plan. Proposals for
-                digital actions. Development of the marketing plan for social
-                media. Monitoring and tracking the marketing budget.
-                Implementation and improvements in the Ecommerce web page.
-              </p>
+              <div className="mb-4 text-[1.2rem] font-light text-gray-400">
+                <li>
+                  - Plan and execute SEM campaigns. Optimize website content to
+                  improve SEO.
+                </li>
+                <li>
+                  - Develop and implement both online and offline marketing
+                  strategies to achieve business goals.
+                </li>
+                <li>
+                  - Plan and execute marketing actions, such as social media
+                  campaigns, online ads, and email marketing.
+                </li>
+                <li>
+                  - Monitor and track the marketing budget. Ensure marketing
+                  activities are cost-effective and within budget.
+                </li>
+                <li>
+                  - Implement improvements on the Ecommerce website to enhance
+                  user experience and increase sales.
+                </li>
+                <li>- Execute marketing campaigns across various channels.</li>
+                <li>
+                  - Prepare regular reports on marketing activities and their
+                  effectiveness. Present reports and recommendations to senior
+                  management.
+                </li>
+                <li className="text-balance">
+                  - Work with other departments, such as sales and customer
+                  services, to ensure cohesive and effective marketing efforts.
+                </li>
+              </div>
+            </div>
+            <li className="ms-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
+                + Over 7 Years on Digital Marketing
+              </time>
             </li>
           </ol>
         </div>

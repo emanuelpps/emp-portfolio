@@ -1,12 +1,12 @@
 //import NavBar from "@/components/NavBar/NavBar";
 import NavBar from "@/components/NavBar/NavBar";
-import Contact from "./contact/Contact";
 import Footer from "@/components/footer/Footer";
 import Intro from "./intro/Intro";
 import PortfolioContainer from "./portfolio/PortfolioContainer";
 import Experience from "./experience/Experience";
 import Projects from "./projects/Projects";
 import Skills from "./Skills/Skills";
+import Contact from "./contact/Contact";
 
 export default function page() {
   return (
