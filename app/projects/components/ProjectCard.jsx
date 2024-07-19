@@ -1,12 +1,21 @@
-'use client';
+
 import Image from "next/image";
-import { useState } from "react";
+//import { useState } from "react";
+import { motion } from "framer-motion";
 
 function ProjectCard({ ...props }) {
-    const [onMouseOver, setOnMouseOver] = useState(false);
+  //const [onMouseOver, setOnMouseOver] = useState(false);
+
   return (
-    <div id="project-card-container" className="flex flex-col" onClick={() => props.setSelectedId(props.project.id)}>
-      <div id="project-card-header" className="flex justify-evenly mb-5 items-center">
+    <motion.div
+      id={props.project.id}
+      className="flex flex-col  z-10"
+      onClick={() => props.setSelectedId(props.project.id)}
+    >
+      <div
+        id="project-card-header"
+        className="flex justify-evenly mb-5 items-center"
+      >
         <div className="px-2 ">
           <h2 className="text-2xl font-semibold">{props.project.name}</h2>
         </div>
@@ -14,30 +23,47 @@ function ProjectCard({ ...props }) {
           <span className="text-xl">{props.project.class}</span>
         </div>
       </div>
-      <div id="project-card" className="flex justify-center items-center w-full rounded-xl">
+      <motion.div
+        id="project-card"
+        className="flex justify-center items-center w-full rounded-xl cursor-pointer"
+      whileHover={{
+        scale: 1.04,
+        transition: {
+           duration: 0.6,
+           ease: "easeOut",
+           repeat: 0,
+           repeatDelay: 0,
+           delay: 0
+        }
+    }}
+      >
         <Image
-          src={onMouseOver ? props.project.img2 : props.project.img}
-          width={620}
+          src={props.project.img}
+          width={600}
           height={300}
           property="cover"
-          className="bg-fill rounded-xl"
-          onMouseEnter={() => setOnMouseOver(true)}
-          onMouseLeave={() => setOnMouseOver(false)}
+          className={`bg-fill rounded-xl`}
+          //onMouseEnter={() => setOnMouseOver(true)}
+          //onMouseLeave={() => setOnMouseOver(false)}
+          alt="Project Image"
         />
-      </div>
+      </motion.div>
       <div
         id="project-content"
         className="flex flex-col justify-center items-center"
       >
-        <div id="project-technologies" className="flex justify-center items-center gap-2">
+        <div
+          id="project-technologies"
+          className="flex justify-center items-center gap-2"
+        >
           {props.project.lenguage?.map((tech) => (
-            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg px-2 mt-5">
+            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5">
               {tech}
             </span>
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

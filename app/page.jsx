@@ -12,7 +12,7 @@ export default function page() {
   return (
     <div>
       <NavBar />
-      <main className="flex min-h-screen flex-col items-center justify-between pl-24 pr-24 gap-60 overflow-y-hidden scroll-smooth">
+      <main className="flex min-h-screen flex-col items-center justify-between pl-24 pr-24 gap-60 overflow-hidden scroll-smooth">
         <Intro />
         <Experience />
         <Projects />

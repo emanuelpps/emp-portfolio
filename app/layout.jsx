@@ -20,7 +20,7 @@ export default async function RootLayout({ children }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <body className="overflow-x-hidden scroll-smooth">
+      <body className="scroll-smooth">
         <GoogleAnalytics />
         {children}
         <ToastContainer closeButton={false} />

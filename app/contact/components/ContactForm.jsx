@@ -77,28 +77,24 @@ function ContactForm() {
 
   return (
     <>
-      <div className="absolute w-full flex justify-center">
+      <div className="absolute flex justify-center">
         <span className="text-[16rem] font-[900] opacity-10">Contact</span>
       </div>
       {formErrors && <Modal params={errorManagement} />}
-      <div>
+      <div className="flex flex-col justify-center items-center w-[100%]">
         <form
           id="contact-container"
-          className="rounded-lg shadow-xl flex flex-col px-4 md:px-8 py-6 md:py-8 w-full md:w-[60rem] mt-5 md:mt-20"
+          className="rounded-lg shadow-xl flex flex-col px-4  py-6 w-[80%]  mt-5 md:mt-20"
           ref={form}
           onSubmit={handleSubmit}
         >
-          <h1 className="font-semibold text-md text-center md:text-start">
-            Send me a message
-          </h1>
-
-          <label htmlFor="fullName" className="mt-8 font-extralight text-sm">
+          <label htmlFor="fullName" className="mt-8 font-extralight text-xl">
             Full name<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             name="from_name"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
             value={fullName}
             onChange={(e) => {
               setFullName(e.target.value);
@@ -106,13 +102,13 @@ function ContactForm() {
             aria-labelledby="fullName"
           />
 
-          <label htmlFor="email" className="mt-4 font-extralight text-sm">
+          <label htmlFor="email" className="mt-4 font-extralight text-xl">
             E-mail<span className="text-red-500">*</span>
           </label>
           <input
             type="email"
             name="reply_to"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
@@ -120,13 +116,13 @@ function ContactForm() {
             aria-labelledby="email"
           />
 
-          <label htmlFor="subject" className="mt-4 font-extralight text-sm">
+          <label htmlFor="subject" className="mt-4 font-extralight text-xl">
             Subject<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             name="subject"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value);
@@ -134,12 +130,12 @@ function ContactForm() {
             aria-labelledby="subject"
           />
 
-          <label htmlFor="message" className="mt-4 font-extralight text-sm">
+          <label htmlFor="message" className="mt-4 font-extralight text-xl">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea
             name="message"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
             value={message}
             onChange={(e) => {
               setMessage(e.target.value);
@@ -147,7 +143,7 @@ function ContactForm() {
             aria-labelledby="message"
           ></textarea>
           <div className="flex flex-row items-center justify-center md:justify-start">
-            <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-sm font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+            <button className="py-3 mt-12 px-10 inline-flex items-center gap-x-2 text-md font-normal rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
               {buttonText === "Sending" ? (
                 <>
                   {buttonText}

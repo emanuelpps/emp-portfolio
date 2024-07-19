@@ -7,9 +7,13 @@ import { IoDocumentText } from "react-icons/io5";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaCheckCircle } from "react-icons/fa";
+import { animate } from "framer-motion";
+import { motion } from "framer-motion";
 
 function Menu({ ...props }) {
   const [mailCopied, setMailCopied] = useState(false);
+  const sequence = [];
+  animate(sequence)
   const resetCopied = () => {
     setInterval(() => {
       setMailCopied(false);
@@ -30,9 +34,13 @@ function Menu({ ...props }) {
     });
   };
   return (
-    <div
+    <motion.div
       id="navBar-menu"
-      className="bg-white fixed top-0 right-0 z-909 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 flex flex-col justify-between"
+      className="bg-white fixed top-0 right-0 z-909 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 flex flex-col justify-between z-50"
+      initial={{ x: 400 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.5, ease: props.isOpen ? "backIn" : "backOut", type: "tween" }}
+      exit={{transition: { duration: 0.8, ease: "backOut" , type: "tween"} }}
     >
       <div
         id="navBar-menu-close"
@@ -134,7 +142,7 @@ function Menu({ ...props }) {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

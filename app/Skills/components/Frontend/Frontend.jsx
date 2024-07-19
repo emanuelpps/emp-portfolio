@@ -92,7 +92,7 @@ function Frontend() {
     <div className="w-[100%] flex justify-center">
       <div id="frontend-skill" className="w-[85%]">
         <div id="forntend-title">
-          <h2 className="text-6xl opacity-75">Frontend</h2>
+          <h2 className="text-5xl opacity-75">Frontend</h2>
         </div>
         <div id="frontend-container">
           <div
