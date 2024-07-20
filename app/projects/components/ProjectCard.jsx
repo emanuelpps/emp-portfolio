@@ -62,11 +62,12 @@ function ProjectCard({ ...props }) {
             </span>
           ))}
         </div>
+        { props.selectedId === props.project.id && props.projectSelected?.length > 0 &&
         <AnimatePresence>
           {props.selectedId === props.project.id && (
             <ProjectDetails {...props}/>
           )}
-        </AnimatePresence>
+        </AnimatePresence>}
       </div>
     </motion.div>
   );
