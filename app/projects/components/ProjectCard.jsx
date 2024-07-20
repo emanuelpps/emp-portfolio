@@ -1,7 +1,7 @@
-
 import Image from "next/image";
 //import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import ProjectDetails from "./ProjectDetails";
 
 function ProjectCard({ ...props }) {
   //const [onMouseOver, setOnMouseOver] = useState(false);
@@ -9,7 +9,7 @@ function ProjectCard({ ...props }) {
   return (
     <motion.div
       id={props.project.id}
-      className="flex flex-col  z-10"
+      className="flex flex-col"
       onClick={() => props.setSelectedId(props.project.id)}
     >
       <div
@@ -19,23 +19,23 @@ function ProjectCard({ ...props }) {
         <div className="px-2 ">
           <h2 className="text-2xl font-semibold">{props.project.name}</h2>
         </div>
-        <div className="opacity-50 px-2 ">
-          <span className="text-xl">{props.project.class}</span>
+        <div className="px-2 ">
+          <span className="text-xl bg-[(rgba(128,128,128,0.2))]">{props.project.class}</span>
         </div>
       </div>
       <motion.div
         id="project-card"
         className="flex justify-center items-center w-full rounded-xl cursor-pointer"
-      whileHover={{
-        scale: 1.04,
-        transition: {
-           duration: 0.6,
-           ease: "easeOut",
-           repeat: 0,
-           repeatDelay: 0,
-           delay: 0
-        }
-    }}
+        whileHover={{
+          scale: 1.04,
+          transition: {
+            duration: 0.6,
+            ease: "easeOut",
+            repeat: 0,
+            repeatDelay: 0,
+            delay: 0,
+          },
+        }}
       >
         <Image
           src={props.project.img}
@@ -62,6 +62,11 @@ function ProjectCard({ ...props }) {
             </span>
           ))}
         </div>
+        <AnimatePresence>
+          {props.selectedId === props.project.id && (
+            <ProjectDetails {...props}/>
+          )}
+        </AnimatePresence>
       </div>
     </motion.div>
   );

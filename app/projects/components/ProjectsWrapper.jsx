@@ -31,21 +31,10 @@ function ProjectsWrapper() {
             project={project}
             selectedId={selectedId}
             setSelectedId={setSelectedId}
+            projectSelected={projectSelected}
+            setProjectSelected={setProjectSelected}
           />
         ))}
-        <AnimatePresence>
-          {selectedId && (
-            <motion.div
-              layoutId={selectedId}
-              className="absolute w-[90%] bg-[#252525] flex justify-center items-center p-10 rounded-xl z-40"
-             
-            >
-              <motion.h5>{projectSelected[0]?.name}</motion.h5>
-              <motion.h2>{projectSelected[0]?.class}</motion.h2>
-              <motion.button onClick={() => setSelectedId(null)} />
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
     </>
   );
