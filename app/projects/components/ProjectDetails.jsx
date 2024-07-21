@@ -6,6 +6,7 @@ import GenericButton from "@/components/buttons/GenericButton/GenericButton";
 import Link from "next/link";
 import { GrClose } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
+import { VscLinkExternal, VscGithub } from "react-icons/vsc";
 
 function ProjectDetails({ ...props }) {
   const [isClicked, setIsClicked] = useState(false);
@@ -19,18 +20,26 @@ function ProjectDetails({ ...props }) {
       }}
       animate={
         //? { y: 0, opacity: 0, transition: { duration: 0.5 }, scale: 0 }
-        { y: -300, opacity: 1, transition: { duration: 0.5 }, scale: 1 }
+        {
+          x: props.projectSelected[0].id % 2 === 0 ? "-25%" : "25%",
+          y: -300,
+          opacity: 1,
+          transition: {
+            duration: 0.5,
+          },
+          scale: 1,
+        }
       }
       exit={{ opacity: 0, x: 0, scale: 0, transition: { duration: 0.5 } }}
       layoutId={props.selectedId}
-      className="absolute bg-[#252525] flexjustify-center items-center p-2 rounded-xl"
+      className="absolute bg-[#252525]  justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90"
     >
       <div
         id="project-details-close"
-        className="flex items-center justify-end "
+        className="flex w-full h-[50px] p-5 justify-center items-center rounded-t-xl"
       >
         <div
-          className="text-xl bg-white bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-1 mb-5"
+          className="w-full flex justify-end items-center rounded-t-xl"
           onClick={() => {
             props.setSelectedId(0), props.setProjectSelected();
           }}
@@ -40,63 +49,116 @@ function ProjectDetails({ ...props }) {
       </div>
       <div
         id="project-details"
-        className="flex justify-center items-center gap-3 w-[700px]"
+        className="flex justify-center items-center gap-5 w-[100%] h-[100%]"
       >
-        <div id="project-details-video-container" className="">
+        <div
+          id="project-details-video-container"
+          className="w-full justify-center items-center rounded-xl p-5"
+        >
           {props?.projectSelected[0]?.video ? (
             <video autoPlay muted loop className="w-[100%] rounded-xl">
               <source src={props?.projectSelected[0]?.video} type="video/mp4" />
             </video>
           ) : (
-            <Image
-              src={props.projectSelected[0]?.img2}
-              width={800}
-              height={300}
-              property="cover"
-              className={`bg-fill rounded-xl`}
-              alt="Project Image"
-            />
+            <div className="w-[100%] h-[400px] flex justify-center items-center bg-fill">
+              <Image
+                src={props.projectSelected[0]?.img2}
+                width={800}
+                height={800}
+                property="fill"
+                className={`bg-contain rounded-xl flex justify-center items-center`}
+                alt="Project Image"
+              />
+            </div>
           )}
         </div>
-        <div>
-          <div className="flex w-full justify-between">
-            <motion.h5>{props.projectSelected[0]?.name}</motion.h5>
+        <div className="flex flex-col gap-5 w-full">
+          <div className="flex">
+            <motion.h5 className="text-3xl font-semibold">
+              {props.projectSelected[0]?.name}
+            </motion.h5>
           </div>
-          <div id="project-details-buttons">
-            <div className="flex justify-evenly w-full">
-              <Link href={`${props.projectSelected[0]?.link}`}>
-                <GenericButton label="Demo"></GenericButton>
-              </Link>
-              <Link href={`${props.projectSelected[0]?.github}`}>
-                <GenericButton
-                  label={
-                    <>
-                      <FaGithub /> Code
-                    </>
-                  }
-                ></GenericButton>
-              </Link>
+          <div id="project-details-buttons" className="flex justify-evenly">
+            <div className="flex w-full jflex justify-evenly">
+              {props.projectSelected[0] ? (
+                <>
+                  {!props.projectSelected[0]?.isInProgress && (
+                    <Link href={props.projectSelected[0]?.demo} target="_blank">
+                      <button className="m-2 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                        <VscLinkExternal />
+                        <p>Demo</p>
+                      </button>
+                    </Link>
+                  )}
+                  <Link href={props.projectSelected[0]?.code} target="_blank">
+                    <button className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                      <VscGithub />
+                      <p>Repository</p>
+                    </button>
+                  </Link>
+                </>
+              ) : (
+                <div></div>
+              )}
             </div>
           </div>
-          <div id="project-details-description">
-            <div className="flex w-full justify-center">
-              <p>{props.projectSelected[0]?.description}</p>
+          <div id="project-details-description" className="flex flex-col gap-5">
+            <div className="flex justify-center w-[95%]">
+              <p className="text-md">{props.projectSelected[0]?.description}</p>
             </div>
             <div id="project-details-overview">
-              <div>{props.projectSelected[0]?.infoProject?.overview}</div>
+              <p>{props.projectSelected[0]?.infoProject?.overview}</p>
             </div>
-            <div id="project-details-rol-team">
-              <div>
-                <span>My Role: </span>
-                {props.projectSelected[0]?.infoProject?.myRole}
+            <div id="project-details-rol-team" className="flex flex-col gap-2">
+              <div className="flex gap-5">
+                <span className="font-thin text-balance">My Role: </span>
+                <span className="font-semibold text-balance w-[fit-content]">
+                  {props.projectSelected[0]?.infoProject[0]?.myRole}
+                </span>
               </div>
+              {props.projectSelected[0]?.infoProject[0]?.team && (
+                <div className="flex flex-col">
+                  <span>Team: </span>
+                  <div className="w-[95%]">
+                    {props.projectSelected[0]?.infoProject[0]?.team.map(
+                      (team) => (
+                        <p className="font-semibold justify-end items-end w-full">
+                          {team}
+                        </p>
+                      )
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+            <div id="project-details-highlight">
               <div>
-                <span>Team: </span>
-                <span>{props.projectSelected[0]?.infoProject?.team}</span>
+                <h5>Highlight:</h5>
+                <div>
+                  <p className="w-[95%]">
+                    {props.projectSelected[0]?.infoProject[0]?.highlight}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <motion.button onClick={() => setSelectedId(null)} />
+        </div>
+      </div>
+      <div id="project-details-gallery" className="w-full h-full mt-10 mb-10">
+        <div className="flex gap-5 justify-center items-center">
+          {Object.entries(
+            props.projectSelected[0].infoProject[0].images[0].gallery
+          ).map(([key, image], index) => (
+            <Image
+              key={index}
+              src={image}
+              width={400}
+              height={800}
+              property="fill"
+              className="bg-contain rounded-xl flex justify-center items-center"
+              alt={`Project Image ${key}`} // Puedes usar `key` para describir la imagen
+            />
+          ))}
         </div>
       </div>
     </motion.div>
