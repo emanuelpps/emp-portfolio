@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 import animations from "@midudev/tailwind-animations";
 
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        nunito: ["nunito", "sans-serif"],
+        Outfit: ["Outfit"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

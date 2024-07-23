@@ -77,9 +77,9 @@ function ContactForm() {
 
   return (
     <>
-      <div className="absolute flex justify-center">
-        <span className="text-[16rem] font-[900] opacity-10">Contact</span>
-      </div>
+    <div className="absolute flex justify-center items-center w-full">
+      <span className="text-[16rem] font-[900] opacity-10">Contact</span>
+    </div>
       {formErrors && <Modal params={errorManagement} />}
       <div className="flex flex-col justify-center items-center w-[100%]">
         <form

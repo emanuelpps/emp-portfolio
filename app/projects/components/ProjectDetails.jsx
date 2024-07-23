@@ -9,6 +9,9 @@ import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal, VscGithub } from "react-icons/vsc";
 
 function ProjectDetails({ ...props }) {
+  const [imageSelected, setImageSelected] = useState(
+    props.projectSelected[0]?.img2
+  );
   const [isClicked, setIsClicked] = useState(false);
   return (
     <motion.div
@@ -32,14 +35,14 @@ function ProjectDetails({ ...props }) {
       }
       exit={{ opacity: 0, x: 0, scale: 0, transition: { duration: 0.5 } }}
       layoutId={props.selectedId}
-      className="absolute bg-[#252525]  justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90"
+      className="absolute bg-[#252525]  justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90 mb-50"
     >
       <div
         id="project-details-close"
         className="flex w-full h-[50px] p-5 justify-center items-center rounded-t-xl"
       >
         <div
-          className="w-full flex justify-end items-center rounded-t-xl"
+          className="w-full flex justify-end items-center rounded-t-xl cursor-pointer"
           onClick={() => {
             props.setSelectedId(0), props.setProjectSelected();
           }}
@@ -62,7 +65,7 @@ function ProjectDetails({ ...props }) {
           ) : (
             <div className="w-[100%] h-[400px] flex justify-center items-center bg-fill">
               <Image
-                src={props.projectSelected[0]?.img2}
+                src={imageSelected}
                 width={800}
                 height={800}
                 property="fill"
@@ -73,13 +76,21 @@ function ProjectDetails({ ...props }) {
           )}
         </div>
         <div className="flex flex-col gap-5 w-full">
-          <div className="flex  border-b-2 mr-10">
-            <motion.h5 className="text-3xl font-semibold">
-              <p className="font-thin text-sm opacity-25">
-                {props.projectSelected[0]?.class}
-              </p>
-              {props.projectSelected[0]?.name}
-            </motion.h5>
+          <div className="flex flex-col border-b-2 mr-10">
+            <p className="font-thin text-sm opacity-45">
+              {props.projectSelected[0]?.class}
+            </p>
+            <div className="flex justfy-between  w-full">
+              <motion.h5 className="text-3xl font-semibold w-full">
+                {props.projectSelected[0]?.name}
+              </motion.h5>
+              <div className="flex justify-center items-center w-full">
+                <span className="text-sm">
+                  {props.projectSelected[0]?.isInProgress &&
+                    "Currently under development..."}
+                </span>
+              </div>
+            </div>
           </div>
           <div id="project-details-buttons" className="flex justify-evenly">
             <div className="flex w-full jflex justify-evenly">
@@ -153,15 +164,18 @@ function ProjectDetails({ ...props }) {
           {Object.entries(
             props.projectSelected[0].infoProject[0].images[0].gallery
           ).map(([key, image], index) => (
-            <div className="flex justify-center items-center flex-row w-[50%]">
+            <div
+              className="flex justify-center items-center flex-row w-[50%] cursor-pointer"
+              onClick={() => setImageSelected(image)}
+            >
               <Image
                 key={index}
                 src={image}
                 width={400}
                 height={800}
-                property="fill"
-                className="bg-contain rounded-xl flex justify-center items-center"
-                alt={`Project Image ${key}`} // Puedes usar `key` para describir la imagen
+                objectFit="cover"
+                className="bg-cover rounded-xl flex justify-center items-center"
+                alt={`Project Image ${index}`}
               />
             </div>
           ))}

@@ -16,11 +16,8 @@ function ProjectCard({ ...props }) {
         id="project-card-header"
         className="flex justify-evenly mb-5 items-center"
       >
-        <div className="px-2 ">
+        <div className="flex w-full px-2 ">
           <h2 className="text-2xl font-semibold">{props.project.name}</h2>
-        </div>
-        <div className="px-2 ">
-          <span className="text-xl bg-[(rgba(128,128,128,0.2))]">{props.project.class}</span>
         </div>
       </div>
       <motion.div
