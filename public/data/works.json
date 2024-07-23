@@ -18,7 +18,7 @@
     "demo": "https://the-coffee-roastery.vercel.app/",
     "linkName": "coffee-roastery",
     "noCountry": false,
-    "isInProgress": false,
+    "isInProgress": true,
     "infoProject": [
       {
         "overview": "Project under development...",
@@ -32,7 +32,14 @@
               "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717544870/uowkytgenc8p1ks6nwo3.png",
               "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717544872/wbtbovd51q8gif5ftn54.png"
             },
-            "gallery": {}
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706046/ts4f07eiebavlsbuqlo8.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706369/yo8ogd2nywytf77ze0we.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706447/nrdpc5pdu0b0jpegzzlu.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706567/zvvdp1agnrxk41mhsjy2.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706617/y3cytrmzcnmhlzvliofv.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706656/warjhitmg3hbby1soc0n.png"
+            }
           }
         ]
       }
@@ -48,7 +55,7 @@
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821524/liywvyveafas1nwt8oi4.png",
     "lenguage": ["Next Js", "Tailwindcss", "Fetch API"],
     "code": "https://github.com/emanuelpps/EPic-Sound",
-    "demo": "#",
+    "demo": null,
     "linkName": "epic-sound",
     "noCountry": false,
     "isInProgress": true,
@@ -116,16 +123,12 @@
               "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/m8siv1uuveiesafjbxyi.png"
             },
             "gallery": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431781/hosting/edu-class/hqcnp9wf4kyyhvxmzeeb.png",
-              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431819/hosting/edu-class/fvrawvvy026uegqrlidw.png",
-              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/u9jk0owmk1ddxwe0epko.png",
-              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/xfho7ft052tto94wpvow.png",
-              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/slimz5wrtsldumn3ysqs.png",
-              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/yywkh8mxq4q99qtzsozi.png",
-              "image-7": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/m8siv1uuveiesafjbxyi.png",
-              "image-8": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/uvqtdztdguia30xj5ufy.png",
-              "image-9": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/kp5eow0uayo4mrpvq57o.png",
-              "image-10": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/jbqporxz3ywbsoyyhx5a.png"
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706879/foob2azalejufux05lt8.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706933/d89cxjfnkags7vdl2tbt.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706977/awzgjngzixnreaze3rnq.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707042/qch92egj7xrtye5kdz63.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707104/nb77avqenrud3tamy66r.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707224/lsr7bdztqgwuvj23fevc.png"
             }
           }
         ]
@@ -331,7 +334,7 @@
     "type": "Web App",
     "description": "An easy-to-use project for ordering pizzas or empanadas, making your meal experience delightful with straightforward ordering and delivery features.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720824856/m03t7cfwqnkhmpynrsz9.png",
-    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720825295/ldc86au9oiitltxwlomc.png", 
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720825295/ldc86au9oiitltxwlomc.png",
     "lenguage": [
       "CSS 3",
       "React Js",

@@ -9,8 +9,8 @@ import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal, VscGithub } from "react-icons/vsc";
 import { BsCameraVideo } from "react-icons/bs";
 
-
 function ProjectDetails({ ...props }) {
+  const [isVideoSelected, setIsVideoSelected] = useState(false);
   const [imageSelected, setImageSelected] = useState(
     props.projectSelected[0]?.img2
   );
@@ -46,7 +46,7 @@ function ProjectDetails({ ...props }) {
         <div
           className="w-full flex justify-end items-center rounded-t-xl cursor-pointer"
           onClick={() => {
-            props.setSelectedId(0), props.setProjectSelected();
+            props.setSelectedId(null), props.setProjectSelected();
           }}
         >
           <GrClose />
@@ -60,22 +60,31 @@ function ProjectDetails({ ...props }) {
           id="project-details-video-container"
           className="w-full justify-center items-center rounded-xl p-5"
         >
-          {props?.projectSelected[0]?.video ? (
-            <video autoPlay muted loop className="w-[100%] rounded-xl">
-              <source src={props?.projectSelected[0]?.video} type="video/mp4" />
-            </video>
-          ) : (
-            <div className="w-[100%] h-[400px] flex justify-center items-center bg-fill">
+          <div className="w-[100%] h-[400px] flex justify-center items-center bg-fill">
+            {isVideoSelected ? (
+              <video
+                className="bg-contain rounded-xl flex justify-center items-center w-[800px] bg-fill"
+                src={props.projectSelected[0].infoProject[0]?.video}
+                autoPlay
+                loop
+                muted
+                controlsList="nodownload"
+                controls
+                width={800}
+                height={600}
+                property="cover"
+              />
+            ) : (
               <Image
                 src={imageSelected}
                 width={800}
-                height={800}
-                property="fill"
-                className={`bg-contain rounded-xl flex justify-center items-center`}
+                height={600}
+                property="cover"
+                className={`bg-cover rounded-xl flex justify-center items-center`}
                 alt="Project Image"
               />
-            </div>
-          )}
+            )}
+          </div>
         </div>
         <div className="flex flex-col gap-5 w-full">
           <div className="flex flex-col border-b-2 mr-10">
@@ -86,7 +95,7 @@ function ProjectDetails({ ...props }) {
               <motion.h5 className="text-3xl font-semibold w-full">
                 {props.projectSelected[0]?.name}
               </motion.h5>
-              <div className="flex justify-center items-center w-full">
+              <div className="flex justify-center items-end mb-2 w-full">
                 <span className="text-sm">
                   {props.projectSelected[0]?.isInProgress &&
                     "Currently under development..."}
@@ -98,7 +107,7 @@ function ProjectDetails({ ...props }) {
             <div className="flex w-full jflex justify-evenly">
               {props.projectSelected[0] ? (
                 <>
-                  {!props.projectSelected[0]?.isInProgress && (
+                  {props.projectSelected[0]?.demo && (
                     <Link href={props.projectSelected[0]?.demo} target="_blank">
                       <button className="m-2 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                         <VscLinkExternal />
@@ -112,15 +121,10 @@ function ProjectDetails({ ...props }) {
                       <p>Repository</p>
                     </button>
                   </Link>
-                  <Link
-                    href={props.projectSelected[0]?.infoProject[0]?.video}
-                    target="_blank"
-                  >
-                    <button className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                    <button className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black" onClick={() => setIsVideoSelected(true)}>
                       <BsCameraVideo />
                       <p>Teaser</p>
                     </button>
-                  </Link>
                 </>
               ) : (
                 <div></div>
@@ -179,7 +183,9 @@ function ProjectDetails({ ...props }) {
           ).map(([key, image], index) => (
             <div
               className="flex justify-center items-center flex-row w-[50%] cursor-pointer"
-              onClick={() => setImageSelected(image)}
+              onClick={() => {
+                setImageSelected(image), setIsVideoSelected(false);
+              }}
             >
               <Image
                 key={index}
