@@ -73,8 +73,11 @@ function ProjectDetails({ ...props }) {
           )}
         </div>
         <div className="flex flex-col gap-5 w-full">
-          <div className="flex">
+          <div className="flex  border-b-2 mr-10">
             <motion.h5 className="text-3xl font-semibold">
+              <p className="font-thin text-sm opacity-25">
+                {props.projectSelected[0]?.class}
+              </p>
               {props.projectSelected[0]?.name}
             </motion.h5>
           </div>
@@ -103,22 +106,23 @@ function ProjectDetails({ ...props }) {
             </div>
           </div>
           <div id="project-details-description" className="flex flex-col gap-5">
-            <div className="flex justify-center w-[95%]">
-              <p className="text-md">{props.projectSelected[0]?.description}</p>
-            </div>
             <div id="project-details-overview">
               <p>{props.projectSelected[0]?.infoProject?.overview}</p>
             </div>
             <div id="project-details-rol-team" className="flex flex-col gap-2">
               <div className="flex gap-5">
-                <span className="font-thin text-balance">My Role: </span>
+                <span className="font-thin text-balance opacity-80">
+                  My Role:{" "}
+                </span>
                 <span className="font-semibold text-balance w-[fit-content]">
                   {props.projectSelected[0]?.infoProject[0]?.myRole}
                 </span>
               </div>
               {props.projectSelected[0]?.infoProject[0]?.team && (
                 <div className="flex flex-col">
-                  <span>Team: </span>
+                  <span className="font-thin text-balance opacity-80">
+                    Team:{" "}
+                  </span>
                   <div className="w-[95%]">
                     {props.projectSelected[0]?.infoProject[0]?.team.map(
                       (team) => (
@@ -145,19 +149,21 @@ function ProjectDetails({ ...props }) {
         </div>
       </div>
       <div id="project-details-gallery" className="w-full h-full mt-10 mb-10">
-        <div className="flex gap-5 justify-center items-center">
+        <div className="flex gap-5 justify-center items-center w-[100%] max-w-[100%]  pl-5 pr-5">
           {Object.entries(
             props.projectSelected[0].infoProject[0].images[0].gallery
           ).map(([key, image], index) => (
-            <Image
-              key={index}
-              src={image}
-              width={400}
-              height={800}
-              property="fill"
-              className="bg-contain rounded-xl flex justify-center items-center"
-              alt={`Project Image ${key}`} // Puedes usar `key` para describir la imagen
-            />
+            <div className="flex justify-center items-center flex-row w-[50%]">
+              <Image
+                key={index}
+                src={image}
+                width={400}
+                height={800}
+                property="fill"
+                className="bg-contain rounded-xl flex justify-center items-center"
+                alt={`Project Image ${key}`} // Puedes usar `key` para describir la imagen
+              />
+            </div>
           ))}
         </div>
       </div>
