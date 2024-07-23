@@ -72,7 +72,14 @@
               "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717546957/x8izasxlhjkssfpxc3a2.png",
               "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717546982/tw8thniopdbvyr3quozj.png"
             },
-            "gallery": {}
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/hxklom4bb3bifn9pbq24.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/zc0wchfgwomu5axnqdsd.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/pvgwfwmlkjorankllugo.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/obtzrlzfzcrq0ua0kdml.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746407/ojxjmfyxsljwtowkgpnn.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/pm488blbhyujyioe63m1.png"
+            }
           }
         ]
       }
