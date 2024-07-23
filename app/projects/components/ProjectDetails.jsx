@@ -7,6 +7,8 @@ import Link from "next/link";
 import { GrClose } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal, VscGithub } from "react-icons/vsc";
+import { BsCameraVideo } from "react-icons/bs";
+
 
 function ProjectDetails({ ...props }) {
   const [imageSelected, setImageSelected] = useState(
@@ -110,6 +112,15 @@ function ProjectDetails({ ...props }) {
                       <p>Repository</p>
                     </button>
                   </Link>
+                  <Link
+                    href={props.projectSelected[0]?.infoProject[0]?.video}
+                    target="_blank"
+                  >
+                    <button className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                      <BsCameraVideo />
+                      <p>Teaser</p>
+                    </button>
+                  </Link>
                 </>
               ) : (
                 <div></div>
@@ -123,7 +134,7 @@ function ProjectDetails({ ...props }) {
             <div id="project-details-rol-team" className="flex flex-col gap-2">
               <div className="flex gap-5">
                 <span className="font-thin text-balance opacity-80">
-                  My Role:{" "}
+                  My Role:
                 </span>
                 <span className="font-semibold text-balance w-[fit-content]">
                   {props.projectSelected[0]?.infoProject[0]?.myRole}
@@ -132,7 +143,7 @@ function ProjectDetails({ ...props }) {
               {props.projectSelected[0]?.infoProject[0]?.team && (
                 <div className="flex flex-col">
                   <span className="font-thin text-balance opacity-80">
-                    Team:{" "}
+                    Team:
                   </span>
                   <div className="w-[95%]">
                     {props.projectSelected[0]?.infoProject[0]?.team.map(
@@ -148,7 +159,9 @@ function ProjectDetails({ ...props }) {
             </div>
             <div id="project-details-highlight">
               <div>
-                <h5>Highlight:</h5>
+                <h5 className="font-thin text-balance opacity-80">
+                  Highlight:
+                </h5>
                 <div>
                   <p className="w-[95%]">
                     {props.projectSelected[0]?.infoProject[0]?.highlight}
