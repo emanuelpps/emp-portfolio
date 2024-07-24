@@ -281,12 +281,12 @@
               "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597394/hosting/ep-player/wreemhw2smtefhtrovz0.png"
             },
             "gallery": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597392/hosting/ep-player/i0wgarhjbjfwugyk9nn3.png",
-              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597392/hosting/ep-player/iopczxed34mubw5vr1vy.png",
-              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597392/hosting/ep-player/fmnplsmng41pzyjdxqcg.png",
-              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597393/hosting/ep-player/jltbddbjei2axfvh2ofz.png",
-              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597393/hosting/ep-player/lvukt78kijcusred1kzh.png",
-              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597394/hosting/ep-player/wreemhw2smtefhtrovz0.png"
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/qsxee8bkw7fl8sukgijs.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/owum9p1db3xibrcmlvwo.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/uj3o4jj6hlfxz0hnbbny.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/nmvc0kqzvqmo9h7decv2.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/agxooldl5ybhu9xh2dvw.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/l9mbum6eucxsohnjykow.png"
             }
           }
         ]
@@ -299,7 +299,7 @@
     "class": "Weather Information",
     "type": "Web App",
     "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720823918/jxgdp6wh8rhezayzufsw.png",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721786934/zpwjjztqw5dwmlpjohso.png",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720824317/umeudxk6ehfzpbstfppd.png",
     "lenguage": ["CSS 3", "React Js", "Bootstrap", "Fetch API"],
     "code": "https://github.com/emanuelpps/EP-WeatherAPP",
@@ -338,7 +338,7 @@
     "class": "Food Delivery",
     "type": "Web App",
     "description": "An easy-to-use project for ordering pizzas or empanadas, making your meal experience delightful with straightforward ordering and delivery features.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720824856/m03t7cfwqnkhmpynrsz9.png",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721786949/ihasfckd3w7cxptjbsyu.png",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720825295/ldc86au9oiitltxwlomc.png",
     "lenguage": [
       "CSS 3",
