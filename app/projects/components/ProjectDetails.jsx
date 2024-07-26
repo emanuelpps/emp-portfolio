@@ -14,7 +14,12 @@ function ProjectDetails({ ...props }) {
   const [imageSelected, setImageSelected] = useState(
     props.projectSelected[0]?.img2
   );
-  const [isClicked, setIsClicked] = useState(false);
+
+  const closeDetailHandler = () => {
+    props.setIsClicked(false);
+    props.setSelectedId(0)
+    props.setProjectSelected({});
+  };
   return (
     <motion.div
       initial={{
@@ -45,9 +50,7 @@ function ProjectDetails({ ...props }) {
       >
         <div
           className="w-full flex justify-end items-center rounded-t-xl cursor-pointer"
-          onClick={() => {
-            props.setSelectedId(null), props.setProjectSelected();
-          }}
+          onClick={() => closeDetailHandler()}
         >
           <GrClose />
         </div>
@@ -77,7 +80,7 @@ function ProjectDetails({ ...props }) {
             ) : (
               <Image
                 src={imageSelected}
-                width={800}
+                width={600}
                 height={600}
                 property="cover"
                 className={`bg-cover rounded-xl flex justify-center items-center`}

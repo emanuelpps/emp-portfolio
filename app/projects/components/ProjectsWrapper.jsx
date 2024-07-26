@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 function ProjectsWrapper() {
   const [selectedId, setSelectedId] = useState(0);
   const [projectSelected, setProjectSelected] = useState({});
+  const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
     const projectFiltered = Projects.filter(
@@ -14,7 +15,10 @@ function ProjectsWrapper() {
     );
     setProjectSelected(projectFiltered);
     console.log(projectSelected);
-  }, [selectedId]);
+  }, [selectedId, isClicked]);
+
+  
+  console.log(projectSelected);
   return (
     <>
       <div className="absolute w-full flex justify-center">
@@ -33,6 +37,8 @@ function ProjectsWrapper() {
             setSelectedId={setSelectedId}
             projectSelected={projectSelected}
             setProjectSelected={setProjectSelected}
+            isClicked={isClicked}
+            setIsClicked={setIsClicked}
           />
         ))}
       </div>

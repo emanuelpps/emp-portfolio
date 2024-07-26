@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div id="projects" className="w-full">
       <div id="projects-container" className="flex flex-col gap-40 relative ">
-        <SectionTitle text="I been working on these" title="Projects" />
+        <SectionTitle text="I've been working on these" title="Projects" />
         <ProjectsWrapper />
       </div>
     </div>

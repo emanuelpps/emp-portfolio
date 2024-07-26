@@ -6,6 +6,11 @@ import ProjectDetails from "./ProjectDetails";
 function ProjectCard({ ...props }) {
   //const [onMouseOver, setOnMouseOver] = useState(false);
 
+  const cardClickHandler = () => {
+    props.setSelectedId(props.project.id);
+    props.setIsClicked(true);
+  };
+
   return (
     <motion.div
       id={props.project.id}

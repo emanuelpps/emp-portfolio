@@ -13,6 +13,32 @@ function ExperienceBox() {
         ></div>
         <div id="experience-container" className="pt-10 ml-5  w-[80%]">
           <ol className="relative border-s border-gray-200 dark:border-gray-700">
+          <div className="mb-10 ms-4">
+              <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time className="mb-1 text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
+                2024 - July
+              </time>
+              <div className="flex flex-row items-center">
+                <h3 className="text-[2rem] font-light  text-white flex flex-row">
+                  Frontend Developer
+                </h3>
+                <p className="ml-2 text-gray-400 font-thin text-[2rem]">
+                  - Hackathon Participation at Justina.io
+                </p>
+              </div>
+              <div className="mb-4 text-[1.1rem] font-light text-gray-400 text-pretty flex flex-col gap-2">
+              <li>
+                  - Develop frontend components using React JS.
+                </li>
+                <li className="text-balance">
+                  - Develop and implement mobile user interfaces.
+                </li>
+                <li>
+                  - Connect services and APIs to get data and display it
+                  dynamically in the user interface.
+                </li>
+              </div>
+            </div>
             <div className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
