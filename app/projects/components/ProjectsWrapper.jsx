@@ -29,7 +29,7 @@ function ProjectsWrapper() {
   return (
     <>
       <div className="absolute w-full flex justify-center">
-        <span className="text-[16rem] font-[900] opacity-10">Projects</span>
+        <span className="text-[5rem] md:text-[16rem] font-[900] opacity-10">Projects</span>
       </div>
       <div
         id="projects-wrapper"

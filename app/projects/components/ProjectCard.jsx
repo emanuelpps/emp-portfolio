@@ -18,10 +18,10 @@ function ProjectCard({ ...props }) {
     >
       <div
         id="project-card-header"
-        className="flex justify-evenly mb-5 items-center"
+        className="flex justify-evenly mb-5 items-center px-5"
       >
         <div className="flex w-full px-2 ">
-          <h2 className="text-2xl font-semibold">{props.project.name}</h2>
+          <h2 className="text-xl md:text-2xl font-semibold">{props.project.name}</h2>
         </div>
       </div>
       <motion.div
@@ -58,7 +58,7 @@ function ProjectCard({ ...props }) {
           className="flex justify-center items-center gap-2"
         >
           {props.project.lenguage?.map((tech) => (
-            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5">
+            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-1 md:p-2 mt-5 text-[0.5rem] md:text-[1rem]">
               {tech}
             </span>
           ))}

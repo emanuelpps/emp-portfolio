@@ -25,7 +25,7 @@ export const frontendIcons = [
   },
   {
     id: 9,
-    name: "Tailwind CSS",
+    name: "Tailwindcss",
     path: "/assets/skills-icons/frontend/tailwindcss-light.svg",
   },
   {

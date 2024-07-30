@@ -9,8 +9,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { animate } from "framer-motion";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 function Menu({ ...props }) {
+  const router = useRouter();
   const [mailCopied, setMailCopied] = useState(false);
   const sequence = [];
   animate(sequence)
@@ -33,6 +35,11 @@ function Menu({ ...props }) {
       icon: ({ theme, type }) => <FaCheckCircle className="h-10" />,
     });
   };
+
+  const closeMenuHandler = () => {
+    props.setIsOpen(!props.isOpen);
+    //router.push("/");
+  };
   return (
     <motion.div
       id="navBar-menu"
@@ -48,9 +55,7 @@ function Menu({ ...props }) {
       >
         <GrClose
           className="text-black text-2xl cursor-pointer"
-          onClick={() => {
-            props.setIsOpen(!props.isOpen);
-          }}
+          onClick={closeMenuHandler}
         />
       </div>
       <div
@@ -74,7 +79,7 @@ function Menu({ ...props }) {
           </div>
         </Link>
         <Link
-          href={"/#experience"}
+          href={"/#projects"}
           className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
@@ -82,7 +87,7 @@ function Menu({ ...props }) {
           </div>
         </Link>
         <Link
-          href={"/#experience"}
+          href={"/#skills"}
           className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>
@@ -90,7 +95,7 @@ function Menu({ ...props }) {
           </div>
         </Link>
         <Link
-          href={"/#experience"}
+          href={"/#contact"}
           className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
         >
           <div className="text-3xl" scroll={true}>

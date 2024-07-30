@@ -8,21 +8,21 @@ function Native() {
     {
       id: uuid(),
       title: "React Native",
-      icon: <FaReact className="text-[#61dafb] text-[3rem]" />,
+      icon: <FaReact className="text-[#61dafb] text-[2rem] md:text-[3rem]" />,
       url: "https://reactnative.dev",
     },
     {
       id: uuid(),
       title: "Expo",
-      icon: <SiExpo className="text-[#ffff] text-[3rem]" />,
+      icon: <SiExpo className="text-[#ffff] text-[2rem] md:text-[3rem]" />,
       url: "https://expo.dev",
     },
   ]);
   return (
     <div className="w-[100%] flex justify-center">
-      <div id="frontend-skill" className="w-[85%]">
+      <div id="frontend-skill" className="md:w-[85%]">
         <div id="forntend-title">
-          <h2 className="text-5xl opacity-75">Native</h2>
+          <h2 className="text-3xl md:text-5xl opacity-75">Native</h2>
         </div>
         <div id="frontend-container">
           <div
@@ -31,11 +31,13 @@ function Native() {
           >
             {nativeSkills.map((skill) => (
               <div
-                className="flex justify-center items-center bg-[#252525] p-5 rounded-md gap-5 w-60"
+                className="flex justify-center items-center bg-[#252525] p-5 rounded-md gap-5 w-[40%] md:w-60 text-[0.8rem] md:text-[1rem]"
                 title={skill.title}
               >
                 <div>{skill.icon} </div>
-                {skill.title}
+                <span className="text-[0.6rem] md:text-[1rem] w-[fit-content]">
+                  {skill.title}
+                </span>
               </div>
             ))}
           </div>

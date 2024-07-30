@@ -7,7 +7,7 @@ function SkillsWrapper() {
   return (
     <>
       <div className="absolute w-full flex justify-center">
-        <span className="text-[16rem] font-[900] opacity-10">Skills</span>
+        <span className="text-[5rem] md:text-[16rem] font-[900] opacity-10">Skills</span>
       </div>
       <div className="flex flex-wrap justify-center w-full items-center mt-20 gap-24">
         <Frontend />

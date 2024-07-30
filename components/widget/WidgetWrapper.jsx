@@ -3,7 +3,7 @@ import Widget from "./components/Widget";
 
 function WidgetWrapper() {
   return (
-    <div id="widget-wrapper" className="position-relative">
+    <div id="widget-wrapper" className="relative z-40">
       <Widget />
     </div>
   );

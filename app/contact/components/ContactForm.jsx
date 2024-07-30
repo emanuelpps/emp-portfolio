@@ -78,7 +78,7 @@ function ContactForm() {
   return (
     <>
     <div className="absolute flex justify-center items-center w-full">
-      <span className="text-[16rem] font-[900] opacity-10">Contact</span>
+      <span className="text-[5rem] md:text-[16rem] font-[900] opacity-10">Contact</span>
     </div>
       {formErrors && <Modal params={errorManagement} />}
       <div className="flex flex-col justify-center items-center w-[100%]">
@@ -88,13 +88,13 @@ function ContactForm() {
           ref={form}
           onSubmit={handleSubmit}
         >
-          <label htmlFor="fullName" className="mt-8 font-extralight text-xl">
+          <label htmlFor="fullName" className="mt-8 font-extralight text-lg md:text-xl">
             Full name<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             name="from_name"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-lg md:text-xl"
             value={fullName}
             onChange={(e) => {
               setFullName(e.target.value);
@@ -102,13 +102,13 @@ function ContactForm() {
             aria-labelledby="fullName"
           />
 
-          <label htmlFor="email" className="mt-4 font-extralight text-xl">
+          <label htmlFor="email" className="mt-4 font-extralight text-lg md:text-xl">
             E-mail<span className="text-red-500">*</span>
           </label>
           <input
             type="email"
             name="reply_to"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-lg md:text-xl"
             value={email}
             onChange={(e) => {
               setEmail(e.target.value);
@@ -116,13 +116,13 @@ function ContactForm() {
             aria-labelledby="email"
           />
 
-          <label htmlFor="subject" className="mt-4 font-extralight text-xl">
+          <label htmlFor="subject" className="mt-4 font-extralight text-lg md:text-xl">
             Subject<span className="text-red-500">*</span>
           </label>
           <input
             type="text"
             name="subject"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-lg md:text-xl"
             value={subject}
             onChange={(e) => {
               setSubject(e.target.value);
@@ -130,12 +130,12 @@ function ContactForm() {
             aria-labelledby="subject"
           />
 
-          <label htmlFor="message" className="mt-4 font-extralight text-xl">
+          <label htmlFor="message" className="mt-4 font-extralight text-lg md:text-xl">
             Message<span className="text-red-500">*</span>
           </label>
           <textarea
             name="message"
-            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-xl"
+            className="bg-transparent border-b py-2 pl-4 focus:outline-none focus:rounded-md focus:ring-1 ring-gray-500 text-gray-500 text-lg md:text-xl"
             value={message}
             onChange={(e) => {
               setMessage(e.target.value);
