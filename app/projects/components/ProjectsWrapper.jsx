@@ -5,20 +5,27 @@ import Projects from "@/public/data/works.json";
 import ProjectCard from "./ProjectCard";
 
 function ProjectsWrapper() {
-  const [selectedId, setSelectedId] = useState(0);
+  const [selectedId, setSelectedId] = useState(null);
   const [projectSelected, setProjectSelected] = useState({});
-  const [isClicked, setIsClicked] = useState(false);
+  //const [isClicked, setIsClicked] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [forceUpdate, setForceUpdate] = useState(0);
 
   useEffect(() => {
-    const projectFiltered = Projects.filter(
+    const selectedProject = Projects.find(
       (project) => project.id === selectedId
     );
-    setProjectSelected(projectFiltered);
-    console.log(projectSelected);
-  }, [selectedId, isClicked]);
+    setProjectSelected(selectedProject);
+  }, [selectedId, forceUpdate]);
 
-  
-  console.log(projectSelected);
+  const handleCardClick = (id) => {
+    if (selectedId === id) {
+      setForceUpdate((prev) => prev + 1);
+    } else {
+      setSelectedId(id);
+    }
+    setIsOpen(true);
+  };
   return (
     <>
       <div className="absolute w-full flex justify-center">
@@ -30,15 +37,14 @@ function ProjectsWrapper() {
       >
         {Projects.map((project, index) => (
           <ProjectCard
-            layoutId={project.id}
             key={project.id}
             project={project}
             selectedId={selectedId}
             setSelectedId={setSelectedId}
+            onCardClick={handleCardClick}
             projectSelected={projectSelected}
-            setProjectSelected={setProjectSelected}
-            isClicked={isClicked}
-            setIsClicked={setIsClicked}
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
           />
         ))}
       </div>

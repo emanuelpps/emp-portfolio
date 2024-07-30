@@ -7,15 +7,14 @@ function ProjectCard({ ...props }) {
   //const [onMouseOver, setOnMouseOver] = useState(false);
 
   const cardClickHandler = () => {
-    props.setSelectedId(props.project.id);
-    props.setIsClicked(true);
+    props.onCardClick(props.project.id);
   };
 
   return (
     <motion.div
       id={props.project.id}
       className="flex flex-col"
-      onClick={() => props.setSelectedId(props.project.id)}
+      onClick={cardClickHandler}
     >
       <div
         id="project-card-header"
@@ -64,12 +63,11 @@ function ProjectCard({ ...props }) {
             </span>
           ))}
         </div>
-        { props.selectedId === props.project.id && props.projectSelected?.length > 0 &&
-        <AnimatePresence>
-          {props.selectedId === props.project.id && (
-            <ProjectDetails {...props}/>
-          )}
-        </AnimatePresence>}
+        {props.selectedId === props.project.id && props.isOpen && (
+          <AnimatePresence>
+            <ProjectDetails {...props} />
+          </AnimatePresence>
+        )}
       </div>
     </motion.div>
   );
