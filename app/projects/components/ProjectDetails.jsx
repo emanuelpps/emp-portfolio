@@ -11,9 +11,7 @@ import { BsCameraVideo } from "react-icons/bs";
 
 function ProjectDetails({ ...props }) {
   const [isVideoSelected, setIsVideoSelected] = useState(false);
-  const [imageSelected, setImageSelected] = useState(
-    props.projectSelected?.img2
-  );
+  const [imageSelected, setImageSelected] = useState();
 
   const closeProjectDetails = () => {
     props.setIsOpen(false);
@@ -31,7 +29,7 @@ function ProjectDetails({ ...props }) {
       animate={
         //? { y: 0, opacity: 0, transition: { duration: 0.5 }, scale: 0 }
         {
-          x: props.projectSelected?.id % 2 === 0 ? "-25%" : "25%",
+          x: props.projectSelected?.id % 2 === 0 ? "-25%" : "26%",
           y: -300,
           opacity: 1,
           transition: {
@@ -79,7 +77,7 @@ function ProjectDetails({ ...props }) {
               />
             ) : (
               <Image
-                src={props.projectSelected?.img2}
+                src={imageSelected || props.projectSelected?.img2}
                 width={600}
                 height={600}
                 property="cover"
