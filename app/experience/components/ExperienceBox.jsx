@@ -122,7 +122,7 @@ function ExperienceBox() {
             </div> */}
             <li className="ms-4">
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-              <time className="mb-1 text-[1rem] md:text-[2rem]font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-[1rem] md:text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
                 + Over 7 Years Working on Digital Products.
               </time>
             </li>
