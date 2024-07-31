@@ -46,13 +46,16 @@ function Backend() {
             id="frontend-icons"
             className="flex flex-wrap gap-10 justify-center items-center mt-10"
           >
-            {backendSkills.map((skill) => (
+            {backendSkills.map((skill, index) => (
               <div
-                className="flex justify-center items-center bg-[#252525] p-5 rounded-md gap-5 w-[40%] md:w-60 text-[0.8rem] md:text-[1rem]"
+                key={index}
+                className="flex justify-center items-center bg-[#252525] p-1 md:p-5 rounded-md gap-2 md:gap-5 w-[40%] min-h-[50px] md:w-60 text-[0.8rem] md:text-[1rem]"
                 title={skill.title}
               >
                 <div>{skill.icon} </div>
-                <span className="text-[0.6rem] md:text-[1rem] w-[fit-content]">{skill.title}</span>
+                <span className="text-[0.9rem] md:text-[1rem] w-[fit-content]">
+                  {skill.title}
+                </span>
               </div>
             ))}
           </div>

@@ -15,7 +15,7 @@ function Menu({ ...props }) {
   const router = useRouter();
   const [mailCopied, setMailCopied] = useState(false);
   const sequence = [];
-  animate(sequence)
+  animate(sequence);
   const resetCopied = () => {
     setInterval(() => {
       setMailCopied(false);
@@ -46,8 +46,12 @@ function Menu({ ...props }) {
       className="bg-white fixed top-0 right-0 z-909 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 flex flex-col justify-between z-50"
       initial={{ x: 400 }}
       animate={{ x: 0 }}
-      transition={{ duration: 0.5, ease: props.isOpen ? "backIn" : "backOut", type: "tween" }}
-      exit={{transition: { duration: 0.8, ease: "backOut" , type: "tween"} }}
+      transition={{
+        duration: 0.5,
+        ease: props.isOpen ? "backIn" : "backOut",
+        type: "tween",
+      }}
+      exit={{ transition: { duration: 0.8, ease: "backOut", type: "tween" } }}
     >
       <div
         id="navBar-menu-close"
@@ -60,7 +64,7 @@ function Menu({ ...props }) {
       </div>
       <div
         id="navBar-menu-container"
-        className="flex flex-col justify-center items-start"
+        className="flex flex-col justify-center items-start h-[100vh] overflow-hidden"
       >
         <Link
           href={"/#home"}

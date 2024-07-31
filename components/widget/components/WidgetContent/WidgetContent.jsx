@@ -9,7 +9,7 @@ function WidgetContent() {
     <div id="widget-content" className="relative z-50">
       <div
         id="widget-content-container"
-        className="absolute bottom-2 bg-white color-black right-1 w-[400px] h-[600px] max-h-[screen] overflow-y-scroll rounded-lg widget-content"
+        className="absolute bottom-2 bg-white color-black right-0 md:right-1 w-screen md:w-[400px] h-[600px] max-h-[screen] overflow-y-scroll rounded-lg widget-content"
       >
         <WidgetContentTitle />
         <WidgetContentText />

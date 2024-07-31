@@ -55,10 +55,10 @@ function ProjectCard({ ...props }) {
       >
         <div
           id="project-technologies"
-          className="flex justify-center items-center gap-2"
+          className="flex flex-wrap md:flex-nowrap justify-center items-center gap-2"
         >
           {props.project.lenguage?.map((tech) => (
-            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-1 md:p-2 mt-5 text-[0.5rem] md:text-[1rem]">
+            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5 text-[0.8rem] md:text-[1rem]">
               {tech}
             </span>
           ))}

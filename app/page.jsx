@@ -13,7 +13,7 @@ export default function page() {
   return (
     <div>
       <NavBar />
-      <main className="flex min-h-screen flex-col items-center justify-center md:pl-24 md:pr-24 gap-10 md:gap-60 overflow-hidden scroll-smooth px-5">
+      <main className="flex min-h-screen flex-col items-center justify-center md:pl-24 md:pr-24 gap-20 md:gap-60 overflow-hidden scroll-smooth px-5">
         <Intro />
         <Experience />
         <Projects />

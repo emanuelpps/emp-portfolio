@@ -40,7 +40,7 @@ function ProjectDetails({ ...props }) {
       }
       exit={{ opacity: 0, x: 0, scale: 0, transition: { duration: 0.5 } }}
       layoutId={props.selectedId}
-      className="absolute bg-[#252525]  justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90 mb-50"
+      className="absolute bg-[#252525] flex flex-col md:block justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90 mb-50"
     >
       <div
         id="project-details-close"
@@ -55,16 +55,16 @@ function ProjectDetails({ ...props }) {
       </div>
       <div
         id="project-details"
-        className="flex justify-center items-center gap-5 w-[100%] h-[100%]"
+        className="flex flex-col md:flex-row justify-center items-center gap-5 w-[100%] h-[100%]"
       >
         <div
           id="project-details-video-container"
           className="w-full justify-center items-center rounded-xl p-5"
         >
-          <div className="w-[100%] h-[400px] flex justify-center items-center bg-fill">
+          <div className="w-[100%] h-[200px] md:h-[400px] flex justify-center items-center bg-fill">
             {isVideoSelected ? (
               <video
-                className="bg-contain rounded-xl flex justify-center items-center w-[800px] bg-fill"
+                className="bg-contain rounded-xl flex justify-center items-center w-[200px] md:w-[800px] bg-fill"
                 src={props.projectSelected?.infoProject[0]?.video}
                 autoPlay
                 loop
@@ -87,24 +87,24 @@ function ProjectDetails({ ...props }) {
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-5 w-full">
+        <div className="flex flex-col gap-5 w-[90%] md:w-full">
           <div className="flex flex-col border-b-2 mr-10">
             <p className="font-thin text-sm opacity-45">
               {props.projectSelected?.class}
             </p>
             <div className="flex justfy-between  w-full">
-              <motion.h5 className="text-3xl font-semibold w-full">
+              <motion.h5 className="text-xl md:text-3xl font-semibold w-full">
                 {props.projectSelected?.name}
               </motion.h5>
               <div className="flex justify-center items-end mb-2 w-full">
                 {props.projectSelected?.isInProgress && (
-                  <span className="text-sm bg-white text-black p-2 rounded-lg">Currently under development</span>
+                  <span className="flex justify-center items-center  bg-white text-black p-2 rounded-lg text-[0.6rem] md:text-[0.8rem]">Currently under development</span>
                 )}
               </div>
             </div>
           </div>
           <div id="project-details-buttons" className="flex justify-evenly">
-            <div className="flex w-full jflex justify-evenly">
+            <div className="flex w-full flex-col items-center justify-center md:flex-row md:justify-evenly">
               {props.projectSelected ? (
                 <>
                   {props.projectSelected?.demo && (
@@ -177,15 +177,15 @@ function ProjectDetails({ ...props }) {
           </div>
         </div>
       </div>
-      <div id="project-details-gallery" className="w-full h-full mt-10 mb-10">
-        <div className="flex gap-5 justify-center items-center w-[100%] max-w-[100%]  pl-5 pr-5">
+      <div id="project-details-gallery" className="hidden md:block w-full h-full mt-10 mb-10">
+        <div className="flex flex-col md:flex-row gap-5 justify-center items-center w-[100%] max-w-[100%]  md:pl-5 md:pr-5">
           {props.projectSelected?.infoProject[0]?.images[0]?.gallery &&
             Object.entries(
               props.projectSelected?.infoProject[0].images[0].gallery
             ).map(([key, image], index) => (
               <div
                 key={key}
-                className="flex justify-center items-center flex-row w-[50%] cursor-pointer"
+                className="flex justify-center items-center flex-row w-[90%] md:w-[50%] cursor-pointer"
                 onClick={() => {
                   setImageSelected(image), setIsVideoSelected(false);
                 }}

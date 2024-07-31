@@ -7,7 +7,7 @@
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 17, 14, 14;
   --background-end-rgb: 0, 0, 0;
-  max-width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #111111;
   margin: 0;

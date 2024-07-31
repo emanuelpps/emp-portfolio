@@ -4,7 +4,7 @@ function TitleIntro() {
   return (
     <div
       id="title-intro"
-      className="w-full h-[100vh] md:h-full flex flex-col justify-center items-start leading-tight mt-[10%] animate-fade-right animate-ease-in animate-normal animate-fill-forwards"
+      className="w-full h-[100vh] md:h-full flex flex-col justify-center items-start leading-tight mt-0 md:mt-[10%] animate-fade-right animate-ease-in animate-normal animate-fill-forwards"
     >
       <div>
         <span className="hidden md:flex md:text-[8rem] font-[300] opacity-20">
