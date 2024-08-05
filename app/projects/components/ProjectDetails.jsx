@@ -10,8 +10,17 @@ import { VscLinkExternal, VscGithub } from "react-icons/vsc";
 import { BsCameraVideo } from "react-icons/bs";
 
 function ProjectDetails({ ...props }) {
+  const [isVerticalView, setIsVerticalView] = useState(false);
   const [isVideoSelected, setIsVideoSelected] = useState(false);
   const [imageSelected, setImageSelected] = useState();
+
+  useEffect(() => {
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+    if (height > width) {
+      setIsVerticalView(true);
+    }
+  }, []);
 
   const closeProjectDetails = () => {
     props.setIsOpen(false);
@@ -27,9 +36,12 @@ function ProjectDetails({ ...props }) {
         scale: 0,
       }}
       animate={
-        //? { y: 0, opacity: 0, transition: { duration: 0.5 }, scale: 0 }
         {
-          x: props.projectSelected?.id % 2 === 0 ? "-25%" : "26%",
+          x: !isVerticalView
+            ? props.projectSelected?.id % 2 === 0
+              ? "-25%"
+              : "26%"
+            : 0,
           y: -300,
           opacity: 1,
           transition: {
@@ -98,7 +110,9 @@ function ProjectDetails({ ...props }) {
               </motion.h5>
               <div className="flex justify-center items-end mb-2 w-full">
                 {props.projectSelected?.isInProgress && (
-                  <span className="flex justify-center items-center  bg-white text-black p-2 rounded-lg text-[0.6rem] md:text-[0.8rem]">Currently under development</span>
+                  <span className="flex justify-center items-center  bg-white text-black p-2 rounded-lg text-[0.6rem] md:text-[0.8rem]">
+                    Currently under development
+                  </span>
                 )}
               </div>
             </div>
@@ -109,20 +123,20 @@ function ProjectDetails({ ...props }) {
                 <>
                   {props.projectSelected?.demo && (
                     <Link href={props.projectSelected?.demo} target="_blank">
-                      <button className="m-2 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                      <button className="w-[10rem] justify-center m-2 py-3 px-8 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                         <VscLinkExternal />
                         <p>Demo</p>
                       </button>
                     </Link>
                   )}
                   <Link href={props.projectSelected?.code} target="_blank">
-                    <button className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
+                    <button className="w-[10rem] justify-center m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black">
                       <VscGithub />
                       <p>Repository</p>
                     </button>
                   </Link>
                   <button
-                    className="m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black"
+                    className="w-[10rem] justify-center m-2 py-3 px-5 inline-flex items-center gap-x-2 text-sm rounded-md bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100 hover:bg-gray-200 hover:text-black"
                     onClick={() => setIsVideoSelected(true)}
                   >
                     <BsCameraVideo />
@@ -177,7 +191,10 @@ function ProjectDetails({ ...props }) {
           </div>
         </div>
       </div>
-      <div id="project-details-gallery" className="hidden md:block w-full h-full mt-10 mb-10">
+      <div
+        id="project-details-gallery"
+        className="hidden md:block w-full h-full mt-10 mb-10"
+      >
         <div className="flex flex-col md:flex-row gap-5 justify-center items-center w-[100%] max-w-[100%]  md:pl-5 md:pr-5">
           {props.projectSelected?.infoProject[0]?.images[0]?.gallery &&
             Object.entries(

@@ -28,12 +28,12 @@ function ProjectsWrapper() {
   };
   return (
     <>
-      <div className="absolute w-full flex justify-center">
-        <span className="text-[5rem] md:text-[16rem] font-[900] opacity-10">Projects</span>
+      <div className="absolute flex justify-center w-full">
+        <span className="text-[5rem] md:text-[11rem] lg:text-[16rem] font-[900] opacity-10">Projects</span>
       </div>
       <div
         id="projects-wrapper"
-        className="flex flex-wrap justify-center w-full items-center mt-20 gap-20 relative"
+        className="relative flex flex-wrap items-center justify-center w-full gap-20 mt-20"
       >
         {Projects.map((project, index) => (
           <ProjectCard

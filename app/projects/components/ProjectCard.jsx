@@ -21,7 +21,9 @@ function ProjectCard({ ...props }) {
         className="flex justify-evenly mb-5 items-center px-5"
       >
         <div className="flex w-full px-2 ">
-          <h2 className="text-xl md:text-2xl font-semibold">{props.project.name}</h2>
+          <h2 className="text-xl md:text-2xl font-semibold">
+            {props.project.name}
+          </h2>
         </div>
       </div>
       <motion.div
@@ -65,7 +67,11 @@ function ProjectCard({ ...props }) {
         </div>
         {props.selectedId === props.project.id && props.isOpen && (
           <AnimatePresence>
-            <ProjectDetails {...props} />
+            {props.projectSelected ? (
+              <ProjectDetails {...props} />
+            ) : (
+              "Loading..."
+            )}
           </AnimatePresence>
         )}
       </div>

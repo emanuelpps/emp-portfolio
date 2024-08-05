@@ -13,7 +13,6 @@ export default function Intro() {
   return (
     <div className="w-full max-w-[1400px] h-[100%] relative ">
       <TitleIntro />
-      {/*<ArrowIntro />*/}
     </div>
   );
 }
