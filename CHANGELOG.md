@@ -1,5 +1,22 @@
 
 
+## [2.1.0](https://github.com/emanuelpps/emp-portfolio/compare/v2.0.1...v2.1.0) (2024-8-5)
+
+
+### Bug Fixes
+
+* added card links correction ([151d1e1](https://github.com/emanuelpps/emp-portfolio/commit/151d1e12bc8efbe07c4b60eccfc2a2826717a35b))
+* Added corrections to dependencies ([80cad9f](https://github.com/emanuelpps/emp-portfolio/commit/80cad9f996a4afa7502aa4e288aca939c70f9586))
+* refactor structure ([1d3cd8e](https://github.com/emanuelpps/emp-portfolio/commit/1d3cd8e9b0f64a61eccdf83889650f015df44218))
+
+
+### Features
+
+* added experience section ([01243d2](https://github.com/emanuelpps/emp-portfolio/commit/01243d227aa2f86e542a139c84f98bf8a87c28cc))
+* added new intro and new navbar menu ([cb77ba2](https://github.com/emanuelpps/emp-portfolio/commit/cb77ba2cf9208251087ca8686c6c4b4a774f5853))
+* added new projects page and structure ([bae3abd](https://github.com/emanuelpps/emp-portfolio/commit/bae3abdecd7d07c60d89d9863c60f0fb3b31c352))
+* added projects title ([3e2404f](https://github.com/emanuelpps/emp-portfolio/commit/3e2404f2ca22d3fd4c15c6b801cb2ef9e9b1b5e0))
+
 ## [2.0.1](https://github.com/emanuelpps/emp-portfolio/compare/v1.5.2...v2.0.1) (2024-6-17)
 
 
