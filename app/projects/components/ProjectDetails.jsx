@@ -59,7 +59,7 @@ function ProjectDetails({ ...props }) {
         className="flex w-full h-[50px] p-5 justify-center items-center rounded-t-xl"
       >
         <div
-          className="w-full flex justify-end items-center rounded-t-xl cursor-pointer"
+          className="flex items-center justify-end w-full cursor-pointer rounded-t-xl"
           onClick={closeProjectDetails}
         >
           <GrClose />
@@ -71,12 +71,12 @@ function ProjectDetails({ ...props }) {
       >
         <div
           id="project-details-video-container"
-          className="w-full justify-center items-center rounded-xl p-5"
+          className="items-center justify-center w-full p-5 rounded-xl"
         >
           <div className="w-[100%] h-[200px] md:h-[400px] flex justify-center items-center bg-fill">
             {isVideoSelected ? (
               <video
-                className="bg-contain rounded-xl flex justify-center items-center w-[200px] md:w-[800px] bg-fill"
+                className="bg-contain rounded-xl flex justify-center items-center w-[400px] md:w-[800px] bg-fill"
                 src={props.projectSelected?.infoProject[0]?.video}
                 autoPlay
                 loop
@@ -100,15 +100,15 @@ function ProjectDetails({ ...props }) {
           </div>
         </div>
         <div className="flex flex-col gap-5 w-[90%] md:w-full">
-          <div className="flex flex-col border-b-2 mr-10">
-            <p className="font-thin text-sm opacity-45">
+          <div className="flex flex-col mr-10 border-b-2">
+            <p className="text-sm font-thin opacity-45">
               {props.projectSelected?.class}
             </p>
-            <div className="flex justfy-between  w-full">
-              <motion.h5 className="text-xl md:text-3xl font-semibold w-full">
+            <div className="flex w-full justfy-between">
+              <motion.h5 className="w-full text-xl font-semibold md:text-3xl">
                 {props.projectSelected?.name}
               </motion.h5>
-              <div className="flex justify-center items-end mb-2 w-full">
+              <div className="flex items-end justify-center w-full mb-2">
                 {props.projectSelected?.isInProgress && (
                   <span className="flex justify-center items-center  bg-white text-black p-2 rounded-lg text-[0.6rem] md:text-[0.8rem]">
                     Currently under development
@@ -118,7 +118,7 @@ function ProjectDetails({ ...props }) {
             </div>
           </div>
           <div id="project-details-buttons" className="flex justify-evenly">
-            <div className="flex w-full flex-col items-center justify-center md:flex-row md:justify-evenly">
+            <div className="flex flex-col items-center justify-center w-full md:flex-row md:justify-evenly">
               {props.projectSelected ? (
                 <>
                   {props.projectSelected?.demo && (
@@ -148,7 +148,7 @@ function ProjectDetails({ ...props }) {
               )}
             </div>
           </div>
-          <div id="project-details-description" className="flex flex-col gap-5">
+          <div id="project-details-description" className="flex flex-col gap-5 mb-10 md:mb-0 lg:mb-0">
             <div id="project-details-overview">
               <p>{props.projectSelected?.infoProject?.overview}</p>
             </div>
@@ -168,7 +168,7 @@ function ProjectDetails({ ...props }) {
                   </span>
                   <div className="w-[95%]">
                     {props.projectSelected?.infoProject[0]?.team.map((team) => (
-                      <p className="font-semibold justify-end items-end w-full">
+                      <p className="items-end justify-end w-full font-semibold">
                         {team}
                       </p>
                     ))}
@@ -193,7 +193,7 @@ function ProjectDetails({ ...props }) {
       </div>
       <div
         id="project-details-gallery"
-        className="hidden md:block w-full h-full mt-10 mb-10"
+        className="hidden w-full h-full mt-10 mb-10 md:block"
       >
         <div className="flex flex-col md:flex-row gap-5 justify-center items-center w-[100%] max-w-[100%]  md:pl-5 md:pr-5">
           {props.projectSelected?.infoProject[0]?.images[0]?.gallery &&
@@ -213,7 +213,7 @@ function ProjectDetails({ ...props }) {
                   width={400}
                   height={800}
                   objectFit="cover"
-                  className="bg-cover rounded-xl flex justify-center items-center"
+                  className="flex items-center justify-center bg-cover rounded-xl"
                   alt={`Project Image ${index}`}
                 />
               </div>
