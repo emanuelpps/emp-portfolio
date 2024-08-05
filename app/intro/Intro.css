@@ -1,0 +1,44 @@
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+a {
+  text-decoration: none;
+}
+.main__scroll-text {
+  color: whie;
+}
+
+.main__action:hover .main__scroll-box {
+  animation: scroll-down 3s infinite;
+}
+
+@keyframes scroll-down {
+  0%,
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
+
