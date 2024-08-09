@@ -9,6 +9,7 @@ import Skills from "./Skills/Skills";
 import Contact from "./contact/Contact";
 import WidgetWrapper from "@/components/widget/WidgetWrapper";
 
+
 export default function page() {
   return (
     <div>

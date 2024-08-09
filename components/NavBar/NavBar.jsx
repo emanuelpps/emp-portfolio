@@ -2,17 +2,17 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import PortfolioLogo from "@/public/assets/logo-ep.svg";
-import Link from "next/link";
-import arrow from "@/public/assets/arrow.svg";
-import { useRouter } from "next/navigation";
-import { usePathname } from "next/navigation";
-import { GrMenu } from "react-icons/gr";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { RiMailCheckFill } from "react-icons/ri";
-import { RiMailFill } from "react-icons/ri";
+//import Link from "next/link";
+//import arrow from "@/public/assets/arrow.svg";
+//import { useRouter } from "next/navigation";
+//import { usePathname } from "next/navigation";
+//import { GrMenu } from "react-icons/gr";
+//import { FaGithub } from "react-icons/fa";
+//import { FaLinkedinIn } from "react-icons/fa";
+//import { RiMailCheckFill } from "react-icons/ri";
+//import { RiMailFill } from "react-icons/ri";
 import { BsFillFileEarmarkMedicalFill } from "react-icons/bs";
-import { toast } from "react-toastify";
+//import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { TfiMenu } from "react-icons/tfi";
@@ -49,10 +49,10 @@ export default function NavBar() {
 
   return (
     <>
-      <div id="navbar" className="w-full fixed top-0 z-30">
+      <div id="navbar" className="fixed top-0 z-30 w-full">
         <div
           id="navBarContainer"
-          className="flex justify-between items-center pl-10 pr-10 pt-5 z-30"
+          className="z-30 flex items-center justify-between pt-5 pl-10 pr-10"
         >
           <Image
             src={PortfolioLogo}
@@ -62,7 +62,7 @@ export default function NavBar() {
             className="font-bold"
           />
           <TfiMenu
-            className="text-4xl  cursor-pointer"
+            className="text-4xl cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           />
         </div>

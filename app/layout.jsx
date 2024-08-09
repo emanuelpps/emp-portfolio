@@ -1,7 +1,9 @@
 import "./globals.css";
 import { Outfit } from "next/font/google";
 import Head from "next/head";
+import "react-toastify/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.css";
 import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata = {

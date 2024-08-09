@@ -18,17 +18,17 @@ function ProjectCard({ ...props }) {
     >
       <div
         id="project-card-header"
-        className="flex justify-evenly mb-5 items-center px-5"
+        className="flex items-center px-5 mb-5 justify-evenly"
       >
         <div className="flex w-full px-2 ">
-          <h2 className="text-xl md:text-2xl font-semibold">
+          <h2 className="text-xl font-semibold md:text-2xl">
             {props.project.name}
           </h2>
         </div>
       </div>
       <motion.div
         id="project-card"
-        className="flex justify-center items-center w-full rounded-xl cursor-pointer"
+        className="flex items-center justify-center w-full cursor-pointer rounded-xl"
         whileHover={{
           scale: 1.04,
           transition: {
@@ -49,15 +49,16 @@ function ProjectCard({ ...props }) {
           //onMouseEnter={() => setOnMouseOver(true)}
           //onMouseLeave={() => setOnMouseOver(false)}
           alt="Project Image"
+          loading="lazy"
         />
       </motion.div>
       <div
         id="project-content"
-        className="flex flex-col justify-center items-center"
+        className="flex flex-col items-center justify-center"
       >
         <div
           id="project-technologies"
-          className="flex flex-wrap md:flex-nowrap justify-center items-center gap-2"
+          className="flex flex-wrap items-center justify-center gap-2 md:flex-nowrap"
         >
           {props.project.lenguage?.map((tech) => (
             <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5 text-[0.8rem] md:text-[1rem]">

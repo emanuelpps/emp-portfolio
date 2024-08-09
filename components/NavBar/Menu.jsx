@@ -38,12 +38,11 @@ function Menu({ ...props }) {
 
   const closeMenuHandler = () => {
     props.setIsOpen(!props.isOpen);
-    //router.push("/");
   };
   return (
     <motion.div
       id="navBar-menu"
-      className="bg-white fixed top-0 right-0 z-909 w-60 h-screen transition-transform -translate-x-full sm:translate-x-0 flex flex-col justify-between z-50"
+      className="fixed top-0 right-0 z-50 flex flex-col justify-between h-screen transition-transform -translate-x-full bg-white z-909 w-60 sm:translate-x-0"
       initial={{ x: 400 }}
       animate={{ x: 0 }}
       transition={{
@@ -58,7 +57,7 @@ function Menu({ ...props }) {
         className="flex justify-end [fit-content] p-4"
       >
         <GrClose
-          className="text-black text-2xl cursor-pointer"
+          className="text-2xl text-black cursor-pointer"
           onClick={closeMenuHandler}
         />
       </div>
@@ -68,7 +67,7 @@ function Menu({ ...props }) {
       >
         <Link
           href={"/#home"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
+          className="w-full pt-2 pb-2 pl-5 text-black hover:bg-black hover:text-white hover:font-semibold"
         >
           <div className="text-3xl" scroll={true}>
             Home
@@ -76,7 +75,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#experience"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
+          className="w-full pt-2 pb-2 pl-5 text-black hover:bg-black hover:text-white hover:font-semibold"
         >
           <div className="text-3xl" scroll={true}>
             Experience
@@ -84,7 +83,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#projects"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
+          className="w-full pt-2 pb-2 pl-5 text-black hover:bg-black hover:text-white hover:font-semibold"
         >
           <div className="text-3xl" scroll={true}>
             Projects
@@ -92,7 +91,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#skills"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
+          className="w-full pt-2 pb-2 pl-5 text-black hover:bg-black hover:text-white hover:font-semibold"
         >
           <div className="text-3xl" scroll={true}>
             Skills
@@ -100,7 +99,7 @@ function Menu({ ...props }) {
         </Link>
         <Link
           href={"/#contact"}
-          className="pl-5 pt-2 pb-2 text-black hover:bg-black hover:text-white hover:font-semibold w-full"
+          className="w-full pt-2 pb-2 pl-5 text-black hover:bg-black hover:text-white hover:font-semibold"
         >
           <div className="text-3xl" scroll={true}>
             Contact
@@ -109,7 +108,7 @@ function Menu({ ...props }) {
       </div>
       <div
         id="socialMedia-container"
-        className="flex flex-row justify-evenly m-4"
+        className="flex flex-row m-4 justify-evenly"
       >
         <Link
           href="https://github.com/emanuelpps"
@@ -145,9 +144,9 @@ function Menu({ ...props }) {
           className="cursor-pointer"
         >
           {mailCopied ? (
-            <MdOutlineMarkEmailRead className="text-black text-3xl" />
+            <MdOutlineMarkEmailRead className="text-3xl text-black" />
           ) : (
-            <MdOutlineMailOutline className="text-black text-3xl" />
+            <MdOutlineMailOutline className="text-3xl text-black" />
           )}
         </div>
       </div>

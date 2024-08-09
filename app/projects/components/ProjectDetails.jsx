@@ -35,21 +35,19 @@ function ProjectDetails({ ...props }) {
         transition: { duration: 0.5 },
         scale: 0,
       }}
-      animate={
-        {
-          x: !isVerticalView
-            ? props.projectSelected?.id % 2 === 0
-              ? "-25%"
-              : "26%"
-            : 0,
-          y: -300,
-          opacity: 1,
-          transition: {
-            duration: 0.5,
-          },
-          scale: 1,
-        }
-      }
+      animate={{
+        x: !isVerticalView
+          ? props.projectSelected?.id % 2 === 0
+            ? "-25%"
+            : "26%"
+          : 0,
+        y: -300,
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+        },
+        scale: 1,
+      }}
       exit={{ opacity: 0, x: 0, scale: 0, transition: { duration: 0.5 } }}
       layoutId={props.selectedId}
       className="absolute bg-[#252525] flex flex-col md:block justify-center items-center rounded-xl min-h-[100vh] w-[100%] z-50 backdrop-blur-sm bg-opacity-90 mb-50"
@@ -148,7 +146,10 @@ function ProjectDetails({ ...props }) {
               )}
             </div>
           </div>
-          <div id="project-details-description" className="flex flex-col gap-5 mb-10 md:mb-0 lg:mb-0">
+          <div
+            id="project-details-description"
+            className="flex flex-col gap-5 mb-10 md:mb-0 lg:mb-0"
+          >
             <div id="project-details-overview">
               <p>{props.projectSelected?.infoProject?.overview}</p>
             </div>
@@ -212,9 +213,9 @@ function ProjectDetails({ ...props }) {
                   src={image}
                   width={400}
                   height={800}
-                  objectFit="cover"
                   className="flex items-center justify-center bg-cover rounded-xl"
                   alt={`Project Image ${index}`}
+                  loading="lazy"
                 />
               </div>
             ))}
