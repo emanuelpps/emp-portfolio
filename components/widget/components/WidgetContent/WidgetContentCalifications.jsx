@@ -5,17 +5,17 @@ import { calculatePercentage } from "@/utils/calculatePercentage";
 function WidgetContentCalifications() {
   const [skills, setSkills] = useState({
     "Team Work": 9.4,
-    Communication: 9.1,
+    Communication: 9.2,
     Proactivity: 9.4,
     "Learning Agility": 9.3,
-    "Change Resilience": 9.0,
-    Adaptability: 9.3,
-    "Problem Solving": 9.3,
-    Autonomy: 9.2,
-    "Positive Attitude": 8.0,
-    Empathy: 9.3,
-    Punctuality: 9.2,
-    "Time Management": 9.3,
+    "Change Resilience": 9.1,
+    Adaptability: 9.4,
+    "Problem Solving": 9.4,
+    Autonomy: 9.3,
+    "Positive Attitude": 9.4,
+    Empathy: 9.4,
+    Punctuality: 9.3,
+    "Time Management": 9.4,
     Solidarity: 9.4,
   });
 
@@ -23,7 +23,7 @@ function WidgetContentCalifications() {
     <div id="widget-content-califications">
       <div
         id="widget-content-califications-container"
-        className=" pl-5 text-black pb-5 pr-5"
+        className="pb-5 pl-5 pr-5 text-black "
       >
         <ul className="flex flex-col gap-5 text-[0.8rem]">
           {Object.entries(skills).map(([skill, value]) => (

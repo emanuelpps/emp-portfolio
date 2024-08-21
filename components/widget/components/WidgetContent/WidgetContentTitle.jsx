@@ -6,12 +6,12 @@ function WidgetContentTitle() {
     <div id="widget-content-title">
       <div
         id="widget-content-title-container"
-        className="flex items-center h-full justify-between"
+        className="flex items-center justify-between h-full"
       >
-        <h3 className="text-black pl-5 pt-5">My Soft Skills</h3>
+        <h3 className="pt-5 pl-5 text-black">My Soft Skills</h3>
         <Link
           href={
-            "https://res.cloudinary.com/dkgoszhfr/image/upload/v1722527308/m4h14teakal41xhxskze.pdf"
+            "https://res.cloudinary.com/dkgoszhfr/image/upload/v1724283164/p5j5htc2f32het7frtrt.pdf"
           }
           target="_blank"
         >
