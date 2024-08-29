@@ -19,10 +19,10 @@ function ExperienceBox() {
             className="pt-10 ml-5 w-[100%] md:w-[90%]"
           >
             <ol className="relative border-gray-200 border-s dark:border-gray-700">
-              {/*  <div className="mb-10 ms-4">
+              <div className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-[1rem] md:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
-                  2024 - Present
+                2024 (June) - Present
                 </time>
                 <div className="flex flex-row items-center md:gap-16">
                   <h3 className="text-[1.1rem] md:text-[2rem] font-light text-white flex flex-row w-[100%]">
@@ -33,7 +33,7 @@ function ExperienceBox() {
                     The CodeMaker Lab
                   </p>
                 </div>
-              </div> */}
+              </div>
               <div className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-[1rem]  md:text-[1.2rem] lg:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
@@ -79,7 +79,7 @@ function ExperienceBox() {
                   </p>
                 </div>
               </div>
-              <div className="mb-10 ms-4">
+              {/* <div className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-[1rem]  md:text-[1.2rem] lg:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
                   2021 - 2022
@@ -93,7 +93,7 @@ function ExperienceBox() {
                     Vital Servicios
                   </p>
                 </div>
-              </div>
+              </div> */}
               <li className="ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1text-[1.1rem] md:text-[1.5rem] lg:text-[2rem] font-normal leading-none text-gray-400 dark:text-gray-500">
