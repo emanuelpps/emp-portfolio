@@ -59,7 +59,7 @@ export default function NavBar() {
             alt="Portfolio Logo"
             width={45}
             height={45}
-            className="font-bold"
+            className="font-bold "
           />
           <TfiMenu
             className="text-4xl cursor-pointer"

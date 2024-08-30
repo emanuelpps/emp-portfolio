@@ -154,10 +154,7 @@
       "Next Js",
       "Tailwindcss",
       "Redux",
-      "Axios",
-      "Date FNS",
-      "Notiflix",
-      "React Day Picker"
+      "Axios"
     ],
     "code": "https://github.com/No-Country/s11-04-t-node-react",
     "demo": "https://barberbuddyapp.vercel.app/",

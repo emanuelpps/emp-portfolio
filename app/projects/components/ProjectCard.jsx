@@ -13,7 +13,7 @@ function ProjectCard({ ...props }) {
   return (
     <motion.div
       id={props.project.id}
-      className="flex flex-col"
+      className="flex flex-col lg:w-[45%]"
       onClick={cardClickHandler}
     >
       <div
@@ -61,7 +61,7 @@ function ProjectCard({ ...props }) {
           className="flex flex-wrap items-center justify-center gap-2 md:flex-nowrap"
         >
           {props.project.lenguage?.map((tech) => (
-            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5 text-[0.8rem] md:text-[1rem]">
+            <span className="bg-gray-500 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-lg p-2 mt-5 text-[0.8rem]">
               {tech}
             </span>
           ))}
