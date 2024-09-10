@@ -28,17 +28,17 @@ function Native() {
     <div className="w-[100%] flex justify-center">
       <div id="native-skill" className="md:w-[85%]">
         <div id="native-title">
-          <h2 className="text-3xl md:text-5xl opacity-75">Native</h2>
+          <h2 className="text-3xl opacity-75 md:text-5xl">Native</h2>
         </div>
         <div id="native-container">
           <div
             id="native-icons"
-            className="flex flex-wrap gap-10 justify-center items-center mt-10"
+            className="flex flex-wrap items-center justify-center gap-10 mt-10"
           >
             {nativeSkills.map((skill, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center bg-[#252525] p-1 md:p-5 rounded-md gap-2 md:gap-5 w-[40%] min-h-[50px] md:w-60 text-[0.8rem] md:text-[1rem]"
+                className="flex justify-center items-center bg-[#252525] p-1 md:p-5 rounded-md gap-2 md:gap-5 w-[40%] min-h-[50px] h-[70px] md:w-60 text-[0.8rem] md:text-[1rem]"
                 title={skill.title}
               >
                 <div>{skill.icon} </div>

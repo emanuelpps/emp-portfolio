@@ -13,6 +13,8 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
 import { SiFramer } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import ZustandLogo from "@/public/assets/skills-icons/frontend/zustand.svg";
+import Image from "next/image";
 
 function Frontend() {
   const [frontendSkills] = useState([
@@ -93,26 +95,26 @@ function Frontend() {
     },
     {
       id: uuid(),
-      title: "NextUI",
-      icon: <SiNextui className="text-[#000000] text-[2rem] md:text-[3rem]" />,
-      url: "https://nextui.org",
+      title: "Zustand",
+      icon: <Image src={ZustandLogo} width={45} height={45} className="text-[#000000] text-[2rem] md:text-[3rem]" />,
+      url: "https://www.zustand.dev",
     },
   ]);
   return (
     <div className="w-[100%] flex justify-center">
       <div id="frontend-skill" className="md:w-[85%]">
         <div id="forntend-title">
-          <h2 className="text-3xl md:text-5xl opacity-75">Frontend</h2>
+          <h2 className="text-3xl opacity-75 md:text-5xl">Frontend</h2>
         </div>
         <div id="frontend-container">
           <div
             id="frontend-icons"
-            className="flex flex-wrap gap-10 justify-center items-center mt-10"
+            className="flex flex-wrap items-center justify-center gap-10 mt-10"
           >
             {frontendSkills.map((skill, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center bg-[#252525] p-1 md:p-5 rounded-md gap-2 md:gap-5 w-[40%] min-h-[50px] md:w-60 text-[0.8rem] md:text-[1rem]"
+                className="flex justify-center items-center bg-[#252525] p-1 md:p-5 rounded-md gap-2 md:gap-5 w-[40%] min-h-[50px] h-[70px] md:w-60 text-[0.8rem] md:text-[1rem]"
                 title={skill.title}
               >
                 <div>{skill.icon} </div>
