@@ -1,5 +1,15 @@
 
 
+## [2.1.1](https://github.com/emanuelpps/emp-portfolio/compare/v2.1.0...v2.1.1) (2024-9-10)
+
+
+### Bug Fixes
+
+* added zustand to front skills ([3135eb2](https://github.com/emanuelpps/emp-portfolio/commit/3135eb2daf269dade5cb94803c7519f74470cc2c))
+* audit fix ([825c41d](https://github.com/emanuelpps/emp-portfolio/commit/825c41d65ebc3c58362a70a138f3182b71b08c38))
+* corrections in POSS ([0d8625f](https://github.com/emanuelpps/emp-portfolio/commit/0d8625fd432f010123267461c48c39db669badbb))
+* dependencies fix ([2d06ec9](https://github.com/emanuelpps/emp-portfolio/commit/2d06ec9e574811c32835dcf8989a32ff0657628f))
+
 ## [2.1.0](https://github.com/emanuelpps/emp-portfolio/compare/v2.0.1...v2.1.0) (2024-8-5)
 
 
