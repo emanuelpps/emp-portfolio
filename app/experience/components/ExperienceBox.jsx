@@ -22,7 +22,7 @@ function ExperienceBox() {
               <div className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-[1rem] md:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
-                2024 (June) - Present
+                2024 - Present
                 </time>
                 <div className="flex flex-row items-center md:gap-16">
                   <h3 className="text-[1.1rem] md:text-[2rem] font-light text-white flex flex-row w-[100%]">
