@@ -52,20 +52,19 @@ export default function NavBar() {
       <div id="navbar" className="fixed top-0 z-30 w-full">
         <div
           id="navBarContainer"
-          className="z-30 flex items-center justify-between pr-5 mt-2 lg:mt-5 lg:pl-10 lg:pr-10"
+          className="z-30 flex items-center justify-between p-2 bg-[#100D0D] md lg:bg-transparent lg:mt-5 lg:pl-10 lg:pr-10"
         >
           <Image
             src={PortfolioLogo}
             alt="Portfolio Logo"
             width={45}
             height={45}
-            className="invisible lg:visible"
+            className="pl-2 md:pl-0 lg:visible"
           />
-          <div className="p-2 font-bold bg-black rounded-lg lg:p-0 lg:rounded-none">
+          <div className="p-2 font-bold rounded-lg lg:p-0 lg:rounded-none">
             <TfiMenu
               className="text-4xl cursor-pointer"
               onClick={() => setIsOpen(!isOpen)}
-              
             />
           </div>
         </div>
