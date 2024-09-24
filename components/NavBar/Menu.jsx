@@ -127,7 +127,7 @@ function Menu({ ...props }) {
           <FaLinkedinIn className="text-black text-3xl hover:text-white hover:stroke-black hover:stroke-[1.5rem]" />
         </Link>
         <Link
-          href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1714355292/EmanuelPagesResume_lh3cvm.pdf"
+          href="https://res.cloudinary.com/dkgoszhfr/image/upload/v1727211444/att3iubmuvxolbtagder.pdf"
           id="resume-link"
           target="_blank"
           title="See my Resume"
