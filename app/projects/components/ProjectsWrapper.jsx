@@ -33,7 +33,7 @@ function ProjectsWrapper() {
       </div>
       <div
         id="projects-wrapper"
-        className="relative flex flex-wrap items-center justify-center w-full gap-20 mt-20 lg:gap-10"
+        className="relative flex flex-col items-center justify-center w-full gap-20 mt-20 lg:gap-10"
       >
         {Projects.map((project, index) => (
           <ProjectCard

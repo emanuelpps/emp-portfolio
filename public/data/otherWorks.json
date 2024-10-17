@@ -1,5 +1,327 @@
 [
   {
+    "id": 2,
+    "name": "Epic Sound",
+    "class": "Music App",
+    "type": "Web App",
+    "description": "Streaming music application",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814653/auxszozaciecs84n2lz3.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821524/liywvyveafas1nwt8oi4.png",
+    "lenguage": ["Next Js", "Tailwindcss", "Fetch API"],
+    "code": "https://github.com/emanuelpps/EPic-Sound",
+    "demo": null,
+    "linkName": "epic-sound",
+    "noCountry": false,
+    "isInProgress": true,
+    "infoProject": [
+      {
+        "overview": "Project under development...",
+        "myRole": "Frontend Developer and UI Designer",
+        "highlight": "Epic Sound is a cutting-edge music streaming app like Spotify, offering a vast library of songs, curated playlists, and personalized recommendations to enhance your listening experience.",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1717546094/urc6gbv4c2sdnvjjbn1a.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717546883/iwe6pm0w4mti4oieopqf.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717546957/x8izasxlhjkssfpxc3a2.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1717546982/tw8thniopdbvyr3quozj.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/hxklom4bb3bifn9pbq24.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/zc0wchfgwomu5axnqdsd.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/pvgwfwmlkjorankllugo.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/obtzrlzfzcrq0ua0kdml.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746407/ojxjmfyxsljwtowkgpnn.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721746408/pm488blbhyujyioe63m1.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "EduClass",
+    "class": "Communication Tool",
+    "type": "Web App",
+    "description": "Communications Manager for Educational institutions",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720815527/nzfah0sqz3nxreuunp9p.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814117/vdd0rkmpqdb9socaqmd1.png",
+    "lenguage": [
+      "React Js",
+      "Tailwindcss",
+      "React-Router-DOM",
+      "NextUI",
+      "Axios"
+    ],
+    "code": "https://github.com/No-Country/s13-03-m-node-react/tree/dev-front",
+    "demo": "https://educlass-two.vercel.app/",
+    "linkName": "edu-class",
+    "noCountry": true,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "(This platform has been designed only in mobile version)\n\n Communication between schools and families is disrupted by WhatsApp groups. Incoherent messages lead to poor flow and important information gets lost, making it hard for families to organize. EduClass is a tool that optimizes communication between schools and families through a direct link, promoting transparency, security, and avoiding unnecessary conflicts. The target audience includes institutions and families with children aged between 3 and 12 years old (Preschool/Kindergarten and Primary School).",
+        "myRole": "Frontend Developer",
+        "highlight": "A notable feature is that parents or guardians can receive notifications from their children's school to stay informed about school activities and important dates. Additionally, they can view and track academic performance. Besides, in EduClass, there is the option to generate a digital authorization as a parent or guardian, allowing the institution to carry out specific activities. Also, there is the possibility to submit medical certificates or request student withdrawals directly through the platform.",
+        "team": [
+          "Emilio Pino, Frontend ",
+          "Paula Velez, Frontend ",
+          "Valentino Indorato, Frontend",
+          "Emiliano Brizuela, Backend",
+          "Alejandro Mattias, Backend",
+          "Radhamés Capellán, Backend",
+          "Cecilia Suarez, UX/UI",
+          "Maria Paz Kitroser, UX/UI",
+          "Dalmiro Pintos, PM"
+        ],
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1710431842/hosting/edu-class/video/pljeta35asb1ayp4fyis.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431819/hosting/edu-class/fvrawvvy026uegqrlidw.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/u9jk0owmk1ddxwe0epko.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1710431818/hosting/edu-class/m8siv1uuveiesafjbxyi.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706879/foob2azalejufux05lt8.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706933/d89cxjfnkags7vdl2tbt.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721706977/awzgjngzixnreaze3rnq.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707042/qch92egj7xrtye5kdz63.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707104/nb77avqenrud3tamy66r.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721707224/lsr7bdztqgwuvj23fevc.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "BarberBuddy",
+    "class": "Appointment Manager",
+    "type": "Web App",
+    "description": "BarberBuddy is a appointment management system",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720816721/kdni8hqdrfducl3scngh.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821867/toskikwqcoov878tzqiw.png",
+    "lenguage": ["Next Js", "Tailwindcss", "Redux", "Axios"],
+    "code": "https://github.com/No-Country/s11-04-t-node-react",
+    "demo": "https://barberbuddyapp.vercel.app/",
+    "linkName": "barber-buddy",
+    "noCountry": true,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "BarberBuddy is a syste­m to help barbers organize and e­asily manage their appointments \n\nEach barbe­r can access their BarberBuddy account se­curely through their own email addre­ss. Once logged in, simple tools are­ available to help with appointments and se­rvices. \n\nThe main part of BarberBuddy le­ts barbers schedule appointme­nts easily and correctly. Each barber can se­e an interactive cale­ndar showing open time slots. They can pick the­ day and time that works best for them. \n\nAlso, the­ system lets barbers choose­ one or more service­s for each appointment. This makes it e­asy to get ready and plan the workday.",
+        "myRole": "Frontend Developer and UX/UI Designer",
+        "highlight": "A standout feature is the ability to maintain a detailed history of each client and the services they have booked. Barbers can easily access this information. The history includes details such as the appointment date, the requested service, and the name of the barber who attended to the client, providing a complete overview of the relationship between the client and the barbershop.",
+        "team": [
+          "Marco Perez Donoso, Frontend",
+          "Juan Carlos Galué, Backend",
+          "John Pablo, Frontend",
+          "Juan Pablo Saluzzo, Backend",
+          "Fabian Carabajal, Frontend"
+        ],
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597393/hosting/barber-buddy/video/extuxunmvmpxuzhd8rrn.mp4",
+        "images": [
+          {
+            "highlight": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597942/hosting/barber-buddy/gful0dgs6v3m1zpyz5ou.png",
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737277/lbwu01yt5esy9qiqdaws.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737277/dgkrhihefdetyefxm8ot.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737277/cnnb6293ymytqu8upcoh.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737277/xtkjfo4muchwbwcjyz6i.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737278/a3ax7edb6bgzcjmhbcip.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721737278/dbyixbgmkhwnf5bgcj4s.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "HomeFix",
+    "class": "Inventory Manager",
+    "type": "Web App",
+    "description": "Efficient inventory management for tools and construction materials, optimizing stock and streamlining operations.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821040/gfhqibalm9l3llcuawka.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821280/llrwjxdwauxxqgsyuvsl.png",
+    "lenguage": [
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Redux Toolkit",
+      "Axios",
+      "ReCharts"
+    ],
+    "code": "https://github.com/No-Country/c13-33-t-csharp",
+    "demo": "https://homefixapp.vercel.app/",
+    "linkName": "home-fix",
+    "noCountry": true,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "HOMEFIX is a space for inventory management of tools and constructions products that enables you to organize and keep a track on flow of the products.Such a lean system helps to identify the most profitable products without any additional losses and reduce the costs of extra warehousing, thus speeding up operation and making changes in the decision making.",
+        "myRole": "Frontend Developer",
+        "highlight": "HomeFix is more than just provide you with an inventory tracking system, it also provides you with analytics capabilities, which is in fact a key ingredient to the understanding of the inventory behavior.It is very simple, you can immediately distinguish those products which are selling well on a daily and monthly sales basis.With this information you can make right decisions to run your business successfully.",
+        "team": [
+          "Marco Perez Donoso, Frontend",
+          "Martin Romero, Backend",
+          "Macarena Diaz, UX/UI",
+          "Yaco Ibars, Backend",
+          "Matias D'Amico, Backend"
+        ],
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597418/hosting/home-fix/video/izmfkj0uwevqk8bkiyb2.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597402/hosting/home-fix/s72pa7g58uo9ywydkxra.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597402/hosting/home-fix/ifsrhwkxpojkxbuo97jy.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597402/hosting/home-fix/wpjuzqqdwgww3wuvm5ch.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944682/gzcemdlfw588msua3319.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944682/jhya81nnia1u0eu0hyxn.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944682/lrvou2bhtspzfezm8t2w.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944682/nlybim5y7gvhzpd0izse.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944681/ytvt8ajolwjdkxyyek1f.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721944681/mxzknoknydj12vwpwkad.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "EP Music Player",
+    "class": "Music Player",
+    "type": "Web App",
+    "description": "A simple and user-friendly music player project, bringing joy to your tunes with easy navigation and playback features",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720822653/uhfplhqcufyd2pqikhch.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720822862/fdqiiwznrel5v0efaa2x.png",
+    "lenguage": [
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Framer Motion",
+      "Fetch API"
+    ],
+    "code": "https://github.com/emanuelpps/EP-Music-Player",
+    "demo": "https://emanuelpps.github.io/EP-Music-Player/",
+    "linkName": "ep-music-player",
+    "noCountry": false,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "EP Music Player is a web music player made with HTML5, CSS3, Bootstrap, ReactJS, Fetch API, API Context, and Framer Motion, using the Audius API. With EP Music Player, you can access to a predefined playlist or create your personalized playlist. Take control of playback, skip to the next track, or go back. Additionally, you can easily add songs to your playlist with a single click on the \"Like\" ❤️ button or remove them just with the same ease.",
+        "myRole": "Frontend Developer and UI Designer",
+        "highlight": "Enjoy music easily with a simple design. Create your own playlists or listen to a default one. Skip, go back, and control playback with ease. Add or remove songs from your playlist with just a click.",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597401/hosting/ep-player/video/rqxdjfx2imqmaggyluqv.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597394/hosting/ep-player/wreemhw2smtefhtrovz0.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/qsxee8bkw7fl8sukgijs.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/owum9p1db3xibrcmlvwo.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/uj3o4jj6hlfxz0hnbbny.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/nmvc0kqzvqmo9h7decv2.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/agxooldl5ybhu9xh2dvw.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721790924/l9mbum6eucxsohnjykow.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "EP Weather",
+    "class": "Weather Information",
+    "type": "Web App",
+    "description": "A user-friendly web application for checking the weather, providing you with simple access to forecasts and current conditions to plan your day with ease.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721786934/zpwjjztqw5dwmlpjohso.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720824317/umeudxk6ehfzpbstfppd.png",
+    "lenguage": ["CSS 3", "React Js", "Bootstrap", "Fetch API"],
+    "code": "https://github.com/emanuelpps/EP-WeatherAPP",
+    "demo": "https://emanuelpps.github.io/EP-WeatherAPP/",
+    "linkName": "ep-weather",
+    "noCountry": false,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "EP Weather App is a completely responsive web weather application that I created using HTML5, CSS3, ReactJS, Bootstrap, and Fetch API. When you enter to the app, it will automatically determine where you are, to show you the weather conditions at your location. It also provides the forecast for the next three hours and for the next five days. If you want to check the weather in another place, this app has a friendly search tool that lets you find out the weather conditions of any location you want.",
+        "highlight": "The app use your device's geolocation to provide real-time weather updates for your current location. Offering a comprehensive forecast, the app provides weather predictions every three hours and extends its forecast for the next five days.Built with a responsive design, EP Weather App ensures a consistent and visually appealing experience across various devices. The application's design focuses on functionality and intuitiveness, making it easy for users to access the weather information they need. Additionally, the application features a dynamic background that adjusts according to the local weather conditions. For instance, if it's cloudy, raining, stormy, or snowing, the background of the app reflects these climatic conditions.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597401/hosting/ep-weather/video/jh0tsuk9ae4ybmzyuiyr.mp4",
+        "images": [
+          {
+            "highlight": {
+              "video-1": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597399/hosting/ep-weather/video/hwwyze8u55ndjj8e2wzz.mp4",
+              "video-2": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597400/hosting/ep-weather/video/cxzt0c8cwnpjaol2gmok.mp4"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946478/uheimt4qsmzxoognkj2h.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946478/mzqwqryit3gfcr8zoxwb.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946477/s58uifora3cpj3wbj84x.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946477/fhvpsyzb3ke4c5jfzwvl.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946477/f0o4zcurrohrtabxdwrz.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721946477/o8h8atzu0l3phjtvvzh9.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Don Remolo",
+    "class": "Food Delivery",
+    "type": "Web App",
+    "description": "An easy-to-use project for ordering pizzas or empanadas, making your meal experience delightful with straightforward ordering and delivery features.",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721786949/ihasfckd3w7cxptjbsyu.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720825295/ldc86au9oiitltxwlomc.png",
+    "lenguage": [
+      "CSS 3",
+      "React Js",
+      "Bootstrap",
+      "Framer Motion",
+      " Firebase"
+    ],
+    "code": "https://github.com/emanuelpps/don-remolo-pizza",
+    "demo": "https://emanuelpps.github.io/don-remolo-pizza/",
+    "linkName": "don-remolo",
+    "noCountry": false,
+    "isInProgress": false,
+    "infoProject": [
+      {
+        "overview": "Don Remolo Pizza is a web application for food ordering, created using CSS3, HTML5, React JS, Bootstrap, Framer Motion, and Firebase.This project work was designed to be simple, and at the same time have very intuitive user interface. On entering, you can place an order by referring to the menu and then adding the chosen items on the cart. Inside the cart, you have the feature enabling you to vary quantities, drop any item, or empty it completely. To conclude, state in your option, payment method, and your address to submit your order.  Don Remolo Pizza is a project idea by ID for Ideas.",
+        "highlight": "The order you create is sent directly as a text message via WhatsApp to the company.",
+        "myRole": "Frontend Developer and UI Designer",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597399/hosting/don-remolo/video/pkjssx23gowqewosqsek.mp4",
+        "images": [
+          {
+            "highlight": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597389/hosting/don-remolo/xjmigufk2jfjk5cizgav.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597387/hosting/don-remolo/jpin0ejy1beitmadthle.png"
+            },
+            "gallery": {
+              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960245/mfkaezwruzbvazeifjvz.png",
+              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960245/yjesnkefjoaeyjtxzite.png",
+              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960245/u3qwtvkypttzzb2r0k8u.png",
+              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960245/wsacjvoelcjsb5mbafo7.png",
+              "image-5": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960245/lnufqp4zjp1paxlg9cy0.png",
+              "image-6": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1721960244/tqq5ap2cve9b7ezjaec0.png"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": 6,
     "name": "EP Converter",
     "class": "Currency Converter",
