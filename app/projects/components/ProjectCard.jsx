@@ -20,7 +20,7 @@ function ProjectCard({ ...props }) {
       id="project-card-container"
       className="flex w-[100%] justify-center items-center"
     >
-      <div id="project-card" className="flex flex-col w-[90%] gap-10">
+      <div id="project-card" className="flex flex-col w-[100%] gap-10">
         <ProjectCardHeader
           title={props.project.name}
           skills={props.project.lenguage}
@@ -28,8 +28,11 @@ function ProjectCard({ ...props }) {
         <ProjectCardHighlight
           highlight={props.project.infoProject[0].highlight}
         />
-        <ProjectCardButtons />
-        <ProjectCardImage />
+        <ProjectCardButtons
+          code={props.project.code}
+          demo={props.project.demo}
+        />
+        <ProjectCardImage image={props.project.img} />
       </div>
     </div>
   );
