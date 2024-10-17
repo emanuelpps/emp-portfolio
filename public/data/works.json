@@ -5,7 +5,7 @@
     "class": "Coffee Shop",
     "type": "Web Page",
     "description": "Web page for holesale coffee market",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1729125977/u6ipf5njktywqje8rptg.png",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/nid5nei34pyvhqodza9f",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814120/x0jvmuh6xrudmqgfyrun.png",
     "lenguage": [
       "React Js",
@@ -42,6 +42,47 @@
             }
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "The CodeMaker Lab",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/fvpizujztu5lrv3gzsam",
+    "lenguage": [
+      "Typescript",
+      "Tailwindcss",
+      "Zustand",
+      "Framer Motion"
+    ],
+    "code": "",
+    "demo": "https://codemakerlab.vercel.app/",
+    "infoProject": [
+      {
+        "overview": "Project under development...",
+        "myRole": "Frontend Developer and UI Designer",
+        "highlight": "I was responsible for both the design and development of The CodeMaker Lab website, which initially had an outdated and unattractive format. I proposed a complete redesign, implementing a modern and professional look. Using a color palette of deep blue, vibrant teal, and clean white, I created a fresh and dynamic interface. The new layout focuses on simplicity, with clear navigation and bold typography. This redesign not only made the website look better but also enhanced the overall user experience, making the website more engaging and aligned with the agency's goals.",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1717545353/ntikq9lhlwnbcbrusisf.mp4"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Actor Portfolio",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c9mcise12ax5daek4xpt",
+    "lenguage": [
+      "Typescript",
+      "Tailwindcss",
+      "Framer Motion"
+    ],
+    "code": "",
+    "demo": "https://mng-actor.vercel.app/",
+    "infoProject": [
+      {
+        "overview": "Project under development...",
+        "myRole": "Frontend Developer and UI Designer",
+        "highlight": "I designed and developed this actor's portfolio as a project assigned to me by The CodeMaker Lab. The website showcases the actor's professional experience in theater with a simple, easy-to-navigate structure. It features the actor's biography, performances, and images from past plays. I used a clean layout with bold typography to highlight key details. The color palette of white, black, and soft grays gives the site a professional and elegant look. This project allowed me to create a modern, personal website that reflects the actor’s work and career.",
+        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1717545353/ntikq9lhlwnbcbrusisf.mp4"
       }
     ]
   }

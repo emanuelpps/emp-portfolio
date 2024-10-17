@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import Projects from "@/public/data/works.json";
 import ProjectCard from "./ProjectCard";
+import MoreProjectsSlider from "./MoreProjectsSlider";
+import MoreProjects from "@/public/data/otherWorks.json";
 
 function ProjectsWrapper() {
   const [selectedId, setSelectedId] = useState(null);
@@ -10,6 +12,7 @@ function ProjectsWrapper() {
   //const [isClicked, setIsClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [forceUpdate, setForceUpdate] = useState(0);
+  const [moreProjectPosition, setMoreProjectPosition] = useState(0);
 
   useEffect(() => {
     const selectedProject = Projects.find(
@@ -29,11 +32,13 @@ function ProjectsWrapper() {
   return (
     <>
       <div className="absolute flex justify-center w-full">
-        <span className="text-[5rem] md:text-[11rem] lg:text-[16rem] font-[900] opacity-10">Projects</span>
+        <span className="text-[5rem] md:text-[11rem] lg:text-[16rem] font-[900] opacity-10">
+          Projects
+        </span>
       </div>
       <div
         id="projects-wrapper"
-        className="relative flex flex-col items-center justify-center w-full gap-20 mt-20 lg:gap-10"
+        className="relative flex flex-col items-center justify-center w-full gap-20 mt-20 lg:gap-20"
       >
         {Projects.map((project, index) => (
           <ProjectCard
@@ -47,6 +52,9 @@ function ProjectsWrapper() {
             setIsOpen={setIsOpen}
           />
         ))}
+        <div>
+          <MoreProjectsSlider />
+        </div>
       </div>
     </>
   );

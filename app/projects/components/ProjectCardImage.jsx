@@ -8,7 +8,7 @@ function ProjectCardImage({ image }) {
         id="project-card-image"
         className="flex w-[100%] justify-center items-center"
       >
-        <Image src={image} width={1200} height={1200} />
+        <Image src={image} width={1600} height={1200} />
       </div>
     </div>
   );
