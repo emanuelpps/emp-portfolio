@@ -5,6 +5,9 @@ import Projects from "@/public/data/works.json";
 import ProjectCard from "./ProjectCard";
 import MoreProjectsSlider from "./MoreProjectsSlider";
 import MoreProjects from "@/public/data/otherWorks.json";
+import { MdOutlineArrowBackIos } from "react-icons/md";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import SectionTitle from "@/components/SectionTitles/SectionTitles";
 
 function ProjectsWrapper() {
   const [selectedId, setSelectedId] = useState(null);
@@ -13,6 +16,8 @@ function ProjectsWrapper() {
   const [isOpen, setIsOpen] = useState(false);
   const [forceUpdate, setForceUpdate] = useState(0);
   const [moreProjectPosition, setMoreProjectPosition] = useState(0);
+
+  console.log(MoreProjects[moreProjectPosition]);
 
   useEffect(() => {
     const selectedProject = Projects.find(
@@ -52,8 +57,23 @@ function ProjectsWrapper() {
             setIsOpen={setIsOpen}
           />
         ))}
-        <div>
-          <MoreProjectsSlider />
+        <div id="more-projects-slider-container" className="w-[95%] mt-20">
+          <h2 className="mb-20 text-3xl">More Projects</h2>
+          <div className="flex items-center justify-center gap-20">
+            <div>
+              <button>
+                <MdOutlineArrowBackIos className="text-[2.5rem]" />
+              </button>
+            </div>
+            {MoreProjects[moreProjectPosition].map((extraProject, index) => (
+              <MoreProjectsSlider key={index} otherProjects={extraProject} />
+            ))}
+            <div>
+              <button>
+                <MdOutlineArrowForwardIos className="text-[2.5rem]" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

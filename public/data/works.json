@@ -50,6 +50,7 @@
     "name": "The CodeMaker Lab",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/fvpizujztu5lrv3gzsam",
     "lenguage": [
+      "Next Js",
       "Typescript",
       "Tailwindcss",
       "Zustand",
@@ -61,7 +62,7 @@
       {
         "overview": "Project under development...",
         "myRole": "Frontend Developer and UI Designer",
-        "highlight": "I was responsible for both the design and development of The CodeMaker Lab website, which initially had an outdated and unattractive format. I proposed a complete redesign, implementing a modern and professional look. Using a color palette of deep blue, vibrant teal, and clean white, I created a fresh and dynamic interface. The new layout focuses on simplicity, with clear navigation and bold typography. This redesign not only made the website look better but also enhanced the overall user experience, making the website more engaging and aligned with the agency's goals.",
+        "highlight": "I was responsible for both the design and development of The CodeMaker Lab website, which initially had an outdated and unattractive format. I proposed a complete redesign, implementing a modern and professional look. Using a color palette of deep blue, vibrant teal, and soft aqua, I created a fresh and dynamic interface. The new layout focuses on simplicity, with clear navigation and bold typography. This redesign not only made the website look better but also enhanced the overall user experience, making the website more engaging and aligned with the agency's goals.",
         "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1717545353/ntikq9lhlwnbcbrusisf.mp4"
       }
     ]
@@ -71,6 +72,7 @@
     "name": "Actor Portfolio",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c9mcise12ax5daek4xpt",
     "lenguage": [
+      "Next Js",
       "Typescript",
       "Tailwindcss",
       "Framer Motion"

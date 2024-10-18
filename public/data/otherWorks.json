@@ -1,11 +1,11 @@
 [
-  {
+  [{
     "id": 1,
     "name": "Epic Sound",
     "class": "Music App",
     "type": "Web App",
     "description": "Streaming music application",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814653/auxszozaciecs84n2lz3.png",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/ufwjb8hwaz8maptuhpmw",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821524/liywvyveafas1nwt8oi4.png",
     "lenguage": ["Next Js", "Tailwindcss", "Fetch API"],
     "code": "https://github.com/emanuelpps/EPic-Sound",
@@ -45,7 +45,7 @@
     "class": "Communication Tool",
     "type": "Web App",
     "description": "Communications Manager for Educational institutions",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720815527/nzfah0sqz3nxreuunp9p.png",
+    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/uyqk4czxjvyln3xv5snc",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814117/vdd0rkmpqdb9socaqmd1.png",
     "lenguage": [
       "React Js",
@@ -95,8 +95,8 @@
         ]
       }
     ]
-  },
-  {
+  }],
+  [{
     "id": 3,
     "name": "BarberBuddy",
     "class": "Appointment Manager",
@@ -192,8 +192,8 @@
         ]
       }
     ]
-  },
-  {
+  }],
+  [{
     "id": 5,
     "name": "EP Music Player",
     "class": "Music Player",
@@ -275,8 +275,8 @@
         ]
       }
     ]
-  },
-  {
+  }],
+  [{
     "id": 7,
     "name": "Don Remolo",
     "class": "Food Delivery",
@@ -351,8 +351,8 @@
         ]
       }
     ]
-  },
-  {
+  }],
+  [{
     "id": 9,
     "name": "Embé Home & Deco",
     "class": "Ecommerce",
@@ -426,40 +426,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": 11,
-    "name": "Ñire",
-    "class": "Bakery",
-    "type": "Landing Page",
-    "description": "Institutional bakery landing page, offering a delightful online experience to explore bakery products and stay updated with the latest offerings.",
-    "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1716691246/b1v10q7u5pldf7ciaslm.png",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Framer Motion",
-    "code": "https://github.com/emanuelpps/Nire-Panaderia",
-    "demo": "https://emanuelpps.github.io/Nire-Panaderia/",
-    "linkName": "nire",
-    "noCountry": false,
-    "isInProgress": false,
-    "infoProject": [
-      {
-        "overview": "I develop a landing page for a fictional bakery named Ñire, providing insights into the bakery's background, its products, and location. The lainding page emphasizes a minimalist yet highly appealing design.",
-        "highlight": "The landing page features a modern and minimalist design, ensuring a visually pleasing and user-friendly experience for all visitors. The primary goal of this project was to establish a captivating online presence for Ñire, providing visitors with a visually appealing platform to discover more about the bakery and its delightful products.",
-        "myRole": "Frontend Developer and UI Designer",
-        "video": "https://res.cloudinary.com/dkgoszhfr/video/upload/v1709597409/hosting/nire/video/zntjl8vlp9agts3fzxrf.mp4",
-        "images": [
-          {
-            "highlight": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/lxjt45gtsxttf2tt0ihu.png"
-            },
-            "gallery": {
-              "image-1": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/hgw45rvmrgaoh3qzrwfq.png",
-              "image-2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597405/hosting/nire/ru39zbhqmcpnybisrhed.png",
-              "image-3": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/lxjt45gtsxttf2tt0ihu.png",
-              "image-4": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1709597404/hosting/nire/ve8yc2zlnrsv72j7hcmv.png"
-            }
-          }
-        ]
-      }
-    ]
-  }
+  }]
 ]
