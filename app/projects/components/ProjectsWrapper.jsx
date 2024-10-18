@@ -34,6 +34,23 @@ function ProjectsWrapper() {
     }
     setIsOpen(true);
   };
+
+
+  const sliderHandler = (direction) => {
+    if (direction === "increase") {
+      if (moreProjectPosition < MoreProjects.length - 1) {
+        setMoreProjectPosition(moreProjectPosition + 1);
+      } else {
+        setMoreProjectPosition(0);
+      }
+    } else {
+      if (moreProjectPosition > 0) {
+        setMoreProjectPosition(moreProjectPosition - 1);
+      } else {
+        setMoreProjectPosition(MoreProjects.length - 1);
+      }
+    }
+  };
   return (
     <>
       <div className="absolute flex justify-center w-full">
@@ -61,7 +78,7 @@ function ProjectsWrapper() {
           <h2 className="mb-20 text-3xl">More Projects</h2>
           <div className="flex items-center justify-center gap-20">
             <div>
-              <button>
+              <button onClick={() => sliderHandler("descrease")}>
                 <MdOutlineArrowBackIos className="text-[2.5rem]" />
               </button>
             </div>
@@ -69,7 +86,7 @@ function ProjectsWrapper() {
               <MoreProjectsSlider key={index} otherProjects={extraProject} />
             ))}
             <div>
-              <button>
+              <button onClick={() => sliderHandler("increase")}>
                 <MdOutlineArrowForwardIos className="text-[2.5rem]" />
               </button>
             </div>

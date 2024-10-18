@@ -11,7 +11,7 @@ function MoreProjectsSlider({ otherProjects }) {
       <div className="relative w-full h-full">
         <div
           className={`absolute w-full h-full ${
-            showButtons ? "bg-black opacity-60 fade-in" : ""
+            showButtons ? "bg-black opacity-60 fade-in animate-delay-75" : ""
           }`}
         ></div>
         <div
