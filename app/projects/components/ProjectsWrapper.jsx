@@ -15,7 +15,8 @@ function ProjectsWrapper() {
   //const [isClicked, setIsClicked] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [forceUpdate, setForceUpdate] = useState(0);
-  const [moreProjectPosition, setMoreProjectPosition] = useState(0);
+  const [moreProjectPosition, setMoreProjectPosition] = useState(1);
+  const [projectPositionIndex, setProjectPositionIndex] = useState(0);
 
   console.log(MoreProjects[moreProjectPosition]);
 
@@ -35,22 +36,35 @@ function ProjectsWrapper() {
     setIsOpen(true);
   };
 
-
+  console.log("project", projectPositionIndex, moreProjectPosition);
   const sliderHandler = (direction) => {
+    const lastIndex = MoreProjects.length;
+
     if (direction === "increase") {
-      if (moreProjectPosition < MoreProjects.length - 1) {
+      if (moreProjectPosition < lastIndex) {
         setMoreProjectPosition(moreProjectPosition + 1);
+        setProjectPositionIndex(projectPositionIndex + 1);
       } else {
-        setMoreProjectPosition(0);
+        setMoreProjectPosition(1);
+        setProjectPositionIndex(0);
       }
     } else {
-      if (moreProjectPosition > 0) {
+      if (moreProjectPosition > 1) {
         setMoreProjectPosition(moreProjectPosition - 1);
+        setProjectPositionIndex(projectPositionIndex - 1);
       } else {
-        setMoreProjectPosition(MoreProjects.length - 1);
+        setMoreProjectPosition(lastIndex);
+        setProjectPositionIndex(lastIndex - 1);
       }
     }
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      sliderHandler("increase");
+    }, 8000);
+  }, [moreProjectPosition]);
+
   return (
     <>
       <div className="absolute flex justify-center w-full">
@@ -82,9 +96,11 @@ function ProjectsWrapper() {
                 <MdOutlineArrowBackIos className="text-[2.5rem]" />
               </button>
             </div>
-            {MoreProjects[moreProjectPosition].map((extraProject, index) => (
-              <MoreProjectsSlider key={index} otherProjects={extraProject} />
-            ))}
+            {MoreProjects.slice(projectPositionIndex, moreProjectPosition).map(
+              (project, index) => (
+                <MoreProjectsSlider key={index} otherProjects={project} />
+              )
+            )}
             <div>
               <button onClick={() => sliderHandler("increase")}>
                 <MdOutlineArrowForwardIos className="text-[2.5rem]" />

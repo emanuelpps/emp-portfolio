@@ -14,11 +14,11 @@ export default function page() {
   return (
     <div>
       <NavBar />
-      <main className="flex min-h-screen flex-col items-center justify-center md:pl-24 md:pr-24 gap-20 md:gap-60 overflow-hidden scroll-smooth px-5">
+      <main className="flex flex-col items-center justify-center min-h-screen gap-20 px-5 overflow-hidden md:pl-24 md:pr-24 md:gap-60 scroll-smooth">
         <Intro />
         <Experience />
-        <Projects />
         <Skills />
+        <Projects />
         <Contact />
         <Footer />
       </main>

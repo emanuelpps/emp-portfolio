@@ -1,5 +1,5 @@
 [
-  [{
+  {
     "id": 1,
     "name": "Epic Sound",
     "class": "Music App",
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "id":2,
+    "id": 2,
     "name": "EduClass",
     "class": "Communication Tool",
     "type": "Web App",
@@ -95,8 +95,8 @@
         ]
       }
     ]
-  }],
-  [{
+  },
+  {
     "id": 3,
     "name": "BarberBuddy",
     "class": "Appointment Manager",
@@ -147,14 +147,7 @@
     "description": "Efficient inventory management for tools and construction materials, optimizing stock and streamlining operations.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/uoavxaduhfas9v0mhh0d",
     "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720821280/llrwjxdwauxxqgsyuvsl.png",
-    "lenguage": [
-      "CSS",
-      "React Js",
-      "Bootstrap",
-      "Redux",
-      "Axios",
-      "ReCharts"
-    ],
+    "lenguage": ["CSS", "React Js", "Bootstrap", "Redux", "Axios", "ReCharts"],
     "code": "https://github.com/No-Country/c13-33-t-csharp",
     "demo": "https://homefixapp.vercel.app/",
     "linkName": "home-fix",
@@ -192,8 +185,8 @@
         ]
       }
     ]
-  }],
-  [{
+  },
+  {
     "id": 5,
     "name": "EP Music Player",
     "class": "Music Player",
@@ -275,8 +268,8 @@
         ]
       }
     ]
-  }],
-  [{
+  },
+  {
     "id": 7,
     "name": "Don Remolo",
     "class": "Food Delivery",
@@ -328,7 +321,7 @@
     "type": "Web App",
     "description": "Currency converter application, helping you quickly convert currencies for smooth financial transactions.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/mhpaangvaqj2nsrbll2d",
-    "lenguage": "SASS - HTML 5 - React Js - Bootstrap - Fetch API",
+    "lenguage": ["SASS", "HTML 5", "React Js", "Bootstrap", "Fetch API"],
     "code": "https://github.com/emanuelpps/ep-currency-converter",
     "demo": "https://emanuelpps.github.io/ep-currency-converter/",
     "linkName": "ep-converter",
@@ -351,15 +344,22 @@
         ]
       }
     ]
-  }],
-  [{
+  },
+  {
     "id": 9,
     "name": "Embé Home & Deco",
     "class": "Ecommerce",
     "type": "Web Page",
     "description": "An online shop for home and decor items. It's easy to use, so you can enjoy shopping and know what's new.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/ybn1ak0t3pllchvnpzlw",
-    "lenguage": "HTML 5 - CSS 3 - React Js - Bootstrap - Firebase - Sweetalert",
+    "lenguage": [
+      "HTML",
+      "CSS",
+      "React Js",
+      "Bootstrap",
+      "Firebase",
+      "Sweetalert"
+    ],
     "code": "https://github.com/emanuelpps/embe-ecommerce",
     "demo": "https://emanuelpps.github.io/embe-ecommerce/",
     "linkName": "embe-home-deco",
@@ -397,7 +397,7 @@
     "type": "Web Page",
     "description": "An online store for aviation products. Easy shopping to discover the latest gear and essentials.",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/cezbxucuqirrsjooraqh",
-    "lenguage": "HTML 5 - CSS 3 - Javascript - Bootstrap",
+    "lenguage": ["HTML 5", "CSS 3", "Vanilla Javascript", "Bootstrap"],
     "code": "https://github.com/emanuelpps/Falcon-Aviation-Shop",
     "demo": "https://emanuelpps.github.io/Falcon-Aviation-Shop/",
     "linkName": "falcon-aviation-shop",
@@ -426,5 +426,5 @@
         ]
       }
     ]
-  }]
+  }
 ]
