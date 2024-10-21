@@ -6,7 +6,7 @@
     "type": "Web Page",
     "description": "Web page for holesale coffee market",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/nid5nei34pyvhqodza9f",
-    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/v1720814120/x0jvmuh6xrudmqgfyrun.png",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/mpuxljlcp2k8iwdwotcx",
     "lenguage": [
       "React Js",
       "Tailwindcss",
@@ -49,6 +49,7 @@
     "id": 2,
     "name": "The CodeMaker Lab",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/fvpizujztu5lrv3gzsam",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/jm2b7e48wpfisjdloapk",
     "lenguage": [
       "Next Js",
       "Typescript",
@@ -71,6 +72,7 @@
     "id": 3,
     "name": "Actor Portfolio",
     "img": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/c9mcise12ax5daek4xpt",
+    "img2": "https://res.cloudinary.com/dkgoszhfr/image/upload/f_auto,q_auto/hkhtxbhchexjiccmvetn",
     "lenguage": [
       "Next Js",
       "Typescript",

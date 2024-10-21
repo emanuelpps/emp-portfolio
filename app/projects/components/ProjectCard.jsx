@@ -32,7 +32,7 @@ function ProjectCard({ ...props }) {
           code={props.project.code}
           demo={props.project.demo}
         />
-        <ProjectCardImage image={props.project.img} />
+        <ProjectCardImage image={props.project.img} imageTwo={props.project.img2} />
       </div>
     </div>
   );

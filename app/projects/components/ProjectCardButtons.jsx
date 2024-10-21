@@ -19,7 +19,7 @@ function ProjectCardButtons({ code, demo }) {
             href={code}
             className="flex text-[1.2rem] bg-slate-100 p-2 text-black justify-center items-center rounded-lg w-[50%] hover:bg-slate-200 gap-5"
           >
-            <FaGithub />
+            <FaGithub className="hidden md:flex"/>
             Code
           </Link>
         )}
@@ -29,7 +29,7 @@ function ProjectCardButtons({ code, demo }) {
           href={demo}
           className="flex text-[1.2rem] bg-slate-100 p-2 text-black justify-center items-center rounded-lg w-[50%]  hover:bg-slate-200 gap-5"
         >
-          <MdWeb />
+          <MdWeb  className="hidden md:flex"/>
           Deploy
         </Link>
       </div>

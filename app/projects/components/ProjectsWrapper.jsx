@@ -18,8 +18,6 @@ function ProjectsWrapper() {
   const [moreProjectPosition, setMoreProjectPosition] = useState(1);
   const [projectPositionIndex, setProjectPositionIndex] = useState(0);
 
-  console.log(MoreProjects[moreProjectPosition]);
-
   useEffect(() => {
     const selectedProject = Projects.find(
       (project) => project.id === selectedId
@@ -59,11 +57,11 @@ function ProjectsWrapper() {
     }
   };
 
-  useEffect(() => {
+  /*   useEffect(() => {
     setTimeout(() => {
       sliderHandler("increase");
     }, 8000);
-  }, [moreProjectPosition]);
+  }, []); */
 
   return (
     <>
@@ -90,8 +88,16 @@ function ProjectsWrapper() {
         ))}
         <div id="more-projects-slider-container" className="w-[95%] mt-20">
           <h2 className="mb-20 text-3xl">More Projects</h2>
+          <div className="flex items-center justify-center gap-10 mb-10 lg:hidden">
+            <button onClick={() => sliderHandler("descrease")}>
+              <MdOutlineArrowBackIos className="text-[2.5rem]" />
+            </button>
+            <button onClick={() => sliderHandler("increase")}>
+              <MdOutlineArrowForwardIos className="text-[2.5rem]" />
+            </button>
+          </div>
           <div className="flex items-center justify-center gap-20">
-            <div>
+            <div className="">
               <button onClick={() => sliderHandler("descrease")}>
                 <MdOutlineArrowBackIos className="text-[2.5rem]" />
               </button>
@@ -101,7 +107,7 @@ function ProjectsWrapper() {
                 <MoreProjectsSlider key={index} otherProjects={project} />
               )
             )}
-            <div>
+            <div className="">
               <button onClick={() => sliderHandler("increase")}>
                 <MdOutlineArrowForwardIos className="text-[2.5rem]" />
               </button>
