@@ -13,7 +13,7 @@ function MoreProjectsSlider({ otherProjects }) {
     <div id="more-projects-slider">
       <div className="relative w-full h-full">
         <div
-          className={`absolute w-full h-full ${
+          className={`absolute w-full h-full bg-black opacity-60 lg:bg-inherit${
             showButtons ? "bg-black opacity-60 fade-in animate-delay-75" : ""
           }`}
         ></div>
@@ -74,7 +74,7 @@ function MoreProjectsSlider({ otherProjects }) {
               {otherProjects?.lenguage?.map((leng, index) => (
                 <div
                   key={index}
-                  className="flex flex-wrap items-center justify-center gap-2 p-2 text-[0.6rem] md:text-[1.2rem] lg:text-[0.8rem] text-white bg-black border border-gray-600 rounded-md"
+                  className="flex flex-wrap items-center justify-center gap-2 p-2 text-[0.5rem] md:text-[1.2rem] lg:text-[0.8rem] text-white bg-black border border-gray-600 rounded-md"
                 >
                   {leng}
                 </div>
