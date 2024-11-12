@@ -10,7 +10,7 @@ function MoreProjectsSlider({ otherProjects }) {
   console.log("other", otherProjects);
 
   return (
-    <div id="more-projects-slider">
+    <div id="more-projects-slider" className="animate-fade-in-left">
       <div className="relative w-full h-full">
         <div
           className={`absolute w-full h-full bg-black opacity-60 lg:bg-inherit${

@@ -57,11 +57,11 @@ function ProjectsWrapper() {
     }
   };
 
-  /*   useEffect(() => {
+   useEffect(() => {
     setTimeout(() => {
       sliderHandler("increase");
     }, 8000);
-  }, []); */
+  }, []);
 
   return (
     <>
