@@ -8,11 +8,12 @@ import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-import { SiNextui } from "react-icons/si";
 import { TbBrandTypescript } from "react-icons/tb";
 import { FaSass } from "react-icons/fa";
 import { SiFramer } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiCssmodules } from "react-icons/si";
+import { SiStyledcomponents } from "react-icons/si";
 import ZustandLogo from "@/public/assets/skills-icons/frontend/zustand.svg";
 import Image from "next/image";
 
@@ -83,6 +84,22 @@ function Frontend() {
     },
     {
       id: uuid(),
+      title: "CSS Modules",
+      icon: (
+        <SiCssmodules className="text-white text-[2rem] md:text-[3rem]" />
+      ),
+      url: "https://github.com/css-modules/css-modules",
+    },
+    {
+      id: uuid(),
+      title: "Styled Components",
+      icon: (
+        <SiStyledcomponents className="text-white text-[2rem] md:text-[3rem]" />
+      ),
+      url: "https://styled-components.com",
+    },
+    {
+      id: uuid(),
       title: "Sass",
       icon: <FaSass className="text-[#cd6799] text-[2rem] md:text-[3rem]" />,
       url: "https://sass-lang.com",
@@ -96,7 +113,14 @@ function Frontend() {
     {
       id: uuid(),
       title: "Zustand",
-      icon: <Image src={ZustandLogo} width={45} height={45} className="text-[#000000] text-[2rem] md:text-[3rem]" />,
+      icon: (
+        <Image
+          src={ZustandLogo}
+          width={45}
+          height={45}
+          className="text-[#000000] text-[2rem] md:text-[3rem]"
+        />
+      ),
       url: "https://www.zustand.dev",
     },
   ]);
