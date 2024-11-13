@@ -2,6 +2,7 @@ import React from "react";
 import Frontend from "./Frontend/Frontend";
 import Native from "./Native/Native";
 import Backend from "./Backend/Backend";
+import InProgress from "./InProgress/InProgress";
 
 function SkillsWrapper() {
   return (
@@ -15,6 +16,7 @@ function SkillsWrapper() {
         <Frontend />
         <Native />
         <Backend />
+        <InProgress />
       </div>
     </>
   );
