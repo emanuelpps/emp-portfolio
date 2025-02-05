@@ -19,6 +19,21 @@ function ExperienceBox() {
             className="pt-10 ml-5 w-[100%] md:w-[90%]"
           >
             <ol className="relative border-gray-200 border-s dark:border-gray-700">
+            <div className="mb-10 ms-4">
+                <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time className="mb-1 text-[1rem] md:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
+                2025 - Present
+                </time>
+                <div className="flex flex-row items-center md:gap-16">
+                  <h3 className="text-[1.1rem] md:text-[2rem] font-light text-white flex flex-row w-[100%]">
+                    Data Entry Specialist
+                  </h3>
+                  <span className="flex w-[50%] md:hidden">-</span>
+                  <p className="text-gray-400 font-thin text-[1rem] md:text-[1.8rem] w-[100%]">
+                    Vates Software an EPAM Company
+                  </p>
+                </div>
+              </div>
               <div className="mb-10 ms-4">
                 <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <time className="mb-1 text-[1rem] md:text-[1.5rem] font-normal leading-none text-gray-400 dark:text-gray-500">
