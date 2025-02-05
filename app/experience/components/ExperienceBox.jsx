@@ -26,7 +26,7 @@ function ExperienceBox() {
                 </time>
                 <div className="flex flex-row items-center md:gap-16">
                   <h3 className="text-[1.1rem] md:text-[2rem] font-light text-white flex flex-row w-[100%]">
-                    Data Entry Specialist
+                  Associate Project Administrator
                   </h3>
                   <span className="flex w-[50%] md:hidden">-</span>
                   <p className="text-gray-400 font-thin text-[1rem] md:text-[1.8rem] w-[100%]">
